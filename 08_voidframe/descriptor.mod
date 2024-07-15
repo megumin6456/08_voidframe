@@ -6,4 +6,4 @@ tags={
 name="ANZ VOIDFRAME"
 picture="thumbnail.png"
 supported_version="v3.12.*"
-remote_file_id="2795052305"
+remote_file_id="3289877651"
