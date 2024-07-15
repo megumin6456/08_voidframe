@@ -1,0 +1,128 @@
+voidframe_toxic_attendant_growth = {
+	base = 0
+
+	# STANDARD FOUNDRY, BIG FOUNDRY, REFINERY, SUPERTENSILES are already covered
+	# vanilla giga has a bug where frameworld factory districts are ignored (confirmed Dec 7 2023 by TFTCUTS)
+	# but I am preemptively patching enigmatic factories
+
+	#foundry
+	complex_trigger_modifier = {
+		trigger = num_districts
+		parameters = {
+			type = district_giga_voidframe_foundry_dm
+		}
+		mode = add
+	}
+	complex_trigger_modifier = {
+		trigger = num_districts
+		parameters = {
+			type = district_giga_voidframe_foundry_de
+		}
+		mode = add
+	}
+	complex_trigger_modifier = {
+		trigger = num_districts
+		parameters = {
+			type = district_giga_voidframe_foundry_pe
+		}
+		mode = add
+	}
+	complex_trigger_modifier = {
+		trigger = num_districts
+		parameters = {
+			type = district_giga_voidframe_foundry_se
+		}
+		mode = add
+	}
+
+	#factory
+	complex_trigger_modifier = {
+		trigger = num_districts
+		parameters = {
+			type = district_giga_voidframe_factory_dm
+		}
+		mode = add
+	}
+	complex_trigger_modifier = {
+		trigger = num_districts
+		parameters = {
+			type = district_giga_voidframe_factory_de
+		}
+		mode = add
+	}
+	complex_trigger_modifier = {
+		trigger = num_districts
+		parameters = {
+			type = district_giga_voidframe_factory_pe
+		}
+		mode = add
+	}
+	complex_trigger_modifier = {
+		trigger = num_districts
+		parameters = {
+			type = district_giga_voidframe_factory_se
+		}
+		mode = add
+	}
+
+	#refinery
+	complex_trigger_modifier = {
+		trigger = num_districts
+		parameters = {
+			type = district_giga_voidframe_refinery_dm
+		}
+		mode = add
+	}
+	complex_trigger_modifier = {
+		trigger = num_districts
+		parameters = {
+			type = district_giga_voidframe_refinery_de
+		}
+		mode = add
+	}
+	complex_trigger_modifier = {
+		trigger = num_districts
+		parameters = {
+			type = district_giga_voidframe_refinery_pe
+		}
+		mode = add
+	}
+	complex_trigger_modifier = {
+		trigger = num_districts
+		parameters = {
+			type = district_giga_voidframe_refinery_se
+		}
+		mode = add
+	}
+
+	#supertensiles
+	complex_trigger_modifier = {
+		trigger = num_districts
+		parameters = {
+			type = district_giga_voidframe_supertensiles_dm
+		}
+		mode = add
+	}
+	complex_trigger_modifier = {
+		trigger = num_districts
+		parameters = {
+			type = district_giga_voidframe_supertensiles_de
+		}
+		mode = add
+	}
+	complex_trigger_modifier = {
+		trigger = num_districts
+		parameters = {
+			type = district_giga_voidframe_supertensiles_pe
+		}
+		mode = add
+	}
+	complex_trigger_modifier = {
+		trigger = num_districts
+		parameters = {
+			type = district_giga_voidframe_supertensiles_se
+		}
+		mode = add
+	}
+
+}

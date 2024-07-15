@@ -1,0 +1,433 @@
+###################
+# Basic Jobs
+###################
+# override to add vanilla 1% trade value, nothing more
+
+dm_clerk = {
+	category = worker
+	condition_string = WORKER_JOB_TRIGGER
+	building_icon = building_dm_commercial_megaplex
+	clothes_texture_index = 2
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+	possible_precalc = can_fill_worker_job
+	planet_modifier = {
+		trade_value_mult = 0.01
+		planet_amenities_add = 6
+		trade_value_add = 6
+	}
+	triggered_planet_modifier = {
+		potential = {
+			OR = {
+				has_trait = trait_robot_domestic_protocols
+				has_trait = trait_charismatic
+			}
+		}
+		modifier = {
+			planet_amenities_add = 0.6
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			has_trait = trait_repugnant
+		}
+		modifier = {
+			planet_amenities_add = -0.6
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			has_trait = trait_thrifty
+		}
+		modifier = {
+			trade_value_add = 0.7
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			has_trait = trait_nuumismatic_administration
+		}
+		modifier = {
+			trade_value_add = 0.7
+		}
+	}
+	weight = {
+		weight = @clerk_job_weight
+		modifier = {
+			factor = 5
+			has_job = dm_clerk
+		}
+		modifier = {
+			factor = 0.25
+			is_enslaved = yes
+			can_take_servant_job = no
+			NOR = {
+				has_trait = trait_nuumismatic_administration
+				has_trait = trait_thrifty
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				is_non_sapient_robot = yes
+				is_shackled_robot = yes
+			}
+			can_take_servant_job = no
+		}
+		modifier = {
+			factor = 1.5
+			OR = {
+				has_trait = trait_thrifty
+				has_trait = trait_nuumismatic_administration
+			}
+		}
+		modifier = {
+			factor = 0.1
+			can_take_servant_job = yes
+		}
+		modifier = {
+			factor = 1.5
+			OR = {
+				has_trait = trait_robot_domestic_protocols
+				has_trait = trait_charismatic
+			}
+		}
+		modifier = {
+			factor = 0.5
+			has_trait = trait_repugnant
+		}
+		modifier = {
+			factor = 0.5
+			exists = owner
+			owner = {
+				is_fallen_empire = yes
+			}
+		}
+	}
+}
+
+ae_clerk = {
+	category = worker
+	condition_string = WORKER_JOB_TRIGGER
+	building_icon = building_ae_commercial_megaplex
+	clothes_texture_index = 2
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+	possible_precalc = can_fill_worker_job
+	planet_modifier = {
+		trade_value_mult = 0.01
+		planet_amenities_add = 12
+		trade_value_add = 12
+	}
+	triggered_planet_modifier = {
+		potential = {
+			OR = {
+				has_trait = trait_robot_domestic_protocols
+				has_trait = trait_charismatic
+			}
+		}
+		modifier = {
+			planet_amenities_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			has_trait = trait_repugnant
+		}
+		modifier = {
+			planet_amenities_add = -1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			has_trait = trait_thrifty
+		}
+		modifier = {
+			trade_value_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			has_trait = trait_nuumismatic_administration
+		}
+		modifier = {
+			trade_value_add = 1
+		}
+	}
+	weight = {
+		weight = @clerk_job_weight
+		modifier = {
+			factor = 5
+			has_job = ae_clerk
+		}
+		modifier = {
+			factor = 0.25
+			is_enslaved = yes
+			can_take_servant_job = no
+			NOR = {
+				has_trait = trait_nuumismatic_administration
+				has_trait = trait_thrifty
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				is_non_sapient_robot = yes
+				is_shackled_robot = yes
+			}
+			can_take_servant_job = no
+		}
+		modifier = {
+			factor = 1.5
+			OR = {
+				has_trait = trait_thrifty
+				has_trait = trait_nuumismatic_administration
+			}
+		}
+		modifier = {
+			factor = 0.1
+			can_take_servant_job = yes
+		}
+		modifier = {
+			factor = 1.5
+			OR = {
+				has_trait = trait_robot_domestic_protocols
+				has_trait = trait_charismatic
+			}
+		}
+		modifier = {
+			factor = 0.5
+			has_trait = trait_repugnant
+		}
+		modifier = {
+			factor = 0.5
+			exists = owner
+			owner = {
+				is_fallen_empire = yes
+			}
+		}
+	}
+}
+
+phanon_clerk = {
+	category = worker
+	condition_string = WORKER_JOB_TRIGGER
+	building_icon = building_phanon_commercial_megaplex
+	icon = stellarite_clerk
+	clothes_texture_index = 2
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+	possible_precalc = can_fill_worker_job
+	planet_modifier = {
+		trade_value_mult = 0.01
+		planet_amenities_add = 25
+		trade_value_add = 25
+	}
+	triggered_planet_modifier = {
+		potential = {
+			OR = {
+				has_trait = trait_robot_domestic_protocols
+				has_trait = trait_charismatic
+			}
+		}
+		modifier = {
+			planet_amenities_add = 2
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			has_trait = trait_repugnant
+		}
+		modifier = {
+			planet_amenities_add = -2
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			has_trait = trait_thrifty
+		}
+		modifier = {
+			trade_value_add = 1.5
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			has_trait = trait_nuumismatic_administration
+		}
+		modifier = {
+			trade_value_add = 1.5
+		}
+	}
+	weight = {
+		weight = @clerk_job_weight
+		modifier = {
+			factor = 5
+			has_job = phanon_clerk
+		}
+		modifier = {
+			factor = 0.25
+			is_enslaved = yes
+			can_take_servant_job = no
+			NOR = {
+				has_trait = trait_nuumismatic_administration
+				has_trait = trait_thrifty
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				is_non_sapient_robot = yes
+				is_shackled_robot = yes
+			}
+			can_take_servant_job = no
+		}
+		modifier = {
+			factor = 1.5
+			OR = {
+				has_trait = trait_thrifty
+				has_trait = trait_nuumismatic_administration
+			}
+		}
+		modifier = {
+			factor = 0.1
+			can_take_servant_job = yes
+		}
+		modifier = {
+			factor = 1.5
+			OR = {
+				has_trait = trait_robot_domestic_protocols
+				has_trait = trait_charismatic
+			}
+		}
+		modifier = {
+			factor = 0.5
+			has_trait = trait_repugnant
+		}
+		modifier = {
+			factor = 0.5
+			exists = owner
+			owner = {
+				is_fallen_empire = yes
+			}
+		}
+	}
+}
+
+stellarite_clerk = {
+	category = worker
+	condition_string = WORKER_JOB_TRIGGER
+	building_icon = building_stellarite_commercial_megaplex
+	clothes_texture_index = 2
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+	possible_precalc = can_fill_worker_job
+	planet_modifier = {
+		trade_value_mult = 0.01
+		planet_amenities_add = 50
+		trade_value_add = 50
+	}
+	triggered_planet_modifier = {
+		potential = {
+			OR = {
+				has_trait = trait_robot_domestic_protocols
+				has_trait = trait_charismatic
+			}
+		}
+		modifier = {
+			planet_amenities_add = 4
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			has_trait = trait_repugnant
+		}
+		modifier = {
+			planet_amenities_add = -4
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			has_trait = trait_thrifty
+		}
+		modifier = {
+			trade_value_add = 3
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			has_trait = trait_nuumismatic_administration
+		}
+		modifier = {
+			trade_value_add = 3
+		}
+	}
+	weight = {
+		weight = @clerk_job_weight
+		modifier = {
+			factor = 5
+			has_job = stellarite_clerk
+		}
+		modifier = {
+			factor = 0.25
+			is_enslaved = yes
+			can_take_servant_job = no
+			NOR = {
+				has_trait = trait_nuumismatic_administration
+				has_trait = trait_thrifty
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				is_non_sapient_robot = yes
+				is_shackled_robot = yes
+			}
+			can_take_servant_job = no
+		}
+		modifier = {
+			factor = 1.5
+			OR = {
+				has_trait = trait_thrifty
+				has_trait = trait_nuumismatic_administration
+			}
+		}
+		modifier = {
+			factor = 0.1
+			can_take_servant_job = yes
+		}
+		modifier = {
+			factor = 1.5
+			OR = {
+				has_trait = trait_robot_domestic_protocols
+				has_trait = trait_charismatic
+			}
+		}
+		modifier = {
+			factor = 0.5
+			has_trait = trait_repugnant
+		}
+		modifier = {
+			factor = 0.5
+			exists = owner
+			owner = {
+				is_fallen_empire = yes
+			}
+		}
+	}
+}

@@ -1,0 +1,151 @@
+# Check for installed mods and unlock features accordingly
+anz_voidframe_installed = {
+	always = yes
+}
+
+# Enigmatic + Precursor
+has_voidframe_mods_acot = {
+	has_global_flag = acot_activated
+}
+
+# Stellarite + Phanon
+has_voidframe_mods_aot = {
+	has_global_flag = has_aot_mod
+}
+
+# Shroud Masters
+has_voidframe_mods_sots = {
+	has_global_flag = has_aot_mod
+	has_global_flag = has_sots_mod
+}
+
+# Stellarborne
+has_voidframe_mods_sbtg = {
+	has_global_flag = acot_activated
+	has_global_flag = sofe_activated
+}
+
+# Void Galaxy
+has_voidframe_mods_vgal = {
+	has_global_flag = anz_void_galaxy
+}
+
+# Check if Voidframe or Frameworld
+is_voidframe_upgraded = {
+	OR = {
+		is_voidframe_dm = yes
+		is_voidframe_de = yes
+		is_voidframe_pe = yes
+		is_voidframe_se = yes
+		is_voidframe_te = yes
+		is_voidframe_oe = yes
+	}
+}
+
+# Check Upgrade Level (Mutually Exclusive)
+is_voidframe_exclusive_dm = {
+	is_voidframe_dm = yes
+	is_voidframe_de = no
+	is_voidframe_pe = no
+	is_voidframe_se = no
+	is_voidframe_te = no
+	is_voidframe_oe = no
+}
+
+is_voidframe_exclusive_de = {
+	is_voidframe_de = yes
+	is_voidframe_pe = no
+	is_voidframe_se = no
+	is_voidframe_te = no
+	is_voidframe_oe = no
+}
+
+is_voidframe_exclusive_pe = {
+	is_voidframe_pe = yes
+	is_voidframe_se = no
+	is_voidframe_te = no
+	is_voidframe_oe = no
+}
+
+is_voidframe_exclusive_se = {
+	is_voidframe_se = yes
+	is_voidframe_te = no
+	is_voidframe_oe = no
+}
+
+is_voidframe_exclusive_te = {
+	is_voidframe_te = yes
+	is_voidframe_oe = no
+}
+
+is_voidframe_exclusive_oe = {
+	is_voidframe_oe = yes
+}
+
+# Similar to is_voidframe_exclusive but checks one step ahead
+is_voidframe_outdated_dm = {
+	OR = {
+		is_voidframe_de = yes
+		is_voidframe_pe = yes
+		is_voidframe_se = yes
+		is_voidframe_te = yes
+		is_voidframe_oe = yes
+	}
+}
+
+is_voidframe_outdated_de = {
+	OR = {
+		is_voidframe_pe = yes
+		is_voidframe_se = yes
+		is_voidframe_te = yes
+		is_voidframe_oe = yes
+	}
+}
+
+is_voidframe_outdated_pe = {
+	OR = {
+		is_voidframe_se = yes
+		is_voidframe_te = yes
+		is_voidframe_oe = yes
+	}
+}
+
+is_voidframe_outdated_se = {
+	OR = {
+		is_voidframe_te = yes
+		is_voidframe_oe = yes
+	}
+}
+
+is_voidframe_outdated_te = {
+	is_voidframe_oe = yes
+}
+
+is_voidframe_outdated_oe = {
+	always = no # highest tier can never be outdated
+}
+
+# Check Upgrade Level
+is_voidframe_dm = {
+	has_planet_flag = voidframe_enigmatic
+}
+
+is_voidframe_de = {
+	has_planet_flag = voidframe_enigmatic_ae
+}
+
+is_voidframe_pe = {
+	has_planet_flag = voidframe_phanon
+}
+
+is_voidframe_se = {
+	has_planet_flag = voidframe_stellarite
+}
+
+is_voidframe_te = {
+	has_planet_flag = voidframe_soul
+}
+
+is_voidframe_oe = {
+	has_planet_flag = voidframe_light
+}

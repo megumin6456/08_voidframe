@@ -1,0 +1,810 @@
+# Organic Admin
+
+# admin_dm = {
+# 	category = specialist
+# 	condition_string = SPECIALIST_JOB_TRIGGER
+# 	building_icon = building_affluence_center
+	
+# 	possible_pre_triggers = {
+# 		has_owner = yes
+# 		is_being_purged = no
+# 		is_being_assimilated = no
+# 		is_sapient = yes
+# 	}
+
+# 	possible_precalc = can_fill_specialist_job
+# 	possible = { complex_specialist_job_check_trigger = yes }
+
+# 	resources = {
+# 		category = planet_administrators	
+# 		produces = {
+# 			unity = 20
+# 			#research goes 4 -> 25 for vanilla -> acot
+# 			# i will make burecrats go 4 -> 20
+# 		}
+# 		produces = {
+# 			trigger = {
+# 				exists = owner
+# 				owner = {
+# 					has_valid_civic = civic_byzantine_bureaucracy
+# 				}
+# 			}
+# 			unity = 5
+# 		}
+# 		upkeep = {
+# 			sr_dark_matter = 1
+# 			acot_sr_dark_energy = 2
+# 			consumer_goods = 5
+# 		}
+# 	}
+
+# 	weight = {
+# 		weight = @specialist_job_weight
+# 		mult = value:job_weights_modifier|JOB|bureaucrat|RESOURCE|unity|
+# 	}
+# }
+
+# admin_de = {
+# 	category = specialist
+# 	condition_string = SPECIALIST_JOB_TRIGGER
+# 	icon = admin_de
+# 	building_icon = building_ae_affluence_center
+	
+# 	possible_pre_triggers = {
+# 		has_owner = yes
+# 		is_being_purged = no
+# 		is_being_assimilated = no
+# 		is_sapient = yes
+# 	}
+
+# 	possible_precalc = can_fill_specialist_job
+# 	possible = { complex_specialist_job_check_trigger = yes }
+
+# 	resources = {
+# 		category = planet_administrators	
+# 		produces = {
+# 			unity = 40
+# 			# doubling inline with acot "balance"
+# 		}
+# 		produces = {
+# 			trigger = {
+# 				exists = owner
+# 				owner = {
+# 					has_valid_civic = civic_byzantine_bureaucracy
+# 				}
+# 			}
+# 			unity = 10
+# 		}
+# 		upkeep = {
+# 			sr_dark_matter = 2
+# 			acot_sr_dark_energy = 4
+# 			consumer_goods = 5
+# 		}
+# 	}
+
+# 	weight = {
+# 		weight = @specialist_job_weight
+# 		mult = value:job_weights_modifier|JOB|bureaucrat|RESOURCE|unity|
+# 	}
+# }
+
+# admin_pe = {
+# 	category = specialist
+# 	condition_string = SPECIALIST_JOB_TRIGGER
+# 	icon = admin_pe
+# 	building_icon = building_phanon_affluence_center
+	
+# 	possible_pre_triggers = {
+# 		has_owner = yes
+# 		is_being_purged = no
+# 		is_being_assimilated = no
+# 		is_sapient = yes
+# 	}
+
+# 	possible_precalc = can_fill_specialist_job
+# 	possible = { complex_specialist_job_check_trigger = yes }
+
+# 	resources = {
+# 		category = planet_administrators	
+# 		produces = {
+# 			unity = 80
+# 			# doubling inline with acot "balance"
+# 		}
+# 		produces = {
+# 			trigger = {
+# 				exists = owner
+# 				owner = {
+# 					has_valid_civic = civic_byzantine_bureaucracy
+# 				}
+# 			}
+# 			unity = 20
+# 		}
+# 		upkeep = {
+# 			aot_sr_runic_power = 5
+# 			consumer_goods = 10
+# 		}
+# 	}
+
+# 	weight = {
+# 		weight = @specialist_job_weight
+# 		mult = value:job_weights_modifier|JOB|bureaucrat|RESOURCE|unity|
+# 	}
+# }
+
+# admin_se = {
+# 	category = specialist
+# 	condition_string = SPECIALIST_JOB_TRIGGER
+# 	icon = admin_se
+# 	building_icon = building_stellarite_affluence_center
+	
+# 	possible_pre_triggers = {
+# 		has_owner = yes
+# 		is_being_purged = no
+# 		is_being_assimilated = no
+# 		is_sapient = yes
+# 	}
+
+# 	possible_precalc = can_fill_specialist_job
+# 	possible = { complex_specialist_job_check_trigger = yes }
+
+# 	resources = {
+# 		category = planet_administrators	
+# 		produces = {
+# 			unity = 160
+# 			#balanz comrade
+# 		}
+# 		produces = {
+# 			trigger = {
+# 				exists = owner
+# 				owner = {
+# 					has_valid_civic = civic_byzantine_bureaucracy
+# 				}
+# 			}
+# 			unity = 40
+# 		}
+# 		upkeep = {
+# 			acot_sr_stellarite = 5
+# 			consumer_goods = 10
+# 		}
+# 	}
+
+# 	weight = {
+# 		weight = @specialist_job_weight
+# 		mult = value:job_weights_modifier|JOB|bureaucrat|RESOURCE|unity|
+# 	}
+# }
+
+# megumin: renamed job to have prefix to prevent any unforseen conflicts (inline with theta job)
+
+# Machine Coordinator
+#NOTE: I set these to be slightly stronger than bureaucrat jobs, but no way near priest jobs 
+
+anz_voidframe_admin_drone_dm = {
+	category = complex_drone
+	condition_string = DRONE_JOB_TRIGGER
+	# icon = admin_dm
+	building_icon = building_acot_dm_ancient_control_center
+	
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+
+	possible_precalc = can_fill_drone_job
+	possible = { can_think = yes }
+
+	resources = {
+		category = planet_administrators	
+		produces = {
+			unity = 14
+		}
+		upkeep = {
+			sr_dark_matter = 1
+			acot_sr_dark_energy = 2
+			energy = 10
+		}
+	}
+
+	weight = {
+		weight = @complex_drone_job_weight
+		mult = value:job_weights_modifier|JOB|coordinator|RESOURCE|unity|
+	}
+
+	inline_script = "jobs/automodding_priority_unity"
+}
+
+anz_voidframe_admin_drone_de = {
+	category = complex_drone
+	condition_string = DRONE_JOB_TRIGGER
+	#icon = admin_de
+	building_icon = building_acot_ae_ancient_control_center
+	
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+
+	possible_precalc = can_fill_drone_job
+	possible = { can_think = yes }
+
+	resources = {
+		category = planet_administrators	
+		produces = {
+			unity = 28
+		}
+		upkeep = {
+			sr_dark_matter = 2
+			acot_sr_dark_energy = 4
+			energy = 10
+		}
+	}
+
+	weight = {
+		weight = @complex_drone_job_weight
+		mult = value:job_weights_modifier|JOB|coordinator|RESOURCE|unity|
+	}
+
+	inline_script = "jobs/automodding_priority_unity"
+}
+
+anz_voidframe_admin_drone_pe = {
+	category = complex_drone
+	condition_string = DRONE_JOB_TRIGGER
+	#icon = admin_pe
+	building_icon = building_phanon_control_center
+	
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+
+	possible_precalc = can_fill_drone_job
+	possible = { can_think = yes }
+
+	resources = {
+		category = planet_administrators	
+		produces = {
+			unity = 120
+		}
+		upkeep = {
+			aot_sr_runic_power = 6
+			energy = 10
+		}
+	}
+
+	weight = {
+		weight = @complex_drone_job_weight
+		mult = value:job_weights_modifier|JOB|coordinator|RESOURCE|unity|
+	}
+}
+
+anz_voidframe_admin_drone_se = {
+	category = complex_drone
+	condition_string = DRONE_JOB_TRIGGER
+	#icon = admin_se
+	building_icon = building_stellarite_control_center
+	
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+
+	possible_precalc = can_fill_drone_job
+	possible = { can_think = yes }
+
+	resources = {
+		category = planet_administrators	
+		produces = {
+			unity = 240
+		}
+		upkeep = {
+			acot_sr_stellarite = 7
+			energy = 15
+		}
+	}
+
+	weight = {
+		weight = @complex_drone_job_weight
+		mult = value:job_weights_modifier|JOB|coordinator|RESOURCE|unity|
+	}
+}
+
+# Hive Synapse
+#NOTE: I set these to be slightly stronger than bureaucrat jobs, but no way near priest jobs 
+
+anz_voidframe_synapse_drone_dm = {
+	category = complex_drone
+	condition_string = DRONE_JOB_TRIGGER
+	#icon = synapse_dm
+	building_icon = building_acot_dm_ancient_hive_cluster
+	
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+
+	possible_precalc = can_fill_drone_job
+	possible = { can_think = yes }
+
+	resources = {
+		category = planet_administrators	
+		produces = {
+			unity = 14
+		}
+		upkeep = {
+			sr_dark_matter = 1
+			acot_sr_dark_energy = 2
+			food = 4
+			minerals = 4
+		}
+	}
+
+	weight = {
+		weight = @complex_drone_job_weight
+		mult = value:job_weights_modifier|JOB|coordinator|RESOURCE|unity|
+	}
+
+	inline_script = "jobs/automodding_priority_unity"
+}
+
+anz_voidframe_synapse_drone_de = {
+	category = complex_drone
+	condition_string = DRONE_JOB_TRIGGER
+	#icon = synapse_de
+	building_icon = building_acot_ae_ancient_hive_cluster
+	
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+
+	possible_precalc = can_fill_drone_job
+	possible = { can_think = yes }
+
+	resources = {
+		category = planet_administrators	
+		produces = {
+			unity = 28
+		}
+		upkeep = {
+			sr_dark_matter = 2
+			acot_sr_dark_energy = 4
+			food = 4
+			minerals = 4
+		}
+	}
+
+	weight = {
+		weight = @complex_drone_job_weight
+		mult = value:job_weights_modifier|JOB|coordinator|RESOURCE|unity|
+	}
+
+	inline_script = "jobs/automodding_priority_unity"
+}
+
+anz_voidframe_synapse_drone_pe = {
+	category = complex_drone
+	condition_string = DRONE_JOB_TRIGGER
+	#icon = synapse_pe
+	building_icon = building_phanon_hive_cluster
+	
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+
+	possible_precalc = can_fill_drone_job
+	possible = { can_think = yes }
+
+	resources = {
+		category = planet_administrators	
+		produces = {
+			unity = 120
+		}
+		upkeep = {
+			aot_sr_runic_power = 6
+			energy = 10
+		}
+	}
+
+	weight = {
+		weight = @complex_drone_job_weight
+		mult = value:job_weights_modifier|JOB|coordinator|RESOURCE|unity|
+	}
+}
+
+anz_voidframe_synapse_drone_se = {
+	category = complex_drone
+	condition_string = DRONE_JOB_TRIGGER
+	#icon = synapse_se
+	building_icon = building_stellarite_hive_cluster
+	
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+
+	possible_precalc = can_fill_drone_job
+	possible = { can_think = yes }
+
+	resources = {
+		category = planet_administrators	
+		produces = {
+			unity = 240
+		}
+		upkeep = {
+			acot_sr_stellarite = 7
+			energy = 15
+		}
+	}
+
+	weight = {
+		weight = @complex_drone_job_weight
+		mult = value:job_weights_modifier|JOB|coordinator|RESOURCE|unity|
+	}
+}
+
+# Trader jobs
+
+anz_voidframe_trader_dm = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_dm_commercial_megaplex
+	
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_specialist_job
+	possible = { complex_specialist_job_check_trigger = yes }
+
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		trade_value_add = 16
+		mult = value:scripted_modifier_mult|MODIFIER|pop_job_trade_mult|
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_tradition = tr_mercantile_commercial_enterprise }
+		}
+		planet_amenities_add = 4
+		mult = value:scripted_modifier_mult|MODIFIER|pop_job_trade_mult|
+	}
+
+	resources = {
+		category = planet_traders
+		upkeep = {
+			consumer_goods = 1
+			acot_sr_dark_energy = 1
+		}
+	}
+
+	weight = {
+		weight = @specialist_job_weight
+		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
+		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_trade_mult|
+		modifier = {
+			factor = 5
+			has_job = trader
+		}
+		# crisis purge
+		modifier = {
+			factor = 0.01
+			exists = planet
+			exists = planet.controller
+			planet.controller = {
+				OR = {
+					is_country_type = swarm
+					is_country_type = ai_empire
+				}
+			}
+			OR = { # contingency won't purge itself
+				NOT = { exists = event_target:custodian_bot }
+				AND = {
+					exists = event_target:custodian_bot
+					NOT = { species = { is_same_value = event_target:custodian_bot } }
+				}
+			}
+		}
+	}
+}
+
+anz_voidframe_trader_de = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_dm_commercial_megaplex
+	
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_specialist_job
+	possible = { complex_specialist_job_check_trigger = yes }
+
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		trade_value_add = 32
+		mult = value:scripted_modifier_mult|MODIFIER|pop_job_trade_mult|
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_tradition = tr_mercantile_commercial_enterprise }
+		}
+		planet_amenities_add = 8
+		mult = value:scripted_modifier_mult|MODIFIER|pop_job_trade_mult|
+	}
+
+	resources = {
+		category = planet_traders
+		upkeep = {
+			sr_dark_matter = 2
+			acot_sr_dark_energy = 2
+			#vanilla trader has half compared to vanilla bureacrat / researcher, attempted to keep that ratio
+		}
+	}
+
+	weight = {
+		weight = @specialist_job_weight
+		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
+		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_trade_mult|
+		modifier = {
+			factor = 5
+			has_job = trader
+		}
+		# crisis purge
+		modifier = {
+			factor = 0.01
+			exists = planet
+			exists = planet.controller
+			planet.controller = {
+				OR = {
+					is_country_type = swarm
+					is_country_type = ai_empire
+				}
+			}
+			OR = { # contingency won't purge itself
+				NOT = { exists = event_target:custodian_bot }
+				AND = {
+					exists = event_target:custodian_bot
+					NOT = { species = { is_same_value = event_target:custodian_bot } }
+				}
+			}
+		}
+	}
+}
+
+anz_voidframe_trader_pe = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_dm_commercial_megaplex
+	
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_specialist_job
+	possible = { complex_specialist_job_check_trigger = yes }
+
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		trade_value_add = 64
+		mult = value:scripted_modifier_mult|MODIFIER|pop_job_trade_mult|
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_tradition = tr_mercantile_commercial_enterprise }
+		}
+		planet_amenities_add = 16
+		mult = value:scripted_modifier_mult|MODIFIER|pop_job_trade_mult|
+	}
+
+	resources = {
+		category = planet_traders
+		upkeep = {
+			aot_sr_runic_power = 4
+			#vanilla trader has half compared to vanilla bureacrat / researcher, attempted to keep that ratio
+		}
+	}
+
+	weight = {
+		weight = @specialist_job_weight
+		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
+		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_trade_mult|
+		modifier = {
+			factor = 5
+			has_job = trader
+		}
+		# crisis purge
+		modifier = {
+			factor = 0.01
+			exists = planet
+			exists = planet.controller
+			planet.controller = {
+				OR = {
+					is_country_type = swarm
+					is_country_type = ai_empire
+				}
+			}
+			OR = { # contingency won't purge itself
+				NOT = { exists = event_target:custodian_bot }
+				AND = {
+					exists = event_target:custodian_bot
+					NOT = { species = { is_same_value = event_target:custodian_bot } }
+				}
+			}
+		}
+	}
+}
+
+anz_voidframe_trader_se = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_dm_commercial_megaplex
+	
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_specialist_job
+	possible = { complex_specialist_job_check_trigger = yes }
+
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		trade_value_add = 128
+		mult = value:scripted_modifier_mult|MODIFIER|pop_job_trade_mult|
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_tradition = tr_mercantile_commercial_enterprise }
+		}
+		planet_amenities_add = 32
+		mult = value:scripted_modifier_mult|MODIFIER|pop_job_trade_mult|
+	}
+
+	resources = {
+		category = planet_traders
+		upkeep = {
+			acot_sr_stellarite = 4
+			#vanilla trader has half compared to vanilla bureacrat / researcher, attempted to keep that ratio
+		}
+	}
+
+	weight = {
+		weight = @specialist_job_weight
+		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
+		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_trade_mult|
+		modifier = {
+			factor = 5
+			has_job = trader
+		}
+		# crisis purge
+		modifier = {
+			factor = 0.01
+			exists = planet
+			exists = planet.controller
+			planet.controller = {
+				OR = {
+					is_country_type = swarm
+					is_country_type = ai_empire
+				}
+			}
+			OR = { # contingency won't purge itself
+				NOT = { exists = event_target:custodian_bot }
+				AND = {
+					exists = event_target:custodian_bot
+					NOT = { species = { is_same_value = event_target:custodian_bot } }
+				}
+			}
+		}
+	}
+}
+
+
+# Theta Basic
+anz_voidframe_meditator = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	icon = giga_amb_fe_celestial_architect
+	building_icon = building_ae_dimensional_fabricator
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_sapient = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+
+	possible_precalc = can_fill_specialist_job
+	possible = { complex_specialist_job_check_trigger = yes }
+
+	resources = {
+		category = planet_metallurgists
+
+		produces = {
+			sm_sr_perfect_runic_energy = 0.2
+		}
+		upkeep = {
+		}
+	}
+
+	weight = {
+		weight = @specialist_job_weight
+	}
+}
+
+anz_voidframe_meditator_drone = {
+	category = complex_drone
+	condition_string = DRONE_JOB_TRIGGER
+	icon = giga_amb_fe_celestial_architect
+	building_icon = building_ae_dimensional_fabricator
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_sapient = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+
+	possible_precalc = can_fill_drone_job
+	possible = { can_think = yes }
+
+	resources = {
+		category = planet_metallurgists
+
+		produces = {
+			sm_sr_perfect_runic_energy = 0.2
+		}
+		upkeep = {
+		}
+	}
+
+	weight = {
+		weight = @complex_drone_job_weight
+	}
+}
