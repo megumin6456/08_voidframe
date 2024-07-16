@@ -530,6 +530,8 @@ anz_voidframe_trader_dm = {
 			}
 		}
 	}
+
+	inline_script = "jobs/automodding_priority_trade"
 }
 
 anz_voidframe_trader_de = {
@@ -601,6 +603,8 @@ anz_voidframe_trader_de = {
 			}
 		}
 	}
+
+	inline_script = "jobs/automodding_priority_trade"
 }
 
 anz_voidframe_trader_pe = {
@@ -671,6 +675,8 @@ anz_voidframe_trader_pe = {
 			}
 		}
 	}
+
+	inline_script = "jobs/automodding_priority_trade"
 }
 
 anz_voidframe_trader_se = {
@@ -741,6 +747,8 @@ anz_voidframe_trader_se = {
 			}
 		}
 	}
+
+	inline_script = "jobs/automodding_priority_trade"
 }
 
 
