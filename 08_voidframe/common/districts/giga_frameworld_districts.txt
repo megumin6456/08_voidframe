@@ -3282,7 +3282,7 @@ inline_script = {
 
 	tier = "dm"
 	reqtech = "tech_acot_dm_temple"
-	ignore_aot = "no"
+	ignore_aot = "yes"
 
 	pass_condition = "
 		has_building = building_acot_dm_temple
@@ -3308,7 +3308,7 @@ inline_script = {
 
 	tier = "de"
 	reqtech = "tech_acot_ae_temple"
-	ignore_aot = "yes"
+	ignore_aot = "no"
 
 	pass_condition = "
 		has_building = building_acot_ae_temple
@@ -4407,7 +4407,7 @@ inline_script = {
 
 	tier = "dm"
 	reqtech = "tech_acot_dm_enigmatic_lab"
-	ignore_aot = "no"
+	ignore_aot = "yes"
 
 	pass_condition = "
 		has_building = building_acot_dm_enigmatic_lab
