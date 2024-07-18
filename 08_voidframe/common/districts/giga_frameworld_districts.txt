@@ -2375,7 +2375,7 @@ district_giga_frameworld_decompressor = {
 
 	inline_script = {
 		script = planet/minerals/giga_miner_job_swap
-		jobs = 2
+		jobs = 8
 		district = @yes
 		extra_hive_jobs = @yes
 	}
