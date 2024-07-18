@@ -54,7 +54,7 @@ district_giga_voidframe_synapse_$tier$ = {
 		district_giga_voidframe_temple_pe
 		district_giga_voidframe_temple_se
 
-		district_giga_frameworld_simulator
+		district_giga_frameworld_simulation
 
 		district_giga_voidframe_simulation_dm
 		district_giga_voidframe_simulation_de

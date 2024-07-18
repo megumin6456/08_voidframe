@@ -3007,7 +3007,7 @@ district_giga_frameworld_administrative = {
 		district_giga_voidframe_temple_pe
 		district_giga_voidframe_temple_se
 
-		district_giga_frameworld_simulator
+		district_giga_frameworld_simulation
 
 		district_giga_voidframe_simulation_dm
 		district_giga_voidframe_simulation_de
@@ -3220,7 +3220,7 @@ district_giga_frameworld_temple = {
 		district_giga_voidframe_temple_pe
 		district_giga_voidframe_temple_se
 
-		district_giga_frameworld_simulator
+		district_giga_frameworld_simulation
 
 		district_giga_voidframe_simulation_dm
 		district_giga_voidframe_simulation_de
@@ -3440,7 +3440,7 @@ district_giga_frameworld_synapse = {
 		district_giga_voidframe_temple_pe
 		district_giga_voidframe_temple_se
 
-		district_giga_frameworld_simulator
+		district_giga_frameworld_simulation
 
 		district_giga_voidframe_simulation_dm
 		district_giga_voidframe_simulation_de
@@ -3690,7 +3690,7 @@ district_giga_frameworld_simulation = { # megumin was once here and someday they
 		district_giga_voidframe_temple_pe
 		district_giga_voidframe_temple_se
 
-		district_giga_frameworld_simulator
+		district_giga_frameworld_simulation
 
 		district_giga_voidframe_simulation_dm
 		district_giga_voidframe_simulation_de
@@ -3925,7 +3925,7 @@ district_giga_frameworld_sanctuary = {
 		district_giga_voidframe_temple_pe
 		district_giga_voidframe_temple_se
 
-		district_giga_frameworld_simulator
+		district_giga_frameworld_simulation
 
 		district_giga_voidframe_simulation_dm
 		district_giga_voidframe_simulation_de
@@ -4085,7 +4085,7 @@ district_giga_frameworld_sanctuary_advanced = {
 		district_giga_voidframe_temple_pe
 		district_giga_voidframe_temple_se
 
-		district_giga_frameworld_simulator
+		district_giga_frameworld_simulation
 
 		district_giga_voidframe_simulation_dm
 		district_giga_voidframe_simulation_de
