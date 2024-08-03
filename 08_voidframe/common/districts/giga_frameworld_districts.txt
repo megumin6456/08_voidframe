@@ -1216,7 +1216,7 @@ inline_script = {
 	acot_gestjob = ""
 
 	aot_normjob = "job_phanon_alloyman_add = 2"
-	aot_gestjob = "job_phanon_alloyman_add = 2"
+	aot_gestjob = "job_phanon_alloydrone_add = 2"
 
 	nanite_energy_cost = "40"
 	nanite_nanite_cost = "5"
@@ -1245,7 +1245,7 @@ inline_script = {
 	acot_gestjob = ""
 
 	aot_normjob = "job_stellarite_alloyman_add = 2"
-	aot_gestjob = "job_stellarite_alloyman_add = 2"
+	aot_gestjob = "job_stellarite_alloydrone_add = 2"
 
 	cost = "energy = 4000 minerals = 4000 acot_sr_stellarite = 800"
 
@@ -1610,8 +1610,8 @@ inline_script = {
 	acot_normjob = ""
 	acot_gestjob = ""
 
-	aot_normjob = "job_phanon_artisan_add = 4"
-	aot_gestjob = "job_phanon_artisan_add = 4"
+	aot_normjob = "job_phanon_artisan_add = 2"
+	aot_gestjob = "job_phanon_artisan_drone_add = 2"
 
 	cost = "energy = 2000 minerals = 2000 aot_sr_runic_power = 800"
 	upkeep = "energy = 10 aot_sr_runic_power = 10"
@@ -1635,8 +1635,8 @@ inline_script = {
 	acot_normjob = ""
 	acot_gestjob = ""
 
-	aot_normjob = "job_stellarite_artisan_add = 4"
-	aot_gestjob = "job_stellarite_artisan_add = 4"
+	aot_normjob = "job_stellarite_artisan_add = 2"
+	aot_gestjob = "job_stellarite_artisan_drone_add = 2"
 
 	cost = "energy = 4000 minerals = 4000 acot_sr_stellarite = 800"
 
@@ -2693,8 +2693,8 @@ inline_script = {
 	acot_normjob = ""
 	acot_gestjob = ""
 
-	aot_normjob = "job_phanon_foodman_add = 4"
-	aot_gestjob = "job_phanon_fooddrone_add = 4"
+	aot_normjob = "job_phanon_foodman_add = 2"
+	aot_gestjob = "job_phanon_fooddrone_add = 2"
 
 	cost = "minerals = 1000 aot_sr_runic_power = 400"
 	upkeep = "energy = 6 aot_sr_runic_power = 4"
@@ -2718,8 +2718,8 @@ inline_script = {
 	acot_normjob = ""
 	acot_gestjob = ""
 
-	aot_normjob = "job_stellarite_foodman_add = 4"
-	aot_gestjob = "job_stellarite_fooddrone_add = 4"
+	aot_normjob = "job_stellarite_foodman_add = 2"
+	aot_gestjob = "job_stellarite_fooddrone_add = 2"
 
 	cost = "minerals = 2000 acot_sr_stellarite = 400"
 	upkeep = "energy = 8 acot_sr_stellarite = 6"
@@ -5441,7 +5441,7 @@ inline_script = {
 	script = "districts/voidframe/strategic/vanilla"
 
 	tier = "pe"
-	reqtech = "tech_phanon_alloy_foundry"
+	reqtech = "tech_phanon_transmutor"
 	ignore_aot = "no"
 
 	pass_condition = "
@@ -5467,7 +5467,7 @@ inline_script = {
 	script = "districts/voidframe/strategic/vanilla"
 
 	tier = "se"
-	reqtech = "tech_stellarite_alloy_foundry"
+	reqtech = "tech_stellarite_transmutor"
 	ignore_aot = "no"
 
 	pass_condition = "
