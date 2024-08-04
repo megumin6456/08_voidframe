@@ -4645,10 +4645,6 @@ inline_script = {
 		has_building = building_phanon_stronghold
 		has_building = building_stellarite_stronghold	
 	"
-	#tech_dm_stronghold
-	#tech_ae_stronghold
-	#tech_phanon_stronghold
-	#tech_stellarite_stronghold
 	time = "480"
 
 	acot_normjob = "job_acot_enforcer_add = 2"
@@ -6910,7 +6906,7 @@ inline_script = {
 
 	tier = "dm"
 	reqtech = "tech_acot_dm_stronghold"
-	ignore_aot = "yes"
+	ignore_aot = "no"
 
 	pass_condition = "
 		has_building = building_acot_dm_stronghold
@@ -6926,8 +6922,8 @@ inline_script = {
 	acot_normjob = "job_acot_soldier_add = 2"
 	acot_gestjob = "job_acot_soldier_drone_add = 2"
 
-	aot_normjob = ""
-	aot_gestjob = ""
+	aot_normjob = "job_aot_dm_soldier_add = 2"
+	aot_gestjob = "job_aot_dm_soldier_drone_add = 2"
 
 	cost = "minerals = 1000 sr_dark_matter = 200"
 	upkeep = "energy = 4"
@@ -6979,8 +6975,8 @@ inline_script = {
 	acot_normjob = ""
 	acot_gestjob = ""
 
-	aot_normjob = ""
-	aot_gestjob = ""
+	aot_normjob = "job_phanon_soldier_add = 2"
+	aot_gestjob = "job_phanon_soldier_drone_add = 2"
 
 	cost = "energy = 2000 minerals = 2000 aot_sr_runic_power = 800"
 	upkeep = "energy = 10 aot_sr_runic_power = 10"
@@ -7003,9 +6999,8 @@ inline_script = {
 	acot_normjob = ""
 	acot_gestjob = ""
 
-	aot_normjob = ""
-	aot_gestjob = ""
-
+	aot_normjob = "job_stellarite_soldier_add = 2"
+	aot_gestjob = "job_stellarite_soldier_drone_add = 2"
 
 	cost = "energy = 4000 minerals = 4000 acot_sr_stellarite = 800"
 	upkeep = "energy = 20 acot_sr_stellarite = 10"
