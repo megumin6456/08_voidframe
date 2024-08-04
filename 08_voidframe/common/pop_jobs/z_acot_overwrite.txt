@@ -730,7 +730,7 @@
 # 	}
 # }
 
-
+# override to remove living metal + zro upkeep, and reduce energy + alloy upkeep
 
 #############################################################
 

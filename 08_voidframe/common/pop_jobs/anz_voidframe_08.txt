@@ -176,8 +176,13 @@
 
 # megumin: renamed job to have prefix to prevent any unforseen conflicts (inline with theta job)
 
+# priest: 		16 / X / 42 / 126
+# bureaucrat: 	15 / 30 / 50 / 150
+# i have no idea why bureaucrat is more than priest
+# coordinator:	15 / 30 / 44 / 132
+# synapse:		15 / 30 / 44 / 132
+
 # Machine Coordinator
-#NOTE: I set these to be slightly stronger than bureaucrat jobs, but no way near priest jobs 
 
 anz_voidframe_admin_drone_dm = {
 	category = complex_drone
@@ -198,7 +203,7 @@ anz_voidframe_admin_drone_dm = {
 	resources = {
 		category = planet_administrators	
 		produces = {
-			unity = 14
+			unity = 15
 		}
 		upkeep = {
 			sr_dark_matter = 1
@@ -210,6 +215,10 @@ anz_voidframe_admin_drone_dm = {
 	weight = {
 		weight = @complex_drone_job_weight
 		mult = value:job_weights_modifier|JOB|coordinator|RESOURCE|unity|
+		modifier = {
+			factor = 1.5
+			has_job = anz_voidframe_admin_drone_dm
+		}
 	}
 
 	inline_script = "jobs/automodding_priority_unity"
@@ -234,7 +243,7 @@ anz_voidframe_admin_drone_de = {
 	resources = {
 		category = planet_administrators	
 		produces = {
-			unity = 28
+			unity = 30
 		}
 		upkeep = {
 			sr_dark_matter = 2
@@ -246,6 +255,10 @@ anz_voidframe_admin_drone_de = {
 	weight = {
 		weight = @complex_drone_job_weight
 		mult = value:job_weights_modifier|JOB|coordinator|RESOURCE|unity|
+		modifier = {
+			factor = 1.5
+			has_job = anz_voidframe_admin_drone_de
+		}
 	}
 
 	inline_script = "jobs/automodding_priority_unity"
@@ -270,7 +283,7 @@ anz_voidframe_admin_drone_pe = {
 	resources = {
 		category = planet_administrators	
 		produces = {
-			unity = 120
+			unity = 44
 		}
 		upkeep = {
 			aot_sr_runic_power = 6
@@ -281,6 +294,10 @@ anz_voidframe_admin_drone_pe = {
 	weight = {
 		weight = @complex_drone_job_weight
 		mult = value:job_weights_modifier|JOB|coordinator|RESOURCE|unity|
+		modifier = {
+			factor = 1.5
+			has_job = anz_voidframe_admin_drone_pe
+		}
 	}
 }
 
@@ -303,7 +320,7 @@ anz_voidframe_admin_drone_se = {
 	resources = {
 		category = planet_administrators	
 		produces = {
-			unity = 240
+			unity = 132
 		}
 		upkeep = {
 			acot_sr_stellarite = 7
@@ -314,11 +331,14 @@ anz_voidframe_admin_drone_se = {
 	weight = {
 		weight = @complex_drone_job_weight
 		mult = value:job_weights_modifier|JOB|coordinator|RESOURCE|unity|
+		modifier = {
+			factor = 1.5
+			has_job = anz_voidframe_admin_drone_se
+		}
 	}
 }
 
 # Hive Synapse
-#NOTE: I set these to be slightly stronger than bureaucrat jobs, but no way near priest jobs 
 
 anz_voidframe_synapse_drone_dm = {
 	category = complex_drone
@@ -339,7 +359,7 @@ anz_voidframe_synapse_drone_dm = {
 	resources = {
 		category = planet_administrators	
 		produces = {
-			unity = 14
+			unity = 15
 		}
 		upkeep = {
 			sr_dark_matter = 1
@@ -352,6 +372,10 @@ anz_voidframe_synapse_drone_dm = {
 	weight = {
 		weight = @complex_drone_job_weight
 		mult = value:job_weights_modifier|JOB|coordinator|RESOURCE|unity|
+		modifier = {
+			factor = 1.5
+			has_job = anz_voidframe_synapse_drone_dm
+		}
 	}
 
 	inline_script = "jobs/automodding_priority_unity"
@@ -376,7 +400,7 @@ anz_voidframe_synapse_drone_de = {
 	resources = {
 		category = planet_administrators	
 		produces = {
-			unity = 28
+			unity = 30
 		}
 		upkeep = {
 			sr_dark_matter = 2
@@ -389,6 +413,10 @@ anz_voidframe_synapse_drone_de = {
 	weight = {
 		weight = @complex_drone_job_weight
 		mult = value:job_weights_modifier|JOB|coordinator|RESOURCE|unity|
+		modifier = {
+			factor = 1.5
+			has_job = anz_voidframe_synapse_drone_de
+		}
 	}
 
 	inline_script = "jobs/automodding_priority_unity"
@@ -413,7 +441,7 @@ anz_voidframe_synapse_drone_pe = {
 	resources = {
 		category = planet_administrators	
 		produces = {
-			unity = 120
+			unity = 44
 		}
 		upkeep = {
 			aot_sr_runic_power = 6
@@ -424,6 +452,10 @@ anz_voidframe_synapse_drone_pe = {
 	weight = {
 		weight = @complex_drone_job_weight
 		mult = value:job_weights_modifier|JOB|coordinator|RESOURCE|unity|
+		modifier = {
+			factor = 1.5
+			has_job = anz_voidframe_synapse_drone_pe
+		}
 	}
 }
 
@@ -446,7 +478,7 @@ anz_voidframe_synapse_drone_se = {
 	resources = {
 		category = planet_administrators	
 		produces = {
-			unity = 240
+			unity = 132
 		}
 		upkeep = {
 			acot_sr_stellarite = 7
@@ -457,10 +489,18 @@ anz_voidframe_synapse_drone_se = {
 	weight = {
 		weight = @complex_drone_job_weight
 		mult = value:job_weights_modifier|JOB|coordinator|RESOURCE|unity|
+		modifier = {
+			factor = 1.5
+			has_job = anz_voidframe_synapse_drone_se
+		}
 	}
 }
 
 # Trader jobs
+
+# clerks: 6 / 12 / 25 / 50
+# vanilla trader is 8 vs 3 of clerk
+# trader: 16 / 32 / 64 / 128
 
 anz_voidframe_trader_dm = {
 	category = specialist
@@ -508,7 +548,7 @@ anz_voidframe_trader_dm = {
 		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_trade_mult|
 		modifier = {
 			factor = 5
-			has_job = trader
+			has_job = anz_voidframe_trader_dm
 		}
 		# crisis purge
 		modifier = {
@@ -581,7 +621,7 @@ anz_voidframe_trader_de = {
 		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_trade_mult|
 		modifier = {
 			factor = 5
-			has_job = trader
+			has_job = anz_voidframe_trader_de
 		}
 		# crisis purge
 		modifier = {
@@ -653,7 +693,7 @@ anz_voidframe_trader_pe = {
 		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_trade_mult|
 		modifier = {
 			factor = 5
-			has_job = trader
+			has_job = anz_voidframe_trader_pe
 		}
 		# crisis purge
 		modifier = {
@@ -725,7 +765,7 @@ anz_voidframe_trader_se = {
 		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_trade_mult|
 		modifier = {
 			factor = 5
-			has_job = trader
+			has_job = anz_voidframe_trader_se
 		}
 		# crisis purge
 		modifier = {
@@ -782,6 +822,10 @@ anz_voidframe_meditator = {
 
 	weight = {
 		weight = @specialist_job_weight
+		modifier = {
+			factor = 5
+			has_job = anz_voidframe_meditator
+		}
 	}
 }
 
@@ -814,5 +858,9 @@ anz_voidframe_meditator_drone = {
 
 	weight = {
 		weight = @complex_drone_job_weight
+		modifier = {
+			factor = 5
+			has_job = anz_voidframe_meditator_drone
+		}
 	}
 }
