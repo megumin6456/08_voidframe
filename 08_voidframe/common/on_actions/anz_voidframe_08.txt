@@ -4,12 +4,3 @@ on_game_start = {
 		anz_voidframe.0
 	}
 }
-
-# Triggers when ground combat starts
-# This = planet
-# From = country attacking
-on_ground_combat_started = {
-	events = {
-		acot_pmc.9999 # Custom event to stop devastation on the vault upon invasion
-	}
-}

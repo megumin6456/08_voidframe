@@ -90,7 +90,7 @@ district_giga_voidframe_admin_$tier$ = {
 	}
 	
 	planet_modifier = {
-		planet_housing_add = $house$
+		# planet_housing_add = $house$
 	}
 
 	# AOT (bureaucrat jobs are AOT only)
@@ -112,9 +112,9 @@ district_giga_voidframe_admin_$tier$ = {
 			exists = owner
 			owner = {
 				is_gestalt = no
+				giga_empire_has_extra_virtual_jobs = yes
 			}
 			has_voidframe_mods_aot = yes
-			giga_empire_has_extra_virtual_jobs = yes
 		}
 		modifier = {
 			$aot_normjob_virt$

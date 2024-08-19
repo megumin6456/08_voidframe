@@ -5406,6 +5406,10 @@ inline_script = {
 	aot_normjob = ""
 	aot_gestjob = ""
 
+	nanite_energy_cost = "20"
+	nanite_nanite_cost = "5"
+	nanite_strat_prod = "3"
+
 	cost = "minerals = 1000 sr_dark_matter = 200"
 	upkeep = "energy = 4"
 }
@@ -5433,6 +5437,10 @@ inline_script = {
 	aot_normjob = ""
 	aot_gestjob = ""
 
+	nanite_energy_cost = "30"
+	nanite_nanite_cost = "5"
+	nanite_strat_prod = "6"
+
 	cost = "minerals = 1000 sr_dark_matter = 400 acot_sr_dark_energy = 400"
 	upkeep = "energy = 6 sr_dark_matter = 2"
 }
@@ -5459,6 +5467,10 @@ inline_script = {
 	aot_normjob = "job_phanon_transmute_man_add = 2"
 	aot_gestjob = "job_phanon_transmute_drone_add = 2"
 
+	nanite_energy_cost = "40"
+	nanite_nanite_cost = "5"
+	nanite_strat_prod = "13"
+
 	cost = "energy = 2000 minerals = 2000 aot_sr_runic_power = 800"
 	upkeep = "energy = 10 aot_sr_runic_power = 10"
 }
@@ -5482,6 +5494,10 @@ inline_script = {
 
 	aot_normjob = "job_stellarite_transmute_man_add = 2"
 	aot_gestjob = "job_stellarite_transmute_drone_add = 2"
+
+	nanite_energy_cost = "50"
+	nanite_nanite_cost = "5"
+	nanite_strat_prod = "26"
 
 	cost = "energy = 4000 minerals = 4000 acot_sr_stellarite = 800"
 
@@ -7136,8 +7152,8 @@ inline_script = {
 
 	tier = "dm"
 
-	tech_has_aot = "tech_giga_fortress_dm"
-	tech_no_aot = "tech_acot_giga_fortress"
+	tech_has_aot = "has_technology = tech_giga_fortress_dm"
+	tech_no_aot = "has_technology = tech_acot_giga_fortress"
 
 	pass_condition_aot = "
 		has_building = building_giga_fortress_dm
@@ -7180,8 +7196,8 @@ inline_script = {
 
 	tier = "de"
 
-	tech_has_aot = "tech_acot_giga_fortress"
-	tech_no_aot = "tech_acot_giga_fortress"
+	tech_has_aot = "has_technology = tech_acot_giga_fortress"
+	tech_no_aot = "has_technology = tech_acot_giga_fortress"
 
 	pass_condition_aot = "
 		has_building = building_acot_giga_fortress
@@ -7220,7 +7236,7 @@ inline_script = {
 
 	tier = "pe"
 
-	tech_has_aot = "tech_phanon_giga_fortress"
+	tech_has_aot = "has_technology = tech_phanon_giga_fortress"
 	tech_no_aot = ""
 
 	pass_condition_aot = "
@@ -7252,7 +7268,7 @@ inline_script = {
 
 	tier = "se"
 
-	tech_has_aot = "tech_stellarite_giga_fortress"
+	tech_has_aot = "has_technology = tech_stellarite_giga_fortress"
 	tech_no_aot = ""
 
 	pass_condition_aot = "
@@ -7393,8 +7409,8 @@ inline_script = {
 
 	tier = "dm"
 
-	tech_has_aot = "tech_giga_fortress_dm"
-	tech_no_aot = "tech_acot_giga_fortress"
+	tech_has_aot = "has_technology = tech_giga_fortress_dm"
+	tech_no_aot = "has_technology = tech_acot_giga_fortress"
 
 	pass_condition_aot = "
 		has_building = building_giga_fortress_dm
@@ -7433,8 +7449,8 @@ inline_script = {
 
 	tier = "de"
 
-	tech_has_aot = "tech_acot_giga_fortress"
-	tech_no_aot = "tech_acot_giga_fortress"
+	tech_has_aot = "has_technology = tech_acot_giga_fortress"
+	tech_no_aot = "has_technology = tech_acot_giga_fortress"
 
 	pass_condition_aot = "
 		has_building = building_acot_giga_fortress
@@ -7470,7 +7486,7 @@ inline_script = {
 
 	tier = "pe"
 
-	tech_has_aot = "tech_phanon_giga_fortress"
+	tech_has_aot = "has_technology = tech_phanon_giga_fortress"
 	tech_no_aot = ""
 
 	pass_condition_aot = "
@@ -7499,7 +7515,7 @@ inline_script = {
 
 	tier = "se"
 
-	tech_has_aot = "tech_stellarite_giga_fortress"
+	tech_has_aot = "has_technology = tech_stellarite_giga_fortress"
 	tech_no_aot = ""
 
 	pass_condition_aot = "

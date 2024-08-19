@@ -23,11 +23,11 @@ district_giga_voidframe_maginot_shield_generators_$tier$ = {
 		if = {
 			limit = {has_voidframe_mods_aot = yes}
 			owner = {
-				has_technology = $tech_has_aot$
+				$tech_has_aot$
 			}
-		} else {
+		} else = {
 			owner = {
-				has_technology = $tech_no_aot$
+				$tech_no_aot$
 			}			
 		}
 
@@ -45,7 +45,7 @@ district_giga_voidframe_maginot_shield_generators_$tier$ = {
 					$fail_condition_aot$
 				}
 			}
-		} else { # if only ACOT
+		} else = { # if only ACOT
 			if = {
 				limit = { is_voidframe_outdated_$tier$ = yes }
 				OR = { $pass_condition_acot$ }

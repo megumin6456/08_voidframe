@@ -74,6 +74,7 @@ district_giga_voidframe_foundry_$tier$ = {
 		############ NANITE
 		upkeep = {
 			trigger = {
+				exists = owner
 				frameworld_has_active_nanite_upgrade = yes
 			}
 			energy = $nanite_energy_cost$
@@ -81,6 +82,7 @@ district_giga_voidframe_foundry_$tier$ = {
 		}
 		produces = {
 			trigger = {
+				exists = owner
 				frameworld_has_active_nanite_upgrade = yes
 			}
 			alloys = $nanite_alloy_prod$

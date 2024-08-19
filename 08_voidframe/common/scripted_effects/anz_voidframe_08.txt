@@ -1,0 +1,14 @@
+anz_voidframe_merg_vault_delay = {
+	if = {
+		limit = { has_voidframe_mods_aot = yes }
+		add_modifier = {
+			modifier = acot_modifier_vault_delay
+			days = 360
+		}
+	} else = {
+		add_modifier = {
+			modifier = acot_modifier_vault_delay
+			days = 720
+		}
+	}
+}

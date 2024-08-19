@@ -94,7 +94,7 @@ district_giga_voidframe_sanctuary_$tier$ = {
 	}
 	
 	planet_modifier = {
-		planet_housing_add = $house$
+		planet_housing_add = 25 # $house$
 		job_bio_trophy_add = 25
 	}
 
@@ -102,7 +102,7 @@ district_giga_voidframe_sanctuary_$tier$ = {
 		potential = {
 			has_planet_flag = frameworld_advanced_sanctuary
 		}
-		planet_housing_add = $house$
+		planet_housing_add = 25 # $house$
 		job_bio_trophy_add = 25
 	}
 

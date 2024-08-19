@@ -56,7 +56,7 @@ district_giga_voidframe_trade_$tier$ = {
 	}
 	
 	planet_modifier = {
-		planet_housing_add = $house$
+		# planet_housing_add = $house$
 	}
 
 	# AOT (merchant jobs are AOT only)

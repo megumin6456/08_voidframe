@@ -60,7 +60,7 @@ district_giga_voidframe_amenities_dystopian_$tier$ = {
 	}
 	
 	planet_modifier = {
-		planet_housing_add = $house$
+		#planet_housing_add = $house$
 	}
 	
 	# ACOT

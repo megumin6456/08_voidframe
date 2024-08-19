@@ -90,7 +90,7 @@ district_giga_voidframe_temple_$tier$ = {
 	}
 	
 	planet_modifier = {
-		planet_housing_add = $house$
+		#planet_housing_add = $house$
 	}
 
 	# ACOT (acot now has priests)

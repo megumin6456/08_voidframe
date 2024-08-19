@@ -293,7 +293,7 @@ decision_voidframe_raid_phanon = {
 		}
 	}
 	potential = {
-		owner = {
+		planet_owner = {
 			is_ai = no
 			has_country_flag = has_vault_within_borders
 			NOT = { has_country_flag = acot_phanon_tech_stage_four_enabled }
@@ -302,7 +302,10 @@ decision_voidframe_raid_phanon = {
 			is_planet_class = pc_giga_frameworld
 			is_voidframe_de = yes
 		}
-		NOT = { has_planet_flag = acot_vault_floor_four_cleared }
+		NOR = {
+			has_planet_flag = acot_vault_floor_four_cleared
+			has_planet_flag = acot_vault_rival_cleared
+		}
 		has_ground_combat = no
 	}
 	effect = {
@@ -310,58 +313,70 @@ decision_voidframe_raid_phanon = {
 			set_planet_flag = ongoing_vault_infiltration
 			add_modifier = {
 				modifier = acot_modifier_vault_delay
-				days = 180
+				months = 6
 			}
-			IF = {
+			if = {
 				limit = {
-					owner = {
-						NOT = {
+					NOT = {
+						has_global_flag = acot_phanon_rival_plan_initiated
+					}
+				}
+				if = {
+					limit = {
+						owner = {
+							NOT = {
+								has_country_flag = acot_phanon_tech_stage_one_enabled
+							}
+						}
+					}
+					planet_event = {
+						id = acot_pmc.12
+					}
+				}
+				if = {
+					limit = {
+						owner = {
 							has_country_flag = acot_phanon_tech_stage_one_enabled
+							NOT = {
+								has_country_flag = acot_phanon_tech_stage_two_enabled
+							}
 						}
 					}
+					planet_event = {
+						id = acot_pmc.13
+					}
 				}
-				planet_event = {
-					id = acot_pmc.12
-				}
-			}
-			IF = {
-				limit = {
-					owner = {
-						has_country_flag = acot_phanon_tech_stage_one_enabled
-						NOT = {
+				if = {
+					limit = {
+						owner = {
 							has_country_flag = acot_phanon_tech_stage_two_enabled
+							NOT = {
+								has_country_flag = acot_phanon_tech_stage_three_enabled
+							}
 						}
 					}
+					planet_event = {
+						id = acot_pmc.14
+					}
 				}
-				planet_event = {
-					id = acot_pmc.13
-				}
-			}
-			IF = {
-				limit = {
-					owner = {
-						has_country_flag = acot_phanon_tech_stage_two_enabled
-						NOT = {
+				if = {
+					limit = {
+						owner = {
 							has_country_flag = acot_phanon_tech_stage_three_enabled
+							NOT = {
+								has_country_flag = acot_phanon_tech_stage_four_enabled
+							}
 						}
 					}
-				}
-				planet_event = {
-					id = acot_pmc.14
+					planet_event = {
+						id = acot_pmc.15
+					}
 				}
 			}
-			IF = {
-				limit = {
-					owner = {
-						has_country_flag = acot_phanon_tech_stage_three_enabled
-						NOT = {
-							has_country_flag = acot_phanon_tech_stage_four_enabled
-						}
-					}
-				}
+			else = {
 				planet_event = {
-					id = acot_pmc.15
-				}
+					id = acot_pmc.16
+				}			
 			}
 		}
 	}

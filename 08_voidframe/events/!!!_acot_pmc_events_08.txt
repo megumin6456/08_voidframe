@@ -1,6 +1,8 @@
 namespace = acot_pmc
-# Cooldown time before we can raid again
-@vault_delay = 720
+
+# Merge both ACOT & AOT code using if satements
+# + Adding restrictions when done from voidframe
+
 # On Taking the Vault
 country_event = {
 	id = acot_pmc.11
@@ -9,6 +11,7 @@ country_event = {
 		trigger = {
 			NOR = {
 				has_country_flag = acot_first_time_vault_capture
+				has_global_flag = acot_phanon_rival_plan_initiated
 				giga_has_frameworld_origin = yes
 			}
 		}
@@ -16,16 +19,25 @@ country_event = {
 	}
 	desc = {
 		trigger = {
-			has_country_flag = acot_first_time_vault_capture
-			NOT = { giga_has_frameworld_origin = yes }
+			has_global_flag = acot_phanon_rival_plan_initiated
+			NOR = {
+				has_country_flag = acot_first_time_vault_capture
+				giga_has_frameworld_origin = yes
+			}
 		}
 		text = "acot_pmc.11.desc.b"
 	}
 	desc = {
 		trigger = {
+			has_country_flag = acot_first_time_vault_capture
+		}
+		text = "acot_pmc.11.desc.c"
+	}
+	desc = {
+		trigger = {
 			giga_has_frameworld_origin = yes
 		}
-		text = acot_pmc.11.desc.voidframe
+		text = "acot_pmc.11.desc.voidframe"
 	}
 	show_sound = event_mystery
 	picture = GFX_evt_star_chart
@@ -37,10 +49,30 @@ country_event = {
 	}
 	immediate = {
 		if = {
-			limit = { has_global_flag = has_aot_mod }
+			limit = { has_voidframe_mods_aot = yes }
 			create_protecc_country = yes
 		}
-		FROMFROM = {
+		fromfrom = {
+			# It seems like the vanilla pop resettle is more proper to avoid void pop creation.
+			if = {
+				limit = { root = { giga_has_frameworld_origin = yes } }
+				root = { set_country_flag = has_vault_within_borders }
+			} else = {
+				root = {
+					while = {
+						count = 3
+						random_owned_pop = {
+							limit = {
+								is_being_purged = no
+							}
+							resettle_pop = {
+								pop = this
+								planet = fromfrom
+							}
+						}
+					}
+				}
+			}			
 			every_owned_pop = {
 				limit = {
 					species = {
@@ -51,105 +83,135 @@ country_event = {
 			}
 			set_owner = root
 			set_controller = root
+			change_colony_foundation_date = 0			# Needed for acot_pmc.9101
+
+			# voidframe flags
 			set_planet_flag = under_assault
-			set_planet_flag = under_assault_by@root
-			if = {
-				limit = { # do not spawn pops if frameworld (let it decolonize)
-					root = { giga_has_frameworld_origin = yes }
-				}
-				root = { set_country_flag = has_vault_within_borders }
-			} else = {
-				while = {
-					count = 5
-					create_pop = {
-						species = owner_main_species
-					}
-				}
+			set_planet_flag = under_assault_by_@root
+		}
+	}
+	option = {
+		name = acot_pmc.11.a
+		custom_tooltip = acot_pmc.11.a.tooltip
+		trigger = {
+			NOR = {
+				has_country_flag = acot_first_time_vault_capture
+				has_global_flag = acot_phanon_rival_plan_initiated
 			}
-			IF = {
-				limit = {
-					NOT = {
-						has_planet_flag = acot_vault_overtaken
+		}
+		set_country_flag = acot_first_time_vault_capture
+	}
+	option = {
+		name = acot_pmc.11.b
+		custom_tooltip = acot_pmc.11.b.tooltip
+		trigger = {
+			has_global_flag = acot_phanon_rival_plan_initiated
+			NOT = {
+				has_country_flag = acot_first_time_vault_capture
+			}
+		}
+		set_country_flag = acot_first_time_vault_capture
+		set_country_flag = acot_rival_vault_mechanic
+		add_event_chain_counter = {
+			event_chain = acot_phanon_event_chain
+			counter = phanon_vault_stage
+			amount = 3
+		}
+		if = {
+			limit = { root = { giga_has_frameworld_origin = no } }
+			fromfrom = {
+				set_planet_size = 25
+			}
+		}
+		hidden_effect = {
+			create_fleet = {
+				effect = {
+					set_owner = root
+					while = {
+						count = 200
+						create_army_transport = {
+							army_type = acot_phanon_army
+							species = event_target:phanon_species
+						}
+					}
+					while = {
+						count = 100
+						create_army_transport = {
+							army_type = acot_phanon_army_sniper
+							species = event_target:phanon_species
+						}
+					}
+					while = {
+						count = 50
+						create_army_transport = {
+							army_type = acot_phanon_elite
+							species = event_target:phanon_species
+						}
+					}
+					while = {
+						count = 30
+						create_army_transport = {
+							army_type = acot_phanon_tank
+							species = event_target:phanon_species
+						}
+					}
+					while = {
+						count = 2
+						create_army_transport = {
+							army_type = acot_phanon_operative
+							species = event_target:phanon_operative_species
+						}
+					}
+					set_location = {
+						target = event_target:acot_phanon_vault
+						distance = 5
+						angle = random
 					}
 				}
-				set_planet_flag = acot_vault_overtaken
-				if = {
-					limit = {
-						NOT = { is_planet_class = pc_giga_frameworld }
-					}
-					set_planet_size = 10
+				settings = {
 				}
 			}
 		}
 	}
 	option = {
-		name = acot_pmc.11.a
+		name = acot_pmc.11.c
 		trigger = {
-			NOT = {
-				has_country_flag = acot_first_time_vault_capture
-			}
+			has_country_flag = acot_first_time_vault_capture
 		}
-		IF = {
-			limit = {
-				NOT = {
-					has_technology = tech_precursor_phanon_design_pe_1
-				}
-			}
-			add_research_option = tech_precursor_phanon_design_pe_1
-		}
-		IF = {
-			limit = {
-				NOT = {
-					has_technology = tech_precursor_phanon_design_pe_2
-				}
-			}
-			add_research_option = tech_precursor_phanon_design_pe_2
-		}
-		IF = {
-			limit = {
-				NOT = {
-					has_technology = tech_precursor_phanon_design_pe_3
-				}
-			}
-			add_research_option = tech_precursor_phanon_design_pe_3
-		}
-		IF = {
+	}
+	after = {
+		if = {
 			limit = {
 				NOT = {
 					has_country_flag = acot_first_time_vault_capture
 				}
 			}
-			set_country_flag = acot_first_time_vault_capture
-		}
-	}
-	option = {
-		name = acot_pmc.11.b
-		trigger = {
-			has_country_flag = acot_first_time_vault_capture
-		}
-		IF = {
-			limit = {
-				NOT = {
-					has_technology = tech_precursor_phanon_design_pe_1
+			if = {
+				limit = {
+					NOT = {
+						has_technology = tech_precursor_phanon_design_pe_1
+					}
 				}
+				add_research_option = tech_precursor_phanon_design_pe_1
+				set_country_flag = missing_pe_tech
 			}
-			add_research_option = tech_precursor_phanon_design_pe_1
-		}
-		IF = {
-			limit = {
-				NOT = {
-					has_technology = tech_precursor_phanon_design_pe_2
+			else_if = {
+				limit = {
+					NOT = {
+						has_technology = tech_precursor_phanon_design_pe_2
+					}
 				}
+				add_research_option = tech_precursor_phanon_design_pe_2
+				set_country_flag = missing_pe_tech
 			}
-			add_research_option = tech_precursor_phanon_design_pe_2
-		}
-		IF = {
-			limit = {
-				NOT = {
-					has_technology = tech_precursor_phanon_design_pe_3
+			else_if = {
+				limit = {
+					NOT = {
+						has_technology = tech_precursor_phanon_design_pe_3
+					}
 				}
+				add_research_option = tech_precursor_phanon_design_pe_3
 			}
-			add_research_option = tech_precursor_phanon_design_pe_3
 		}
 	}
 }
@@ -179,25 +241,23 @@ country_event = {
 			}
 			has_planet_flag = ongoing_vault_infiltration
 		}
-		NOT = {
+		NOR = {
 			has_country_flag = acot_phanon_tech_stage_one_enabled
+			has_global_flag = acot_phanon_rival_plan_initiated
 		}
 	}
 	immediate = {
-		FROMFROM = {
+		fromfrom = {
 			remove_planet_flag = ongoing_vault_infiltration
 			add_planet_devastation = -100
-			add_modifier = {
-				modifier = acot_modifier_vault_delay
-				days = @vault_delay
-			}
-			IF = {
+			anz_voidframe_merg_vault_delay = yes
+			if = {
 				limit = {
 					has_modifier = acot_vault_good_cover_buff_25
 				}
 				remove_modifier = acot_vault_good_cover_buff_25
 			}
-			IF = {
+			if = {
 				limit = {
 					has_modifier = acot_vault_psi_gas_debuff
 				}
@@ -205,15 +265,15 @@ country_event = {
 			}
 		}
 		if = {
-			limit = { has_global_flag = has_aot_mod }
+			limit = { has_voidframe_mods_aot = yes }
 			event_target:phanon_protecc_base_country = {
-				IF = {
+				if = {
 					limit = {
 						has_modifier = acot_vault_exposed_debuff_25
 					}
 					remove_modifier = acot_vault_exposed_debuff_25
 				}
-				IF = {
+				if = {
 					limit = {
 						has_modifier = acot_vault_psi_gas_debuff
 					}
@@ -222,13 +282,13 @@ country_event = {
 			}
 		} else = {
 			event_target:phanon_base_country = {
-				IF = {
+				if = {
 					limit = {
 						has_modifier = acot_vault_exposed_debuff_25
 					}
 					remove_modifier = acot_vault_exposed_debuff_25
 				}
-				IF = {
+				if = {
 					limit = {
 						has_modifier = acot_vault_psi_gas_debuff
 					}
@@ -236,18 +296,16 @@ country_event = {
 				}
 			}
 		}
-		IF = {
+		if = {
 			limit = {
-				NOT = {
-					has_country_flag = acot_phanon_tech_enabled
-				}
+				NOT = { has_country_flag = acot_phanon_tech_enabled }
 			}
 			set_country_flag = acot_phanon_tech_enabled
-		}
+		}	
 	}
 	option = {
 		name = acot_pmc.1200.a
-		FROMFROM = {
+		fromfrom = {
 			if = {
 				limit = {
 					NOT = { is_planet_class = pc_giga_frameworld }
@@ -255,9 +313,9 @@ country_event = {
 				set_planet_size = 15
 			}
 			set_planet_flag = acot_vault_floor_one_cleared
-		}		
+		}
 		if = {
-			limit = { has_global_flag = has_aot_mod }
+			limit = { has_voidframe_mods_aot = yes }
 			phanon_type_a_tech_gift = yes
 		} else_if = {
 			limit = {
@@ -293,14 +351,12 @@ planet_event = {
 		custom_tooltip = acot_pmc.13.a.tooltip
 		hidden_effect = {
 			if = {
-				limit = { has_global_flag = has_aot_mod }
+				limit = { has_voidframe_mods_aot = yes }
 				while = {
-					count = 60
+					count = 80
 					create_army = {
 						owner = event_target:phanon_protecc_base_country
 						type = acot_phanon_defense_droid
-						species = event_target:phanon_operative_species
-						land_army = yes
 					}
 				}
 				while = {
@@ -308,8 +364,6 @@ planet_event = {
 					create_army = {
 						owner = event_target:phanon_protecc_base_country
 						type = acot_phanon_defense_droid_shielder
-						species = event_target:phanon_operative_species
-						land_army = yes
 					}
 				}
 				while = {
@@ -317,8 +371,6 @@ planet_event = {
 					create_army = {
 						owner = event_target:phanon_protecc_base_country
 						type = acot_phanon_defense_droid_commando
-						species = event_target:phanon_operative_species
-						land_army = yes
 					}
 				}
 				while = {
@@ -326,18 +378,14 @@ planet_event = {
 					create_army = {
 						owner = event_target:phanon_protecc_base_country
 						type = acot_phanon_defense_droid_commander
-						species = event_target:phanon_operative_species
-						land_army = yes
 					}
 				}
 			} else = {
 				while = {
-					count = 60
+					count = 80
 					create_army = {
 						owner = event_target:phanon_base_country
 						type = acot_phanon_defense_droid
-						species = event_target:phanon_operative_species
-						land_army = yes
 					}
 				}
 				while = {
@@ -345,8 +393,6 @@ planet_event = {
 					create_army = {
 						owner = event_target:phanon_base_country
 						type = acot_phanon_defense_droid_shielder
-						species = event_target:phanon_operative_species
-						land_army = yes
 					}
 				}
 				while = {
@@ -354,8 +400,6 @@ planet_event = {
 					create_army = {
 						owner = event_target:phanon_base_country
 						type = acot_phanon_defense_droid_commando
-						species = event_target:phanon_operative_species
-						land_army = yes
 					}
 				}
 				while = {
@@ -363,8 +407,6 @@ planet_event = {
 					create_army = {
 						owner = event_target:phanon_base_country
 						type = acot_phanon_defense_droid_commander
-						species = event_target:phanon_operative_species
-						land_army = yes
 					}
 				}
 			}
@@ -375,7 +417,6 @@ planet_event = {
 					owner = root
 					type = acot_phanon_defense_turret
 					species = owner_main_species
-					land_army = yes
 				}
 			}
 			while = {
@@ -384,7 +425,6 @@ planet_event = {
 					owner = root
 					type = acot_phanon_defense_trap
 					species = owner_main_species
-					land_army = yes
 				}
 			}
 		}
@@ -397,14 +437,12 @@ planet_event = {
 		}
 		hidden_effect = {
 			if = {
-				limit = { has_global_flag = has_aot_mod }
+				limit = { has_voidframe_mods_aot = yes }
 				while = {
-					count = 60
+					count = 80
 					create_army = {
 						owner = event_target:phanon_protecc_base_country
 						type = acot_phanon_defense_droid
-						species = event_target:phanon_operative_species
-						land_army = yes
 					}
 				}
 				while = {
@@ -412,8 +450,6 @@ planet_event = {
 					create_army = {
 						owner = event_target:phanon_protecc_base_country
 						type = acot_phanon_defense_droid_shielder
-						species = event_target:phanon_operative_species
-						land_army = yes
 					}
 				}
 				while = {
@@ -421,8 +457,6 @@ planet_event = {
 					create_army = {
 						owner = event_target:phanon_protecc_base_country
 						type = acot_phanon_defense_droid_commando
-						species = event_target:phanon_operative_species
-						land_army = yes
 					}
 				}
 				while = {
@@ -430,18 +464,29 @@ planet_event = {
 					create_army = {
 						owner = event_target:phanon_protecc_base_country
 						type = acot_phanon_defense_droid_commander
-						species = event_target:phanon_operative_species
-						land_army = yes
+					}
+				}
+				#### AUTOMATED DEFENSES
+				while = {
+					count = 10
+					create_army = {
+						owner = event_target:phanon_protecc_base_country
+						type = acot_phanon_defense_turret
+					}
+				}
+				while = {
+					count = 5
+					create_army = {
+						owner = event_target:phanon_protecc_base_country
+						type = acot_phanon_defense_trap
 					}
 				}
 			} else = {
 				while = {
-					count = 60
+					count = 80
 					create_army = {
 						owner = event_target:phanon_base_country
 						type = acot_phanon_defense_droid
-						species = event_target:phanon_operative_species
-						land_army = yes
 					}
 				}
 				while = {
@@ -449,8 +494,6 @@ planet_event = {
 					create_army = {
 						owner = event_target:phanon_base_country
 						type = acot_phanon_defense_droid_shielder
-						species = event_target:phanon_operative_species
-						land_army = yes
 					}
 				}
 				while = {
@@ -458,8 +501,6 @@ planet_event = {
 					create_army = {
 						owner = event_target:phanon_base_country
 						type = acot_phanon_defense_droid_commando
-						species = event_target:phanon_operative_species
-						land_army = yes
 					}
 				}
 				while = {
@@ -467,28 +508,22 @@ planet_event = {
 					create_army = {
 						owner = event_target:phanon_base_country
 						type = acot_phanon_defense_droid_commander
-						species = event_target:phanon_operative_species
-						land_army = yes
 					}
 				}
-			}
-			#### AUTOMATED DEFENSES
-			while = {
-				count = 10
-				create_army = {
-					owner = root
-					type = acot_phanon_defense_turret
-					species = owner_main_species
-					land_army = yes
+				#### AUTOMATED DEFENSES
+				while = {
+					count = 10
+					create_army = {
+						owner = event_target:phanon_base_country
+						type = acot_phanon_defense_turret
+					}
 				}
-			}
-			while = {
-				count = 5
-				create_army = {
-					owner = root
-					type = acot_phanon_defense_trap
-					species = owner_main_species
-					land_army = yes
+				while = {
+					count = 5
+					create_army = {
+						owner = event_target:phanon_base_country
+						type = acot_phanon_defense_trap
+					}
 				}
 			}
 			#### XENOMORPH ARMY
@@ -498,7 +533,6 @@ planet_event = {
 					owner = root
 					type = acot_phanon_defense_xenomorph
 					species = owner_main_species
-					land_army = yes
 				}
 			}
 			planet_event = {
@@ -510,14 +544,13 @@ planet_event = {
 		name = acot_pmc.13.c
 		hidden_effect = {
 			if = {
-				limit = { has_global_flag = has_aot_mod }
+				limit = { has_voidframe_mods_aot = yes }
 				while = {
 					count = 80
 					create_army = {
 						owner = event_target:phanon_protecc_base_country
-						type = acot_phanon_defense_droid
 						species = event_target:phanon_operative_species
-						land_army = yes
+						type = acot_phanon_defense_droid
 					}
 				}
 				while = {
@@ -525,8 +558,6 @@ planet_event = {
 					create_army = {
 						owner = event_target:phanon_protecc_base_country
 						type = acot_phanon_defense_droid_shielder
-						species = event_target:phanon_operative_species
-						land_army = yes
 					}
 				}
 				while = {
@@ -534,8 +565,6 @@ planet_event = {
 					create_army = {
 						owner = event_target:phanon_protecc_base_country
 						type = acot_phanon_defense_droid_commando
-						species = event_target:phanon_operative_species
-						land_army = yes
 					}
 				}
 				while = {
@@ -543,8 +572,6 @@ planet_event = {
 					create_army = {
 						owner = event_target:phanon_protecc_base_country
 						type = acot_phanon_defense_droid_commander
-						species = event_target:phanon_operative_species
-						land_army = yes
 					}
 				}
 			} else = {
@@ -553,17 +580,13 @@ planet_event = {
 					create_army = {
 						owner = event_target:phanon_base_country
 						type = acot_phanon_defense_droid
-						species = event_target:phanon_operative_species
-						land_army = yes
 					}
 				}
 				while = {
-					count = 30
+					count = 20
 					create_army = {
 						owner = event_target:phanon_base_country
 						type = acot_phanon_defense_droid_shielder
-						species = event_target:phanon_operative_species
-						land_army = yes
 					}
 				}
 				while = {
@@ -571,8 +594,6 @@ planet_event = {
 					create_army = {
 						owner = event_target:phanon_base_country
 						type = acot_phanon_defense_droid_commando
-						species = event_target:phanon_operative_species
-						land_army = yes
 					}
 				}
 				while = {
@@ -580,8 +601,6 @@ planet_event = {
 					create_army = {
 						owner = event_target:phanon_base_country
 						type = acot_phanon_defense_droid_commander
-						species = event_target:phanon_operative_species
-						land_army = yes
 					}
 				}
 			}
@@ -590,7 +609,6 @@ planet_event = {
 	option = {
 		name = acot_pmc.13.d
 		hidden_effect = {
-			remove_modifier = acot_modifier_vault_delay
 			remove_planet_flag = ongoing_vault_infiltration
 		}
 	}
@@ -621,8 +639,9 @@ country_event = {
 			}
 			has_planet_flag = ongoing_vault_infiltration
 		}
-		NOT = {
+		NOR = {
 			has_country_flag = acot_phanon_tech_stage_two_enabled
+			has_global_flag = acot_phanon_rival_plan_initiated
 		}
 	}
 
@@ -631,10 +650,7 @@ country_event = {
 			remove_planet_flag = ongoing_vault_infiltration
 			set_planet_flag = acot_vault_floor_two_cleared
 			add_planet_devastation = -100
-			add_modifier = {
-				modifier = acot_modifier_vault_delay
-				days = @vault_delay
-			}
+			anz_voidframe_merg_vault_delay = yes
 		}
 		IF = {
 			limit = {
@@ -648,7 +664,7 @@ country_event = {
 	
 	option = {
 		name = acot_pmc.1300.a
-		FROMFROM = {
+		fromfrom = {
 			if = {
 				limit = {
 					NOT = { is_planet_class = pc_giga_frameworld }
@@ -658,7 +674,7 @@ country_event = {
 		}
 		set_country_flag = acot_phanon_tech_stage_two_enabled
 		if = {
-			limit = { has_global_flag = has_aot_mod }
+			limit = { has_voidframe_mods_aot = yes }
 			phanon_type_civ_tech_gift = yes
 			phanon_species_traits_tech_gift_card = yes
 		}
@@ -697,13 +713,14 @@ country_event = {
 			}
 			has_planet_flag = ongoing_vault_infiltration
 		}
-		NOT = {
+		NOR = {
 			has_country_flag = acot_phanon_tech_stage_three_enabled
+			has_global_flag = acot_phanon_rival_plan_initiated
 		}
 	}
 	immediate = {
 		if = {
-			limit = { has_global_flag = has_aot_mod }
+			limit = { has_voidframe_mods_aot = yes }
 			event_target:phanon_protecc_base_country = {
 				IF = {
 					limit = {
@@ -722,27 +739,22 @@ country_event = {
 				}
 			}
 		}		
-		FROMFROM = {
+		fromfrom = {
 			remove_planet_flag = ongoing_vault_infiltration
 			set_planet_flag = acot_vault_floor_three_cleared
 			add_planet_devastation = -100
-			add_modifier = {
-				modifier = acot_modifier_vault_delay
-				days = @vault_delay
-			}
+			anz_voidframe_merg_vault_delay = yes
 		}
-		IF = {
+		if = {
 			limit = {
-				NOT = {
-					has_country_flag = acot_phanon_tech_enabled
-				}
+				NOT = { has_country_flag = acot_phanon_tech_enabled }
 			}
 			set_country_flag = acot_phanon_tech_enabled
 		}
 	}
 	option = {
 		name = acot_pmc.1400.a
-		FROMFROM = {
+		fromfrom = {
 			if = {
 				limit = {
 					NOT = { is_planet_class = pc_giga_frameworld }
@@ -751,7 +763,7 @@ country_event = {
 			}
 		}
 		if = {
-			limit = { has_global_flag = has_aot_mod }
+			limit = { has_voidframe_mods_aot = yes }
 			phanon_type_ship_tech_gift = yes
 		}
 		set_country_flag = acot_phanon_tech_stage_three_enabled
@@ -790,21 +802,18 @@ country_event = {
 			}
 			has_planet_flag = ongoing_vault_infiltration
 		}
-		NOT = {
+		NOR = {
 			has_country_flag = acot_phanon_tech_stage_four_enabled
+			has_global_flag = acot_phanon_rival_plan_initiated
 		}
 	}
 	immediate = {
-		FROMFROM = {
+		fromfrom = {
 			remove_planet_flag = ongoing_vault_infiltration
 			set_planet_flag = acot_vault_floor_four_cleared
 			add_planet_devastation = -100
-			add_modifier = {
-				modifier = acot_modifier_vault_delay
-				days = @vault_delay
-			}
 		}
-		IF = {
+		if = {
 			limit = {
 				NOT = {
 					has_country_flag = acot_phanon_tech_enabled
@@ -812,12 +821,12 @@ country_event = {
 			}
 			set_country_flag = acot_phanon_tech_enabled
 		}
-		if = { # remove vault after all is done if using my modlist
+		if = { # eternal lights modlist exclusive
 			limit = { has_global_flag = anz_ee_modlist }
 			every_galaxy_planet = {
 				limit = {
 					is_planet_class = pc_acot_pmc_vault
-					has_planet_flag = under_assault_by@root
+					has_planet_flag = under_assault_by_@root
 				}
 				destroy_colony = yes
 				remove_planet = yes
@@ -826,7 +835,7 @@ country_event = {
 	}
 	option = {
 		name = acot_pmc.1500.a
-		FROMFROM = {
+		fromfrom = {
 			if = {
 				limit = {
 					NOT = { is_planet_class = pc_giga_frameworld }
@@ -835,12 +844,12 @@ country_event = {
 			}
 		}
 		if = {
-			limit = { has_global_flag = has_aot_mod }
+			limit = { has_voidframe_mods_aot = yes }
 			phanon_type_a_tech_gift = yes
 			phanon_type_civ_tech_gift = yes
 			phanon_type_ship_tech_gift = yes
-			phanon_type_b_tech_gift = yes
 			phanon_species_traits_tech_gift_card = yes
+			phanon_type_b_tech_gift = yes
 		}
 		set_country_flag = acot_phanon_tech_stage_four_enabled
 		hidden_effect = {
@@ -850,23 +859,187 @@ country_event = {
 				amount = 1
 			}
 			country_event = {
-				id = acot_pmc.16 days = 5
+				id = acot_pmc.17 days = 5
 			}
 		}
 	}
 }
 
-# Vault Abandonded Exception
-# Phanon Creates New Starbase - Created From Planet Lacking Owner or System unoccupied
-planet_event = {
-	id = acot_pmc.9901
-	hide_window = yes
+################## RIVAL VERSION
+
+# Vault Invasion Victory - Rival Phase
+country_event = {
+	id = acot_pmc.1600
+	title = "acot_pmc.1600.title"
+	desc = {
+		trigger = {
+			NOT = {
+				has_global_flag = acot_phanon_agent_escaped
+			}
+		}
+		text = acot_pmc.1600.desc.a
+	}
+	desc = {
+		trigger = {
+			has_global_flag = acot_phanon_agent_escaped
+		}
+		text = acot_pmc.1600.desc.b
+	}
+	show_sound = event_ground_battle
+	picture = GFX_evt_sentry_guns
+	is_triggered_only = yes
 	
 	trigger = {	
+		is_playable_country = yes
+		fromfrom = {
+			OR = {
+				is_planet_class = pc_acot_pmc_vault
+				AND = {
+					is_planet_class = pc_giga_frameworld
+					root = {
+						giga_has_frameworld_origin = yes
+						has_country_flag = has_vault_within_borders
+					}
+				}
+			}
+			has_planet_flag = ongoing_vault_infiltration
+		}
+		has_global_flag = acot_phanon_rival_plan_initiated
+	}
+
+	immediate = {
+		fromfrom = {
+			remove_planet_flag = ongoing_vault_infiltration
+			set_planet_flag = acot_vault_rival_cleared
+			add_planet_devastation = -100
+		}
+		remove_global_flag = acot_phanon_retaliation_crisis_initiated
+		remove_global_flag = phanon_crazy
+		event_target:phanon_base_country = {
+			set_country_type = acot_phanon_base
+			every_owned_starbase = {
+				limit = {
+					solar_system = {
+						NOT = {
+							has_star_flag = phanon_home_base
+						}
+					}
+				}
+				fleet = {
+					delete_fleet = this
+				}	
+			}
+			every_owned_fleet = {
+				set_owner = root
+			}
+			every_owned_army = {
+				set_owner = root		
+			}
+		}
+	}
+	
+	option = {
+		name = acot_pmc.1600.a
+		trigger = {
+			NOT = {
+				has_global_flag = acot_phanon_agent_escaped
+			}
+		}
+		fromfrom = {
+			if = {
+				limit = {
+					NOT = { is_planet_class = pc_giga_frameworld }
+				}
+				set_planet_size = 30
+			}
+		}
+		hidden_effect = {
+			add_event_chain_counter = {
+				event_chain = acot_phanon_event_chain
+				counter = phanon_vault_stage
+				amount = 1
+			}
+		}
+	}
+
+	##### DELICIOUS BTW
+	option = {
+		name = acot_pmc.1600.b
+		trigger = {
+			has_valid_civic = civic_hive_devouring_swarm
+			NOT = {
+				has_global_flag = acot_phanon_agent_escaped
+			}
+		}
+		add_resource = {
+			food = 1337
+			alloys = 34
+			energy = 911
+		}
+		fromfrom = {
+			if = {
+				limit = {
+					NOT = { is_planet_class = pc_giga_frameworld }
+				}
+				set_planet_size = 30
+			}
+		}
+		hidden_effect = {
+			add_event_chain_counter = {
+				event_chain = acot_phanon_event_chain
+				counter = phanon_vault_stage
+				amount = 1
+			}
+		}
+	}
+
+	option = {
+		name = acot_pmc.1600.c
+		trigger = {
+			has_global_flag = acot_phanon_agent_escaped
+		}
+		fromfrom = {
+			if = {
+				limit = {
+					NOT = { is_planet_class = pc_giga_frameworld }
+				}
+				set_planet_size = 30
+			}
+		}
+		hidden_effect = {
+			add_event_chain_counter = {
+				event_chain = acot_phanon_event_chain
+				counter = phanon_vault_stage
+				amount = 1
+			}
+		}
+	}
+
+	after = {
+		every_playable_country = {
+			limit = {
+				is_ai = no
+			}
+			country_event = {
+				id = acot_pmc.1601 days = 5
+			}
+		}
+	}
+	
+}
+
+# Vault Abandonded Exception
+# Reset Vault (Not Starbase) - Only if no planet owner AND system unoccupied
+planet_event = {
+	id = acot_pmc.9903
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
 		is_planet_class = pc_acot_pmc_vault
 		NOT = { has_planet_flag = under_assault }
 		solar_system = {
-			has_star_flag = phanon_base_system
+			has_star_flag = phanon_home_base
 		}
 		OR = {
 			NOT = {
@@ -879,118 +1052,12 @@ planet_event = {
 			}
 		}
 	}
-
-	mean_time_to_happen = {
-		months = 2
-	}
 	
 	immediate = {
-		solar_system = {
-			create_starbase = {
-				size = "acot_star_commander"
-				owner = event_target:phanon_base_country
-				effect = {
-				}
-			}
-		}
-		remove_planet_flag = ongoing_vault_infiltration
-		add_planet_devastation = -100
-		every_owned_pop = {
-			kill_pop = yes
-		}
-		every_planet_army = {
-			limit = {
-				owner = {
-					NOT = {
-						is_same_value = from
-					}
-				}
-			}
-			remove_army = yes
-		}
-		destroy_colony = yes
-		remove_all_districts = yes
-		add_district = district_acot_phanon_command
-		add_district = district_acot_phanon_command
-		add_district = district_acot_phanon_command
-		add_district = district_acot_phanon_data
-		add_district = district_acot_phanon_vault
-		remove_all_buildings = yes
-		add_building = building_phanon_tower
-		add_building = building_phanon_lab
-		add_building = building_phanon_vault
-		add_building = building_phanon_vault
-		add_building = building_phanon_plant
-		add_building = building_phanon_plant
-		add_building = building_phanon_plant
-		set_owner = event_target:phanon_base_country
-		set_controller = event_target:phanon_base_country
-		while = {
-			count = 5
-			create_pop = {
-				species = event_target:phanon_species
-			}
-		}
-		while = {
-			count = 40
-			create_army = {
-				owner = event_target:phanon_base_country
-				species = event_target:phanon_species
-				type = "acot_phanon_defense_soldier"
-				land_army = yes
-			}
-		}
-		while = {
-			count = 20
-			create_army = {
-				owner = event_target:phanon_base_country
-				species = event_target:phanon_species
-				type = "acot_phanon_defense_elite"
-				land_army = yes
-			}
-		}
-		while = {
-			count = 1
-			create_army = {
-				owner = event_target:phanon_base_country
-				species = event_target:phanon_species
-				type = "acot_phanon_defense_commander"
-				land_army = yes
-			}
-		}
-		while = {
-			count = 20
-			create_army = {
-				owner = event_target:phanon_base_country
-				species = event_target:phanon_species
-				type = "acot_phanon_defense_droid_shielder"
-				land_army = yes
-			}
-		}
-	}
-}
-
-# Custom event to stop devastation on the vault upon invasion
-planet_event = {
-	id = acot_pmc.9999
-	hide_window = yes
-
-	is_triggered_only = yes
-
-	trigger = {
-		is_planet_class = pc_acot_pmc_vault
-	}
-
-	immediate = {
-		add_planet_devastation = -100
-
-		# loop event until combat ends
-		if = {
-			limit = { has_ground_combat = yes }
-			planet_event = {
-				id = acot_pmc.9999
-				days = 4
-			}
+		planet_event = {
+			id = acot_pmc.9904
+			days = 300
+			random = 120
 		}
 	}
 }

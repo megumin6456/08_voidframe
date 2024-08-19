@@ -51,10 +51,31 @@ district_giga_voidframe_refinery_$tier$ = {
 		upkeep = {
 			$upkeep$
 		}
+
+		# nanite frame
+		upkeep = {
+			trigger = {
+				exists = owner
+				frameworld_has_active_nanite_upgrade = yes
+			}
+			energy = $nanite_energy_cost$
+			nanites = $nanite_nanite_cost$
+		}
+		
+		produces = {
+			trigger = {
+				exists = owner
+				frameworld_has_active_nanite_upgrade = yes
+			}
+			# n / 3 written as n * 0.3 to avoid any divide by zero crashes + nice rounding
+			volatile_motes = $nanite_strat_prod$
+			exotic_gases = $nanite_strat_prod$
+			rare_crystals = $nanite_strat_prod$
+		}
 	}
 	
 	planet_modifier = {
-		planet_housing_add = $house$
+		# planet_housing_add = $house$
 	}
 
 	# ACOT
