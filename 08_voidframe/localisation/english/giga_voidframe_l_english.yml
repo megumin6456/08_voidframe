@@ -877,6 +877,28 @@ job_anz_voidframe_synapse_drone_se_plural: "Celestial Matrix Drones"
 job_anz_voidframe_synapse_drone_se_desc: "The distance between celestial bodies is vast yet as celestials, it's nothing but a minor inconvenience to us."
 mod_job_anz_voidframe_synapse_drone_se_add: "Celestial Matrix Drones"
 
+# gest super amenities
+
+job_anz_voidframe_frame_overseer_drone_dm: "Awakened Overseer"
+job_anz_voidframe_frame_overseer_drone_dm_plural: "Awakened Overseers"
+job_anz_voidframe_frame_overseer_drone_dm_desc: "Specialized drones created using dark matter, they have intimate knowledge of both their fellow drones and the frame, and how to fix issues that arise."
+mod_job_anz_voidframe_frame_overseer_drone_dm_add: "Awakened Overseers"
+
+job_anz_voidframe_frame_overseer_drone_de: "Ascended Overseer"
+job_anz_voidframe_frame_overseer_drone_de_plural: "Ascended Overseers"
+job_anz_voidframe_frame_overseer_drone_de_desc: "Adding dark energy to the formation process of these superior maintenance drones has increased their efficiency."
+mod_job_anz_voidframe_frame_overseer_drone_de_add: "Ascended Overseers"
+
+job_anz_voidframe_frame_overseer_drone_pe: "$phanon_srname_ee$ Supervisor"
+job_anz_voidframe_frame_overseer_drone_pe_plural: "$phanon_srname_ee$ Supervisors"
+job_anz_voidframe_frame_overseer_drone_pe_desc: "$phanon_classified$"
+mod_job_anz_voidframe_frame_overseer_drone_pe_add: "$phanon_srname_ee$ Supervisors"
+
+job_anz_voidframe_frame_overseer_drone_se: "Supreme Overseer"
+job_anz_voidframe_frame_overseer_drone_se_plural: "Supreme Overseers"
+job_anz_voidframe_frame_overseer_drone_se_desc: "The ultimate in frame maintenance, these drones command systems that can remake stars."
+mod_job_anz_voidframe_frame_overseer_drone_se_add: "Supreme Overseers"
+
 # trader
 
 job_anz_voidframe_trader_dm: "Moonless Entrepreneur"
