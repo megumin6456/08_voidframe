@@ -538,7 +538,7 @@ anz_voidframe_trader_dm = {
 		category = planet_traders
 		upkeep = {
 			consumer_goods = 1
-			acot_sr_dark_energy = 1
+			sr_dark_matter = 1
 		}
 	}
 
@@ -791,6 +791,225 @@ anz_voidframe_trader_se = {
 	inline_script = "jobs/automodding_priority_trade"
 }
 
+# gestalt super amenities
+# maint overseer: 12 / 20 / 28 / 40 / 52
+
+anz_voidframe_frame_overseer_drone_dm = {
+	category = complex_drone
+	condition_string = DRONE_JOB_TRIGGER
+	building_icon = building_acot_dm_hive_depot
+	icon = coordinator
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	resources = {
+		category = planet_jobs
+		produces = {
+			trigger = {
+				exists = owner
+				owner = {
+					has_valid_civic = civic_machine_maintenance_protocols
+				}
+			}
+			unity = 6
+		}
+
+		upkeep = {
+			energy = 4
+			sr_dark_matter = 2
+		}
+	}
+
+	possible_precalc = can_fill_drone_job
+
+	possible = { NOT = { has_trait = trait_nerve_stapled } }
+
+	triggered_planet_modifier = {
+		potential = { always = yes }
+		planet_amenities_no_happiness_add = 20
+		mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
+	}
+
+	planet_modifier = {
+		planet_jobs_simple_drone_produces_mult = 0.01
+	}
+
+	weight = {
+		weight = value:giga_complex_drone_no_resource_weight|JOB|frame_maintenance_overseer|AMENITIES|yes|
+		multiply = value:giga_amenities_dynamic_weight|JOB|frame_maintenance_overseer|
+	}
+
+	inline_script = jobs/automodding_priority_amenities
+}
+
+anz_voidframe_frame_overseer_drone_de = {
+	category = complex_drone
+	condition_string = DRONE_JOB_TRIGGER
+	building_icon = building_acot_ae_hive_depot
+	icon = coordinator
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	resources = {
+		category = planet_jobs
+		produces = {
+			trigger = {
+				exists = owner
+				owner = {
+					has_valid_civic = civic_machine_maintenance_protocols
+				}
+			}
+			unity = 12
+		}
+
+		upkeep = {
+			energy = 6
+			acot_sr_dark_energy = 2
+			sr_dark_matter = 2
+		}
+	}
+
+	possible_precalc = can_fill_drone_job
+
+	possible = { NOT = { has_trait = trait_nerve_stapled } }
+
+	triggered_planet_modifier = {
+		potential = { always = yes }
+		planet_amenities_no_happiness_add = 28
+		mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
+	}
+
+	planet_modifier = {
+		planet_jobs_simple_drone_produces_mult = 0.01
+	}
+
+	weight = {
+		weight = value:giga_complex_drone_no_resource_weight|JOB|frame_maintenance_overseer|AMENITIES|yes|
+		multiply = value:giga_amenities_dynamic_weight|JOB|frame_maintenance_overseer|
+	}
+
+	inline_script = jobs/automodding_priority_amenities
+}
+
+anz_voidframe_frame_overseer_drone_pe = {
+	category = complex_drone
+	condition_string = DRONE_JOB_TRIGGER
+	building_icon = building_acot_phanon_hive_depot
+	icon = coordinator
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	resources = {
+		category = planet_jobs
+		produces = {
+			trigger = {
+				exists = owner
+				owner = {
+					has_valid_civic = civic_machine_maintenance_protocols
+				}
+			}
+			unity = 18
+		}
+
+		upkeep = {
+			energy = 8
+			aot_sr_runic_power = 3
+		}
+	}
+
+	possible_precalc = can_fill_drone_job
+
+	possible = { NOT = { has_trait = trait_nerve_stapled } }
+
+	triggered_planet_modifier = {
+		potential = { always = yes }
+		planet_amenities_no_happiness_add = 40
+		mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
+	}
+
+	planet_modifier = {
+		planet_jobs_simple_drone_produces_mult = 0.01
+	}
+
+	weight = {
+		weight = value:giga_complex_drone_no_resource_weight|JOB|frame_maintenance_overseer|AMENITIES|yes|
+		multiply = value:giga_amenities_dynamic_weight|JOB|frame_maintenance_overseer|
+	}
+
+	inline_script = jobs/automodding_priority_amenities
+}
+
+anz_voidframe_frame_overseer_drone_se = {
+	category = complex_drone
+	condition_string = DRONE_JOB_TRIGGER
+	building_icon = building_acot_stellarite_hive_depot
+	icon = coordinator
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	resources = {
+		category = planet_jobs
+		produces = {
+			trigger = {
+				exists = owner
+				owner = {
+					has_valid_civic = civic_machine_maintenance_protocols
+				}
+			}
+			unity = 24
+		}
+
+		upkeep = {
+			energy = 8
+			acot_sr_stellarite = 3
+		}
+	}
+
+	possible_precalc = can_fill_drone_job
+
+	possible = { NOT = { has_trait = trait_nerve_stapled } }
+
+	triggered_planet_modifier = {
+		potential = { always = yes }
+		planet_amenities_no_happiness_add = 52
+		mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
+	}
+
+	planet_modifier = {
+		planet_jobs_simple_drone_produces_mult = 0.01
+	}
+
+	weight = {
+		weight = value:giga_complex_drone_no_resource_weight|JOB|frame_maintenance_overseer|AMENITIES|yes|
+		multiply = value:giga_amenities_dynamic_weight|JOB|frame_maintenance_overseer|
+	}
+
+	inline_script = jobs/automodding_priority_amenities
+}
 
 # Theta Basic
 anz_voidframe_meditator = {

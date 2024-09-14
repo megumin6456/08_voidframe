@@ -5220,6 +5220,8 @@ inline_script = {
 
 	aot_gestjob = ""
 
+	anz_gestjob = "job_anz_voidframe_frame_overseer_drone_dm_add = 2"
+
 	cost = "minerals = 1000 sr_dark_matter = 200"
 	upkeep = "energy = 4"
 }
@@ -5235,6 +5237,8 @@ inline_script = {
 	acot_gestjob = "job_acot_entertainer_drone_add = 4"
 
 	aot_gestjob = ""
+
+	anz_gestjob = "job_anz_voidframe_frame_overseer_drone_de_add = 2"
 
 	cost = "minerals = 1000 sr_dark_matter = 400 acot_sr_dark_energy = 400"
 	upkeep = "energy = 6 sr_dark_matter = 2"
@@ -5252,6 +5256,8 @@ inline_script = {
 
 	aot_gestjob = "job_phanon_entertainer_drone_add = 2"
 
+	anz_gestjob = "job_anz_voidframe_frame_overseer_drone_pe_add = 2"
+
 	cost = "energy = 2000 minerals = 2000 aot_sr_runic_power = 800"
 	upkeep = "energy = 10 aot_sr_runic_power = 10"
 }
@@ -5267,6 +5273,8 @@ inline_script = {
 	acot_gestjob = ""
 
 	aot_gestjob = "job_stellarite_entertainer_drone_add = 2"
+
+	anz_gestjob = "job_anz_voidframe_frame_overseer_drone_se_add = 2"
 
 	cost = "energy = 4000 minerals = 4000 acot_sr_stellarite = 800"
 	upkeep = "energy = 20 acot_sr_stellarite = 10"

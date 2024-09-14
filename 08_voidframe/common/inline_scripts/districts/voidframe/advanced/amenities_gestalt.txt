@@ -94,4 +94,14 @@ district_giga_voidframe_amenities_gestalt_$tier$ = {
 			$aot_gestjob$
 		}
 	}
+
+	# frame overseer
+	triggered_planet_modifier = {
+		potential = {
+			has_planet_flag = frameworld_advanced_city
+		}
+		modifier = {
+			$anz_gestjob$
+		}
+	}
 }
