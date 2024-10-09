@@ -1,0 +1,78 @@
+decision_giga_voidframe_$type$_upgrade_$tier$ = {
+	# this means upgrade to tier
+	# THE NAME IS THE TARGET
+	base_buildtime = $time$
+	icon = decision_giga_voidframe_$type$_$tier$
+	owned_planets_only = yes
+
+	# SCRIPT INPUTS
+	# type = district type
+	# tier = tier that we upgrade to
+	# time = time to enact
+	# frame_tier_flag = frame upgrade level tag that matches $tier$
+	# tier_down = level below $tier$ (what we are upgrading FROM) 
+	#   (set to 'notier') if from nothing
+	#	technically doesnt matter, but is good practice to keep it consistent
+	# is_upgrading_no_tier = yes if this is upgrading from no tier, otherwise no
+	# reqtech = requisite tech
+	# cost = cost of upgrading
+
+	potential = {
+		# standard frame checks
+		exists = owner
+		owner = {
+			giga_has_frameworld_origin = yes
+		}
+		uses_district_set = giga_frameworld
+
+		# doesnt have the district flag that we upgrade to
+		NOT = {
+			has_planet_flag = anz_voidframe_$type$_$tier$
+		}
+
+		# has the planet flag for frame level to upgrade to
+		# aka 'voidframe_enigmatic_ae' if upgrading to alpha
+		has_planet_flag = $frame_tier_flag$
+
+		OR = {
+			# check if we have the flag to upgrade from
+			has_planet_flag = anz_voidframe_$type$_$tier_down$
+			always = $is_upgrading_no_tier$
+			# or if the upgrade is from no tier
+		}
+		
+	}
+
+	prerequisites = {
+		$reqtech$
+	}
+
+	resources = {
+		category = megastructures
+		cost = {
+			$cost$
+		}
+	}
+
+	show_tech_unlock_if = {
+		giga_has_frameworld_origin = yes
+	}
+
+	effect = {
+		custom_tooltip = decision_giga_voidframe_$type$_upgrade_$tier$_effect
+		hidden_effect = {
+			# put upgraded flag
+			set_planet_flag = anz_voidframe_$type$_$tier$
+
+			if = {	# if not upgrading from no tier
+				limit = { NOT = {always = $is_upgrading_no_tier$} }
+				remove_planet_flag = anz_voidframe_$type$_$tier_down$
+			}
+			validate_planet_buildings_and_districts = yes
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+	}
+}

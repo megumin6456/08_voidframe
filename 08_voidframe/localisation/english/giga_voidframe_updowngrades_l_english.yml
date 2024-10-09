@@ -1,0 +1,22 @@
+﻿l_english:
+
+# food
+decision_giga_voidframe_farming_upgrade_dm: "Voidframe - Upgrade to Delta Farming"
+decision_giga_voidframe_farming_upgrade_dm_effect: "Upgrades farming districts to their Delta equivalent"
+decision_giga_voidframe_farming_upgrade_de: "Voidframe - Upgrade to Alpha Farming"
+decision_giga_voidframe_farming_upgrade_de_effect: "Upgrades farming districts to their Alpha equivalent"
+decision_giga_voidframe_farming_upgrade_pe: "Voidframe - Upgrade to Phanon Farming"
+decision_giga_voidframe_farming_upgrade_pe_effect: "Upgrades farming districts to their Phanon equivalent"
+decision_giga_voidframe_farming_upgrade_se: "Voidframe - Upgrade to Sigma Farming"
+decision_giga_voidframe_farming_upgrade_se_effect: "Upgrades farming districts to their Sigma equivalent"
+
+decision_giga_voidframe_farming_downgrade_no: "Voidframe - Downgrade to normal Farming"
+decision_giga_voidframe_farming_downgrade_no_effect: "Downgrades farming districts to their normal equivalent"
+decision_giga_voidframe_farming_downgrade_dm: "Voidframe - Downgrade to Delta Farming"
+decision_giga_voidframe_farming_downgrade_dm_effect: "Downgrades farming districts to their Delta equivalent"
+decision_giga_voidframe_farming_downgrade_de: "Voidframe - Downgrade to Alpha Farming"
+decision_giga_voidframe_farming_downgrade_de_effect: "Downgrades farming districts to their Alpha equivalent"
+decision_giga_voidframe_farming_downgrade_pe: "Voidframe - Downgrade to Phanon Farming"
+decision_giga_voidframe_farming_downgrade_pe_effect: "Downgrades farming districts to their Phanon equivalent"
+
+

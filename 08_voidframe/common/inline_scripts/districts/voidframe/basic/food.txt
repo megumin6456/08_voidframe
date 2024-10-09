@@ -10,17 +10,7 @@ district_giga_voidframe_farming_$tier$ = {
 	
 	potential = {
 		uses_district_set = giga_frameworld
-		if = {
-			limit = { is_voidframe_outdated_$tier$ = yes }
-			$pass_condition$
-			NOR = { $fail_condition$ }
-		} else = {
-			is_voidframe_$tier$ = yes
-			OR = {
-				$pass_condition$
-				$fail_condition$
-			}
-		}
+		has_planet_flag = $district_flag$
 	}
 
 	prerequisites = {

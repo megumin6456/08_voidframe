@@ -2518,17 +2518,11 @@ district_giga_frameworld_farming = {
 	
 	potential = {
 		uses_district_set = giga_frameworld
-		OR = { # downgrade ability
-			is_voidframe_upgraded = no
-			AND = {
-				NOR = {
-					has_building = building_acot_dm_food_processing_complex
-					has_building = building_acot_ae_food_processing_complex
-					has_building = building_phanon_food_processing_complex
-					has_building = building_stellarite_food_processing_complex
-				}
-				is_voidframe_upgraded = yes
-			}
+		NOR = {
+			has_planet_flag = anz_voidframe_farming_dm
+			has_planet_flag = anz_voidframe_farming_de
+			has_planet_flag = anz_voidframe_farming_pe
+			has_planet_flag = anz_voidframe_farming_se
 		}
 	}
 
@@ -2623,14 +2617,7 @@ inline_script = {
 	reqtech = "tech_acot_dm_food_processing"
 	ignore_aot = "yes"
 
-	pass_condition = "
-		has_building = building_acot_dm_food_processing_complex
-	"
-	fail_condition = "
-		has_building = building_acot_ae_food_processing_complex
-		has_building = building_phanon_food_processing_complex
-		has_building = building_stellarite_food_processing_complex
-	"
+	district_flag = "anz_voidframe_farming_dm"
 
 	house = "3"
 	time = "240"
@@ -2652,13 +2639,7 @@ inline_script = {
 	reqtech = "tech_acot_ae_food_processing"
 	ignore_aot = "yes"
 
-	pass_condition = "
-		has_building = building_acot_ae_food_processing_complex
-	"
-	fail_condition = "
-		has_building = building_phanon_food_processing_complex
-		has_building = building_stellarite_food_processing_complex
-	"
+	district_flag = "anz_voidframe_farming_de"
 
 	house = "3"
 	time = "240"
@@ -2680,12 +2661,7 @@ inline_script = {
 	reqtech = "tech_phanon_food_processing"
 	ignore_aot = "no"
 
-	pass_condition = "
-		has_building = building_phanon_food_processing_complex
-	"
-	fail_condition = "
-		has_building = building_stellarite_food_processing_complex
-	"
+	district_flag = "anz_voidframe_farming_pe"
 
 	house = "3"
 	time = "360"
@@ -2707,10 +2683,7 @@ inline_script = {
 	reqtech = "tech_stellarite_food_processing"
 	ignore_aot = "no"
 
-	pass_condition = "
-		has_building = building_stellarite_food_processing_complex
-	"
-	fail_condition = ""
+	district_flag = "anz_voidframe_farming_se"
 
 	house = "3"
 	time = "480"

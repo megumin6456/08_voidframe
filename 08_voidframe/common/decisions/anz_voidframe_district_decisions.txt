@@ -1,0 +1,106 @@
+### 
+# FOOD
+
+inline_script = { #up DM
+	script = "decisions/voidframe/voidframe_district_upgrade"
+
+	# SCRIPT INPUTS
+	type = "farming"
+	tier = "dm"
+	time = "360"
+	frame_tier_flag = "voidframe_enigmatic"
+	tier_down = "no"
+	is_upgrading_no_tier = "yes"
+	reqtech = "tech_acot_dm_food_processing"
+	cost = "minerals = 500 sr_dark_matter = 200"
+}
+
+inline_script = { #up DE
+	script = "decisions/voidframe/voidframe_district_upgrade"
+
+	# SCRIPT INPUTS
+	type = "farming"
+	tier = "de"
+	time = "360"
+	frame_tier_flag = "voidframe_enigmatic_ae"
+	tier_down = "dm"
+	is_upgrading_no_tier = "no"
+	reqtech = "tech_acot_ae_food_processing"
+	cost =  "minerals = 500 sr_dark_matter = 200 acot_sr_dark_energy = 200"
+}
+
+inline_script = { #up PE
+	script = "decisions/voidframe/voidframe_district_upgrade"
+
+	# SCRIPT INPUTS
+	type = "farming"
+	tier = "pe"
+	time = "360"
+	frame_tier_flag = "voidframe_phanon"
+	tier_down = "de"
+	is_upgrading_no_tier = "no"
+	reqtech = "tech_phanon_food_processing"
+	cost =  "minerals = 1000 aot_sr_runic_power = 400"
+}
+
+inline_script = { #up SE
+	script = "decisions/voidframe/voidframe_district_upgrade"
+
+	# SCRIPT INPUTS
+	type = "farming"
+	tier = "se"
+	time = "360"
+	frame_tier_flag = "voidframe_stellarite"
+	tier_down = "pe"
+	is_upgrading_no_tier = "no"
+	reqtech = "tech_stellarite_food_processing"
+	cost = "minerals = 2000 acot_sr_stellarite = 400"
+}
+
+inline_script = { #down no
+	script = "decisions/voidframe/voidframe_district_downgrade"
+
+	# SCRIPT INPUTS
+	type = "farming"
+	tier = "no"
+	time = "360"
+	tier_up = "dm"
+	is_downgrading_no_tier = "yes"
+	cost = ""
+}
+
+inline_script = { #down dm
+	script = "decisions/voidframe/voidframe_district_downgrade"
+
+	# SCRIPT INPUTS
+	type = "farming"
+	tier = "dm"
+	time = "360"
+	tier_up = "de"
+	is_downgrading_no_tier = "no"
+	cost = ""
+}
+
+inline_script = { #down de
+	script = "decisions/voidframe/voidframe_district_downgrade"
+
+	# SCRIPT INPUTS
+	type = "farming"
+	tier = "de"
+	time = "360"
+	tier_up = "pe"
+	is_downgrading_no_tier = "no"
+	cost = ""
+}
+
+inline_script = { #down pe
+	script = "decisions/voidframe/voidframe_district_downgrade"
+
+	# SCRIPT INPUTS
+	type = "farming"
+	tier = "pe"
+	time = "360"
+	tier_up = "se"
+	is_downgrading_no_tier = "no"
+	cost = ""
+}

@@ -1,0 +1,66 @@
+decision_giga_voidframe_$type$_downgrade_$tier$ = {
+	# this means downgrade to tier
+	# THE NAME IS THE TARGET
+	# let us use 'no' as notier
+	base_buildtime = $time$
+	icon = decision_giga_voidframe_$type$_$tier$
+	owned_planets_only = yes
+
+	# SCRIPT INPUTS
+	# type = district type
+	# tier = tier that we upgrade to
+	# time = time to enact
+	# tier_up = level above $tier$ (level we are downgrading FROM)
+	# is_downgrading_no_tier = yes if this is downgrading to no tier, otherwise no
+	# cost = cost of upgrading
+
+	potential = {
+		# standard frame checks
+		exists = owner
+		owner = {
+			giga_has_frameworld_origin = yes
+		}
+		uses_district_set = giga_frameworld
+
+		OR = {
+			NOT = {
+				# doesnt have the district flag that we downgrade to
+				has_planet_flag = anz_voidframe_$type$_$tier$
+			}
+
+			# or if downgrading to no tier
+			always = $is_downgrading_no_tier$
+		}
+		
+		# no need to check for frame lvl, we are downgrading
+
+		# check if we have the flag to downgrade from
+		has_planet_flag = anz_voidframe_$type$_$tier_up$		
+	}
+
+	# no reqtech, we are downgrading
+
+	resources = {
+		category = megastructures
+		cost = {
+			$cost$
+		}
+	}
+
+	effect = {
+		custom_tooltip = decision_giga_voidframe_$type$_downgrade_$tier$_effect
+		hidden_effect = {
+			if = {	# if not downgrading to no tier
+				limit = { NOT = {always = $is_downgrading_no_tier$} }
+				set_planet_flag = anz_voidframe_$type$_$tier$
+			}
+
+			remove_planet_flag = anz_voidframe_$type$_$tier_up$
+			validate_planet_buildings_and_districts = yes
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+	}
+}
