@@ -1,85 +1,16 @@
 ### 
 # FOOD
 
-inline_script = { #up DM
-	script = "decisions/voidframe/voidframe_district_upgrade_to_norm"
-
+inline_script = { # farm
+	script = "decisions/voidframe/voidframe_district_decision_set"
 	# SCRIPT INPUTS
 	type = "farming"
-	reqtech = "tech_acot_dm_food_processing"
-	cost = "minerals = 500 sr_dark_matter = 200"
-}
-
-inline_script = { #up DE
-	script = "decisions/voidframe/voidframe_district_upgrade"
-
-	# SCRIPT INPUTS
-	type = "farming"
-	tier = "de"
-	frame_tier_flag = "voidframe_enigmatic_ae"
-	tier_down = "dm"
-	reqtech = "tech_acot_ae_food_processing"
-	cost =  "minerals = 500 sr_dark_matter = 200 acot_sr_dark_energy = 200"
-}
-
-inline_script = { #up PE
-	script = "decisions/voidframe/voidframe_district_upgrade"
-
-	# SCRIPT INPUTS
-	type = "farming"
-	tier = "pe"
-	frame_tier_flag = "voidframe_phanon"
-	tier_down = "de"
-	reqtech = "tech_phanon_food_processing"
-	cost =  "minerals = 1000 aot_sr_runic_power = 400"
-}
-
-inline_script = { #up SE
-	script = "decisions/voidframe/voidframe_district_upgrade"
-
-	# SCRIPT INPUTS
-	type = "farming"
-	tier = "se"
-	frame_tier_flag = "voidframe_stellarite"
-	tier_down = "pe"
-	reqtech = "tech_stellarite_food_processing"
-	cost = "minerals = 2000 acot_sr_stellarite = 400"
-}
-
-inline_script = { #down no
-	script = "decisions/voidframe/voidframe_district_downgrade_to_norm"
-
-	# SCRIPT INPUTS
-	type = "farming"
-	cost = ""
-}
-
-inline_script = { #down dm
-	script = "decisions/voidframe/voidframe_district_downgrade"
-
-	# SCRIPT INPUTS
-	type = "farming"
-	tier = "dm"
-	tier_up = "de"
-	cost = ""
-}
-
-inline_script = { #down de
-	script = "decisions/voidframe/voidframe_district_downgrade"
-
-	# SCRIPT INPUTS
-	type = "farming"
-	tier = "de"
-	tier_up = "pe"
-	cost = ""
-}
-
-inline_script = { #down pe
-	script = "decisions/voidframe/voidframe_district_downgrade"
-
-	# SCRIPT INPUTS
-	type = "farming"
-	tier = "pe"
-	tier_up = "se"
-	cost = ""
+	tech_dm = "tech_acot_dm_food_processing"
+	tech_de = "tech_acot_ae_food_processing"
+	tech_se = "tech_phanon_food_processing"
+	tech_pe = "tech_stellarite_food_processing"
+	cost_dm = "minerals = 500 sr_dark_matter = 200"
+	cost_de = "minerals = 500 sr_dark_matter = 200 acot_sr_dark_energy = 200"
+	cost_pe = "minerals = 1000 aot_sr_runic_power = 400"
+	cost_se = "minerals = 2000 acot_sr_stellarite = 400"
 }

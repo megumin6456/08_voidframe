@@ -1,0 +1,93 @@
+# SCRIPT INPUTS
+# type = district type, is also the flag for the district
+# tech_dm = 
+# tech_de = 
+# tech_se = 
+# tech_pe = 
+# cost_dm = 
+# cost_de = 
+# cost_pe = 
+# cost_se = 
+
+inline_script = { #up DM
+	script = "decisions/voidframe/voidframe_district_upgrade_to_norm"
+
+	# SCRIPT INPUTS
+	type = "$type$"
+	reqtech = "$tech_dm$"
+	cost = "$cost_dm$"
+}
+
+inline_script = { #up DE
+	script = "decisions/voidframe/voidframe_district_upgrade"
+
+	# SCRIPT INPUTS
+	type = "$type$"
+	tier = "de"
+	frame_tier_flag = "voidframe_enigmatic_ae"
+	tier_down = "dm"
+	reqtech = "$tech_de$"
+	cost = "$cost_de$"
+}
+
+inline_script = { #up PE
+	script = "decisions/voidframe/voidframe_district_upgrade"
+
+	# SCRIPT INPUTS
+	type = "$type$"
+	tier = "pe"
+	frame_tier_flag = "voidframe_phanon"
+	tier_down = "de"
+	reqtech = "$tech_pe$"
+	cost = "$cost_pe$"
+}
+
+inline_script = { #up SE
+	script = "decisions/voidframe/voidframe_district_upgrade"
+
+	# SCRIPT INPUTS
+	type = "$type$"
+	tier = "se"
+	frame_tier_flag = "voidframe_stellarite"
+	tier_down = "pe"
+	reqtech = "$tech_se$"
+	cost = "$cost_se$"
+}
+
+inline_script = { #down no
+	script = "decisions/voidframe/voidframe_district_downgrade_to_norm"
+
+	# SCRIPT INPUTS
+	type = "$type$"
+	cost = ""
+}
+
+inline_script = { #down dm
+	script = "decisions/voidframe/voidframe_district_downgrade"
+
+	# SCRIPT INPUTS
+	type = "$type$"
+	tier = "dm"
+	tier_up = "de"
+	cost = ""
+}
+
+inline_script = { #down de
+	script = "decisions/voidframe/voidframe_district_downgrade"
+
+	# SCRIPT INPUTS
+	type = "$type$"
+	tier = "de"
+	tier_up = "pe"
+	cost = ""
+}
+
+inline_script = { #down pe
+	script = "decisions/voidframe/voidframe_district_downgrade"
+
+	# SCRIPT INPUTS
+	type = "$type$"
+	tier = "pe"
+	tier_up = "se"
+	cost = ""
+}
