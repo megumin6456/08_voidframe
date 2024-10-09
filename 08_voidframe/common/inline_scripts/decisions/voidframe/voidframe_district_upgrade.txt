@@ -36,6 +36,7 @@ decision_giga_voidframe_$type$_upgrade_$tier$ = {
 			has_planet_flag = anz_voidframe_$type$_$tier_down$
 		}
 		
+		has_planet_flag = anz_voidframe_show_upgrade
 	}
 
 	prerequisites = {

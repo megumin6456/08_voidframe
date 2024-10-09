@@ -21,7 +21,9 @@ decision_giga_voidframe_$type$_downgrade_no = {
 		# no need to check for frame lvl, we are downgrading
 
 		# check if we have the flag to downgrade from
-		has_planet_flag = anz_voidframe_$type$_dm		
+		has_planet_flag = anz_voidframe_$type$_dm
+		
+		has_planet_flag = anz_voidframe_show_downgrade
 	}
 
 	# no reqtech, we are downgrading

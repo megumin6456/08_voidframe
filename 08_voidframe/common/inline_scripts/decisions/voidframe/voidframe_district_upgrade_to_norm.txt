@@ -32,6 +32,8 @@ decision_giga_voidframe_$type$_upgrade_dm = {
 
 		# hard coded
 		has_planet_flag = voidframe_enigmatic
+
+		has_planet_flag = anz_voidframe_show_upgrade
 	}
 
 	prerequisites = {
