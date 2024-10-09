@@ -11,9 +11,6 @@ decision_giga_voidframe_$type$_upgrade_$tier$ = {
 	# time = time to enact
 	# frame_tier_flag = frame upgrade level tag that matches $tier$
 	# tier_down = level below $tier$ (what we are upgrading FROM) 
-	#   (set to 'notier') if from nothing
-	#	technically doesnt matter, but is good practice to keep it consistent
-	# is_upgrading_no_tier = yes if this is upgrading from no tier, otherwise no
 	# reqtech = requisite tech
 	# cost = cost of upgrading
 
@@ -37,8 +34,6 @@ decision_giga_voidframe_$type$_upgrade_$tier$ = {
 		OR = {
 			# check if we have the flag to upgrade from
 			has_planet_flag = anz_voidframe_$type$_$tier_down$
-			always = $is_upgrading_no_tier$
-			# or if the upgrade is from no tier
 		}
 		
 	}
@@ -63,11 +58,7 @@ decision_giga_voidframe_$type$_upgrade_$tier$ = {
 		hidden_effect = {
 			# put upgraded flag
 			set_planet_flag = anz_voidframe_$type$_$tier$
-
-			if = {	# if not upgrading from no tier
-				limit = { NOT = {always = $is_upgrading_no_tier$} }
-				remove_planet_flag = anz_voidframe_$type$_$tier_down$
-			}
+			remove_planet_flag = anz_voidframe_$type$_$tier_down$
 			validate_planet_buildings_and_districts = yes
 		}
 	}

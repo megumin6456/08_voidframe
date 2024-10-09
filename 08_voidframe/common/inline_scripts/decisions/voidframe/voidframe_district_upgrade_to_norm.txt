@@ -1,0 +1,64 @@
+decision_giga_voidframe_$type$_upgrade_dm = {
+
+
+	# this means upgrade to tier DM, THIS IS HARDCODED
+	# THE NAME IS THE TARGET
+	base_buildtime = $time$
+	icon = decision_giga_voidframe_$type$_dm
+	owned_planets_only = yes
+
+	# SCRIPT INPUTS
+	# type = district type
+	# time = time to enact
+	# reqtech = requisite tech
+	# cost = cost of upgrading
+
+	potential = {
+		# standard frame checks
+		exists = owner
+		owner = {
+			giga_has_frameworld_origin = yes
+		}
+		uses_district_set = giga_frameworld
+
+		# doesnt have any upgraded flags
+		# hardcoded
+		NOR = { 
+			has_planet_flag = anz_voidframe_$type$_dm
+			has_planet_flag = anz_voidframe_$type$_de
+			has_planet_flag = anz_voidframe_$type$_pe
+			has_planet_flag = anz_voidframe_$type$_se
+		}
+
+		# hard coded
+		has_planet_flag = voidframe_enigmatic
+	}
+
+	prerequisites = {
+		$reqtech$
+	}
+
+	resources = {
+		category = megastructures
+		cost = {
+			$cost$
+		}
+	}
+
+	show_tech_unlock_if = {
+		giga_has_frameworld_origin = yes
+	}
+
+	effect = {
+		custom_tooltip = decision_giga_voidframe_$type$_upgrade_dm_effect
+		hidden_effect = {
+			# put upgraded flag
+			set_planet_flag = anz_voidframe_$type$_dm
+			validate_planet_buildings_and_districts = yes
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+	}
+}
