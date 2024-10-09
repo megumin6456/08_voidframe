@@ -6,7 +6,6 @@ inline_script = { #up DM
 
 	# SCRIPT INPUTS
 	type = "farming"
-	time = "360"
 	reqtech = "tech_acot_dm_food_processing"
 	cost = "minerals = 500 sr_dark_matter = 200"
 }
@@ -17,7 +16,6 @@ inline_script = { #up DE
 	# SCRIPT INPUTS
 	type = "farming"
 	tier = "de"
-	time = "360"
 	frame_tier_flag = "voidframe_enigmatic_ae"
 	tier_down = "dm"
 	reqtech = "tech_acot_ae_food_processing"
@@ -30,7 +28,6 @@ inline_script = { #up PE
 	# SCRIPT INPUTS
 	type = "farming"
 	tier = "pe"
-	time = "360"
 	frame_tier_flag = "voidframe_phanon"
 	tier_down = "de"
 	reqtech = "tech_phanon_food_processing"
@@ -43,7 +40,6 @@ inline_script = { #up SE
 	# SCRIPT INPUTS
 	type = "farming"
 	tier = "se"
-	time = "360"
 	frame_tier_flag = "voidframe_stellarite"
 	tier_down = "pe"
 	reqtech = "tech_stellarite_food_processing"
@@ -55,7 +51,6 @@ inline_script = { #down no
 
 	# SCRIPT INPUTS
 	type = "farming"
-	time = "360"
 	cost = ""
 }
 
@@ -65,7 +60,6 @@ inline_script = { #down dm
 	# SCRIPT INPUTS
 	type = "farming"
 	tier = "dm"
-	time = "360"
 	tier_up = "de"
 	cost = ""
 }
@@ -76,7 +70,6 @@ inline_script = { #down de
 	# SCRIPT INPUTS
 	type = "farming"
 	tier = "de"
-	time = "360"
 	tier_up = "pe"
 	cost = ""
 }
@@ -87,7 +80,6 @@ inline_script = { #down pe
 	# SCRIPT INPUTS
 	type = "farming"
 	tier = "pe"
-	time = "360"
 	tier_up = "se"
 	cost = ""
 }

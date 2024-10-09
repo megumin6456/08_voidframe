@@ -1,14 +1,12 @@
 decision_giga_voidframe_$type$_downgrade_$tier$ = {
 	# this means downgrade to tier
 	# THE NAME IS THE TARGET
-	base_buildtime = $time$
 	icon = decision_giga_voidframe_$type$_$tier$
 	owned_planets_only = yes
 
 	# SCRIPT INPUTS
 	# type = district type
 	# tier = tier that we downgrade to
-	# time = time to enact
 	# tier_up = level above $tier$ (level we are downgrading FROM)
 	# cost = cost of upgrading
 

@@ -3,13 +3,11 @@ decision_giga_voidframe_$type$_upgrade_dm = {
 
 	# this means upgrade to tier DM, THIS IS HARDCODED
 	# THE NAME IS THE TARGET
-	base_buildtime = $time$
 	icon = decision_giga_voidframe_$type$_dm
 	owned_planets_only = yes
 
 	# SCRIPT INPUTS
 	# type = district type
-	# time = time to enact
 	# reqtech = requisite tech
 	# cost = cost of upgrading
 

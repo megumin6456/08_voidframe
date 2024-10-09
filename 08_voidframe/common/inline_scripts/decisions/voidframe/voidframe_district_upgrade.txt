@@ -1,14 +1,12 @@
 decision_giga_voidframe_$type$_upgrade_$tier$ = {
 	# this means upgrade to tier
 	# THE NAME IS THE TARGET
-	base_buildtime = $time$
 	icon = decision_giga_voidframe_$type$_$tier$
 	owned_planets_only = yes
 
 	# SCRIPT INPUTS
 	# type = district type
 	# tier = tier that we upgrade to
-	# time = time to enact
 	# frame_tier_flag = frame upgrade level tag that matches $tier$
 	# tier_down = level below $tier$ (what we are upgrading FROM) 
 	# reqtech = requisite tech
