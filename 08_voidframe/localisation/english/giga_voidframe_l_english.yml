@@ -1042,8 +1042,13 @@ giga_frameworld_docs_voidframe_tiers_theta: "§YTheta Tier§! §W(Pure Runic / S
 
 acot_pmc.11.desc.voidframe: "$acot_pmc.11.desc.a$\n\nBecause of the unique nature of our empire, we have decided to use a wormhole generator to create a backdoor to the Vault linking it to our Voidframe. This will allow us to engage them in battle on our home turf but beware of collateral damage when fighting there.\n\n - New Decision is available on the Voidframe to start raiding it.\n - We no longer need to hold the system in order to raid it."
 
-# You have reached the end of the file,
-# Congrats! ^_-
+# Ancient Empire Compat
+frameag_building_limit: "§PFrameworld Outpost§!"
+frameag_building_limit_desc: "§PSmall but more capable outpost made to study the Ancient Empire.\nOnce investigations on this world is completed, use EVAC Outpost decision to dismantle it.§!"
+frameag_building_limit_tooltip: ""
+
+frameag_evac: "§PEVAC Outpost§!"
+frameag_evac_desc: "§PDismatles this outpost and resettle all pops to the Frameworld§!"
 
 # EXTRA LINES: LEAVE THESE EMPTY
 # @Megumin, im using these as hooks to add extra documentation to voidframe for adding extra districts in my submod, and will overwrite them
@@ -1064,3 +1069,6 @@ giga_frameworld_docs_voidframe_hook_auto6: ""
 giga_frameworld_docs_voidframe_hook_no1: "" #in use by Frameworld Extra Goodies
 giga_frameworld_docs_voidframe_hook_no2: ""
 giga_frameworld_docs_voidframe_hook_no3: ""
+
+# You have reached the end of the file,
+# Congrats! ^_-

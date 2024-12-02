@@ -384,3 +384,37 @@ decision_voidframe_raid_phanon = {
 		weight = 0
 	}
 }
+
+# Ancient Empire Compat
+frameag_evac = {
+	owned_planets_only = yes
+	icon = decision_federation_fleet
+
+	potential = {
+		owner = {
+			has_origin = origin_frameworld
+		}
+		frameag_colony_exception = yes
+	}
+	
+	resources = {
+		category = decisions
+		cost = {
+			unity = 500
+		}
+	}
+
+	effect = {
+		owner = {
+			capital_scope = {
+				save_event_target_as = target_frameworld
+			}
+		}
+		every_owned_pop = {
+			resettle_pop = {
+				pop = THIS
+				planet = event_target:target_frameworld
+			}
+		}
+	}
+}
