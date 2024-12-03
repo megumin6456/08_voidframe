@@ -31,6 +31,9 @@ can_have_frameworld_outpost = {
 				is_planet_class = pc_dark_fractured
 				space_owner = {	has_technology = tech_acot_colonize_fractured }
 			}
+			# ASPR
+			is_planet_class = pc_apsr_ancient
+			is_planet_class = pc_apsr_unique
 
 			is_planet_class = pc_giga_planetary_computer
 			is_planet_class = pc_ringworld_habitable
