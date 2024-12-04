@@ -1,4 +1,2 @@
-# New
- * Support for Ancient Empire
- * Support for APSR: Anomalies, Planetary and Space Resources
- * ACOT's Fractured world digsite (Amerigo)
+# Bug Fix
+ * Moved the APSR check to the right place, I screwed it up at last update.
