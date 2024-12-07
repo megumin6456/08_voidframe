@@ -10,10 +10,6 @@ frameag_colony_exception = {
 		has_planet_flag = ag_ancient_epsilon_shielded_world_2
 		has_planet_flag = ag_ancient_epsilon_shielded_world_3
 		has_planet_flag = ag_ancient_eta_shielded_world
-
-		# ASPR, nothing to do with Ancient Empire but sharing code.
-		is_planet_class = pc_apsr_ancient
-		is_planet_class = pc_apsr_unique
 	}
 }
 
