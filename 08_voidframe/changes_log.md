@@ -1,0 +1,1 @@
+* Fixed a minor bug with stellarite decision

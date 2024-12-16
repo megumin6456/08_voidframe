@@ -207,7 +207,7 @@ anz_voidframe_stellarite = {
 	icon = decision_voidframe_se
 
 	prerequisites = {
-		tech_acot_stellarite_generator_ae
+		tech_stellarite_generator_lvl3
 	}
 
 	show_tech_unlock_if = {
