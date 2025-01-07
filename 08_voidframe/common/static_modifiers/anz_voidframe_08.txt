@@ -5,6 +5,9 @@ frameag_building_limit = {
 
 	custom_tooltip = frameag_building_limit_tooltip
 
+	# Incase not having ACOT capitals - need some research for quest
+	job_researcher_add = 4
+
 	planet_max_buildings_add = -1000
 	planet_max_districts_add = -1000
 
