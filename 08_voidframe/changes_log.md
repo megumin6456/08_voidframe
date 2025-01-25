@@ -1,2 +1,3 @@
- * Added scripted_variable for compatibility as requested by Inny
- * Added +4 researcher jobs when making an Ancient Empire outpost to help with quest.
+ * Added Delta and Alpha administrative districts for when ACOT is loaded WITHOUT AOT
+   * This also results in new admin jobs
+   * This district upgrades using the Dark Mansion line of buildings
