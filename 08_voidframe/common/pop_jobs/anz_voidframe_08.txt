@@ -1,9 +1,118 @@
 # Organic Admin
 
-# admin_dm = {
+anz_voidframe_admin_dm = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_acot_dm_mansion
+	icon = anz_voidframe_admin_drone_dm
+	
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_specialist_job
+
+	resources = {
+		# from aot
+		category = planet_administrators
+		produces = {
+			unity = 15
+		}
+		produces = {
+			trigger = {
+				exists = owner
+				owner = {
+					has_valid_civic = civic_byzantine_bureaucracy
+				}
+			}
+			unity = 10
+		}
+		upkeep = {
+			sr_dark_matter = 2
+		}
+	}
+
+	# from aot lmao
+	planet_modifier = {
+		planet_stability_add = 10
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_valid_civic = civic_byzantine_bureaucracy
+			}
+		}
+		modifier = {
+			planet_stability_add = 10
+		}
+	}
+
+	weight = {
+		weight = @specialist_job_weight
+		modifier = {
+			factor = 0.2
+			has_citizenship_rights = no
+			NOT = {
+				has_trait = trait_mechanical
+			}
+		}
+		modifier = {
+			factor = 2
+			has_trait = trait_robot_propaganda_machines
+			OR = {
+				is_non_sapient_robot = yes
+				is_shackled_robot = yes
+			}
+		}
+		modifier = {
+			factor = 1.5
+			OR = {
+				has_trait = trait_robot_propaganda_machines
+				has_trait = trait_traditional
+			}
+		}
+		modifier = {
+			factor = 0.5
+			has_trait = trait_quarrelsome
+		}
+		modifier = {
+			factor = 0.1
+			can_take_servant_job = yes
+		}
+		modifier = {
+			factor = 5
+			has_job = dm_bureaucrat
+		}
+		modifier = {
+			factor = 0.5
+			has_trait = trait_presapient_proles
+		}
+		modifier = {
+			factor = 1.1
+			has_trait = trait_latent_psionic
+		}
+		modifier = {
+			factor = 1.2
+			has_trait = trait_psionic
+		}
+		modifier = {
+			factor = 0.5
+			has_trait = trait_enigmatic_intelligence_failed
+		}
+	}
+
+	inline_script = "jobs/automodding_priority_unity"
+}
+
+# anz_voidframe_admin_de = {
 # 	category = specialist
 # 	condition_string = SPECIALIST_JOB_TRIGGER
-# 	building_icon = building_affluence_center
+# 	icon = anz_voidframe_admin_drone_de
+# 	building_icon = building_acot_ae_mansion
 	
 # 	possible_pre_triggers = {
 # 		has_owner = yes
@@ -13,14 +122,11 @@
 # 	}
 
 # 	possible_precalc = can_fill_specialist_job
-# 	possible = { complex_specialist_job_check_trigger = yes }
 
 # 	resources = {
-# 		category = planet_administrators	
+# 		category = planet_administrators
 # 		produces = {
-# 			unity = 20
-# 			#research goes 4 -> 25 for vanilla -> acot
-# 			# i will make burecrats go 4 -> 20
+# 			unity = 30
 # 		}
 # 		produces = {
 # 			trigger = {
@@ -29,63 +135,83 @@
 # 					has_valid_civic = civic_byzantine_bureaucracy
 # 				}
 # 			}
-# 			unity = 5
+# 			unity = 15
 # 		}
 # 		upkeep = {
-# 			sr_dark_matter = 1
-# 			acot_sr_dark_energy = 2
-# 			consumer_goods = 5
+# 			sr_dark_matter = 3
+# 			acot_sr_dark_energy = 3
 # 		}
 # 	}
-
-# 	weight = {
-# 		weight = @specialist_job_weight
-# 		mult = value:job_weights_modifier|JOB|bureaucrat|RESOURCE|unity|
+# 	planet_modifier = {
+# 		planet_stability_add = 15
 # 	}
-# }
-
-# admin_de = {
-# 	category = specialist
-# 	condition_string = SPECIALIST_JOB_TRIGGER
-# 	icon = admin_de
-# 	building_icon = building_ae_affluence_center
-	
-# 	possible_pre_triggers = {
-# 		has_owner = yes
-# 		is_being_purged = no
-# 		is_being_assimilated = no
-# 		is_sapient = yes
-# 	}
-
-# 	possible_precalc = can_fill_specialist_job
-# 	possible = { complex_specialist_job_check_trigger = yes }
-
-# 	resources = {
-# 		category = planet_administrators	
-# 		produces = {
-# 			unity = 40
-# 			# doubling inline with acot "balance"
-# 		}
-# 		produces = {
-# 			trigger = {
-# 				exists = owner
-# 				owner = {
-# 					has_valid_civic = civic_byzantine_bureaucracy
-# 				}
+# 	triggered_planet_modifier = {
+# 		potential = {
+# 			exists = owner
+# 			owner = {
+# 				has_valid_civic = civic_byzantine_bureaucracy
 # 			}
-# 			unity = 10
 # 		}
-# 		upkeep = {
-# 			sr_dark_matter = 2
-# 			acot_sr_dark_energy = 4
-# 			consumer_goods = 5
+# 		modifier = {
+# 			planet_stability_add = 12
 # 		}
 # 	}
 
 # 	weight = {
 # 		weight = @specialist_job_weight
-# 		mult = value:job_weights_modifier|JOB|bureaucrat|RESOURCE|unity|
+# 		modifier = {
+# 			factor = 0.2
+# 			has_citizenship_rights = no
+# 			NOT = {
+# 				has_trait = trait_mechanical
+# 			}
+# 		}
+# 		modifier = {
+# 			factor = 2
+# 			has_trait = trait_robot_propaganda_machines
+# 			OR = {
+# 				is_non_sapient_robot = yes
+# 				is_shackled_robot = yes
+# 			}
+# 		}
+# 		modifier = {
+# 			factor = 1.5
+# 			OR = {
+# 				has_trait = trait_robot_propaganda_machines
+# 				has_trait = trait_traditional
+# 			}
+# 		}
+# 		modifier = {
+# 			factor = 0.5
+# 			has_trait = trait_quarrelsome
+# 		}
+# 		modifier = {
+# 			factor = 0.1
+# 			can_take_servant_job = yes
+# 		}
+# 		modifier = {
+# 			factor = 5
+# 			has_job = ae_bureaucrat
+# 		}
+# 		modifier = {
+# 			factor = 0.5
+# 			has_trait = trait_presapient_proles
+# 		}
+# 		modifier = {
+# 			factor = 1.1
+# 			has_trait = trait_latent_psionic
+# 		}
+# 		modifier = {
+# 			factor = 1.2
+# 			has_trait = trait_psionic
+# 		}
+# 		modifier = {
+# 			factor = 0.5
+# 			has_trait = trait_enigmatic_intelligence_failed
+# 		}
 # 	}
+
+# 	inline_script = "jobs/automodding_priority_unity"
 # }
 
 # admin_pe = {

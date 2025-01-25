@@ -1,5 +1,5 @@
 # CHECKLIST FOR MAKING DISTRICT
-create infile script
+create inline script
 if needed, create jobs
 if needed, create job icons
 create localisation

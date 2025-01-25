@@ -2999,6 +2999,8 @@ district_giga_frameworld_administrative = {
 		district_giga_voidframe_admin_de
 		district_giga_voidframe_admin_pe
 		district_giga_voidframe_admin_se
+		district_giga_voidframe_admin_acot_dm
+		district_giga_voidframe_admin_acot_de
 
 		district_giga_frameworld_temple
 
@@ -3059,13 +3061,12 @@ district_giga_frameworld_administrative = {
 	}
 }
 
+# aot districts
 inline_script = {
 	script = "districts/voidframe/empire/admin"
 
 	tier = "dm"
 	reqtech = "tech_dm_bureau"
-	ignore_aot = "no"
-		#tech and job is from aot
 	pass_condition = "
 		has_building = building_dm_bureaucratic
 	"
@@ -3089,8 +3090,6 @@ inline_script = {
 
 	tier = "de"
 	reqtech = "tech_ae_bureau"
-	ignore_aot = "no"
-		#tech and job is from aot
 	pass_condition = "
 		has_building = building_ae_bureaucratic
 	"
@@ -3113,8 +3112,6 @@ inline_script = {
 
 	tier = "pe"
 	reqtech = "tech_phanon_bureau"
-	ignore_aot = "no"
-		#tech and job is from aot
 	pass_condition = "
 		has_building = building_phanon_bureaucratic
 	"
@@ -3136,8 +3133,6 @@ inline_script = {
 
 	tier = "se"
 	reqtech = "tech_stellarite_bureau"
-	ignore_aot = "no"
-		#tech and job is from aot
 	pass_condition = "
 		has_building = building_stellarite_bureaucratic
 	"
@@ -3150,6 +3145,47 @@ inline_script = {
 
 	cost = "energy = 4000 minerals = 4000 acot_sr_stellarite = 800"
 	upkeep = "energy = 20 acot_sr_stellarite = 10"
+}
+
+# acot only
+inline_script = {
+	script = "districts/voidframe/empire/admin_acot_only"
+
+	tier = "dm"
+	reqtech = "tech_acot_dm_mansion"
+	pass_condition = "
+		has_building = building_acot_dm_mansion
+	"
+	fail_condition = "
+		has_building = building_acot_ae_mansion
+	"
+
+	time = "480"
+
+	acot_normjob = "job_anz_voidframe_admin_dm_add = 2"
+	acot_normjob_virt = "job_anz_voidframe_admin_dm_add = 1"
+
+	cost = "minerals = 1000 sr_dark_matter = 200"
+	upkeep = "energy = 4"
+}
+
+inline_script = {
+	script = "districts/voidframe/empire/admin_acot_only"
+
+	tier = "de"
+	reqtech = "tech_acot_ae_mansion"
+	pass_condition = "
+		has_building = building_acot_ae_mansion
+	"
+	fail_condition = ""
+
+	time = "480"
+
+	acot_normjob = "job_anz_voidframe_admin_dm_add = 4"
+	acot_normjob_virt = "job_anz_voidframe_admin_dm_add = 2"
+
+	cost = "minerals = 1000 sr_dark_matter = 400 acot_sr_dark_energy = 400"
+	upkeep = "energy = 6 sr_dark_matter = 2"
 }
 
 ###############################################################################################################
@@ -4276,6 +4312,8 @@ inline_script = {
 #          SPECIALIST
 ###############################################################################################################
 ###############################################################################################################
+
+# research
 
 district_giga_frameworld_science = {
 	base_buildtime = @advanced_time

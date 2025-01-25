@@ -438,6 +438,16 @@ phanon_srname_ee: "Runic"
   # _oe_plural: "§Y §!"
   # _oe_desc: "§Y §!"
 
+# Admin ACOT
+
+  district_giga_voidframe_admin_acot_dm: "$district_giga_voidframe_admin_dm$"
+  district_giga_voidframe_admin_acot_dm_plural: "$district_giga_voidframe_admin_dm_plural$"
+  district_giga_voidframe_admin_acot_dm_desc: "$district_giga_voidframe_admin_dm_desc$"
+
+  district_giga_voidframe_admin_acot_de: "$district_giga_voidframe_admin_de$"
+  district_giga_voidframe_admin_acot_de_plural: "$district_giga_voidframe_admin_de_plural$"
+  district_giga_voidframe_admin_acot_de_desc: "$district_giga_voidframe_admin_de_desc$"
+
 # Temple
 
   district_giga_voidframe_temple_dm: "Temple of the Night"
@@ -831,7 +841,6 @@ phanon_srname_ee: "Runic"
   job_maginot_planetary_shield_effect_desc_se: "\nProvides 3 §YShield Battery§! armies capable of soaking up vast amounts of enemy fire."
 
 
-
 ################################################################################################################ 
 # JOBS
 ################################################################################################################
@@ -847,15 +856,15 @@ phanon_srname_ee: "Runic"
   job_anz_voidframe_admin_de_desc: "Precursor bionic technology can perfectly links both man and machines, we can now be far more united than we used to be."
   mod_job_anz_voidframe_admin_de_add: "Bionic Administrators"
 
-  job_anz_voidframe_admin_se: "Stellar Administrators"
-  job_anz_voidframe_admin_se_plural: "Stellar Administrators"
-  job_anz_voidframe_admin_se_desc: "May the stars light our path in this dark galaxy."
-  mod_job_anz_voidframe_admin_se_add: "Stellar Administrators"
-
   job_anz_voidframe_admin_pe: "$phanon_srname_ee$ Inspectors"
   job_anz_voidframe_admin_pe_plural: "$phanon_srname_ee$ Inspectors"
   job_anz_voidframe_admin_pe_desc: "$phanon_classified$"
   mod_job_anz_voidframe_admin_pe_add: "$phanon_srname_ee$ Inspectors"
+
+  job_anz_voidframe_admin_se: "Stellar Administrators"
+  job_anz_voidframe_admin_se_plural: "Stellar Administrators"
+  job_anz_voidframe_admin_se_desc: "May the stars light our path in this dark galaxy."
+  mod_job_anz_voidframe_admin_se_add: "Stellar Administrators"
 
 # machine unity
 
