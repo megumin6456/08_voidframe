@@ -2970,11 +2970,20 @@ district_giga_frameworld_administrative = {
 		OR = { # downgrade ability
 			is_voidframe_upgraded = no
 			AND = {
+				has_voidframe_mods_aot = yes
 				NOR = {
 					has_building = building_dm_bureaucratic
 					has_building = building_ae_bureaucratic
 					has_building = building_phanon_bureaucratic
 					has_building = building_stellarite_bureaucratic
+				}
+				is_voidframe_upgraded = yes
+			}
+			AND = {
+				has_voidframe_mods_aot = no
+				NOR = {
+					has_building = building_acot_dm_mansion
+					has_building = building_acot_ae_mansion
 				}
 				is_voidframe_upgraded = yes
 			}
