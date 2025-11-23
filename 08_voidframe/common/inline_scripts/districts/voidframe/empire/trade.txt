@@ -1,0 +1,96 @@
+district_giga_voidframe_trade_$tier$ = {
+	base_buildtime = $time$
+	icon = district_giga_voidframe_trade_$tier$
+	is_capped_by_modifier = no
+	
+	show_on_uncolonized = {
+		exists = from
+		uses_district_set = giga_frameworld
+		is_voidframe_exclusive_$tier$ = yes
+	}
+	
+	potential = {
+		exists = owner
+		uses_district_set = giga_frameworld
+		if = {
+			limit = { is_voidframe_outdated_$tier$ = yes }
+			$pass_condition$
+			NOR = { $fail_condition$ }
+		} else = {
+			is_voidframe_$tier$ = yes
+			OR = {
+				$pass_condition$
+				$fail_condition$
+			}
+		}
+	}
+
+	prerequisites = {
+		$reqtech$
+	}
+
+	show_tech_unlock_if = {
+		giga_has_frameworld_origin = yes
+	}
+	
+	conversion_ratio = 1
+	convert_to = {
+		district_giga_frameworld_trade
+
+		district_giga_voidframe_trade_dm
+		district_giga_voidframe_trade_de
+		district_giga_voidframe_trade_pe
+		district_giga_voidframe_trade_se
+		#NOTE: cannot have this convert to a generator district as well, district conversions split equally between all listed districts.
+		#so if I put a generator district here then when you upgrade trade, it splits the disticts between generator and upgraded trade which is bad
+	}
+
+	resources = {
+		category = planet_districts_hab_research
+		cost = {
+			$cost$
+		}
+		upkeep = {
+			$upkeep$
+		}
+	}
+	
+	planet_modifier = {
+		# planet_housing_add = $house$
+	}
+
+	# AOT (merchant jobs are AOT only)
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+			}
+			has_voidframe_mods_aot = yes
+		}
+		modifier = {
+			$aot_normjob$
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				giga_empire_has_extra_virtual_jobs = yes
+			}
+			has_voidframe_mods_aot = yes
+		}
+		modifier = {
+			$aot_normjob_virt$
+		}
+	}
+
+	ai_resource_production = {
+		ai_unobtainium = 1000
+		trigger = {
+			frameworld_want_science = yes
+		}
+	}
+}

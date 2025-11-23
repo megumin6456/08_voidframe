@@ -1,0 +1,420 @@
+# Voidframe Upgrades
+
+anz_voidframe_enigmatic = {
+	owned_planets_only = yes
+	icon = decision_voidframe_dm
+
+	prerequisites = {
+		tech_acot_dm_dark_matter_synthersizer
+	}
+
+	show_tech_unlock_if = {
+		owner = { giga_has_frameworld_origin = yes }
+	}
+
+	enactment_time = 1800 # 5 years
+	
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 20000
+			sr_dark_matter = 5000
+			acot_sr_dark_energy = 5000
+		}
+	}
+	
+	potential = {
+		exists = owner
+		owner = {
+			giga_has_frameworld_origin = yes
+		}
+		is_planet_class = pc_giga_frameworld
+		has_voidframe_mods_acot = yes
+		is_voidframe_upgraded = no
+	}
+	
+	allow = {		
+		custom_tooltip_fail = {
+			not = {
+				has_planet_flag = frameworld_upgrade
+			}
+			text = giga_frameworld_upgrade_fail
+		}
+		has_enigmatic_capital = yes
+	}
+	
+	effect = {
+		custom_tooltip = giga_frameworld_upgrade_desc
+		custom_tooltip = anz_voidframe_enigmatic_effect
+
+		hidden_effect = {
+			set_planet_flag = voidframe_enigmatic
+			add_deposit = anz_voidframe_delta
+
+			add_modifier = {
+				modifier = "acot_modifier_supercharged_reactor"
+				days = -1
+			}
+
+			add_modifier = {
+				modifier = "acot_modifier_supercharged_pylon"
+				days = -1
+			}
+
+			add_modifier = {
+				modifier = frameworld_building_wreck_fix
+			}
+			validate_planet_buildings_and_districts = yes
+			remove_modifier = frameworld_building_wreck_fix
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+	}
+}
+
+anz_voidframe_enigmatic_ae = {
+	owned_planets_only = yes
+	icon = decision_voidframe_de
+
+	prerequisites = {
+		tech_acot_ae_dark_matter_synthersizer
+	}
+
+	show_tech_unlock_if = {
+		owner = { giga_has_frameworld_origin = yes }
+	}
+
+	enactment_time = 1800 # 5 years
+	
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 40000
+			sr_dark_matter = 10000
+			acot_sr_dark_energy = 10000
+		}
+	}
+	
+	potential = {
+		exists = owner
+		owner = {
+			giga_has_frameworld_origin = yes
+		}
+		is_planet_class = pc_giga_frameworld
+		is_voidframe_exclusive_dm = yes
+	}
+	
+	allow = {
+		custom_tooltip_fail = {
+			not = {
+				has_planet_flag = frameworld_upgrade
+			}
+			text = giga_frameworld_upgrade_fail
+		}
+		has_ascended_capital = yes
+	}
+	
+	effect = {
+		custom_tooltip = giga_frameworld_upgrade_desc
+		custom_tooltip = anz_voidframe_enigmatic_ae_effect
+
+		hidden_effect = {
+			set_planet_flag = voidframe_enigmatic_ae
+			add_deposit = anz_voidframe_alpha
+			remove_deposit = anz_voidframe_delta
+
+			add_modifier = {
+				modifier = frameworld_building_wreck_fix
+			}
+			validate_planet_buildings_and_districts = yes
+			remove_modifier = frameworld_building_wreck_fix
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+	}
+}
+
+anz_voidframe_phanon = {
+	owned_planets_only = yes
+	icon = decision_voidframe_pe
+
+	prerequisites = {
+		tech_precursor_phanon_design
+	}
+
+	show_tech_unlock_if = {
+		owner = { giga_has_frameworld_origin = yes }
+	}
+
+	enactment_time = 1800 # 5 years
+	
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 60000
+			aot_sr_runic_power = 20000
+		}
+	}
+	
+	potential = {
+		exists = owner
+		owner = {
+			giga_has_frameworld_origin = yes
+		}
+		is_planet_class = pc_giga_frameworld
+		is_voidframe_exclusive_de = yes
+		has_voidframe_mods_aot = yes
+	}
+	
+	allow = {
+		has_phanon_capital = yes
+		custom_tooltip_fail = {
+			not = {
+				has_planet_flag = frameworld_upgrade
+			}
+			text = giga_frameworld_upgrade_fail
+		}
+	}
+	
+	effect = {
+		custom_tooltip = giga_frameworld_upgrade_desc
+		custom_tooltip = anz_voidframe_phanon_effect
+
+		hidden_effect = {
+			set_planet_flag = voidframe_phanon
+			add_deposit = anz_voidframe_phanon
+			remove_deposit = anz_voidframe_alpha
+
+			add_modifier = {
+				modifier = frameworld_building_wreck_fix
+			}
+			validate_planet_buildings_and_districts = yes
+			remove_modifier = frameworld_building_wreck_fix
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+	}
+}
+
+anz_voidframe_stellarite = {
+	owned_planets_only = yes
+	icon = decision_voidframe_se
+
+	prerequisites = {
+		tech_stellarite_generator_lvl3
+	}
+
+	show_tech_unlock_if = {
+		owner = { giga_has_frameworld_origin = yes }
+	}
+
+	enactment_time = 1800 # 5 years
+	
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 80000
+			acot_sr_stellarite = 20000
+		}
+	}
+	
+	potential = {
+		exists = owner
+		owner = {
+			giga_has_frameworld_origin = yes
+		}
+		is_planet_class = pc_giga_frameworld
+		is_voidframe_exclusive_pe = yes
+		has_voidframe_mods_aot = yes
+	}
+	
+	allow = {
+		has_stellarite_capital = yes
+		custom_tooltip_fail = {
+			not = {
+				has_planet_flag = frameworld_upgrade
+			}
+			text = giga_frameworld_upgrade_fail
+		}
+	}
+	
+	effect = {
+		custom_tooltip = giga_frameworld_upgrade_desc
+		custom_tooltip = anz_voidframe_stellarite_effect
+
+		hidden_effect = {
+			set_planet_flag = voidframe_stellarite
+			add_deposit = anz_voidframe_stellar
+			remove_deposit = anz_voidframe_phanon
+
+			add_modifier = {
+				modifier = frameworld_building_wreck_fix
+			}
+			validate_planet_buildings_and_districts = yes
+			remove_modifier = frameworld_building_wreck_fix
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+	}
+}
+
+# Phanon Vault RAID
+decision_voidframe_raid_phanon = {
+	owned_planets_only = yes
+	sound = event_ground_battle
+	icon = decision_acot_infiltrate_phanon_grid
+
+	resources = {
+		category = decisions
+		cost = {
+		}
+	}
+	allow = {
+		any_planet_army = {
+			is_owned_by = root.owner
+		}
+		NOR = {
+			has_modifier = acot_modifier_vault_delay
+			has_planet_flag = ongoing_vault_infiltration
+			has_global_flag = aot_phanon_content_OFF
+		}
+		owner = {
+			has_technology = tech_precursor_phanon_design_pe_1
+			has_technology = tech_precursor_phanon_design_pe_2
+			has_technology = tech_precursor_phanon_design_pe_3
+		}
+	}
+	potential = {
+		planet_owner = {
+			is_ai = no
+			has_country_flag = has_vault_within_borders
+			NOT = { has_country_flag = acot_phanon_tech_stage_four_enabled }
+		}
+		OR = {
+			is_planet_class = pc_giga_frameworld
+			is_voidframe_de = yes
+		}
+		NOR = {
+			has_planet_flag = acot_vault_floor_four_cleared
+			has_planet_flag = acot_vault_rival_cleared
+		}
+		has_ground_combat = no
+	}
+	effect = {
+		hidden_effect = {
+			set_planet_flag = ongoing_vault_infiltration
+			add_modifier = {
+				modifier = acot_modifier_vault_delay
+				months = 6
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = acot_phanon_rival_plan_initiated
+					}
+				}
+				if = {
+					limit = {
+						owner = {
+							NOT = {
+								has_country_flag = acot_phanon_tech_stage_one_enabled
+							}
+						}
+					}
+					planet_event = {
+						id = acot_pmc.12
+					}
+				}
+				if = {
+					limit = {
+						owner = {
+							has_country_flag = acot_phanon_tech_stage_one_enabled
+							NOT = {
+								has_country_flag = acot_phanon_tech_stage_two_enabled
+							}
+						}
+					}
+					planet_event = {
+						id = acot_pmc.13
+					}
+				}
+				if = {
+					limit = {
+						owner = {
+							has_country_flag = acot_phanon_tech_stage_two_enabled
+							NOT = {
+								has_country_flag = acot_phanon_tech_stage_three_enabled
+							}
+						}
+					}
+					planet_event = {
+						id = acot_pmc.14
+					}
+				}
+				if = {
+					limit = {
+						owner = {
+							has_country_flag = acot_phanon_tech_stage_three_enabled
+							NOT = {
+								has_country_flag = acot_phanon_tech_stage_four_enabled
+							}
+						}
+					}
+					planet_event = {
+						id = acot_pmc.15
+					}
+				}
+			}
+			else = {
+				planet_event = {
+					id = acot_pmc.16
+				}			
+			}
+		}
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+# Ancient Empire Compat
+frameag_evac = {
+	owned_planets_only = yes
+	icon = decision_federation_fleet
+
+	potential = {
+		owner = {
+			has_origin = origin_frameworld
+		}
+		frameag_colony_exception = yes
+	}
+	
+	resources = {
+		category = decisions
+		cost = {
+			unity = 500
+		}
+	}
+
+	effect = {
+		owner = {
+			capital_scope = {
+				save_event_target_as = target_frameworld
+			}
+		}
+		every_owned_pop = {
+			resettle_pop = {
+				pop = THIS
+				planet = event_target:target_frameworld
+			}
+		}
+	}
+}

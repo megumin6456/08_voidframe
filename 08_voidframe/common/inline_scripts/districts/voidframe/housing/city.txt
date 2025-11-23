@@ -1,0 +1,240 @@
+district_giga_voidframe_city_$tier$ = {
+	base_buildtime = $time$
+	icon = district_giga_voidframe_city_$tier$
+	is_capped_by_modifier = no
+	exempt_from_ai_planet_specialization = yes
+	
+	show_on_uncolonized = {
+		exists = from
+		from = { is_gestalt = no }
+		OR = {
+			uses_district_set = giga_frameworld
+		}
+		is_voidframe_exclusive_$tier$ = yes
+	}
+	
+	potential = {
+		exists = owner
+		owner = { is_gestalt = no }
+		uses_district_set = giga_frameworld
+		is_voidframe_exclusive_$tier$ = yes
+	}
+	
+	conversion_ratio = 1
+	convert_to = {
+		district_giga_frameworld_nexus
+		district_giga_frameworld_city
+		district_giga_frameworld_hive
+		
+		district_giga_frameworld_city_advanced
+		district_giga_frameworld_nexus_advanced
+		district_giga_frameworld_hive_advanced
+
+		district_giga_voidframe_city_dm
+		district_giga_voidframe_city_de
+		district_giga_voidframe_city_pe
+		district_giga_voidframe_city_se
+
+		district_giga_voidframe_hive_dm
+		district_giga_voidframe_hive_de
+		district_giga_voidframe_hive_pe
+		district_giga_voidframe_hive_se
+
+		district_giga_voidframe_nexus_dm
+		district_giga_voidframe_nexus_de
+		district_giga_voidframe_nexus_pe
+		district_giga_voidframe_nexus_se
+	}
+	
+	resources = {
+		category = planet_districts_cities
+		cost = {
+			$cost$
+		}
+		upkeep = {
+			trigger = {
+				has_planet_flag = frameworld_advanced_city
+			}
+			$adv_upkeep$
+		}
+		upkeep = {
+			$upkeep$
+		}
+	}
+	
+	planet_modifier = {
+		planet_housing_add = $house$
+		planet_max_buildings_add = 1
+	}
+
+	triggered_planet_modifier = {
+		potential = { has_planet_flag = frameworld_advanced_city }
+		planet_housing_add = 5
+		planet_max_buildings_add = 1
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_valid_civic = civic_agrarian_idyll
+			}
+			NOT = { has_planet_flag = frameworld_advanced_city }
+		}
+		modifier = {
+			planet_housing_add = -1
+		}
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+			}
+			NOT = { has_planet_flag = frameworld_advanced_city }
+		}
+		modifier = {
+			job_clerk_add = 1
+		}
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_active_tradition = tr_prosperity_public_works }
+			NOT = { has_planet_flag = frameworld_advanced_city }
+		}
+		modifier = {
+			planet_housing_add = 1
+		}
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_housing_1
+			}
+			NOT = { has_planet_flag = frameworld_advanced_city }
+		}
+		modifier = {
+			planet_housing_add = 1
+		}
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_housing_2
+				NOT = { has_valid_civic = civic_agrarian_idyll }
+			}
+			NOT = { has_planet_flag = frameworld_advanced_city }
+		}
+		modifier = {
+			planet_housing_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_valid_civic = civic_agrarian_idyll
+			}
+			has_planet_flag = frameworld_advanced_city
+		}
+		modifier = {
+			planet_housing_add = -2
+		}
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+			}
+			has_planet_flag = frameworld_advanced_city
+		}
+		modifier = {
+			job_clerk_add = 2
+		}
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_active_tradition = tr_prosperity_public_works }
+			has_planet_flag = frameworld_advanced_city
+		}
+		modifier = {
+			planet_housing_add = 2
+		}
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_housing_1
+			}
+			has_planet_flag = frameworld_advanced_city
+		}
+		modifier = {
+			planet_housing_add = 2
+		}
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_housing_2
+				NOT = { has_valid_civic = civic_agrarian_idyll }
+			}
+			has_planet_flag = frameworld_advanced_city
+		}
+		modifier = {
+			planet_housing_add = 2
+		}
+	}
+	
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_gestalt = no }
+		}
+		text = job_clerk_effect_desc
+	}
+
+	##virtuality clerks
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+			}
+			owner = { has_active_tradition = tr_virtuality_4 }
+			NOT = { has_planet_flag = frameworld_advanced_city }
+		}
+		modifier = {
+			job_clerk_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+			}
+			owner = { has_active_tradition = tr_virtuality_4 }
+			has_planet_flag = frameworld_advanced_city
+		}
+		modifier = {
+			job_clerk_add = 2
+		}
+	}
+}

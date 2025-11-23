@@ -1,0 +1,71 @@
+# Ancient Empire Compat - Code from Eternal Lights modlist
+# Search for frameag for any related code
+
+frameag_colony_exception = {
+	OR = {
+		has_planet_flag = ag_ancient_theta_shielded_world
+		has_planet_flag = ag_ancient_beta_shielded_world
+		has_planet_flag = ag_ancient_gamma_shielded_world
+		has_planet_flag = ag_ancient_epsilon_shielded_world
+		has_planet_flag = ag_ancient_epsilon_shielded_world_2
+		has_planet_flag = ag_ancient_epsilon_shielded_world_3
+		has_planet_flag = ag_ancient_eta_shielded_world
+	}
+}
+
+can_have_frameworld_outpost = {
+	custom_tooltip = { fail_text = "requires_surveyed_planet"				is_surveyed = { who = prev.from status = yes } }
+	custom_tooltip = { fail_text = "requires_no_anomaly"					has_anomaly = no }
+	custom_tooltip = { fail_text = "requires_not_asteroid"					is_asteroid = no }
+	#custom_tooltip = { fail_text = "must_build_around_habitable_planet"		is_colonizable = yes is_artificial = no }
+
+	custom_tooltip = { fail_text = "requires_not_terraforming"				is_terraforming = no }
+
+	custom_tooltip = { fail_text = "must_build_around_habitable_planet"		
+		or = {
+			and = { is_colonizable = yes is_artificial = no }
+
+			# voidframe overwrite
+			frameag_colony_exception = yes # ancient empire
+			AND = { # fractured worlds
+				is_planet_class = pc_dark_fractured
+				space_owner = {	has_technology = tech_acot_colonize_fractured }
+			}			
+
+			is_planet_class = pc_giga_planetary_computer
+			is_planet_class = pc_ringworld_habitable
+			is_planet_class = pc_shattered_ring_habitable
+			#is_planet_class = pc_habitat
+			#is_planet_class = pc_gigaorbital_ring
+			is_planet_class = pc_habitable_gas_giant
+			#is_planet_class = pc_interstellar_habitat
+			is_planet_class = pc_interstellar_ringworld_habitable
+			is_planet_class = pc_giga_penrose_habitable
+			is_planet_class = pc_ringworld_city
+			is_planet_class = pc_ringworld_machine
+			is_planet_class = pc_ringworld_hive
+			#is_planet_class = pc_equatorial_shipyard
+			is_planet_class = pc_birch
+			is_planet_class = pc_squareworld_habitable
+			#is_planet_class = pc_virtual_reality
+			#is_planet_class = pc_virtual_industry
+			#is_planet_class = pc_virtual_stellar_industry
+			is_planet_class = pc_alderson_slice_gaia
+			is_planet_class = pc_alderson_slice_pc
+			is_planet_class = pc_alderson_slice_ecu
+			is_planet_class = pc_alderson_slice_hive
+			is_planet_class = pc_alderson_slice_machine
+			is_planet_class = pc_alderson_slice_gaia_shattered
+			#is_planet_class = pc_pouchkinn_black_hole
+			is_planet_class = pc_flat_world
+		}
+	}
+	custom_tooltip = {
+		fail_text = "requires_not_astral_scar"
+		is_astral_scar = no
+	}
+	custom_tooltip = { fail_text = "requires_not_star"						is_star = no }
+	#custom_tooltip = { fail_text = "requires_non_giga_habitable_structure"	giga_habitable_structure = no }
+	custom_tooltip = { fail_text = "requires_no_frameworld_outpost" 		has_frameworld_outpost = no }
+	custom_tooltip = { fail_text = "requires_no_colony"						is_colony = no }
+}

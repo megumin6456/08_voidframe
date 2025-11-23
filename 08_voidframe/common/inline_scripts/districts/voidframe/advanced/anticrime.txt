@@ -1,0 +1,126 @@
+district_giga_voidframe_anticrime_$tier$ = {
+	base_buildtime = $time$
+	icon = district_giga_voidframe_anticrime_$tier$
+	is_capped_by_modifier = no
+	
+	show_on_uncolonized = {
+		exists = from
+		uses_district_set = giga_frameworld
+		is_voidframe_exclusive_$tier$ = yes
+	}
+	
+	potential = {
+		exists = owner
+		uses_district_set = giga_frameworld
+		if = {
+			limit = { is_voidframe_outdated_$tier$ = yes }
+			$pass_condition$
+			NOR = { $fail_condition$ }
+		} else = {
+			is_voidframe_$tier$ = yes
+			OR = {
+				$pass_condition$
+				$fail_condition$
+			}
+		}
+	}
+
+	prerequisites = {
+		$reqtech$
+	}
+
+	show_tech_unlock_if = {
+		giga_has_frameworld_origin = yes
+	}
+	
+	conversion_ratio = 1
+	convert_to = {
+		district_giga_frameworld_anticrime
+
+		district_giga_voidframe_anticrime_dm
+		district_giga_voidframe_anticrime_de
+		district_giga_voidframe_anticrime_pe
+		district_giga_voidframe_anticrime_se
+	}
+
+	resources = {
+		category = planet_districts_hab_research
+		cost = {
+			$cost$
+		}
+		upkeep = {
+			$upkeep$
+		}
+	}
+	
+	planet_modifier = {
+		#planet_housing_add = $house$
+	}
+	
+	# ACOT
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+			}
+			OR = {
+				has_voidframe_mods_aot = no
+				always = $ignore_aot$
+			}
+		}
+		modifier = {
+			$acot_normjob$
+		}
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+			OR = {
+				has_voidframe_mods_aot = no
+				always = $ignore_aot$
+			}
+		}
+		modifier = {
+			$acot_gestjob$
+		}
+	}
+
+	# AOT
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+			}
+			has_voidframe_mods_aot = yes
+		}
+		modifier = {
+			$aot_normjob$
+		}
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+			has_voidframe_mods_aot = yes
+		}
+		modifier = {
+			$aot_gestjob$
+		}
+	}
+
+	ai_resource_production = {
+		ai_unobtainium = 1000
+		trigger = {
+			frameworld_want_anticrime = yes
+		}
+	}
+}

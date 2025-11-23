@@ -1,0 +1,194 @@
+district_giga_voidframe_nexus_$tier$ = {
+	base_buildtime = $time$
+	icon = district_giga_voidframe_nexus_$tier$
+	is_capped_by_modifier = no
+	exempt_from_ai_planet_specialization = yes
+	
+	show_on_uncolonized = {
+		from = { is_machine_empire = yes }
+		uses_district_set = giga_frameworld
+		is_voidframe_exclusive_$tier$ = yes
+	}
+	
+	potential = {
+		exists = owner
+		owner = { is_machine_empire = yes }
+		uses_district_set = giga_frameworld
+		is_voidframe_exclusive_$tier$ = yes
+	}
+
+	allow = {
+		#hidden_trigger = {
+			exists = owner
+			or = {
+				owner = {
+					is_ai = no
+				}
+
+				# we need more housing
+				free_housing < 10
+
+				# we might still need to unlock buildings
+				num_districts = {
+					type = district_giga_voidframe_nexus_$tier$
+					value < 5
+				}
+
+				# if we need more maintenance drones
+				frameworld_needs_more_maintenance_drones = yes
+			}
+		#}
+	}
+	
+	conversion_ratio = 1
+	convert_to = {
+		district_giga_frameworld_city
+		district_giga_frameworld_nexus
+		district_giga_frameworld_hive
+		
+		district_giga_frameworld_city_advanced
+		district_giga_frameworld_nexus_advanced
+		district_giga_frameworld_hive_advanced
+
+		district_giga_voidframe_city_dm
+		district_giga_voidframe_city_de
+		district_giga_voidframe_city_pe
+		district_giga_voidframe_city_se
+
+		district_giga_voidframe_hive_dm
+		district_giga_voidframe_hive_de
+		district_giga_voidframe_hive_pe
+		district_giga_voidframe_hive_se
+
+		district_giga_voidframe_nexus_dm
+		district_giga_voidframe_nexus_de
+		district_giga_voidframe_nexus_pe
+		district_giga_voidframe_nexus_se
+	}
+	
+	resources = {
+		category = planet_districts_cities
+		cost = {
+			$cost$
+		}
+		upkeep = {
+			trigger = {
+				has_planet_flag = frameworld_advanced_city
+			}
+			$adv_upkeep$
+		}
+		upkeep = {
+			$upkeep$
+		}
+	}
+	
+	planet_modifier = {
+		planet_housing_add = $house$
+		job_maintenance_drone_add = 3
+		planet_max_buildings_add = 1
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			has_planet_flag = frameworld_advanced_city
+		}
+		modifier = {
+			planet_housing_add = 5
+			job_maintenance_drone_add = 3
+			planet_max_buildings_add = 1
+		}
+	}
+	
+	# Bonus tech & trads for normi vs adv
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_technology = tech_housing_1 }
+			NOT = { has_planet_flag = frameworld_advanced_city }
+		}
+		modifier = {
+			planet_housing_add = 1
+		}
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_technology = tech_housing_2 }
+			NOT = { has_planet_flag = frameworld_advanced_city }
+		}
+		modifier = {
+			planet_housing_add = 1
+			job_maintenance_drone_add = 1
+		}
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_active_tradition = tr_prosperity_extended_hives }
+			NOT = { has_planet_flag = frameworld_advanced_city }
+		}
+		modifier = {
+			planet_housing_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_technology = tech_housing_1 }
+			has_planet_flag = frameworld_advanced_city
+		}
+		modifier = {
+			planet_housing_add = 2
+		}
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_technology = tech_housing_2 }
+			has_planet_flag = frameworld_advanced_city
+		}
+		modifier = {
+			planet_housing_add = 2
+			job_maintenance_drone_add = 1
+		}
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_active_tradition = tr_prosperity_extended_hives }
+			has_planet_flag = frameworld_advanced_city
+		}
+		modifier = {
+			planet_housing_add = 2
+		}
+	}
+
+	#virtuality maintenance
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_active_tradition = tr_virtuality_4 }
+			NOT = { has_planet_flag = frameworld_advanced_city }
+		}
+		modifier = {
+			job_maintenance_drone_add = 2
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_active_tradition = tr_virtuality_4 }
+			has_planet_flag = frameworld_advanced_city
+		}
+		modifier = {
+			job_maintenance_drone_add = 4
+		}
+	}
+	
+}

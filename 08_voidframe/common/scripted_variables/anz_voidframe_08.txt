@@ -1,0 +1,2 @@
+# Requested by Inny for Compat
+@anz_voidframe_mod = 1

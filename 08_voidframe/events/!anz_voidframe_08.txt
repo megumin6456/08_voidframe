@@ -1,0 +1,211 @@
+# Used to overwrite gigas & acot
+namespace = acot_digsite_events
+
+country_event = {
+	id = acot_digsite_events.1
+	title = acot_digsite_events.1.name
+	desc = acot_digsite_events.1.desc
+	picture = GFX_acot_fractured_world
+	show_sound = event_mystery
+	location = from
+	
+	is_triggered_only = yes
+
+	immediate = {
+		# replaced from with event target as it get's called from diferent scope when building planetary outpost
+		event_target:acot_digsite_1_planet = {
+			create_archaeological_site = sites_acot_old_warfield
+		}
+	}
+
+	option = {
+		name = EXCELLENT
+	}
+}
+
+namespace = giga_frameworld_origin
+
+# resettle pops to homeworld, and make sure the anti-pop-growth mod is applied
+# Modified to have Ancient Empire Compat - Code from Eternal Lights modlist
+country_event = {
+	
+	id = giga_frameworld_origin.100
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		giga_has_frameworld_origin = yes
+		exists = capital_scope
+		capital_scope = {
+			has_orbital_bombardment = no
+			is_occupied_flag = no
+			NOT = { has_modifier = anz_quarantine_planet } # used by my modlist - left here when copying over
+		}
+	}
+	
+	immediate = {
+		random_owned_planet = {
+			limit = { has_planet_flag = giga_frameworld@root }
+			save_event_target_as = target_frameworld
+		}
+
+		set_update_modifiers_batch = begin
+		every_owned_planet = {
+			limit = {
+				nor = {
+					is_same_value = event_target:target_frameworld
+					is_planet_class = pc_cosmogenesis_world
+					frameag_colony_exception = yes
+				}
+				has_orbital_bombardment = no
+				is_occupied_flag = no
+				is_under_colonization = no
+			}
+
+			# add overextension if it's missing
+			if = {
+				limit = {
+					not = {
+						has_modifier = frameworld_conquered
+					}
+				}
+				add_modifier = {
+					modifier = frameworld_conquered
+					clear_on_owner_change = yes
+				}
+			}
+
+			# remove resettlement block if we're not at war
+			if = {
+				limit = {
+					root = { is_at_war = no }
+					has_modifier = frameworld_conquered_no_resettle
+				}
+				remove_modifier = frameworld_conquered_no_resettle
+			}
+
+			# resettle pops to the homeworld
+			# if we're not blocked by war or recent acquisition, anyway...
+			if = {
+				limit = {
+					not = { has_modifier = frameworld_conquered_no_resettle }
+					any_owned_pop = {
+						nand = {
+							is_robotic_species = yes
+							has_virtual_species_trait = yes
+						}
+					}
+				}
+				while = {
+					# 5% or 4, whichever is more
+					count = value:giga_frameworld_resettlement_count
+					random_owned_pop = {
+						limit = {
+							nand = {
+								is_robotic_species = yes
+								has_virtual_species_trait = yes
+							}
+						}
+						resettle_pop = {
+							pop = this
+							planet = event_target:target_frameworld
+						}
+					}
+				}
+			}
+
+			# shut down some virtual pops anyway
+			if = {
+				limit = {
+					any_owned_pop = {
+						is_robotic_species = yes
+						has_virtual_species_trait = yes
+					}
+				}
+				while = {
+					# 5% or 4, whichever is more
+					count = value:giga_frameworld_resettlement_count
+					random_owned_pop = {
+						limit = {
+							is_robotic_species = yes
+							has_virtual_species_trait = yes
+						}
+						kill_pop = yes
+					}
+				}
+			}
+
+			# if there are no pops left, clear out the planet and place an outpost
+			if = {
+				limit = {
+					num_pops = 0
+				}
+				
+				#remove_all_buildings = yes
+				#remove_all_districts = yes
+				#destroy_colony = yes
+				
+				if = {
+					limit = {
+						can_have_frameworld_outpost = yes
+					}
+					set_planet_flag = frameworld_built_outpost
+					#giga_frameworld_create_outpost = { WHO = root RESETTLED = yes}
+					#root = {
+					#	giga_frameworld_recalculate_outpost_bonus = yes
+					#}
+					giga_frameworld_create_outpost = {
+						planet = this
+						owner = root
+					}
+				}
+
+				root = {
+					country_event = {
+						id = giga_frameworld_origin.101
+						scopes = { from = prev }
+					}
+				}
+			}
+		}
+		set_update_modifiers_batch = end
+	}
+}
+
+# overwrite an extra check
+planet_event = {
+	id = giga_frameworld_origin.108
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		from = {
+			giga_has_frameworld_origin = yes
+		}
+		nor = {
+			has_planet_flag = giga_frameworld@from
+			is_planet_class = pc_cosmogenesis_world
+			frameag_colony_exception = yes # look at me I'm over here! hehe
+		}
+	}
+
+	immediate = {
+		add_modifier = {
+			modifier = frameworld_conquered
+			clear_on_owner_change = yes
+		}
+
+		if = {
+			limit = {
+				from = {
+					is_at_war = yes
+				}
+			}
+			add_modifier = {
+				modifier = frameworld_conquered_no_resettle
+				clear_on_owner_change = yes
+				years = 5 # this many years of no resettlement while at war
+			}
+		}
+	}
+}

@@ -1,0 +1,44 @@
+namespace = anz_voidframe
+
+# Global flag to say it's installed
+event = {
+	id = anz_voidframe.0
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		set_global_flag = anz_voidframe_installed
+		# all frameworld type origins will get the update
+		every_playable_country  = {
+			limit = { giga_has_frameworld_origin = yes }
+			country_event = { id = anz_voidframe.1 days = 3 }
+		}
+	}
+	
+}
+
+# adds documentation to all frameworld type origins
+# THEY MUST USE giga_frameworld_docs_chain
+country_event = {
+	id = anz_voidframe.1
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		create_point_of_interest = {
+			id = giga_frameworld_docs_chain.9
+			name = "giga_frameworld_docs_voidframe"
+			desc = "giga_frameworld_docs_voidframe_desc"
+			event_chain = "giga_frameworld_docs_chain"
+			location = capital_scope
+		}
+	
+		create_point_of_interest = {
+			id = giga_frameworld_docs_chain.10
+			name = "giga_frameworld_docs_voidframe_two"
+			desc = "giga_frameworld_docs_voidframe_two_desc"
+			event_chain = "giga_frameworld_docs_chain"
+			location = capital_scope
+		}
+	}
+}
