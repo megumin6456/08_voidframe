@@ -189,4 +189,25 @@ spriteTypes = {
         name = "GFX_anz_voidframe_zone_TE_UNITY"
         texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_TE_UNITY.dds"
     }
+
+    spriteType = {
+        name = "GFX_anz_voidframe_zone_DM_REFINERY"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_DM_REFINERY.dds"
+    }
+    spriteType = {
+        name = "GFX_anz_voidframe_zone_DE_REFINERY"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_DE_REFINERY.dds"
+    }
+    spriteType = {
+        name = "GFX_anz_voidframe_zone_PE_REFINERY"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_PE_REFINERY.dds"
+    }
+    spriteType = {
+        name = "GFX_anz_voidframe_zone_SE_REFINERY"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_SE_REFINERY.dds"
+    }
+    spriteType = {
+        name = "GFX_anz_voidframe_zone_TE_REFINERY"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_TE_REFINERY.dds"
+    }
 }

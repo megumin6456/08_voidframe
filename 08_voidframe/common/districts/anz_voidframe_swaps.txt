@@ -477,7 +477,7 @@ district_giga_voidframe_research_se = {
     }
 }
 
-# REFINERY #TODO: put back the overlay icon once the district icon is cleaned up
+# REFINERY
 district_giga_voidframe_refinery_dm = {
     icon = district_giga_voidframe_strat_dm
     #overlay_icon = GFX_giga_district_strategic_resources
@@ -522,6 +522,8 @@ district_giga_voidframe_refinery_se = {
 # SECURITY
 
 # AMENITIES
+
+# DYSTOPIAN AMENITIES
 
 # SUPERTENSILES
 

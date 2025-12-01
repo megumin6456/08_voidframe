@@ -1,6 +1,7 @@
 #############################################################
 # Districts that currently have no alpha equivalent just get more jobs
 #############################################################
+#TODO, fix the borked jobs
 
 # FOUNDRY
 zone_voidframe_zone_DM_foundry = {
@@ -2394,7 +2395,7 @@ zone_voidframe_zone_SE_research = {
 
 # REFINERY #TODO ICON
 zone_voidframe_zone_DM_refinery = {
-    icon = GFX_anz_voidframe_zone_DM_strategic
+    icon = GFX_anz_voidframe_zone_DM_REFINERY
 
     swap_type = district_giga_voidframe_refinery_dm
     swap_type_weight = 10
@@ -2442,7 +2443,7 @@ zone_voidframe_zone_DM_refinery = {
     }
 }
 zone_voidframe_zone_DE_refinery = {
-    icon = GFX_anz_voidframe_zone_DE_strategic
+    icon = GFX_anz_voidframe_zone_DE_REFINERY
 
     swap_type = district_giga_voidframe_refinery_de
     swap_type_weight = 10
@@ -2490,7 +2491,7 @@ zone_voidframe_zone_DE_refinery = {
     }
 } #no gestalt or individual
 zone_voidframe_zone_PE_refinery = {
-    icon = GFX_anz_voidframe_zone_PE_strategic
+    icon = GFX_anz_voidframe_zone_PE_REFINERY
 
     swap_type = district_giga_voidframe_refinery_pe
     swap_type_weight = 10
@@ -2538,7 +2539,7 @@ zone_voidframe_zone_PE_refinery = {
     }
 }
 zone_voidframe_zone_SE_refinery = {
-    icon = GFX_anz_voidframe_zone_SE_strategic
+    icon = GFX_anz_voidframe_zone_SE_REFINERY
 
     swap_type = district_giga_voidframe_refinery_se
     swap_type_weight = 10
