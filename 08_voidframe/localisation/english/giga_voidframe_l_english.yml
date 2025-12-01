@@ -446,18 +446,26 @@ phanon_srname_ee: "Runic"
   district_giga_voidframe_trade_dm: "Moonless Market"
   district_giga_voidframe_trade_dm_plural: "Moonless Markets"
   district_giga_voidframe_trade_dm_desc: "These markets are shrouded in a dark aura from the enigmatic technology used in the lights. To the traders working here however, the atmosphere is a bonus, as it helps them keep their transactions anonymous."
+  zone_voidframe_zone_DM_trade: "$building_dm_commercial_megaplex$"
+  zone_voidframe_zone_DM_trade_desc: "$building_dm_commercial_megaplex_desc$"
 
   district_giga_voidframe_trade_de: "Market of Imagination"
   district_giga_voidframe_trade_de_plural: "Markets of Imagination"
   district_giga_voidframe_trade_de_desc: "Delphic AIs facilitate the transmission and exchange of ideas. The marketplace of ideas is now a physical location, one where we can discuss the workings of the galaxy with other enlightened minds. For a price of course."
+  zone_voidframe_zone_DE_trade: "$building_ae_commercial_megaplex$"
+  zone_voidframe_zone_DE_trade_desc: "$building_ae_commercial_megaplex_desc$"
 
   district_giga_voidframe_trade_pe: "§R$phanon_srname_ee$ Plaza§!"
   district_giga_voidframe_trade_pe_plural: "§R$phanon_srname_ee$ Plazas§!"
   district_giga_voidframe_trade_pe_desc: "$phanon_classified$"
+  zone_voidframe_zone_PE_trade: "$building_phanon_commercial_megaplex$"
+  zone_voidframe_zone_PE_trade_desc: "$building_phanon_commercial_megaplex_desc$"
 
   district_giga_voidframe_trade_se: "§HCosmic Bazaar§!"
   district_giga_voidframe_trade_se_plural: "§HCosmic Bazaars§!"
   district_giga_voidframe_trade_se_desc: "§HA market teeming with activity, the traders here do not deal is mundane corporate stocks and goods, but speculate on the fates of the stars themselves.§!"
+  zone_voidframe_zone_SE_trade: "$building_stellarite_commercial_megaplex$"
+  zone_voidframe_zone_SE_trade_desc: "$building_stellarite_commercial_megaplex_desc$"
 
   # _te: "§M §!"
   # _te_plural: "§M §!"
@@ -1008,25 +1016,25 @@ phanon_srname_ee: "Runic"
 
 # gest super amenities
 
-  job_anz_voidframe_frame_overseer_drone_dm: "Awakened Overseer"
-  job_anz_voidframe_frame_overseer_drone_dm_plural: "Awakened Overseers"
-  job_anz_voidframe_frame_overseer_drone_dm_desc: "Specialized drones created using dark matter, they have intimate knowledge of both their fellow drones and the frame, and how to fix issues that arise."
-  mod_job_anz_voidframe_frame_overseer_drone_dm_add: "Awakened Overseers"
-
-  job_anz_voidframe_frame_overseer_drone_de: "Ascended Overseer"
-  job_anz_voidframe_frame_overseer_drone_de_plural: "Ascended Overseers"
-  job_anz_voidframe_frame_overseer_drone_de_desc: "Adding dark energy to the formation process of these superior maintenance drones has increased their efficiency."
-  mod_job_anz_voidframe_frame_overseer_drone_de_add: "Ascended Overseers"
-
-  job_anz_voidframe_frame_overseer_drone_pe: "$phanon_srname_ee$ Supervisor"
-  job_anz_voidframe_frame_overseer_drone_pe_plural: "$phanon_srname_ee$ Supervisors"
-  job_anz_voidframe_frame_overseer_drone_pe_desc: "$phanon_classified$"
-  mod_job_anz_voidframe_frame_overseer_drone_pe_add: "$phanon_srname_ee$ Supervisors"
-
-  job_anz_voidframe_frame_overseer_drone_se: "Supreme Overseer"
-  job_anz_voidframe_frame_overseer_drone_se_plural: "Supreme Overseers"
-  job_anz_voidframe_frame_overseer_drone_se_desc: "The ultimate in frame maintenance, these drones command systems that can remake stars."
-  mod_job_anz_voidframe_frame_overseer_drone_se_add: "Supreme Overseers"
+  # job_anz_voidframe_frame_overseer_drone_dm: "Awakened Overseer"
+  # job_anz_voidframe_frame_overseer_drone_dm_plural: "Awakened Overseers"
+  # job_anz_voidframe_frame_overseer_drone_dm_desc: "Specialized drones created using dark matter, they have intimate knowledge of both their fellow drones and the frame, and how to fix issues that arise."
+  # mod_job_anz_voidframe_frame_overseer_drone_dm_add: "Awakened Overseers"
+  #
+  # job_anz_voidframe_frame_overseer_drone_de: "Ascended Overseer"
+  # job_anz_voidframe_frame_overseer_drone_de_plural: "Ascended Overseers"
+  # job_anz_voidframe_frame_overseer_drone_de_desc: "Adding dark energy to the formation process of these superior maintenance drones has increased their efficiency."
+  # mod_job_anz_voidframe_frame_overseer_drone_de_add: "Ascended Overseers"
+  #
+  # job_anz_voidframe_frame_overseer_drone_pe: "$phanon_srname_ee$ Supervisor"
+  # job_anz_voidframe_frame_overseer_drone_pe_plural: "$phanon_srname_ee$ Supervisors"
+  # job_anz_voidframe_frame_overseer_drone_pe_desc: "$phanon_classified$"
+  # mod_job_anz_voidframe_frame_overseer_drone_pe_add: "$phanon_srname_ee$ Supervisors"
+  #
+  # job_anz_voidframe_frame_overseer_drone_se: "Supreme Overseer"
+  # job_anz_voidframe_frame_overseer_drone_se_plural: "Supreme Overseers"
+  # job_anz_voidframe_frame_overseer_drone_se_desc: "The ultimate in frame maintenance, these drones command systems that can remake stars."
+  # mod_job_anz_voidframe_frame_overseer_drone_se_add: "Supreme Overseers"
 
 # trader
 
@@ -1050,49 +1058,49 @@ phanon_srname_ee: "Runic"
   job_anz_voidframe_trader_se_desc: "These noble capitalists speculate on the fates of the stars themselves, and their stock machinations can go up to blowing up several star systems to influence a stock."
   mod_job_anz_voidframe_trader_se_add: "Cosmic Tycoons"
 
-# normal soldiers (not in use)
-
-  job_anz_voidframe_soldier_dm: "Shadow Shade"
-  job_anz_voidframe_soldier_dm_plural: "Shadow Shades"
-  job_anz_voidframe_soldier_dm_desc: "These soldiers are taught to take advantage of the frame's defensive systems, hiding in the artificial shadows created with dark matter before striking with enigmatic weaponry."
-  mod_job_anz_voidframe_soldier_dm_add: "Shadow Shades"
-
-  job_anz_voidframe_soldier_de: "Nightfall Trooper"
-  job_anz_voidframe_soldier_de_plural: "Nightfall Troopers"
-  job_anz_voidframe_soldier_de_desc: "These soldiers cast a pall of shadow in their vicinity, plunging the enemy in unnatural, unpiercable darkness within the fortified zones of the frame."
-  mod_job_anz_voidframe_soldier_de_add: "Nightfall Troopers"
-
-  job_anz_voidframe_soldier_pe: "$phanon_srname_ee$ Jaeger"
-  job_anz_voidframe_soldier_pe_plural: "$phanon_srname_ee$ Jaegers"
-  job_anz_voidframe_soldier_pe_desc: "$phanon_classified$"
-  mod_job_anz_voidframe_soldier_pe_add: "$phanon_srname_ee$ Jaegers"
-
-  job_anz_voidframe_soldier_se: "Quasar Ranger"
-  job_anz_voidframe_soldier_se_plural: "Quasar Rangers"
-  job_anz_voidframe_soldier_se_desc: "To be part of this elite defense force, prospective members must first serve several tours around active black holes, not for the faint of heart."
-  mod_job_anz_voidframe_soldier_se_add: "Quasar Rangers"
-
-# gestalt soldiers (not in use)
-
-  job_anz_voidframe_soldier_drone_dm: "Shadow Shade"
-  job_anz_voidframe_soldier_drone_dm_plural: "Shadow Shades"
-  job_anz_voidframe_soldier_drone_dm_desc: "These drones are interface with the frame's defensive systems, hiding in the artificial shadows created with dark matter before striking with enigmatic weaponry."
-  mod_job_anz_voidframe_soldier_drone_dm_add: "Shadow Shades"
-
-  job_anz_voidframe_soldier_drone_de: "Nightfall Drone"
-  job_anz_voidframe_soldier_drone_de_plural: "Nightfall Drones"
-  job_anz_voidframe_soldier_drone_de_desc: "These drones cast a pall of shadow in their vicinity, plunging the enemy in unnatural, unpiercable darkness within the fortified zones of the frame."
-  mod_job_anz_voidframe_soldier_drone_de_add: "Nightfall Drones"
-
-  job_anz_voidframe_soldier_drone_pe: "$phanon_srname_ee$ Jaeger"
-  job_anz_voidframe_soldier_drone_pe_plural: "$phanon_srname_ee$ Jaegers"
-  job_anz_voidframe_soldier_drone_pe_desc: "$phanon_classified$"
-  mod_job_anz_voidframe_soldier_drone_pe_add: "$phanon_srname_ee$ Jaegers"
-
-  job_anz_voidframe_soldier_drone_se: "Quasar Guard"
-  job_anz_voidframe_soldier_drone_se_plural: "Quasar Guards"
-  job_anz_voidframe_soldier_drone_se_desc: "To be part of this elite defense force, prospective drones must first serve several guard cycles around active black holes. This screens out latent mental / physical defects in the drones."
-  mod_job_anz_voidframe_soldier_drone_se_add: "Quasar Guards"
+# # normal soldiers (not in use)
+#
+#   job_anz_voidframe_soldier_dm: "Shadow Shade"
+#   job_anz_voidframe_soldier_dm_plural: "Shadow Shades"
+#   job_anz_voidframe_soldier_dm_desc: "These soldiers are taught to take advantage of the frame's defensive systems, hiding in the artificial shadows created with dark matter before striking with enigmatic weaponry."
+#   mod_job_anz_voidframe_soldier_dm_add: "Shadow Shades"
+#
+#   job_anz_voidframe_soldier_de: "Nightfall Trooper"
+#   job_anz_voidframe_soldier_de_plural: "Nightfall Troopers"
+#   job_anz_voidframe_soldier_de_desc: "These soldiers cast a pall of shadow in their vicinity, plunging the enemy in unnatural, unpiercable darkness within the fortified zones of the frame."
+#   mod_job_anz_voidframe_soldier_de_add: "Nightfall Troopers"
+#
+#   job_anz_voidframe_soldier_pe: "$phanon_srname_ee$ Jaeger"
+#   job_anz_voidframe_soldier_pe_plural: "$phanon_srname_ee$ Jaegers"
+#   job_anz_voidframe_soldier_pe_desc: "$phanon_classified$"
+#   mod_job_anz_voidframe_soldier_pe_add: "$phanon_srname_ee$ Jaegers"
+#
+#   job_anz_voidframe_soldier_se: "Quasar Ranger"
+#   job_anz_voidframe_soldier_se_plural: "Quasar Rangers"
+#   job_anz_voidframe_soldier_se_desc: "To be part of this elite defense force, prospective members must first serve several tours around active black holes, not for the faint of heart."
+#   mod_job_anz_voidframe_soldier_se_add: "Quasar Rangers"
+#
+# # gestalt soldiers (not in use)
+#
+#   job_anz_voidframe_soldier_drone_dm: "Shadow Shade"
+#   job_anz_voidframe_soldier_drone_dm_plural: "Shadow Shades"
+#   job_anz_voidframe_soldier_drone_dm_desc: "These drones are interface with the frame's defensive systems, hiding in the artificial shadows created with dark matter before striking with enigmatic weaponry."
+#   mod_job_anz_voidframe_soldier_drone_dm_add: "Shadow Shades"
+#
+#   job_anz_voidframe_soldier_drone_de: "Nightfall Drone"
+#   job_anz_voidframe_soldier_drone_de_plural: "Nightfall Drones"
+#   job_anz_voidframe_soldier_drone_de_desc: "These drones cast a pall of shadow in their vicinity, plunging the enemy in unnatural, unpiercable darkness within the fortified zones of the frame."
+#   mod_job_anz_voidframe_soldier_drone_de_add: "Nightfall Drones"
+#
+#   job_anz_voidframe_soldier_drone_pe: "$phanon_srname_ee$ Jaeger"
+#   job_anz_voidframe_soldier_drone_pe_plural: "$phanon_srname_ee$ Jaegers"
+#   job_anz_voidframe_soldier_drone_pe_desc: "$phanon_classified$"
+#   mod_job_anz_voidframe_soldier_drone_pe_add: "$phanon_srname_ee$ Jaegers"
+#
+#   job_anz_voidframe_soldier_drone_se: "Quasar Guard"
+#   job_anz_voidframe_soldier_drone_se_plural: "Quasar Guards"
+#   job_anz_voidframe_soldier_drone_se_desc: "To be part of this elite defense force, prospective drones must first serve several guard cycles around active black holes. This screens out latent mental / physical defects in the drones."
+#   mod_job_anz_voidframe_soldier_drone_se_add: "Quasar Guards"
 
 # Shroud resource
 
