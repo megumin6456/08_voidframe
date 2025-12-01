@@ -1,0 +1,18 @@
+slot_anz_voidframe_enigmatic = {
+
+    include = {
+        zone_anz_voidframe_enigmatic
+        zone_anz_voidframe_enigmatic_ae
+    }
+
+    exclude = {
+    }
+
+    unlock = { # planet scope
+        always = yes
+        # owner = {
+        # 	giga_country_uses_priests = yes
+        # 	has_technology = "tech_holographic_rituals"
+        # }
+    }
+}

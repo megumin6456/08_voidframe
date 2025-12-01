@@ -1547,6 +1547,170 @@ zone_voidframe_zone_SE_farming = {
 # UNITY / machine
 
 # UNITY / servitor
+zone_voidframe_zone_DM_sanctuary = {
+    icon = GFX_anz_voidframe_zone_DM_UNITY
+
+    swap_type = district_giga_voidframe_sanctuary_dm
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_dm_zone
+        TECH = "tech_acot_dm_ancient_cryo_chamber"
+        OTHER_REQ = "has_valid_civic = civic_machine_servitor"
+        OTHER_REQ_PLANET = ""
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                has_valid_civic = civic_machine_servitor
+            }
+        }
+        job_bio_trophy_add = 500
+    }
+
+    triggered_planet_modifier = { 			# Triggered planet modifier from the zone. Scope = Planet
+        potential = {
+            always = yes
+        }
+        planet_bio_trophies_unity_produces_add = 2
+    }
+
+    included_building_sets = {
+        unity
+        bio_trophy
+        urban_automation
+        origin
+    }
+
+    zone_sets = {
+        unity
+    }
+}
+zone_voidframe_zone_DE_sanctuary = {
+    icon = GFX_anz_voidframe_zone_DE_UNITY
+
+    swap_type = district_giga_voidframe_sanctuary_de
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_de_zone
+        TECH = "tech_acot_ae_ancient_cryo_chamber"
+        OTHER_REQ = "has_valid_civic = civic_machine_servitor"
+        OTHER_REQ_PLANET = ""
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                has_valid_civic = civic_machine_servitor
+            }
+        }
+        job_bio_trophy_add = 500
+    }
+
+    triggered_planet_modifier = { 			# Triggered planet modifier from the zone. Scope = Planet
+        potential = {
+            always = yes
+        }
+        planet_bio_trophies_unity_produces_add = 4
+    }
+
+    included_building_sets = {
+        unity
+        bio_trophy
+        urban_automation
+        origin
+    }
+
+    zone_sets = {
+        unity
+    }
+}
+zone_voidframe_zone_PE_sanctuary = {
+    icon = GFX_anz_voidframe_zone_PE_UNITY
+
+    swap_type = district_giga_voidframe_sanctuary_pe
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_pe_zone
+        TECH = "tech_phanon_ancient_cryo_chamber"
+        OTHER_REQ = "has_valid_civic = civic_machine_servitor"
+        OTHER_REQ_PLANET = ""
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                has_valid_civic = civic_machine_servitor
+            }
+        }
+        job_bio_trophy_add = 500
+    }
+
+    triggered_planet_modifier = { 			# Triggered planet modifier from the zone. Scope = Planet
+        potential = {
+            always = yes
+        }
+        planet_bio_trophies_unity_produces_add = 8
+    }
+
+    included_building_sets = {
+        unity
+        bio_trophy
+        urban_automation
+        origin
+    }
+
+    zone_sets = {
+        unity
+    }
+}
+zone_voidframe_zone_SE_sanctuary = {
+    icon = GFX_anz_voidframe_zone_SE_UNITY
+
+    swap_type = district_giga_voidframe_sanctuary_se
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_se_zone
+        TECH = "tech_stellarite_ancient_cryo_chamber"
+        OTHER_REQ = "has_valid_civic = civic_machine_servitor"
+        OTHER_REQ_PLANET = ""
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                has_valid_civic = civic_machine_servitor
+            }
+        }
+        job_bio_trophy_add = 500
+    }
+
+    triggered_planet_modifier = { 			# Triggered planet modifier from the zone. Scope = Planet
+        potential = {
+            always = yes
+        }
+        planet_bio_trophies_unity_produces_add = 12
+    }
+
+    included_building_sets = {
+        unity
+        bio_trophy
+        urban_automation
+        origin
+    }
+
+    zone_sets = {
+        unity
+    }
+}
 
 # RESEARCH
 
@@ -1557,6 +1721,8 @@ zone_voidframe_zone_SE_farming = {
 # AMENITIES
 
 # SOLDIER
+
+# SUPETENSILES
 
 # MAGINOT BUNKER
 

@@ -170,23 +170,23 @@ spriteTypes = {
     }
 
     spriteType = {
-        name = "GFX_anz_voidframe_zone_DM_industry"
-        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_DM_INDUSTRY.dds"
+        name = "GFX_anz_voidframe_zone_DM_UNITY"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_DM_UNITY.dds"
     }
     spriteType = {
-        name = "GFX_anz_voidframe_zone_DE_industry"
-        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_DE_INDUSTRY.dds"
+        name = "GFX_anz_voidframe_zone_DE_UNITY"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_DE_UNITY.dds"
     }
     spriteType = {
-        name = "GFX_anz_voidframe_zone_PE_industry"
-        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_PE_INDUSTRY.dds"
+        name = "GFX_anz_voidframe_zone_PE_UNITY"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_PE_UNITY.dds"
     }
     spriteType = {
-        name = "GFX_anz_voidframe_zone_SE_industry"
-        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_SE_INDUSTRY.dds"
+        name = "GFX_anz_voidframe_zone_SE_UNITY"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_SE_UNITY.dds"
     }
     spriteType = {
-        name = "GFX_anz_voidframe_zone_TE_industry"
-        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_TE_INDUSTRY.dds"
+        name = "GFX_anz_voidframe_zone_TE_UNITY"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_TE_UNITY.dds"
     }
 }

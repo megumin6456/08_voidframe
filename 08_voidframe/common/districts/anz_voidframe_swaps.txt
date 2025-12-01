@@ -304,17 +304,55 @@ district_giga_voidframe_farming_se = {
 # UNITY / machine
 
 # UNITY / servitor
+district_giga_voidframe_sanctuary_dm = {
+    icon = district_giga_voidframe_admin_dm
+    overlay_icon = GFX_district_unity
+    gridbox = district_arcology_organic_housing
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_voidframe_zone_DM_sanctuary
+    }
+}
+district_giga_voidframe_sanctuary_de = {
+    icon = district_giga_voidframe_admin_de
+    overlay_icon = GFX_district_unity
+    gridbox = district_arcology_organic_housing
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_voidframe_zone_DE_sanctuary
+    }
+}
+district_giga_voidframe_sanctuary_pe = {
+    icon = district_giga_voidframe_admin_pe
+    overlay_icon = GFX_district_unity
+    gridbox = district_arcology_organic_housing
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_voidframe_zone_PE_sanctuary
+    }
+}
+district_giga_voidframe_sanctuary_se = {
+    icon = district_giga_voidframe_admin_se
+    overlay_icon = GFX_district_unity
+    gridbox = district_arcology_organic_housing
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_voidframe_zone_SE_sanctuary
+    }
+}
 
 # RESEARCH
 
-
 # REFINERY
-
 
 # SECURITY
 
-
 # AMENITIES
 
-
 # SOLDIER
+
+# SUPETENSILES
