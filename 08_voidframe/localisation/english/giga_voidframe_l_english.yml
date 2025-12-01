@@ -475,19 +475,27 @@ phanon_srname_ee: "Runic"
   district_giga_voidframe_admin_dm: "Delphic Complex"
   district_giga_voidframe_admin_dm_plural: "Delphic Complexes"
   district_giga_voidframe_admin_dm_desc: "Enigmatic AI has allowed our administrators to sort through the chaff in record time, so that their time is spent on actually important tasks."
+  zone_voidframe_zone_DM_admin: "$building_dm_bureaucratic$"
+  zone_voidframe_zone_DM_admin_desc: "$building_dm_bureaucratic_desc$"
 
-  district_giga_voidframe_admin_de: "Bionic Administration Complex"
-  district_giga_voidframe_admin_de_plural: "Bionic Administration Complexes"
+  district_giga_voidframe_admin_de: "Bionic Administration"
+  district_giga_voidframe_admin_de_plural: "Bionic Administration"
   district_giga_voidframe_admin_de_desc: "The new enigmatic technology requires our administrators to physically interface with their computers for maximum efficiency. Of course, they can still detach themselves when their shift is over. For now."
+  zone_voidframe_zone_DE_admin: "$building_ae_bureaucratic$"
+  zone_voidframe_zone_DE_admin_desc: "$building_ae_bureaucratic_desc$"
 
   district_giga_voidframe_admin_pe: "§RPhanon Management Center§!"
   district_giga_voidframe_admin_pe_plural: "§RPhanon Management Centers§!"
   district_giga_voidframe_admin_pe_desc: "$phanon_classified$"
+  zone_voidframe_zone_PE_admin: "$building_phanon_bureaucratic$"
+  zone_voidframe_zone_PE_admin_desc: "$building_phanon_bureaucratic_desc$"
 
   district_giga_voidframe_admin_se: "§HSanctum of the Administratum§!"
   district_giga_voidframe_admin_se_plural: "§HSanctums of the Administratum§!"
   district_giga_voidframe_admin_se_desc: "§HFrom these sanctums, we can administrate not only a galaxy, but the dimensions beyond!§!"
-  #
+  zone_voidframe_zone_SE_admin: "$building_stellarite_bureaucratic$"
+  zone_voidframe_zone_SE_admin_desc: "$building_stellarite_bureaucratic_desc$"
+
   # _te: "§M §!"
   # _te_plural: "§M §!"
   # _te_desc: "§M §!"
@@ -497,33 +505,38 @@ phanon_srname_ee: "Runic"
   # _oe_desc: "§Y §!"
 
 # Admin ACOT
+  district_giga_voidframe_admin_dmacot: "$district_giga_voidframe_admin_dm$"
+  district_giga_voidframe_admin_dmacot_plural: "$district_giga_voidframe_admin_dm_plural$"
+  district_giga_voidframe_admin_dmacot_desc: "$district_giga_voidframe_admin_dm_desc$"
+  zone_voidframe_zone_DMacot_admin: "Delphic Filing Zone"
+  zone_voidframe_zone_DMacot_admin_desc: "Massive rows and rows of supercomputers processing the everyday data of our empire, augmented with enigmatic technology."
 
-  district_giga_voidframe_admin_acot_dm: "$district_giga_voidframe_admin_dm$"
-  district_giga_voidframe_admin_acot_dm_plural: "$district_giga_voidframe_admin_dm_plural$"
-  district_giga_voidframe_admin_acot_dm_desc: "$district_giga_voidframe_admin_dm_desc$"
-
-  district_giga_voidframe_admin_acot_de: "$district_giga_voidframe_admin_de$"
-  district_giga_voidframe_admin_acot_de_plural: "$district_giga_voidframe_admin_de_plural$"
-  district_giga_voidframe_admin_acot_de_desc: "$district_giga_voidframe_admin_de_desc$"
-
-# Temple
+ # Temple
 
   district_giga_voidframe_temple_dm: "Temple of the Night"
   district_giga_voidframe_temple_dm_plural: "Temples of the Night"
   district_giga_voidframe_temple_dm_desc: "With the advent of enigmatic technology, the clergy has found a way to integrate it into their doctrines by adding an emphasis of the divinity of the night."
+  zone_voidframe_zone_DM_temple: "$building_acot_dm_temple$"
+  zone_voidframe_zone_DM_temple_desc: "$building_acot_dm_temple_desc$"
 
   district_giga_voidframe_temple_de: "Cathedral of the Precursors"
   district_giga_voidframe_temple_de_plural: "Cathedrals of the Precursors"
   district_giga_voidframe_temple_de_desc: "The previous doctines have been upgraded to include a healthy reverence for the precursors, and our faith has integrated that into our churches."
+  zone_voidframe_zone_DE_temple: "$building_acot_ae_temple$"
+  zone_voidframe_zone_DE_temple_desc: "$building_acot_ae_temple_desc$"
 
   district_giga_voidframe_temple_pe: "§RPhanon Pantheon§!"
   district_giga_voidframe_temple_pe_plural: "§RPhanon Pantheons§!"
   district_giga_voidframe_temple_pe_desc: "$phanon_classified$"
+  zone_voidframe_zone_PE_temple: "$building_phanon_empyrean_shrine$"
+  zone_voidframe_zone_PE_temple_desc: "$building_phanon_empyrean_shrine_desc$"
 
   district_giga_voidframe_temple_se: "§HShrine of Celestials§!"
   district_giga_voidframe_temple_se_plural: "§HShrines of Celestials§!"
   district_giga_voidframe_temple_se_desc: "§HHere we pray not to a god that is untouchable, but to the gods that are now within our grasp!§!"
-  #
+  zone_voidframe_zone_SE_temple: "$building_stellarite_empyrean_shrine$"
+  zone_voidframe_zone_SE_temple_desc: "$building_stellarite_empyrean_shrine_desc$"
+
   # _te: "§M §!"
   # _te_plural: "§M §!"
   # _te_desc: "§M §!"

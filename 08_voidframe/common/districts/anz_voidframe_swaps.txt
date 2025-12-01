@@ -296,8 +296,98 @@ district_giga_voidframe_farming_se = {
 }
 
 # UNITY
+district_giga_voidframe_admin_dmacot = {
+    icon = district_giga_voidframe_admin_dm
+    overlay_icon = GFX_district_unity
+    gridbox = district_arcology_administrative
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_voidframe_zone_DMacot_admin
+    }
+}
+district_giga_voidframe_admin_dm = {
+    icon = district_giga_voidframe_admin_dm
+    overlay_icon = GFX_district_unity
+    gridbox = district_arcology_administrative
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_voidframe_zone_DM_admin
+    }
+}
+district_giga_voidframe_admin_de = {
+    icon = district_giga_voidframe_admin_de
+    overlay_icon = GFX_district_unity
+    gridbox = district_arcology_administrative
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_voidframe_zone_DE_admin
+    }
+}
+district_giga_voidframe_admin_pe = {
+    icon = district_giga_voidframe_admin_pe
+    overlay_icon = GFX_district_unity
+    gridbox = district_arcology_administrative
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_voidframe_zone_PE_admin
+    }
+}
+district_giga_voidframe_admin_se = {
+    icon = district_giga_voidframe_admin_se
+    overlay_icon = GFX_district_unity
+    gridbox = district_arcology_administrative
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_voidframe_zone_SE_admin
+    }
+}
 
 # UNITY / priest
+district_giga_voidframe_temple_dm = {
+    icon = district_giga_voidframe_admin_dm
+    overlay_icon = GFX_district_unity
+    gridbox = district_arcology_administrative
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_voidframe_zone_DM_temple
+    }
+}
+district_giga_voidframe_temple_de = {
+    icon = district_giga_voidframe_admin_de
+    overlay_icon = GFX_district_unity
+    gridbox = district_arcology_administrative
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_voidframe_zone_DE_temple
+    }
+}
+district_giga_voidframe_temple_pe = {
+    icon = district_giga_voidframe_admin_pe
+    overlay_icon = GFX_district_unity
+    gridbox = district_arcology_administrative
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_voidframe_zone_PE_temple
+    }
+}
+district_giga_voidframe_temple_se = {
+    icon = district_giga_voidframe_admin_se
+    overlay_icon = GFX_district_unity
+    gridbox = district_arcology_administrative
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_voidframe_zone_SE_temple
+    }
+}
 
 # UNITY / hive
 

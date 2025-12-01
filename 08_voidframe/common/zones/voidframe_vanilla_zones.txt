@@ -1,3 +1,6 @@
+#############################################################
+# Districts that currently have no alpha equivalent just get more jobs
+#############################################################
 
 # FOUNDRY
 zone_voidframe_zone_DM_foundry = {
@@ -331,7 +334,7 @@ zone_voidframe_zone_DE_factory = {
     inline_script = {
         script = zones/shared_city_non_urban_zone_modifiers
     }
-} # no AE artisans
+} # no AE artisans or artisan drone
 zone_voidframe_zone_PE_factory = {
     icon = GFX_anz_voidframe_zone_PE_CONSUMER_GOODS
 
@@ -1539,8 +1542,415 @@ zone_voidframe_zone_SE_farming = {
 }
 
 # UNITY
+zone_voidframe_zone_DMacot_admin = {
+    icon = GFX_anz_voidframe_zone_DM_UNITY
+
+    swap_type = district_giga_voidframe_admin_dmacot
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_dm_zone
+        TECH = "tech_acot_dm_mansion"
+        OTHER_REQ = "
+            NOT = { has_global_flag = has_aot_mod }
+            is_spiritualist = no
+            is_gestalt = no
+        "
+        OTHER_REQ_PLANET = ""
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = no }
+        }
+        job_anz_voidframe_admin_dm_add = 200
+        job_bureaucrat_add = -100
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            has_deposit = d_frameworld_computing_complex
+            exists = owner
+            owner = { is_gestalt = no }
+        }
+        job_anz_voidframe_admin_dm_add = 200
+        job_bureaucrat_add = -200
+    }
+
+    included_building_sets = {
+        unity
+        urban_automation
+        origin
+    }
+
+    zone_sets = {
+        unity
+    }
+}
+zone_voidframe_zone_DM_admin = {
+    icon = GFX_anz_voidframe_zone_DM_UNITY
+
+    swap_type = district_giga_voidframe_admin_dm
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_dm_zone
+        TECH = "tech_dm_bureau"
+        OTHER_REQ = "
+            has_global_flag = has_aot_mod
+            is_spiritualist = no
+            is_gestalt = no
+        "
+        OTHER_REQ_PLANET = ""
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = no }
+        }
+        job_dm_bureaucrat_add = 200
+        job_bureaucrat_add = -100
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            has_deposit = d_frameworld_computing_complex
+            exists = owner
+            owner = { is_gestalt = no }
+        }
+        job_dm_bureaucrat_add = 200
+        job_bureaucrat_add = -200
+    }
+
+    included_building_sets = {
+        unity
+        urban_automation
+        origin
+    }
+
+    zone_sets = {
+        unity
+    }
+}
+zone_voidframe_zone_DE_admin = {
+    icon = GFX_anz_voidframe_zone_DE_UNITY
+
+    swap_type = district_giga_voidframe_admin_de
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_de_zone
+        TECH = "tech_ae_bureau"
+        OTHER_REQ = "
+            is_spiritualist = no
+            is_gestalt = no
+        "
+        OTHER_REQ_PLANET = ""
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = no }
+        }
+        job_ae_bureaucrat_add = 200
+        job_bureaucrat_add = -100
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            has_deposit = d_frameworld_computing_complex
+            exists = owner
+            owner = { is_gestalt = no }
+        }
+        job_ae_bureaucrat_add = 200
+        job_bureaucrat_add = -200
+    }
+
+    included_building_sets = {
+        unity
+        urban_automation
+        origin
+    }
+
+    zone_sets = {
+        unity
+    }
+}
+zone_voidframe_zone_PE_admin = {
+    icon = GFX_anz_voidframe_zone_PE_UNITY
+
+    swap_type = district_giga_voidframe_admin_pe
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_pe_zone
+        TECH = "tech_phanon_bureau"
+        OTHER_REQ = "
+            is_spiritualist = no
+            is_gestalt = no
+        "
+        OTHER_REQ_PLANET = ""
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = no }
+        }
+        job_phanon_bureaucrat_add = 200
+        job_bureaucrat_add = -100
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            has_deposit = d_frameworld_computing_complex
+            exists = owner
+            owner = { is_gestalt = no }
+        }
+        job_phanon_bureaucrat_add = 200
+        job_bureaucrat_add = -200
+    }
+
+    included_building_sets = {
+        unity
+        urban_automation
+        origin
+    }
+
+    zone_sets = {
+        unity
+    }
+}
+zone_voidframe_zone_PE_admin = {
+    icon = GFX_anz_voidframe_zone_SE_UNITY
+
+    swap_type = district_giga_voidframe_admin_se
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_se_zone
+        TECH = "tech_stellarite_bureau"
+        OTHER_REQ = "
+            is_spiritualist = no
+            is_gestalt = no
+        "
+        OTHER_REQ_PLANET = ""
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = no }
+        }
+        job_stellarite_bureaucrat_add = 200
+        job_bureaucrat_add = -100
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            has_deposit = d_frameworld_computing_complex
+            exists = owner
+            owner = { is_gestalt = no }
+        }
+        job_stellarite_bureaucrat_add = 200
+        job_bureaucrat_add = -200
+    }
+
+    included_building_sets = {
+        unity
+        urban_automation
+        origin
+    }
+
+    zone_sets = {
+        unity
+    }
+}
 
 # UNITY / priest
+zone_voidframe_zone_DM_temple = {
+    icon = GFX_anz_voidframe_zone_DM_UNITY
+
+    swap_type = district_giga_voidframe_temple_dm
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_dm_zone
+        TECH = "tech_acot_dm_temple"
+        OTHER_REQ = "
+            is_spiritualist = yes
+            is_gestalt = no
+        "
+        OTHER_REQ_PLANET = ""
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = no }
+        }
+        job_acot_priest_add = 200
+        job_bureaucrat_add = -100
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            has_deposit = d_frameworld_computing_complex
+            exists = owner
+            owner = { is_gestalt = no }
+        }
+        job_acot_priest_add = 200
+        job_bureaucrat_add = -200
+    }
+
+    included_building_sets = {
+        unity
+        urban_automation
+        origin
+    }
+
+    zone_sets = {
+        unity
+    }
+}
+zone_voidframe_zone_DE_temple = {
+    icon = GFX_anz_voidframe_zone_DE_UNITY
+
+    swap_type = district_giga_voidframe_temple_de
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_de_zone
+        TECH = "tech_acot_ae_temple"
+        OTHER_REQ = "
+            is_spiritualist = yes
+            is_gestalt = no
+        "
+        OTHER_REQ_PLANET = ""
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = no }
+        }
+        job_acot_priest_add = 300
+        job_bureaucrat_add = -100
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            has_deposit = d_frameworld_computing_complex
+            exists = owner
+            owner = { is_gestalt = no }
+        }
+        job_acot_priest_add = 300
+        job_bureaucrat_add = -200
+    }
+
+    included_building_sets = {
+        unity
+        urban_automation
+        origin
+    }
+
+    zone_sets = {
+        unity
+    }
+} # no alpha priest
+zone_voidframe_zone_PE_temple = {
+    icon = GFX_anz_voidframe_zone_PE_UNITY
+
+    swap_type = district_giga_voidframe_temple_pe
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_pe_zone
+        TECH = "tech_phanon_empyrean_shrine"
+        OTHER_REQ = "
+            is_spiritualist = yes
+            is_gestalt = no
+        "
+        OTHER_REQ_PLANET = ""
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = no }
+        }
+        job_phanon_priest_add = 200
+        job_bureaucrat_add = -100
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            has_deposit = d_frameworld_computing_complex
+            exists = owner
+            owner = { is_gestalt = no }
+        }
+        job_phanon_priest_add = 200
+        job_bureaucrat_add = -200
+    }
+
+    included_building_sets = {
+        unity
+        urban_automation
+        origin
+    }
+
+    zone_sets = {
+        unity
+    }
+}
+zone_voidframe_zone_PE_temple = {
+    icon = GFX_anz_voidframe_zone_SE_UNITY
+
+    swap_type = district_giga_voidframe_temple_se
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_se_zone
+        TECH = "tech_stellarite_empyrean_shrine"
+        OTHER_REQ = "
+            is_spiritualist = yes
+            is_gestalt = no
+        "
+        OTHER_REQ_PLANET = ""
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = no }
+        }
+        job_stellarite_priest_add = 200
+        job_bureaucrat_add = -100
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            has_deposit = d_frameworld_computing_complex
+            exists = owner
+            owner = { is_gestalt = no }
+        }
+        job_stellarite_priest_add = 200
+        job_bureaucrat_add = -200
+    }
+
+    included_building_sets = {
+        unity
+        urban_automation
+        origin
+    }
+
+    zone_sets = {
+        unity
+    }
+}
 
 # UNITY / hive
 
@@ -1722,7 +2132,7 @@ zone_voidframe_zone_SE_sanctuary = {
 
 # SOLDIER
 
-# SUPETENSILES
+# SUPERTENSILES
 
 # MAGINOT BUNKER
 
