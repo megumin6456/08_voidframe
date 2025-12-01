@@ -1,0 +1,43 @@
+# this script adds an extra of 200 jobs
+# and then removes 200 of a job
+# this is to counter a base district
+
+# ADDING ACOT JOB
+triggered_district_planet_modifier = {
+    potential = {
+        exists = owner
+        owner = {
+            is_gestalt = no
+        }
+    }
+    $ACOT_JOB_NORM$ = $AMOUNT$
+}
+triggered_district_planet_modifier = {
+    potential = {
+        exists = owner
+        owner = {
+            is_gestalt = yes
+        }
+    }
+    $ACOT_JOB_GEST$ = $AMOUNT$
+}
+
+# REMOVING NORMAL JOB
+triggered_district_planet_modifier = {
+    potential = {
+        exists = owner
+        owner = {
+            is_gestalt = no
+        }
+    }
+    $JOB_NORM$ = @[-1 * $AMOUNT$]
+}
+triggered_district_planet_modifier = {
+    potential = {
+        exists = owner
+        owner = {
+            is_gestalt = yes
+        }
+    }
+    $JOB_GEST$ = @[-1 * $AMOUNT$]
+}

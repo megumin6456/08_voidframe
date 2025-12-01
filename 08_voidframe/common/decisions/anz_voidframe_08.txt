@@ -61,11 +61,11 @@ anz_voidframe_enigmatic = {
 				days = -1
 			}
 
-			add_modifier = {
-				modifier = frameworld_building_wreck_fix
-			}
+			# add_modifier = {
+			# 	modifier = frameworld_building_wreck_fix
+			# }
 			validate_planet_buildings_and_districts = yes
-			remove_modifier = frameworld_building_wreck_fix
+			# remove_modifier = frameworld_building_wreck_fix
 		}
 	}
 	

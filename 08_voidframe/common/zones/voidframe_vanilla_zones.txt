@@ -1,0 +1,1565 @@
+
+# FOUNDRY
+zone_voidframe_zone_DM_foundry = {
+    icon = GFX_anz_voidframe_zone_DM_ALLOY
+
+    swap_type = district_giga_voidframe_foundry_dm
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_dm_zone
+        TECH = "tech_acot_dm_alloy_foundry"
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = ""
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+            }
+        }
+        job_acot_alloyman_add = @scaling_district_1_job
+    }
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        job_acot_alloydrone_add = @scaling_district_1_job
+    }
+
+    inline_script = {
+        script = zones/anz_voidframe_job_p100_or_p300
+        ACOT_JOB_NORM = job_acot_alloyman_add
+        ACOT_JOB_GEST = job_acot_alloydrone_add
+        JOB_NORM = job_foundry_add
+        JOB_GEST = job_fabricator_add
+        TRIGGER = "has_deposit = d_frameworld_advanced_industrial"
+    }
+
+    included_building_sets = {
+        foundry
+        urban_automation
+        origin
+    }
+
+    zone_sets = {
+        foundry
+    }
+
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
+    }
+}
+zone_voidframe_zone_DE_foundry = {
+    icon = GFX_anz_voidframe_zone_DE_ALLOY
+
+    swap_type = district_giga_voidframe_foundry_de
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_de_zone
+        TECH = "tech_acot_ae_alloy_foundry"
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = ""
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+            }
+        }
+        job_ae_alloyman_add = @scaling_district_1_job
+    }
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        job_ae_alloydrone_add = @scaling_district_1_job
+    }
+
+    inline_script = {
+        script = zones/anz_voidframe_job_p100_or_p300
+        ACOT_JOB_NORM = job_ae_alloyman_add
+        ACOT_JOB_GEST = job_ae_alloydrone_add
+        JOB_NORM = job_foundry_add
+        JOB_GEST = job_fabricator_add
+        TRIGGER = "has_deposit = d_frameworld_advanced_industrial"
+    }
+
+    included_building_sets = {
+        foundry
+        urban_automation
+        origin
+    }
+
+    zone_sets = {
+        foundry
+    }
+
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
+    }
+}
+zone_voidframe_zone_PE_foundry = {
+    icon = GFX_anz_voidframe_zone_PE_ALLOY
+
+    swap_type = district_giga_voidframe_foundry_pe
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_pe_zone
+        TECH = "tech_phanon_alloy_foundry"
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = ""
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+            }
+        }
+        job_phanon_alloyman_add = @scaling_district_1_job
+    }
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        job_phanon_alloydrone_add = @scaling_district_1_job
+    }
+
+    inline_script = {
+        script = zones/anz_voidframe_job_p100_or_p300
+        ACOT_JOB_NORM = job_phanon_alloyman_add
+        ACOT_JOB_GEST = job_phanon_alloydrone_add
+        JOB_NORM = job_foundry_add
+        JOB_GEST = job_fabricator_add
+        TRIGGER = "has_deposit = d_frameworld_advanced_industrial"
+    }
+
+    included_building_sets = {
+        foundry
+        urban_automation
+        origin
+    }
+
+    zone_sets = {
+        foundry
+    }
+
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
+    }
+}
+zone_voidframe_zone_SE_foundry = {
+    icon = GFX_anz_voidframe_zone_SE_ALLOY
+
+    swap_type = district_giga_voidframe_foundry_se
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_se_zone
+        TECH = "tech_stellarite_alloy_foundry"
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = ""
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+            }
+        }
+        job_stellarite_alloyman_add = @scaling_district_1_job
+    }
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        job_stellarite_alloydrone_add = @scaling_district_1_job
+    }
+
+    inline_script = {
+        script = zones/anz_voidframe_job_p100_or_p300
+        ACOT_JOB_NORM = job_stellarite_alloyman_add
+        ACOT_JOB_GEST = job_stellarite_alloydrone_add
+        JOB_NORM = job_foundry_add
+        JOB_GEST = job_fabricator_add
+        TRIGGER = "has_deposit = d_frameworld_advanced_industrial"
+    }
+
+    included_building_sets = {
+        foundry
+        urban_automation
+        origin
+    }
+
+    zone_sets = {
+        foundry
+    }
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
+    }
+}
+
+# FACTORY
+zone_voidframe_zone_DM_factory = {
+    icon = GFX_anz_voidframe_zone_DM_CONSUMER_GOODS
+
+    swap_type = district_giga_voidframe_factory_dm
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_dm_zone
+        TECH = "tech_acot_dm_factory"
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = ""
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+            }
+        }
+        job_acot_artisan_add = @scaling_district_1_job
+    }
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        job_acot_artisan_add = @scaling_district_1_job #WHY
+    }
+
+    inline_script = {
+        script = zones/anz_voidframe_job_p100_or_p300
+        ACOT_JOB_NORM = job_acot_artisan_add
+        ACOT_JOB_GEST = job_acot_artisan_add
+        JOB_NORM = job_artisan_add
+        JOB_GEST = job_artisan_drone_add
+        TRIGGER = "has_deposit = d_frameworld_advanced_industrial"
+    }
+
+    included_building_sets = {
+        factory
+        urban_automation
+        origin
+    }
+
+    zone_sets = {
+        factory
+    }
+
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
+    }
+} # no DM gestalt artisan
+zone_voidframe_zone_DE_factory = {
+    icon = GFX_anz_voidframe_zone_DE_CONSUMER_GOODS
+
+    swap_type = district_giga_voidframe_factory_de
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_de_zone
+        TECH = "tech_acot_ae_factory"
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = ""
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+            }
+        }
+        job_acot_artisan_add = 300
+    }
+    # WHY DOES THE AE ARTISAN JOB NOT EXIST
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        job_acot_artisan_add = 300
+    }
+
+    inline_script = {
+        script = zones/anz_voidframe_job_p100_or_p300
+        ACOT_JOB_NORM = job_acot_artisan_add
+        ACOT_JOB_GEST = job_acot_artisan_add
+        JOB_NORM = job_artisan_add
+        JOB_GEST = job_artisan_drone_add
+        TRIGGER = "has_deposit = d_frameworld_advanced_industrial"
+    }
+
+    included_building_sets = {
+        factory
+        urban_automation
+        origin
+    }
+
+    zone_sets = {
+        factory
+    }
+
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
+    }
+} # no AE artisans
+zone_voidframe_zone_PE_factory = {
+    icon = GFX_anz_voidframe_zone_PE_CONSUMER_GOODS
+
+    swap_type = district_giga_voidframe_factory_pe
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_pe_zone
+        TECH = "tech_phanon_civilian_factory"
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = ""
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+            }
+        }
+        job_phanon_artisan_add = @scaling_district_1_job
+    }
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        job_phanon_artisan_drone_add = @scaling_district_1_job
+    }
+
+    inline_script = {
+        script = zones/anz_voidframe_job_p100_or_p300
+        ACOT_JOB_NORM = job_phanon_artisan_add
+        ACOT_JOB_GEST = job_phanon_artisan_drone_add
+        JOB_NORM = job_artisan_add
+        JOB_GEST = job_artisan_drone_add
+        TRIGGER = "has_deposit = d_frameworld_advanced_industrial"
+    }
+
+    included_building_sets = {
+        factory
+        urban_automation
+        origin
+    }
+
+    zone_sets = {
+        factory
+    }
+
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
+    }
+}
+zone_voidframe_zone_SE_factory = {
+    icon = GFX_anz_voidframe_zone_SE_CONSUMER_GOODS
+
+    swap_type = district_giga_voidframe_factory_se
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_se_zone
+        TECH = "tech_stellarite_civilian_factory"
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = ""
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+            }
+        }
+        job_stellarite_artisan_add = @scaling_district_1_job
+    }
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        job_stellarite_artisan_drone_add = @scaling_district_1_job
+    }
+
+    inline_script = {
+        script = zones/anz_voidframe_job_p100_or_p300
+        ACOT_JOB_NORM = job_stellarite_artisan_add
+        ACOT_JOB_GEST = job_stellarite_artisan_drone_add
+        JOB_NORM = job_artisan_add
+        JOB_GEST = job_artisan_drone_add
+        TRIGGER = "has_deposit = d_frameworld_advanced_industrial"
+    }
+
+    included_building_sets = {
+        factory
+        urban_automation
+        origin
+    }
+
+    zone_sets = {
+        factory
+    }
+    inline_script = {
+        script = zones/shared_city_non_urban_zone_modifiers
+    }
+}
+
+# TRADE
+
+# ENERGY
+zone_voidframe_zone_DM_generator = {
+    icon = GFX_anz_voidframe_zone_DM_ENERGY
+
+    swap_type = district_giga_voidframe_generator_dm
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_dm_zone
+        TECH = "tech_acot_dm_power_hub"
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = "NOT = { has_planet_flag = frameworld_penrose }"
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+            }
+        }
+        job_acot_energyman_add = @scaling_district_1_job
+    }
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        job_acot_energydrone_add = @scaling_district_1_job
+    }
+
+    inline_script = {
+        script = zones/anz_voidframe_job_pConstant
+        ACOT_JOB_NORM = job_acot_energyman_add
+        ACOT_JOB_GEST = job_acot_energydrone_add
+        JOB_NORM = job_technician_add
+        JOB_GEST = job_technician_drone_add
+        AMOUNT = 200
+    }
+
+    included_building_sets = {
+        generator
+        urban_automation
+        origin
+    }
+
+    zone_sets = {
+        energy
+    }
+
+    convert_to = {
+        zone_voidframe_zone_DM_penrose
+    }
+}
+zone_voidframe_zone_DE_generator = {
+    icon = GFX_anz_voidframe_zone_DE_ENERGY
+
+    swap_type = district_giga_voidframe_generator_de
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_de_zone
+        TECH = "tech_acot_ae_power_hub"
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = "NOT = { has_planet_flag = frameworld_penrose }"
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+            }
+        }
+        job_ae_energyman_add = @scaling_district_1_job
+    }
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        job_ae_energydrone_add = @scaling_district_1_job
+    }
+
+    inline_script = {
+        script = zones/anz_voidframe_job_pConstant
+        ACOT_JOB_NORM = job_ae_energyman_add
+        ACOT_JOB_GEST = job_ae_energydrone_add
+        JOB_NORM = job_technician_add
+        JOB_GEST = job_technician_drone_add
+        AMOUNT = 200
+    }
+
+    included_building_sets = {
+        generator
+        urban_automation
+        origin
+    }
+
+    zone_sets = {
+        energy
+    }
+
+    convert_to = {
+        zone_voidframe_zone_DE_penrose
+    }
+}
+zone_voidframe_zone_PE_generator = {
+    icon = GFX_anz_voidframe_zone_PE_ENERGY
+
+    swap_type = district_giga_voidframe_generator_pe
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_pe_zone
+        TECH = "tech_phanon_power_hub"
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = "NOT = { has_planet_flag = frameworld_penrose }"
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+            }
+        }
+        job_phanon_energyman_add = @scaling_district_1_job
+    }
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        job_phanon_energydrone_add = @scaling_district_1_job
+    }
+
+    inline_script = {
+        script = zones/anz_voidframe_job_pConstant
+        ACOT_JOB_NORM = job_phanon_energyman_add
+        ACOT_JOB_GEST = job_phanon_energydrone_add
+        JOB_NORM = job_technician_add
+        JOB_GEST = job_technician_drone_add
+        AMOUNT = 200
+    }
+
+    included_building_sets = {
+        generator
+        urban_automation
+        origin
+    }
+
+    zone_sets = {
+        energy
+    }
+
+    convert_to = {
+        zone_voidframe_zone_PE_penrose
+    }
+}
+zone_voidframe_zone_SE_generator = {
+    icon = GFX_anz_voidframe_zone_SE_ENERGY
+
+    swap_type = district_giga_voidframe_generator_se
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_se_zone
+        TECH = "tech_stellarite_power_hub"
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = "NOT = { has_planet_flag = frameworld_penrose }"
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+            }
+        }
+        job_stellarite_energyman_add = @scaling_district_1_job
+    }
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        job_stellarite_energydrone_add = @scaling_district_1_job
+    }
+
+    inline_script = {
+        script = zones/anz_voidframe_job_pConstant
+        ACOT_JOB_NORM = job_stellarite_energyman_add
+        ACOT_JOB_GEST = job_stellarite_energydrone_add
+        JOB_NORM = job_technician_add
+        JOB_GEST = job_technician_drone_add
+        AMOUNT = 200
+    }
+
+    included_building_sets = {
+        generator
+        urban_automation
+        origin
+    }
+
+    zone_sets = {
+        energy
+    }
+
+    convert_to = {
+        zone_voidframe_zone_SE_penrose
+    }
+}
+
+# PENROSE
+zone_voidframe_zone_DM_penrose = {
+    icon = GFX_anz_voidframe_zone_DM_ENERGY
+
+    swap_type = district_giga_voidframe_penrose_dm
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_dm_zone
+        TECH = "tech_acot_dm_power_hub"
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = "has_planet_flag = frameworld_penrose"
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+            }
+        }
+        job_acot_energyman_add = @scaling_district_1_job
+    }
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        job_acot_energydrone_add = @scaling_district_1_job
+    }
+
+    inline_script = {
+        script = zones/anz_voidframe_job_pConstant
+        ACOT_JOB_NORM = job_acot_energyman_add
+        ACOT_JOB_GEST = job_acot_energydrone_add
+        JOB_NORM = job_technician_add
+        JOB_GEST = job_technician_drone_add
+        AMOUNT = 800
+    }
+
+    included_building_sets = {
+        generator
+        urban_automation
+        origin
+    }
+
+    zone_sets = {
+        energy
+    }
+
+    convert_to = {
+        zone_voidframe_zone_DM_generator
+    }
+}
+zone_voidframe_zone_DE_penrose = {
+    icon = GFX_anz_voidframe_zone_DE_ENERGY
+
+    swap_type = district_giga_voidframe_penrose_de
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_de_zone
+        TECH = "tech_acot_ae_power_hub"
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = "has_planet_flag = frameworld_penrose"
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+            }
+        }
+        job_ae_energyman_add = @scaling_district_1_job
+    }
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        job_ae_energydrone_add = @scaling_district_1_job
+    }
+
+    inline_script = {
+        script = zones/anz_voidframe_job_pConstant
+        ACOT_JOB_NORM = job_ae_energyman_add
+        ACOT_JOB_GEST = job_ae_energydrone_add
+        JOB_NORM = job_technician_add
+        JOB_GEST = job_technician_drone_add
+        AMOUNT = 800
+    }
+
+    included_building_sets = {
+        generator
+        urban_automation
+        origin
+    }
+
+    zone_sets = {
+        energy
+    }
+
+    convert_to = {
+        zone_voidframe_zone_DE_generator
+    }
+}
+zone_voidframe_zone_PE_penrose = {
+    icon = GFX_anz_voidframe_zone_PE_ENERGY
+
+    swap_type = district_giga_voidframe_penrose_pe
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_pe_zone
+        TECH = "tech_phanon_power_hub"
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = "has_planet_flag = frameworld_penrose"
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+            }
+        }
+        job_phanon_energyman_add = @scaling_district_1_job
+    }
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        job_phanon_energydrone_add = @scaling_district_1_job
+    }
+
+    inline_script = {
+        script = zones/anz_voidframe_job_pConstant
+        ACOT_JOB_NORM = job_phanon_energyman_add
+        ACOT_JOB_GEST = job_phanon_energydrone_add
+        JOB_NORM = job_technician_add
+        JOB_GEST = job_technician_drone_add
+        AMOUNT = 800
+    }
+
+    included_building_sets = {
+        generator
+        urban_automation
+        origin
+    }
+
+    zone_sets = {
+        energy
+    }
+
+    convert_to = {
+        zone_voidframe_zone_PE_generator
+    }
+}
+zone_voidframe_zone_SE_penrose = {
+    icon = GFX_anz_voidframe_zone_SE_ENERGY
+
+    swap_type = district_giga_voidframe_penrose_se
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_se_zone
+        TECH = "tech_stellarite_power_hub"
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = "has_planet_flag = frameworld_penrose"
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+            }
+        }
+        job_stellarite_energyman_add = @scaling_district_1_job
+    }
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        job_stellarite_energydrone_add = @scaling_district_1_job
+    }
+
+    inline_script = {
+        script = zones/anz_voidframe_job_pConstant
+        ACOT_JOB_NORM = job_stellarite_energyman_add
+        ACOT_JOB_GEST = job_stellarite_energydrone_add
+        JOB_NORM = job_technician_add
+        JOB_GEST = job_technician_drone_add
+        AMOUNT = 800
+    }
+
+    included_building_sets = {
+        generator
+        urban_automation
+        origin
+    }
+
+    zone_sets = {
+        energy
+    }
+
+    convert_to = {
+        zone_voidframe_zone_SE_generator
+    }
+}
+
+# MINERALS
+zone_voidframe_zone_DM_mining = {
+    icon = GFX_anz_voidframe_zone_DM_MINERAL
+
+    swap_type = district_giga_voidframe_mining_dm
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_dm_zone
+        TECH = "tech_acot_dm_mineral_processing_plant"
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = "NOT = { has_planet_flag = frameworld_decompressor }"
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+            }
+        }
+        job_acot_mineralman_add = @scaling_district_1_job
+    }
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        job_acot_mineraldrone_add = @scaling_district_1_job
+    }
+
+    inline_script = {
+        script = zones/anz_voidframe_job_pConstant
+        ACOT_JOB_NORM = job_acot_mineralman_add
+        ACOT_JOB_GEST = job_acot_mineraldrone_add
+        JOB_NORM = job_miner_add
+        JOB_GEST = job_miner_drone_add
+        AMOUNT = 200
+    }
+
+    included_building_sets = {
+        mining
+        urban_automation
+        origin
+    }
+
+    zone_sets = {
+        minerals
+    }
+
+    convert_to = {
+        zone_voidframe_zone_DM_decompressor
+    }
+}
+zone_voidframe_zone_DE_mining = {
+    icon = GFX_anz_voidframe_zone_DE_MINERAL
+
+    swap_type = district_giga_voidframe_mining_de
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_de_zone
+        TECH = "tech_acot_ae_mineral_processing_plant"
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = "NOT = { has_planet_flag = frameworld_decompressor }"
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+            }
+        }
+        job_ae_mineralman_add = @scaling_district_1_job
+    }
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        job_ae_mineraldrone_add = @scaling_district_1_job
+    }
+
+    inline_script = {
+        script = zones/anz_voidframe_job_pConstant
+        ACOT_JOB_NORM = job_ae_mineralman_add
+        ACOT_JOB_GEST = job_ae_mineraldrone_add
+        JOB_NORM = job_miner_add
+        JOB_GEST = job_miner_drone_add
+        AMOUNT = 200
+    }
+
+    included_building_sets = {
+        mining
+        urban_automation
+        origin
+    }
+
+    zone_sets = {
+        minerals
+    }
+
+    convert_to = {
+        zone_voidframe_zone_DE_decompressor
+    }
+}
+zone_voidframe_zone_PE_mining = {
+    icon = GFX_anz_voidframe_zone_PE_MINERAL
+
+    swap_type = district_giga_voidframe_mining_pe
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_pe_zone
+        TECH = "tech_phanon_mineral_processing_plant"
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = "NOT = { has_planet_flag = frameworld_decompressor }"
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+            }
+        }
+        job_phanon_mineralman_add = @scaling_district_1_job
+    }
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        job_phanon_mineraldrone_add = @scaling_district_1_job
+    }
+
+    inline_script = {
+        script = zones/anz_voidframe_job_pConstant
+        ACOT_JOB_NORM = job_phanon_mineralman_add
+        ACOT_JOB_GEST = job_phanon_mineraldrone_add
+        JOB_NORM = job_miner_add
+        JOB_GEST = job_miner_drone_add
+        AMOUNT = 200
+    }
+
+    included_building_sets = {
+        mining
+        urban_automation
+        origin
+    }
+
+    zone_sets = {
+        minerals
+    }
+
+    convert_to = {
+        zone_voidframe_zone_PE_decompressor
+    }
+}
+zone_voidframe_zone_SE_mining = {
+    icon = GFX_anz_voidframe_zone_SE_MINERAL
+
+    swap_type = district_giga_voidframe_mining_se
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_se_zone
+        TECH = "tech_stellarite_mineral_processing_plant"
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = "NOT = { has_planet_flag = frameworld_decompressor }"
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+            }
+        }
+        job_stellarite_mineralman_add = @scaling_district_1_job
+    }
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        job_stellarite_mineraldrone_add = @scaling_district_1_job
+    }
+
+    inline_script = {
+        script = zones/anz_voidframe_job_pConstant
+        ACOT_JOB_NORM = job_stellarite_mineralman_add
+        ACOT_JOB_GEST = job_stellarite_mineraldrone_add
+        JOB_NORM = job_miner_add
+        JOB_GEST = job_miner_drone_add
+        AMOUNT = 200
+    }
+
+    included_building_sets = {
+        mining
+        urban_automation
+        origin
+    }
+
+    zone_sets = {
+        minerals
+    }
+
+    convert_to = {
+        zone_voidframe_zone_SE_decompressor
+    }
+}
+
+# DECOMPRESSOR
+zone_voidframe_zone_DM_decompressor = {
+    icon = GFX_anz_voidframe_zone_DM_MINERAL
+
+    swap_type = district_giga_voidframe_decompressor_dm
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_dm_zone
+        TECH = "tech_acot_dm_mineral_processing_plant"
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = "has_planet_flag = frameworld_decompressor"
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+            }
+        }
+        job_acot_mineralman_add = @scaling_district_1_job
+    }
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        job_acot_mineraldrone_add = @scaling_district_1_job
+    }
+
+    inline_script = {
+        script = zones/anz_voidframe_job_pConstant
+        ACOT_JOB_NORM = job_acot_mineralman_add
+        ACOT_JOB_GEST = job_acot_mineraldrone_add
+        JOB_NORM = job_miner_add
+        JOB_GEST = job_miner_drone_add
+        AMOUNT = 800
+    }
+
+    included_building_sets = {
+        mining
+        urban_automation
+        origin
+    }
+
+    zone_sets = {
+        minerals
+    }
+
+    convert_to = {
+        zone_voidframe_zone_DM_mining
+    }
+}
+zone_voidframe_zone_DE_decompressor = {
+    icon = GFX_anz_voidframe_zone_DE_MINERAL
+
+    swap_type = district_giga_voidframe_decompressor_de
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_de_zone
+        TECH = "tech_acot_ae_mineral_processing_plant"
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = "has_planet_flag = frameworld_decompressor"
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+            }
+        }
+        job_ae_mineralman_add = @scaling_district_1_job
+    }
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        job_ae_mineraldrone_add = @scaling_district_1_job
+    }
+
+    inline_script = {
+        script = zones/anz_voidframe_job_pConstant
+        ACOT_JOB_NORM = job_ae_mineralman_add
+        ACOT_JOB_GEST = job_ae_mineraldrone_add
+        JOB_NORM = job_miner_add
+        JOB_GEST = job_miner_drone_add
+        AMOUNT = 800
+    }
+
+    included_building_sets = {
+        mining
+        urban_automation
+        origin
+    }
+
+    zone_sets = {
+        minerals
+    }
+
+    convert_to = {
+        zone_voidframe_zone_DE_mining
+    }
+}
+zone_voidframe_zone_PE_decompressor = {
+    icon = GFX_anz_voidframe_zone_PE_MINERAL
+
+    swap_type = district_giga_voidframe_decompressor_pe
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_pe_zone
+        TECH = "tech_phanon_mineral_processing_plant"
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = "has_planet_flag = frameworld_decompressor"
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+            }
+        }
+        job_phanon_mineralman_add = @scaling_district_1_job
+    }
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        job_phanon_mineraldrone_add = @scaling_district_1_job
+    }
+
+    inline_script = {
+        script = zones/anz_voidframe_job_pConstant
+        ACOT_JOB_NORM = job_phanon_mineralman_add
+        ACOT_JOB_GEST = job_phanon_mineraldrone_add
+        JOB_NORM = job_miner_add
+        JOB_GEST = job_miner_drone_add
+        AMOUNT = 800
+    }
+
+    included_building_sets = {
+        mining
+        urban_automation
+        origin
+    }
+
+    zone_sets = {
+        minerals
+    }
+
+    convert_to = {
+        zone_voidframe_zone_PE_mining
+    }
+}
+zone_voidframe_zone_SE_decompressor = {
+    icon = GFX_anz_voidframe_zone_SE_MINERAL
+
+    swap_type = district_giga_voidframe_decompressor_se
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_se_zone
+        TECH = "tech_stellarite_mineral_processing_plant"
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = "has_planet_flag = frameworld_decompressor"
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+            }
+        }
+        job_stellarite_mineralman_add = @scaling_district_1_job
+    }
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        job_stellarite_mineraldrone_add = @scaling_district_1_job
+    }
+
+    inline_script = {
+        script = zones/anz_voidframe_job_pConstant
+        ACOT_JOB_NORM = job_stellarite_mineralman_add
+        ACOT_JOB_GEST = job_stellarite_mineraldrone_add
+        JOB_NORM = job_miner_add
+        JOB_GEST = job_miner_drone_add
+        AMOUNT = 800
+    }
+
+    included_building_sets = {
+        mining
+        urban_automation
+        origin
+    }
+
+    zone_sets = {
+        minerals
+    }
+
+    convert_to = {
+        zone_voidframe_zone_SE_mining
+    }
+}
+
+# FOOD
+zone_voidframe_zone_DM_farming = {
+    icon = GFX_anz_voidframe_zone_DM_FOOD
+
+    swap_type = district_giga_voidframe_farming_dm
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_dm_zone
+        TECH = "tech_acot_dm_food_processing"
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = ""
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+            }
+        }
+        job_acot_foodman_add = @scaling_district_1_job
+    }
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        job_acot_fooddrone_add = @scaling_district_1_job
+    }
+
+    inline_script = {
+        script = zones/anz_voidframe_job_pConstant
+        ACOT_JOB_NORM = job_acot_foodman_add
+        ACOT_JOB_GEST = job_acot_fooddrone_add
+        JOB_NORM = job_farmer_add
+        JOB_GEST = job_farmer_drone_add
+        AMOUNT = 200
+    }
+
+    included_building_sets = {
+        farming
+        urban_automation
+        origin
+    }
+
+    zone_sets = {
+        food
+    }
+}
+zone_voidframe_zone_DE_farming = {
+    icon = GFX_anz_voidframe_zone_DE_FOOD
+
+    swap_type = district_giga_voidframe_farming_de
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_de_zone
+        TECH = "tech_acot_ae_food_processing"
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = ""
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+            }
+        }
+        job_acot_foodman_add = 300
+    }
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        job_acot_fooddrone_add = 300
+    }
+
+    inline_script = {
+        script = zones/anz_voidframe_job_pConstant
+        ACOT_JOB_NORM = job_acot_foodman_add
+        ACOT_JOB_GEST = job_acot_fooddrone_add
+        JOB_NORM = job_farmer_add
+        JOB_GEST = job_farmer_drone_add
+        AMOUNT = 200
+    }
+
+    included_building_sets = {
+        farming
+        urban_automation
+        origin
+    }
+
+    zone_sets = {
+        food
+    }
+} # no alpha food job
+zone_voidframe_zone_PE_farming = {
+    icon = GFX_anz_voidframe_zone_PE_FOOD
+
+    swap_type = district_giga_voidframe_farming_pe
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_pe_zone
+        TECH = "tech_phanon_food_processing"
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = ""
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+            }
+        }
+        job_phanon_foodman_add = @scaling_district_1_job
+    }
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        job_phanon_fooddrone_add = @scaling_district_1_job
+    }
+
+    inline_script = {
+        script = zones/anz_voidframe_job_pConstant
+        ACOT_JOB_NORM = job_phanon_foodman_add
+        ACOT_JOB_GEST = job_phanon_fooddrone_add
+        JOB_NORM = job_farmer_add
+        JOB_GEST = job_farmer_drone_add
+        AMOUNT = 200
+    }
+
+    included_building_sets = {
+        farming
+        urban_automation
+        origin
+    }
+
+    zone_sets = {
+        food
+    }
+}
+zone_voidframe_zone_SE_farming = {
+    icon = GFX_anz_voidframe_zone_SE_FOOD
+
+    swap_type = district_giga_voidframe_farming_se
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_se_zone
+        TECH = "tech_stellarite_food_processing"
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = ""
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+            }
+        }
+        job_stellarite_foodman_add = @scaling_district_1_job
+    }
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        job_stellarite_fooddrone_add = @scaling_district_1_job
+    }
+
+    inline_script = {
+        script = zones/anz_voidframe_job_pConstant
+        ACOT_JOB_NORM = job_stellarite_foodman_add
+        ACOT_JOB_GEST = job_stellarite_fooddrone_add
+        JOB_NORM = job_farmer_add
+        JOB_GEST = job_farmer_drone_add
+        AMOUNT = 200
+    }
+
+    included_building_sets = {
+        farming
+        urban_automation
+        origin
+    }
+
+    zone_sets = {
+        food
+    }
+}
+
+# UNITY
+
+# UNITY / priest
+
+# UNITY / hive
+
+# UNITY / machine
+
+# UNITY / servitor
+
+# RESEARCH
+
+# REFINERY
+
+# SECURITY
+
+# AMENITIES
+
+# SOLDIER
+
+# MAGINOT BUNKER
+
+# MAGINOT GUNS
+
+# MAGINOT SHIELD
