@@ -2123,8 +2123,468 @@ zone_voidframe_zone_SE_sanctuary = {
 }
 
 # RESEARCH
+zone_voidframe_zone_DM_research = {
+icon = GFX_anz_voidframe_zone_DM_RESEARCH
 
-# REFINERY
+    swap_type = district_giga_voidframe_research_dm
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_dm_zone
+        TECH = "tech_acot_dm_enigmatic_lab"
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = ""
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = no }
+        }
+        job_acot_researcher_add   = 200
+        job_physicist_add = -30
+        job_biologist_add = -30
+        job_engineer_add = -30
+    }
+    triggered_district_planet_modifier = {
+        potential = {
+            has_deposit = d_frameworld_computing_complex
+            exists = owner
+            owner = { is_gestalt = no }
+        }
+        job_acot_researcher_add  = 200
+        job_physicist_add = -60
+        job_biologist_add = -60
+        job_engineer_add = -60
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = yes }
+        }
+        job_acot_researcher_drone_add    = 200
+        job_calculator_physicist_add = -30
+        job_calculator_biologist_add = -30
+        job_calculator_engineer_add = -30
+    }
+    triggered_district_planet_modifier = {
+        potential = {
+            has_deposit = d_frameworld_computing_complex
+            exists = owner
+            owner = { is_gestalt = yes }
+        }
+        job_acot_researcher_drone_add   = 200
+        job_calculator_physicist_add = -60
+        job_calculator_biologist_add = -60
+        job_calculator_engineer_add = -60
+    }
+
+    included_building_sets = {
+        research
+        urban_automation
+        origin
+    }
+
+    zone_sets = {
+        research
+    }
+}
+zone_voidframe_zone_DE_research = {
+    icon = GFX_anz_voidframe_zone_DE_RESEARCH
+
+    swap_type = district_giga_voidframe_research_de
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_de_zone
+        TECH = "tech_acot_ae_enigmatic_lab"
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = ""
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = no }
+        }
+        job_ae_researcher_add   = 200
+        job_physicist_add = -30
+        job_biologist_add = -30
+        job_engineer_add = -30
+    }
+    triggered_district_planet_modifier = {
+        potential = {
+            has_deposit = d_frameworld_computing_complex
+            exists = owner
+            owner = { is_gestalt = no }
+        }
+        job_ae_researcher_add  = 200
+        job_physicist_add = -60
+        job_biologist_add = -60
+        job_engineer_add = -60
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = yes }
+        }
+        job_ae_researcher_drone_add = 200
+        job_calculator_physicist_add = -30
+        job_calculator_biologist_add = -30
+        job_calculator_engineer_add = -30
+    }
+    triggered_district_planet_modifier = {
+        potential = {
+            has_deposit = d_frameworld_computing_complex
+            exists = owner
+            owner = { is_gestalt = yes }
+        }
+        job_ae_researcher_drone_add = 200
+        job_calculator_physicist_add = -60
+        job_calculator_biologist_add = -60
+        job_calculator_engineer_add = -60
+    }
+
+    included_building_sets = {
+        research
+        urban_automation
+        origin
+    }
+
+    zone_sets = {
+        research
+    }
+}
+zone_voidframe_zone_PE_research = {
+    icon = GFX_anz_voidframe_zone_PE_RESEARCH
+
+    swap_type = district_giga_voidframe_research_pe
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_pe_zone
+        TECH = "tech_phanon_enigmatic_lab"
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = ""
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = no }
+        }
+        job_phanon_researcher_add  = 200
+        job_physicist_add = -30
+        job_biologist_add = -30
+        job_engineer_add = -30
+    }
+    triggered_district_planet_modifier = {
+        potential = {
+            has_deposit = d_frameworld_computing_complex
+            exists = owner
+            owner = { is_gestalt = no }
+        }
+        job_phanon_researcher_add = 200
+        job_physicist_add = -60
+        job_biologist_add = -60
+        job_engineer_add = -60
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = yes }
+        }
+        job_phanon_researcher_drone_add = 200
+        job_calculator_physicist_add = -30
+        job_calculator_biologist_add = -30
+        job_calculator_engineer_add = -30
+    }
+    triggered_district_planet_modifier = {
+        potential = {
+            has_deposit = d_frameworld_computing_complex
+            exists = owner
+            owner = { is_gestalt = yes }
+        }
+        job_phanon_researcher_drone_add = 200
+        job_calculator_physicist_add = -60
+        job_calculator_biologist_add = -60
+        job_calculator_engineer_add = -60
+    }
+
+    included_building_sets = {
+        research
+        urban_automation
+        origin
+    }
+
+    zone_sets = {
+        research
+    }
+}
+zone_voidframe_zone_SE_research = {
+    icon = GFX_anz_voidframe_zone_SE_RESEARCH
+
+    swap_type = district_giga_voidframe_research_se
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_se_zone
+        TECH = "tech_stellarite_enigmatic_lab"
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = ""
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = no }
+        }
+        job_stellarite_researcher_add  = 200
+        job_physicist_add = -30
+        job_biologist_add = -30
+        job_engineer_add = -30
+    }
+    triggered_district_planet_modifier = {
+        potential = {
+            has_deposit = d_frameworld_computing_complex
+            exists = owner
+            owner = { is_gestalt = no }
+        }
+        job_stellarite_researcher_add = 200
+        job_physicist_add = -60
+        job_biologist_add = -60
+        job_engineer_add = -60
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = yes }
+        }
+        job_stellarite_researcher_drone_add = 200
+        job_calculator_physicist_add = -30
+        job_calculator_biologist_add = -30
+        job_calculator_engineer_add = -30
+    }
+    triggered_district_planet_modifier = {
+        potential = {
+            has_deposit = d_frameworld_computing_complex
+            exists = owner
+            owner = { is_gestalt = yes }
+        }
+        job_stellarite_researcher_drone_add = 200
+        job_calculator_physicist_add = -60
+        job_calculator_biologist_add = -60
+        job_calculator_engineer_add = -60
+    }
+
+    included_building_sets = {
+        research
+        urban_automation
+        origin
+    }
+
+    zone_sets = {
+        research
+    }
+}
+
+# REFINERY #TODO ICON
+zone_voidframe_zone_DM_refinery = {
+    icon = GFX_anz_voidframe_zone_DM_strategic
+
+    swap_type = district_giga_voidframe_refinery_dm
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_dm_zone
+        TECH = "tech_acot_dm_transmutor"
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = ""
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = no }
+        }
+        job_acot_transmute_man_add = 200
+        job_chemist_add = -30
+        job_gas_refiner_add = -30
+        job_translucer_add = -30
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = yes }
+        }
+        job_acot_transmute_drone_add = 200
+        job_chemist_drone_add = -30
+        job_gas_refiner_drone_add = -30
+        job_translucer_drone_add = -30
+    }
+
+    included_building_sets = {
+        refinery
+        factory
+        industrial
+        foundry
+        urban_automation
+        origin
+    }
+
+    zone_sets = {
+        refinery
+    }
+}
+zone_voidframe_zone_DE_refinery = {
+    icon = GFX_anz_voidframe_zone_DE_strategic
+
+    swap_type = district_giga_voidframe_refinery_de
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_de_zone
+        TECH = "tech_acot_ae_transmutor"
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = ""
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = no }
+        }
+        job_acot_transmute_man_add = 300
+        job_chemist_add = -30
+        job_gas_refiner_add = -30
+        job_translucer_add = -30
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = yes }
+        }
+        job_acot_transmute_drone_add = 300
+        job_chemist_drone_add = -30
+        job_gas_refiner_drone_add = -30
+        job_translucer_drone_add = -30
+    }
+
+    included_building_sets = {
+        refinery
+        factory
+        industrial
+        foundry
+        urban_automation
+        origin
+    }
+
+    zone_sets = {
+        refinery
+    }
+} #no gestalt or individual
+zone_voidframe_zone_PE_refinery = {
+    icon = GFX_anz_voidframe_zone_PE_strategic
+
+    swap_type = district_giga_voidframe_refinery_pe
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_pe_zone
+        TECH = "tech_phanon_transmutor"
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = ""
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = no }
+        }
+        job_phanon_transmute_man_add  = 200
+        job_chemist_add = -30
+        job_gas_refiner_add = -30
+        job_translucer_add = -30
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = yes }
+        }
+        job_phanon_transmute_drone_add  = 200
+        job_chemist_drone_add = -30
+        job_gas_refiner_drone_add = -30
+        job_translucer_drone_add = -30
+    }
+
+    included_building_sets = {
+        refinery
+        factory
+        industrial
+        foundry
+        urban_automation
+        origin
+    }
+
+    zone_sets = {
+        refinery
+    }
+}
+zone_voidframe_zone_SE_refinery = {
+    icon = GFX_anz_voidframe_zone_SE_strategic
+
+    swap_type = district_giga_voidframe_refinery_se
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_se_zone
+        TECH = "tech_stellarite_transmutor"
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = ""
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = no }
+        }
+        job_stellarite_transmute_man_add  = 200
+        job_chemist_add = -30
+        job_gas_refiner_add = -30
+        job_translucer_add = -30
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = yes }
+        }
+        job_stellarite_transmute_drone_add  = 200
+        job_chemist_drone_add = -30
+        job_gas_refiner_drone_add = -30
+        job_translucer_drone_add = -30
+    }
+
+    included_building_sets = {
+        refinery
+        factory
+        industrial
+        foundry
+        urban_automation
+        origin
+    }
+
+    zone_sets = {
+        refinery
+    }
+}
 
 # SECURITY
 

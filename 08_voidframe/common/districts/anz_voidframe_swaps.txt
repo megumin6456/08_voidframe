@@ -436,13 +436,99 @@ district_giga_voidframe_sanctuary_se = {
 }
 
 # RESEARCH
+district_giga_voidframe_research_dm = {
+    icon = district_giga_voidframe_research_dm
+    overlay_icon = GFX_district_research
+    gridbox = district_arcology_research
 
-# REFINERY
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_voidframe_zone_DM_research
+    }
+}
+district_giga_voidframe_research_de = {
+    icon = district_giga_voidframe_research_de
+    overlay_icon = GFX_district_research
+    gridbox = district_arcology_research
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_voidframe_zone_DE_research
+    }
+}
+district_giga_voidframe_research_pe = {
+    icon = district_giga_voidframe_research_pe
+    overlay_icon = GFX_district_research
+    gridbox = district_arcology_research
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_voidframe_zone_PE_research
+    }
+}
+district_giga_voidframe_research_se = {
+    icon = district_giga_voidframe_research_se
+    overlay_icon = GFX_district_research
+    gridbox = district_arcology_research
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_voidframe_zone_SE_research
+    }
+}
+
+# REFINERY #TODO: put back the overlay icon once the district icon is cleaned up
+district_giga_voidframe_refinery_dm = {
+    icon = district_giga_voidframe_strat_dm
+    #overlay_icon = GFX_giga_district_strategic_resources
+    gridbox = district_arcology_arms_industry
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_voidframe_zone_DM_refinery
+    }
+}
+district_giga_voidframe_refinery_de = {
+    icon = district_giga_voidframe_strat_de
+    #overlay_icon = GFX_giga_district_strategic_resources
+    gridbox = district_arcology_arms_industry
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_voidframe_zone_DE_refinery
+    }
+}
+district_giga_voidframe_refinery_pe = {
+    icon = district_giga_voidframe_strat_pe
+    #overlay_icon = GFX_giga_district_strategic_resources
+    gridbox = district_arcology_arms_industry
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_voidframe_zone_PE_refinery
+    }
+}
+district_giga_voidframe_refinery_se = {
+    icon = district_giga_voidframe_strat_se
+    #overlay_icon = GFX_giga_district_strategic_resources
+    gridbox = district_arcology_arms_industry
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_voidframe_zone_SE_refinery
+    }
+}
 
 # SECURITY
 
 # AMENITIES
 
+# SUPERTENSILES
+
 # SOLDIER
 
-# SUPETENSILES
+# MAGINOT BUNKER
+
+# MAGINOT GUN
+
+# MAGINOT SHIELD
