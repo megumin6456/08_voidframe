@@ -429,8 +429,88 @@ district_giga_voidframe_temple_se = {
 }
 
 # UNITY / hive
+district_giga_voidframe_synapse_dm = {
+    icon = district_giga_voidframe_admin_dm
+    overlay_icon = GFX_district_unity
+    gridbox = district_arcology_administrative
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_voidframe_zone_DM_synapse
+    }
+}
+district_giga_voidframe_synapse_de = {
+    icon = district_giga_voidframe_admin_de
+    overlay_icon = GFX_district_unity
+    gridbox = district_arcology_administrative
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_voidframe_zone_DE_synapse
+    }
+}
+district_giga_voidframe_synapse_pe = {
+    icon = district_giga_voidframe_admin_pe
+    overlay_icon = GFX_district_unity
+    gridbox = district_arcology_administrative
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_voidframe_zone_PE_synapse
+    }
+}
+district_giga_voidframe_synapse_se = {
+    icon = district_giga_voidframe_admin_se
+    overlay_icon = GFX_district_unity
+    gridbox = district_arcology_administrative
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_voidframe_zone_SE_synapse
+    }
+}
 
 # UNITY / machine
+district_giga_voidframe_simulation_dm = {
+    icon = district_giga_voidframe_admin_dm
+    overlay_icon = GFX_district_unity
+    gridbox = district_arcology_administrative
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_voidframe_zone_DM_simulation
+    }
+}
+district_giga_voidframe_simulation_de = {
+    icon = district_giga_voidframe_admin_de
+    overlay_icon = GFX_district_unity
+    gridbox = district_arcology_administrative
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_voidframe_zone_DE_simulation
+    }
+}
+district_giga_voidframe_simulation_pe = {
+    icon = district_giga_voidframe_admin_pe
+    overlay_icon = GFX_district_unity
+    gridbox = district_arcology_administrative
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_voidframe_zone_PE_simulation
+    }
+}
+district_giga_voidframe_simulation_se = {
+    icon = district_giga_voidframe_admin_se
+    overlay_icon = GFX_district_unity
+    gridbox = district_arcology_administrative
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_voidframe_zone_SE_simulation
+    }
+}
 
 # UNITY / servitor
 district_giga_voidframe_sanctuary_dm = {

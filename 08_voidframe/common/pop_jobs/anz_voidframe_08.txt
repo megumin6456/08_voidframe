@@ -20,7 +20,7 @@ anz_voidframe_admin_dm = {
 
     resources = {
         # from aot
-        category = planet_administrators
+        category = planet_bureaucrats
         produces = {
             unity = 15
         }
@@ -219,9 +219,13 @@ anz_voidframe_admin_dm = {
 
 anz_voidframe_admin_drone_dm = {
 	category = complex_drone
-	condition_string = DRONE_JOB_TRIGGER
-	# icon = admin_dm
-	building_icon = building_acot_dm_ancient_control_center
+    swappable_data = {
+        default = {
+            condition_string = DRONE_JOB_TRIGGER
+            building_icon = building_acot_dm_ancient_control_center
+            icon = anz_voidframe_admin_drone_dm
+        }
+    }
 	
 	possible_pre_triggers = {
 		has_owner = yes
@@ -234,7 +238,7 @@ anz_voidframe_admin_drone_dm = {
 	possible = { can_think = yes }
 
 	resources = {
-		category = planet_administrators	
+		category = planet_bureaucrats
 		produces = {
 			unity = 15
 		}
@@ -245,23 +249,31 @@ anz_voidframe_admin_drone_dm = {
 		}
 	}
 
-	weight = {
-		weight = @complex_drone_job_weight
-		mult = value:job_weights_modifier|JOB|coordinator|RESOURCE|unity|
-		modifier = {
-			factor = 1.5
-			has_job = anz_voidframe_admin_drone_dm
-		}
-	}
+    weight = {
+        weight = @synapse_drone_job_weight
+        mult = value:job_weights_modifier|JOB|coordinator|RESOURCE|unity|
+        mult = value:scripted_job_weight_shroud_forged_mult
+        modifier = {
+            factor = 0.9
+            exists = owner
+            years_passed < 1
+            owner = { has_valid_civic = civic_machine_assimilator }
+            has_trait = trait_cybernetic
+        }
+    }
 
 	inline_script = "jobs/automodding_priority_unity"
 }
 
 anz_voidframe_admin_drone_de = {
 	category = complex_drone
-	condition_string = DRONE_JOB_TRIGGER
-	#icon = admin_de
-	building_icon = building_acot_ae_ancient_control_center
+    swappable_data = {
+        default = {
+            condition_string = DRONE_JOB_TRIGGER
+            building_icon = building_acot_ae_ancient_control_center
+            icon = anz_voidframe_admin_drone_de
+        }
+    }
 	
 	possible_pre_triggers = {
 		has_owner = yes
@@ -274,7 +286,7 @@ anz_voidframe_admin_drone_de = {
 	possible = { can_think = yes }
 
 	resources = {
-		category = planet_administrators	
+		category = planet_bureaucrats
 		produces = {
 			unity = 30
 		}
@@ -285,23 +297,31 @@ anz_voidframe_admin_drone_de = {
 		}
 	}
 
-	weight = {
-		weight = @complex_drone_job_weight
-		mult = value:job_weights_modifier|JOB|coordinator|RESOURCE|unity|
-		modifier = {
-			factor = 1.5
-			has_job = anz_voidframe_admin_drone_de
-		}
-	}
+    weight = {
+        weight = @synapse_drone_job_weight
+        mult = value:job_weights_modifier|JOB|coordinator|RESOURCE|unity|
+        mult = value:scripted_job_weight_shroud_forged_mult
+        modifier = {
+            factor = 0.9
+            exists = owner
+            years_passed < 1
+            owner = { has_valid_civic = civic_machine_assimilator }
+            has_trait = trait_cybernetic
+        }
+    }
 
 	inline_script = "jobs/automodding_priority_unity"
 }
 
 anz_voidframe_admin_drone_pe = {
 	category = complex_drone
-	condition_string = DRONE_JOB_TRIGGER
-	#icon = admin_pe
-	building_icon = building_phanon_control_center
+    swappable_data = {
+        default = {
+            condition_string = DRONE_JOB_TRIGGER
+            building_icon = building_phanon_control_center
+            icon = anz_voidframe_admin_drone_pe
+        }
+    }
 	
 	possible_pre_triggers = {
 		has_owner = yes
@@ -314,7 +334,7 @@ anz_voidframe_admin_drone_pe = {
 	possible = { can_think = yes }
 
 	resources = {
-		category = planet_administrators	
+		category = planet_bureaucrats
 		produces = {
 			unity = 44
 		}
@@ -324,21 +344,29 @@ anz_voidframe_admin_drone_pe = {
 		}
 	}
 
-	weight = {
-		weight = @complex_drone_job_weight
-		mult = value:job_weights_modifier|JOB|coordinator|RESOURCE|unity|
-		modifier = {
-			factor = 1.5
-			has_job = anz_voidframe_admin_drone_pe
-		}
-	}
+    weight = {
+        weight = @synapse_drone_job_weight
+        mult = value:job_weights_modifier|JOB|coordinator|RESOURCE|unity|
+        mult = value:scripted_job_weight_shroud_forged_mult
+        modifier = {
+            factor = 0.9
+            exists = owner
+            years_passed < 1
+            owner = { has_valid_civic = civic_machine_assimilator }
+            has_trait = trait_cybernetic
+        }
+    }
 }
 
 anz_voidframe_admin_drone_se = {
 	category = complex_drone
-	condition_string = DRONE_JOB_TRIGGER
-	#icon = admin_se
-	building_icon = building_stellarite_control_center
+    swappable_data = {
+        default = {
+            condition_string = DRONE_JOB_TRIGGER
+            building_icon = building_stellarite_control_center
+            icon = anz_voidframe_admin_drone_se
+        }
+    }
 	
 	possible_pre_triggers = {
 		has_owner = yes
@@ -351,7 +379,7 @@ anz_voidframe_admin_drone_se = {
 	possible = { can_think = yes }
 
 	resources = {
-		category = planet_administrators	
+		category = planet_bureaucrats
 		produces = {
 			unity = 132
 		}
@@ -361,23 +389,31 @@ anz_voidframe_admin_drone_se = {
 		}
 	}
 
-	weight = {
-		weight = @complex_drone_job_weight
-		mult = value:job_weights_modifier|JOB|coordinator|RESOURCE|unity|
-		modifier = {
-			factor = 1.5
-			has_job = anz_voidframe_admin_drone_se
-		}
-	}
+    weight = {
+        weight = @synapse_drone_job_weight
+        mult = value:job_weights_modifier|JOB|coordinator|RESOURCE|unity|
+        mult = value:scripted_job_weight_shroud_forged_mult
+        modifier = {
+            factor = 0.9
+            exists = owner
+            years_passed < 1
+            owner = { has_valid_civic = civic_machine_assimilator }
+            has_trait = trait_cybernetic
+        }
+    }
 }
 
 # Hive Synapse
 
 anz_voidframe_synapse_drone_dm = {
 	category = complex_drone
-	condition_string = DRONE_JOB_TRIGGER
-	#icon = synapse_dm
-	building_icon = building_acot_dm_ancient_hive_cluster
+    swappable_data = {
+        default = {
+            condition_string = DRONE_JOB_TRIGGER
+            building_icon = building_acot_dm_ancient_hive_cluster
+            icon = anz_voidframe_synapse_drone_dm
+        }
+    }
 	
 	possible_pre_triggers = {
 		has_owner = yes
@@ -390,7 +426,7 @@ anz_voidframe_synapse_drone_dm = {
 	possible = { can_think = yes }
 
 	resources = {
-		category = planet_administrators	
+		category = planet_bureaucrats
 		produces = {
 			unity = 15
 		}
@@ -402,23 +438,31 @@ anz_voidframe_synapse_drone_dm = {
 		}
 	}
 
-	weight = {
-		weight = @complex_drone_job_weight
-		mult = value:job_weights_modifier|JOB|coordinator|RESOURCE|unity|
-		modifier = {
-			factor = 1.5
-			has_job = anz_voidframe_synapse_drone_dm
-		}
-	}
+    weight = {
+        weight = @synapse_drone_job_weight
+        mult = value:job_weights_modifier|JOB|coordinator|RESOURCE|unity|
+        mult = value:scripted_job_weight_shroud_forged_mult
+        modifier = {
+            factor = 0.9
+            exists = owner
+            years_passed < 1
+            owner = { has_valid_civic = civic_machine_assimilator }
+            has_trait = trait_cybernetic
+        }
+    }
 
 	inline_script = "jobs/automodding_priority_unity"
 }
 
 anz_voidframe_synapse_drone_de = {
 	category = complex_drone
-	condition_string = DRONE_JOB_TRIGGER
-	#icon = synapse_de
-	building_icon = building_acot_ae_ancient_hive_cluster
+    swappable_data = {
+        default = {
+            condition_string = DRONE_JOB_TRIGGER
+            building_icon = building_acot_ae_ancient_hive_cluster
+            icon = anz_voidframe_synapse_drone_de
+        }
+    }
 	
 	possible_pre_triggers = {
 		has_owner = yes
@@ -431,7 +475,7 @@ anz_voidframe_synapse_drone_de = {
 	possible = { can_think = yes }
 
 	resources = {
-		category = planet_administrators	
+		category = planet_bureaucrats
 		produces = {
 			unity = 30
 		}
@@ -443,23 +487,31 @@ anz_voidframe_synapse_drone_de = {
 		}
 	}
 
-	weight = {
-		weight = @complex_drone_job_weight
-		mult = value:job_weights_modifier|JOB|coordinator|RESOURCE|unity|
-		modifier = {
-			factor = 1.5
-			has_job = anz_voidframe_synapse_drone_de
-		}
-	}
+    weight = {
+        weight = @synapse_drone_job_weight
+        mult = value:job_weights_modifier|JOB|coordinator|RESOURCE|unity|
+        mult = value:scripted_job_weight_shroud_forged_mult
+        modifier = {
+            factor = 0.9
+            exists = owner
+            years_passed < 1
+            owner = { has_valid_civic = civic_machine_assimilator }
+            has_trait = trait_cybernetic
+        }
+    }
 
 	inline_script = "jobs/automodding_priority_unity"
 }
 
 anz_voidframe_synapse_drone_pe = {
 	category = complex_drone
-	condition_string = DRONE_JOB_TRIGGER
-	#icon = synapse_pe
-	building_icon = building_phanon_hive_cluster
+    swappable_data = {
+        default = {
+            condition_string = DRONE_JOB_TRIGGER
+            building_icon = building_phanon_hive_cluster
+            icon = anz_voidframe_synapse_drone_pe
+        }
+    }
 	
 	possible_pre_triggers = {
 		has_owner = yes
@@ -472,7 +524,7 @@ anz_voidframe_synapse_drone_pe = {
 	possible = { can_think = yes }
 
 	resources = {
-		category = planet_administrators	
+		category = planet_bureaucrats
 		produces = {
 			unity = 44
 		}
@@ -482,21 +534,29 @@ anz_voidframe_synapse_drone_pe = {
 		}
 	}
 
-	weight = {
-		weight = @complex_drone_job_weight
-		mult = value:job_weights_modifier|JOB|coordinator|RESOURCE|unity|
-		modifier = {
-			factor = 1.5
-			has_job = anz_voidframe_synapse_drone_pe
-		}
-	}
+    weight = {
+        weight = @synapse_drone_job_weight
+        mult = value:job_weights_modifier|JOB|coordinator|RESOURCE|unity|
+        mult = value:scripted_job_weight_shroud_forged_mult
+        modifier = {
+            factor = 0.9
+            exists = owner
+            years_passed < 1
+            owner = { has_valid_civic = civic_machine_assimilator }
+            has_trait = trait_cybernetic
+        }
+    }
 }
 
 anz_voidframe_synapse_drone_se = {
 	category = complex_drone
-	condition_string = DRONE_JOB_TRIGGER
-	#icon = synapse_se
-	building_icon = building_stellarite_hive_cluster
+    swappable_data = {
+        default = {
+            condition_string = DRONE_JOB_TRIGGER
+            building_icon = building_stellarite_hive_cluster
+            icon = anz_voidframe_synapse_drone_se
+        }
+    }
 	
 	possible_pre_triggers = {
 		has_owner = yes
@@ -509,7 +569,7 @@ anz_voidframe_synapse_drone_se = {
 	possible = { can_think = yes }
 
 	resources = {
-		category = planet_administrators	
+		category = planet_bureaucrats
 		produces = {
 			unity = 132
 		}
@@ -519,14 +579,18 @@ anz_voidframe_synapse_drone_se = {
 		}
 	}
 
-	weight = {
-		weight = @complex_drone_job_weight
-		mult = value:job_weights_modifier|JOB|coordinator|RESOURCE|unity|
-		modifier = {
-			factor = 1.5
-			has_job = anz_voidframe_synapse_drone_se
-		}
-	}
+    weight = {
+        weight = @synapse_drone_job_weight
+        mult = value:job_weights_modifier|JOB|coordinator|RESOURCE|unity|
+        mult = value:scripted_job_weight_shroud_forged_mult
+        modifier = {
+            factor = 0.9
+            exists = owner
+            years_passed < 1
+            owner = { has_valid_civic = civic_machine_assimilator }
+            has_trait = trait_cybernetic
+        }
+    }
 }
 
 # Trader jobs
