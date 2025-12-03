@@ -1,0 +1,130 @@
+# calculate number of bunker districts for making armies
+maginot_bunker_count = {
+    base = 1
+
+    complex_trigger_modifier = {
+        trigger = num_districts
+        parameters = { type = district_maginot_world_bunkers }
+        mode = add
+    }
+
+    complex_trigger_modifier = {
+        trigger = num_districts
+        parameters = { type = district_maginot_ringworld_bunkers }
+        mode = add
+        mult = 5
+    }
+
+    complex_trigger_modifier = {
+        trigger = num_districts
+        parameters = { type = district_giga_frameworld_fortress_bunker }
+        mode = add
+    }
+
+    #### multiplies if the zone is there
+    modifier = {
+        mult = 2
+        has_zone = { zone = zone_voidframe_zone_DM_maginotbunker }
+    }
+    modifier = {
+        mult = 2
+        has_zone = { zone = zone_voidframe_zone_DE_maginotbunker }
+    }
+    modifier = {
+        mult = 3
+        has_zone = { zone = zone_voidframe_zone_PE_maginotbunker }
+    }
+    modifier = {
+        mult = 3
+        has_zone = { zone = zone_voidframe_zone_SE_maginotbunker }
+    }
+
+}
+
+maginot_bunker_army_count_frameworld = {
+    base = 0
+
+    complex_trigger_modifier = {
+        trigger = num_districts
+        parameters = { type = district_giga_frameworld_fortress_bunker }
+        mode = weight
+    }
+
+    #### multiplies if the zone is there
+    modifier = {
+        mult = 2
+        has_zone = { zone = zone_voidframe_zone_DM_maginotbunker }
+    }
+    modifier = {
+        mult = 2
+        has_zone = { zone = zone_voidframe_zone_DE_maginotbunker }
+    }
+    modifier = {
+        mult = 3
+        has_zone = { zone = zone_voidframe_zone_PE_maginotbunker }
+    }
+    modifier = {
+        mult = 3
+        has_zone = { zone = zone_voidframe_zone_SE_maginotbunker }
+    }
+}
+
+# NO NEED TO PATCH UPGRADE POINTS, AS THOSE ARE CALCULATED VIA # OF JOBS
+
+# calculate how many shield armies we need on this planet
+maginot_shield_army_count_frameworld = {
+    base = 0
+
+    complex_trigger_modifier = {
+        trigger = num_districts
+        parameters = { type = district_giga_frameworld_maginot_shield_generators }
+        mode = weight
+    }
+
+    #### multiplies if the zone is there
+    modifier = {
+        mult = 2
+        has_zone = { zone = zone_voidframe_zone_DM_maginotshield }
+    }
+    modifier = {
+        mult = 2
+        has_zone = { zone = zone_voidframe_zone_DE_maginotshield }
+    }
+    modifier = {
+        mult = 3
+        has_zone = { zone = zone_voidframe_zone_PE_maginotshield }
+    }
+    modifier = {
+        mult = 3
+        has_zone = { zone = zone_voidframe_zone_SE_maginotshield }
+    }
+}
+
+# calculate how many artillery armies we need on this planet
+maginot_artillery_army_count_frameworld = {
+    base = 0
+
+    complex_trigger_modifier = {
+        trigger = num_districts
+        parameters = { type = district_giga_frameworld_maginot_planetary_cannons }
+        mode = weight
+    }
+
+    #### multiplies if the zone is there
+    modifier = {
+        mult = 2
+        has_zone = { zone = zone_voidframe_zone_DM_maginotarty }
+    }
+    modifier = {
+        mult = 2
+        has_zone = { zone = zone_voidframe_zone_DE_maginotarty }
+    }
+    modifier = {
+        mult = 3
+        has_zone = { zone = zone_voidframe_zone_PE_maginotarty }
+    }
+    modifier = {
+        mult = 3
+        has_zone = { zone = zone_voidframe_zone_SE_maginotarty }
+    }
+}

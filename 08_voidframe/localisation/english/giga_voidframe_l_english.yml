@@ -947,21 +947,29 @@ phanon_srname_ee: "Runic"
 
 # MAGINOT GUN
 
-  district_giga_voidframe_maginot_planetary_cannons_dm: "Guns of Urban" #eu4 moment
-  district_giga_voidframe_maginot_planetary_cannons_dm_plural: "Guns of Urban"
-  district_giga_voidframe_maginot_planetary_cannons_dm_desc: "Inspired by a relic found on a tomb world, these guns fire not mundane cannonballs, but blasts of dark matter."
+  district_giga_voidframe_maginotarty_dm: "Guns of Urban" #eu4 moment
+  district_giga_voidframe_maginotarty_dm_plural: "Guns of Urban"
+  district_giga_voidframe_maginotarty_dm_desc: "Inspired by a relic found on a tomb world, these guns fire not mundane cannonballs, but blasts of dark matter."
+  zone_voidframe_zone_DM_maginotarty: "Delta Artillery"
+  zone_voidframe_zone_DM_maginotarty_desc: "$district_giga_voidframe_maginotarty_dm_desc$"
 
-  district_giga_voidframe_maginot_planetary_cannons_de: "Novalith Cannon Array" #sins of a solar empire
-  district_giga_voidframe_maginot_planetary_cannons_de_plural: "Novalith Cannon Arrays"
-  district_giga_voidframe_maginot_planetary_cannons_de_desc: "Some say that firing nuclear cannons close to your planet is a bad idea. Those people have never seen the destructive, yet focused firepower of a dark energy boosted nuclear shell."
+  district_giga_voidframe_maginotarty_de: "Novalith Cannon Array" #sins of a solar empire
+  district_giga_voidframe_maginotarty_de_plural: "Novalith Cannon Arrays"
+  district_giga_voidframe_maginotarty_de_desc: "Some say that firing nuclear cannons close to your planet is a bad idea. Those people have never seen the destructive, yet focused firepower of a dark energy boosted nuclear shell."
+  zone_voidframe_zone_DE_maginotarty: "Alpha Artillery"
+  zone_voidframe_zone_DE_maginotarty_desc: "$district_giga_voidframe_maginotarty_de_desc$"
 
-  district_giga_voidframe_maginot_planetary_cannons_pe: "§RLance of Morskittar§!" #warhammer reference
-  district_giga_voidframe_maginot_planetary_cannons_pe_plural: "§RLances of Morskittar§!"
-  district_giga_voidframe_maginot_planetary_cannons_pe_desc: "$phanon_classified$"
+  district_giga_voidframe_maginotarty_pe: "§RLance of Morskittar§!" #warhammer reference
+  district_giga_voidframe_maginotarty_pe_plural: "§RLances of Morskittar§!"
+  district_giga_voidframe_maginotarty_pe_desc: "$phanon_classified$"
+  zone_voidframe_zone_PE_maginotarty: "Runic Artillery"
+  zone_voidframe_zone_PE_maginotarty_desc: "$district_giga_voidframe_maginotarty_pe_desc$"
 
-  district_giga_voidframe_maginot_planetary_cannons_se: "§HLion's Gate Defenses§!" #warhammer reference
-  district_giga_voidframe_maginot_planetary_cannons_se_plural: "§HLion's Gate Defenses§!"
-  district_giga_voidframe_maginot_planetary_cannons_se_desc: "§HAugmented with stellarite energy, every shot fired from these batteries carries the screaming echoes of a dying star§!."
+  district_giga_voidframe_maginotarty_se: "§HLion's Gate Defenses§!" #warhammer reference
+  district_giga_voidframe_maginotarty_se_plural: "§HLion's Gate Defenses§!"
+  district_giga_voidframe_maginotarty_se_desc: "§HAugmented with stellarite energy, every shot fired from these batteries carries the screaming echoes of a dying star§!."
+  zone_voidframe_zone_SE_maginotarty: "Sigma Artillery"
+  zone_voidframe_zone_SE_maginotarty_desc: "$district_giga_voidframe_maginotarty_se_desc$"
 
   #district_giga_voidframe_maginot_planetary_cannons_te: "§M §!"
   #district_giga_voidframe_maginot_planetary_cannons_te_plural: "§M §!"
@@ -978,21 +986,29 @@ phanon_srname_ee: "Runic"
 
 # MAGINOT SHIELD
 
-  district_giga_voidframe_maginot_shield_generators_dm: "Walls of Camelot" #i dont need to tell you what this references
-  district_giga_voidframe_maginot_shield_generators_dm_plural: "Walls of Camelot"
-  district_giga_voidframe_maginot_shield_generators_dm_desc: "Reinforced with dark matter energy shields, our frame defenses are as strong as the legendary walls of Camelot!"
+  district_giga_voidframe_maginotshield_dm: "Walls of Camelot" #i dont need to tell you what this references
+  district_giga_voidframe_maginotshield_dm_plural: "Walls of Camelot"
+  district_giga_voidframe_maginotshield_dm_desc: "Reinforced with dark matter energy shields, our frame defenses are as strong as the legendary walls of Camelot!"
+  zone_voidframe_zone_DM_maginotshield: "Delta Shields"
+  zone_voidframe_zone_DM_maginotshield_desc: "$district_giga_voidframe_maginotshield_dm_desc$"
 
-  district_giga_voidframe_maginot_shield_generators_de: "Walls of Mordor" #i dont need to tell you what this references
-  district_giga_voidframe_maginot_shield_generators_de_plural: "Walls of Mordor"
-  district_giga_voidframe_maginot_shield_generators_de_desc: "Adding large burning eyes to our energy shields may look strange, but the dark energy beams that they fire to neutralize projectiles prove their worth."
+  district_giga_voidframe_maginotshield_de: "Walls of Mordor" #i dont need to tell you what this references
+  district_giga_voidframe_maginotshield_de_plural: "Walls of Mordor"
+  district_giga_voidframe_maginotshield_de_desc: "Adding large burning eyes to our energy shields may look strange, but the dark energy beams that they fire to neutralize projectiles prove their worth."
+  zone_voidframe_zone_DE_maginotshield: "Alpha Shields"
+  zone_voidframe_zone_DE_maginotshield_desc: "$district_giga_voidframe_maginotshield_de_desc$"
 
-  district_giga_voidframe_maginot_shield_generators_pe: "§RSefirah Castle§!" #lord of the mysteries
-  district_giga_voidframe_maginot_shield_generators_pe_plural: "§RSefirah Castle§!"
-  district_giga_voidframe_maginot_shield_generators_pe_desc: "$phanon_classified$"
+  district_giga_voidframe_maginotshield_pe: "§RWalls of Eryx§!" #lovecraft
+  district_giga_voidframe_maginotshield_pe_plural: "§RWalls of Eryx§!"
+  district_giga_voidframe_maginotshield_pe_desc: "$phanon_classified$"
+  zone_voidframe_zone_PE_maginotshield: "Runic Shields"
+  zone_voidframe_zone_PE_maginotshield_desc: "$district_giga_voidframe_maginotshield_pe_desc$"
 
-  district_giga_voidframe_maginot_shield_generators_se: "§HWalls of Eryx§!" #lovecraft
-  district_giga_voidframe_maginot_shield_generators_se_plural: "§HWalls of Eryx§!"
-  district_giga_voidframe_maginot_shield_generators_se_desc: "§HThese walls are reinforced with multiple dimensional pockets, so enemy attacks have to travel through several places where the laws of physics may not even work properly before they can impact our fortress.§!"
+  district_giga_voidframe_maginotshield_se: "§HSefirah Castle§!" #LOTM
+  district_giga_voidframe_maginotshield_se_plural: "§HSefirah Castle§!"
+  district_giga_voidframe_maginotshield_se_desc: "§HThese walls are reinforced with multiple dimensional pockets, so enemy attacks have to travel through several places where the laws of physics may not even work properly before they can impact our fortress.§!"
+  zone_voidframe_zone_SE_maginotshield: "Sigma Shields"
+  zone_voidframe_zone_SE_maginotshield_desc: "$district_giga_voidframe_maginotshield_se_desc$"
 
   #district_giga_voidframe_maginot_shield_generators_te: "§M §!"
   #district_giga_voidframe_maginot_shield_generators_te_plural: "§M §!"

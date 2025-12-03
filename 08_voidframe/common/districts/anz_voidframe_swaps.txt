@@ -808,6 +808,8 @@ district_giga_voidframe_anticrime_se = {
 
 # AMENITIES
 
+# AMENITIES DYSTOPIA
+
 # EHOF NEG MASS
 
 # EHOF SENT METAL
@@ -859,5 +861,125 @@ district_giga_voidframe_supertensiles_se = {
 # MAGINOT BUNKER
 
 # MAGINOT GUNS
+district_giga_voidframe_maginotarty_dm = {
+    icon = district_giga_voidframe_maginotarty_dm
+    #overlay_icon = GFX_giga_district_strategic_resources
+    gridbox = district_arcology_administrative
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_voidframe_zone_DM_maginotarty
+    }
+
+    triggered_desc = {
+        trigger = { exists = owner }
+        text = job_maginot_planetary_artillery_effect_desc_dm
+    }
+}
+district_giga_voidframe_maginotarty_de = {
+    icon = district_giga_voidframe_maginotarty_de
+    #overlay_icon = GFX_giga_district_strategic_resources
+    gridbox = district_arcology_administrative
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_voidframe_zone_DE_maginotarty
+    }
+
+    triggered_desc = {
+        trigger = { exists = owner }
+        text = job_maginot_planetary_artillery_effect_desc_de
+    }
+}
+district_giga_voidframe_maginotarty_pe = {
+    icon = district_giga_voidframe_maginotarty_pe
+    #overlay_icon = GFX_giga_district_strategic_resources
+    gridbox = district_arcology_administrative
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_voidframe_zone_PE_maginotarty
+    }
+
+    triggered_desc = {
+        trigger = { exists = owner }
+        text = job_maginot_planetary_artillery_effect_desc_pe
+    }
+}
+district_giga_voidframe_maginotarty_se = {
+    icon = district_giga_voidframe_maginotarty_se
+    #overlay_icon = GFX_giga_district_strategic_resources
+    gridbox = district_arcology_administrative
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_voidframe_zone_SE_maginotarty
+    }
+
+    triggered_desc = {
+        trigger = { exists = owner }
+        text = job_maginot_planetary_artillery_effect_desc_se
+    }
+}
 
 # MAGINOT SHIELD
+district_giga_voidframe_maginotshield_dm = {
+    icon = district_giga_voidframe_maginotshield_dm
+    #overlay_icon = GFX_giga_district_strategic_resources
+    gridbox = district_arcology_administrative
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_voidframe_zone_DM_maginotshield
+    }
+
+    triggered_desc = {
+        trigger = { exists = owner }
+        text = job_maginot_planetary_shield_effect_desc_dm
+    }
+}
+district_giga_voidframe_maginotshield_de = {
+    icon = district_giga_voidframe_maginotshield_de
+    #overlay_icon = GFX_giga_district_strategic_resources
+    gridbox = district_arcology_administrative
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_voidframe_zone_DE_maginotshield
+    }
+
+    triggered_desc = {
+        trigger = { exists = owner }
+        text = job_maginot_planetary_shield_effect_desc_de
+    }
+}
+district_giga_voidframe_maginotshield_pe = {
+    icon = district_giga_voidframe_maginotshield_pe
+    #overlay_icon = GFX_giga_district_strategic_resources
+    gridbox = district_arcology_administrative
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_voidframe_zone_PE_maginotshield
+    }
+
+    triggered_desc = {
+        trigger = { exists = owner }
+        text = job_maginot_planetary_shield_effect_desc_pe
+    }
+}
+district_giga_voidframe_maginotshield_se = {
+    icon = district_giga_voidframe_maginotshield_se
+    #overlay_icon = GFX_giga_district_strategic_resources
+    gridbox = district_arcology_administrative
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_voidframe_zone_SE_maginotshield
+    }
+
+    triggered_desc = {
+        trigger = { exists = owner }
+        text = job_maginot_planetary_shield_effect_desc_se
+    }
+}

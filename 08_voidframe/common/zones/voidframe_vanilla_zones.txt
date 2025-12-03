@@ -3390,7 +3390,7 @@ zone_voidframe_zone_DM_anticrime = { #AOT locked since we using dm enforcer
     zone_sets = {
         anticrime
     }
-}
+}  #AOT locked since we using dm enforcer
 zone_voidframe_zone_DE_anticrime = {
     #icon = GFX_anz_voidframe_zone_DE_FOOD
 
@@ -3730,6 +3730,320 @@ zone_voidframe_zone_SE_tensiles = {
 
 # MAGINOT BUNKER
 
-# MAGINOT GUNS
+# MAGINOT GUNS #todo icon
+zone_voidframe_zone_DM_maginotarty = {
+    #icon = GFX_anz_voidframe_zone_DM_maginotarty
 
-# MAGINOT SHIELD
+    swap_type = district_giga_voidframe_maginotarty_dm
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_dm_zone
+        TECH = "tech_acot_dm_stronghold"
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = ""
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = no }
+        }
+        job_acot_soldier_add = 100
+        job_maginot_planetary_cannon_operator_add = 50
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = yes }
+        }
+        job_acot_soldier_drone_add = 100
+        job_maginot_planetary_cannon_operator_gestalt_add = 50
+    }
+
+    included_building_sets = {
+        fortress
+    }
+
+    zone_sets = {
+        maginot_orbital_defense_grids
+    }
+
+} #this uses acot jobs for dm and it annoys me
+zone_voidframe_zone_DE_maginotarty = {
+    #icon = GFX_anz_voidframe_zone_DE_maginotarty
+
+    swap_type = district_giga_voidframe_maginotarty_de
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_de_zone
+        TECH = "tech_acot_ae_stronghold"
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = ""
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = no }
+        }
+        job_acot_soldier_add = 200
+        job_maginot_planetary_cannon_operator_add = 100
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = yes }
+        }
+        job_acot_soldier_drone_add = 200
+        job_maginot_planetary_cannon_operator_gestalt_add = 100
+    }
+
+    included_building_sets = {
+        fortress
+    }
+
+    zone_sets = {
+        maginot_orbital_defense_grids
+    }
+}
+zone_voidframe_zone_PE_maginotarty = {
+    #icon = GFX_anz_voidframe_zone_PE_maginotarty
+
+    swap_type = district_giga_voidframe_maginotarty_pe
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_pe_zone
+        TECH = "tech_phanon_stronghold"
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = ""
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = no }
+        }
+        job_phanon_soldier_add = 200
+        job_maginot_planetary_cannon_operator_add = 150
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = yes }
+        }
+        job_phanon_soldier_drone_add = 200
+        job_maginot_planetary_cannon_operator_gestalt_add = 150
+    }
+
+    included_building_sets = {
+        fortress
+    }
+
+    zone_sets = {
+        maginot_orbital_defense_grids
+    }
+}
+zone_voidframe_zone_SE_maginotarty = {
+    #icon = GFX_anz_voidframe_zone_SE_maginotarty
+
+    swap_type = district_giga_voidframe_maginotarty_se
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_se_zone
+        TECH = "tech_stellarite_stronghold"
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = ""
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = no }
+        }
+        job_stellarite_soldier_add = 200
+        job_maginot_planetary_cannon_operator_add = 200
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = yes }
+        }
+        job_stellarite_soldier_drone_add = 200
+        job_maginot_planetary_cannon_operator_gestalt_add = 200
+    }
+
+    included_building_sets = {
+        fortress
+    }
+
+    zone_sets = {
+        maginot_orbital_defense_grids
+    }
+}
+
+# MAGINOT SHIELD #todo icon
+zone_voidframe_zone_DM_maginotshield = {
+    #icon = GFX_anz_voidframe_zone_DM_maginotshield
+
+    swap_type = district_giga_voidframe_maginotshield_dm
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_dm_zone
+        TECH = "tech_acot_dm_stronghold"
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = ""
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = no }
+        }
+        job_acot_soldier_add = 100
+        job_maginot_shield_generator_operator_add = 50
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = yes }
+        }
+        job_acot_soldier_drone_add = 100
+        job_maginot_shield_generator_operator_gestalt_add = 50
+    }
+
+    included_building_sets = {
+        fortress
+    }
+
+    zone_sets = {
+        maginot_shield_generators
+    }
+
+} #this uses acot jobs for dm and it annoys me
+zone_voidframe_zone_DE_maginotshield = {
+    #icon = GFX_anz_voidframe_zone_DE_maginotshield
+
+    swap_type = district_giga_voidframe_maginotshield_de
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_de_zone
+        TECH = "tech_acot_ae_stronghold"
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = ""
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = no }
+        }
+        job_acot_soldier_add = 200
+        job_maginot_shield_generator_operator_add = 100
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = yes }
+        }
+        job_acot_soldier_drone_add = 200
+        job_maginot_shield_generator_operator_gestalt_add = 100
+    }
+
+    included_building_sets = {
+        fortress
+    }
+
+    zone_sets = {
+        maginot_shield_generators
+    }
+}
+zone_voidframe_zone_PE_maginotshield = {
+    #icon = GFX_anz_voidframe_zone_PE_maginotshield
+
+    swap_type = district_giga_voidframe_maginotshield_pe
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_pe_zone
+        TECH = "tech_phanon_stronghold"
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = ""
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = no }
+        }
+        job_phanon_soldier_add = 200
+        job_maginot_shield_generator_operator_add = 150
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = yes }
+        }
+        job_phanon_soldier_drone_add = 200
+        job_maginot_shield_generator_operator_gestalt_add = 150
+    }
+
+    included_building_sets = {
+        fortress
+    }
+
+    zone_sets = {
+        maginot_shield_generators
+    }
+}
+zone_voidframe_zone_SE_maginotshield = {
+    #icon = GFX_anz_voidframe_zone_SE_maginotshield
+
+    swap_type = district_giga_voidframe_maginotshield_se
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_se_zone
+        TECH = "tech_stellarite_stronghold"
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = ""
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = no }
+        }
+        job_stellarite_soldier_add = 200
+        job_maginot_shield_generator_operator_add = 200
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = yes }
+        }
+        job_stellarite_soldier_drone_add = 200
+        job_maginot_shield_generator_operator_gestalt_add = 200
+    }
+
+    included_building_sets = {
+        fortress
+    }
+
+    zone_sets = {
+        maginot_shield_generators
+    }
+}
