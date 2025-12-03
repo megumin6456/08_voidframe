@@ -2,7 +2,11 @@ slot_anz_voidframe_enigmatic = {
 
     include = {
         zone_anz_voidframe_enigmatic
-        zone_anz_voidframe_enigmatic_ae
+        zone_anz_voidframe_enigmatic_alpha
+    }
+
+    included_zone_sets = {
+        frame_enigmatic
     }
 
     exclude = {
@@ -10,9 +14,23 @@ slot_anz_voidframe_enigmatic = {
 
     unlock = { # planet scope
         always = yes
-        # owner = {
-        # 	giga_country_uses_priests = yes
-        # 	has_technology = "tech_holographic_rituals"
-        # }
+    }
+}
+
+slot_anz_voidframe_phanon = {
+
+    include = {
+        zone_anz_voidframe_phanon
+    }
+
+    included_zone_sets = {
+        frame_phanon
+    }
+
+    exclude = {
+    }
+
+    unlock = { # planet scope
+        always = yes
     }
 }

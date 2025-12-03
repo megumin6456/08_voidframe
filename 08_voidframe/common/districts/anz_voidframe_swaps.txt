@@ -722,7 +722,7 @@ district_giga_voidframe_research_se = {
     }
 }
 
-# REFINERY
+# REFINERY #todo put the overlay icon on
 district_giga_voidframe_refinery_dm = {
     icon = district_giga_voidframe_strat_dm
     #overlay_icon = GFX_giga_district_strategic_resources
@@ -764,7 +764,47 @@ district_giga_voidframe_refinery_se = {
     }
 }
 
-# SECURITY
+# SECURITY #todo make an overlay icon
+district_giga_voidframe_anticrime_dm = {
+    icon = district_giga_voidframe_anticrime_dm
+    #overlay_icon = GFX_giga_district_strategic_resources
+    gridbox = district_arcology_leisure
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_voidframe_zone_DM_anticrime
+    }
+}
+district_giga_voidframe_anticrime_de = {
+    icon = district_giga_voidframe_anticrime_de
+    #overlay_icon = GFX_giga_district_strategic_resources
+    gridbox = district_arcology_leisure
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_voidframe_zone_DE_anticrime
+    }
+}
+district_giga_voidframe_anticrime_pe = {
+    icon = district_giga_voidframe_anticrime_pe
+    #overlay_icon = GFX_giga_district_strategic_resources
+    gridbox = district_arcology_leisure
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_voidframe_zone_PE_anticrime
+    }
+}
+district_giga_voidframe_anticrime_se = {
+    icon = district_giga_voidframe_anticrime_se
+    #overlay_icon = GFX_giga_district_strategic_resources
+    gridbox = district_arcology_leisure
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_voidframe_zone_SE_anticrime
+    }
+}
 
 # AMENITIES
 

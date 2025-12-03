@@ -160,6 +160,120 @@ district_giga_voidframe_enigmatic = {
         trigger = {
             always = yes
         }
-        text = "Enigmatic Alchemy"
+        text = zone_anz_voidframe_enigmatic_subtitle
+    }
+}
+district_giga_voidframe_enigmatic_ae = {
+    icon = district_ae_hab_dark_matter_energy
+    #overlay_icon = GFX_district_unity
+    gridbox = district_dm_hab_dark_matter_energy
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_anz_voidframe_enigmatic_upgrade_subtitle
+    }
+}
+
+district_giga_voidframe_phanon = { # Basic Version
+    base_buildtime = 630
+    icon = district_macripp_runic_power_generator
+    gridbox = district_macripp_runic_power_generator
+    is_capped_by_modifier = no
+
+    zone_slots = {
+        slot_anz_voidframe_phanon
+    }
+
+    show_on_uncolonized = {
+        always = no
+    }
+
+    potential = {
+        uses_district_set = giga_frameworld
+        is_voidframe_de = yes
+            #appears when de, upgrades when pe
+            # the upgrade doubles the jobs
+        has_phanon_capital = yes
+        exists = owner
+        owner = { has_technology = tech_phanon_stellar_converter }
+    }
+
+    prerequisites = {
+        tech_phanon_stellar_converter
+    }
+
+    show_tech_unlock_if = {
+        giga_has_frameworld_origin = yes
+    }
+
+    resources = {
+        category = planet_districts
+        cost = {
+            alloys = 1000
+        }
+        upkeep = {
+            energy = 10
+        }
+    }
+
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+            }
+        }
+        modifier = {
+            job_phanon_dimension_folder_add = 100
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            is_voidframe_pe = yes
+            exists = owner
+            owner = {
+                is_gestalt = no
+            }
+        }
+        modifier = {
+            job_phanon_dimension_folder_add = 200
+        }
+    }
+
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        modifier = {
+            job_phanon_dimension_folderdrone_add = 100
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            is_voidframe_pe = yes
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        modifier = {
+            job_phanon_dimension_folderdrone_add = 200
+        }
+    }
+
+    triggered_name = {
+        trigger = {
+            is_voidframe_pe = no
+        }
+        text = "district_giga_voidframe_phanon_ae_subtitle"
+    }
+    triggered_name = {
+        trigger = {
+            is_voidframe_pe = yes
+        }
+        text = "district_giga_voidframe_phanon_ae_subtitle_upgrade"
     }
 }
