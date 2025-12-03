@@ -3184,6 +3184,182 @@ zone_voidframe_zone_SE_refinery = {
 # EHOF SENT METAL
 
 # SUPERTENSILES
+zone_voidframe_zone_DM_tensiles = {
+    icon = GFX_anz_voidframe_zone_DM_TENSILES
+
+    swap_type = district_giga_voidframe_supertensiles_dm
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_dm_zone
+        TECH = "giga_tech_amb_supertensiles_acot_delta"
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = ""
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = no }
+        }
+        job_giga_megaengineer_acot_delta_add = 200
+        job_giga_megaengineer_add = -100
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = yes }
+        }
+        job_giga_megaengineer_drone_acot_delta_add = 200
+        job_giga_megaengineer_drone_add = -100
+    }
+
+    included_building_sets = {
+        giga_supertensile
+        factory
+        industrial
+        foundry
+        urban_automation
+        origin
+    }
+
+    zone_sets = {
+        supertensiles
+    }
+}
+zone_voidframe_zone_DE_tensiles = {
+    icon = GFX_anz_voidframe_zone_DE_TENSILES
+
+    swap_type = district_giga_voidframe_supertensiles_de
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_de_zone
+        TECH = "giga_tech_amb_supertensiles_acot_alpha"
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = ""
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = no }
+        }
+        job_giga_megaengineer_acot_alpha_add = 200
+        job_giga_megaengineer_add = -100
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = yes }
+        }
+        job_giga_megaengineer_drone_acot_alpha_add = 200
+        job_giga_megaengineer_drone_add = -100
+    }
+
+    included_building_sets = {
+        giga_supertensile
+        factory
+        industrial
+        foundry
+        urban_automation
+        origin
+    }
+
+    zone_sets = {
+        supertensiles
+    }
+}
+zone_voidframe_zone_PE_tensiles = {
+    icon = GFX_anz_voidframe_zone_PE_TENSILES
+
+    swap_type = district_giga_voidframe_supertensiles_pe
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_pe_zone
+        TECH = "giga_tech_amb_supertensiles_acot_phanon"
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = ""
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = no }
+        }
+        job_giga_megaengineer_acot_phanon_add = 200
+        job_giga_megaengineer_add = -100
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = yes }
+        }
+        job_giga_megaengineer_drone_acot_phanon_add = 200
+        job_giga_megaengineer_drone_add = -100
+    }
+
+    included_building_sets = {
+        giga_supertensile
+        factory
+        industrial
+        foundry
+        urban_automation
+        origin
+    }
+
+    zone_sets = {
+        supertensiles
+    }
+}
+zone_voidframe_zone_SE_tensiles = {
+    icon = GFX_anz_voidframe_zone_SE_TENSILES
+
+    swap_type = district_giga_voidframe_supertensiles_se
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_se_zone
+        TECH = "giga_tech_amb_supertensiles_acot_sigma"
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = ""
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = no }
+        }
+        job_giga_megaengineer_acot_sigma_add = 200
+        job_giga_megaengineer_add = -100
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = yes }
+        }
+        job_giga_megaengineer_drone_acot_sigma_add = 200
+        job_giga_megaengineer_drone_add = -100
+    }
+
+    included_building_sets = {
+        giga_supertensile
+        factory
+        industrial
+        foundry
+        urban_automation
+        origin
+    }
+
+    zone_sets = {
+        supertensiles
+    }
+}
 
 # SOLDIER
 

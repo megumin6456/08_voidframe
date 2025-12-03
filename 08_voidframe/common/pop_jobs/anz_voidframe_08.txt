@@ -807,10 +807,13 @@ anz_voidframe_trader_se = {
 # Theta Basic
 anz_voidframe_meditator = {
 	category = specialist
-	condition_string = SPECIALIST_JOB_TRIGGER
-	icon = giga_amb_fe_celestial_architect
-	building_icon = building_ae_dimensional_fabricator
-
+    swappable_data = {
+        default = {
+            condition_string = SPECIALIST_JOB_TRIGGER
+            building_icon = building_ae_dimensional_fabricator
+            icon = giga_amb_fe_celestial_architect
+        }
+    }
 	possible_pre_triggers = {
 		has_owner = yes
 		is_sapient = yes
@@ -834,19 +837,18 @@ anz_voidframe_meditator = {
 
 	weight = {
 		weight = @specialist_job_weight
-		modifier = {
-			factor = 5
-			has_job = anz_voidframe_meditator
-		}
 	}
 }
 
 anz_voidframe_meditator_drone = {
 	category = complex_drone
-	condition_string = DRONE_JOB_TRIGGER
-	icon = giga_amb_fe_celestial_architect
-	building_icon = building_ae_dimensional_fabricator
-
+    swappable_data = {
+        default = {
+            condition_string = DRONE_JOB_TRIGGER
+            building_icon = building_ae_dimensional_fabricator
+            icon = giga_amb_fe_celestial_architect
+        }
+    }
 	possible_pre_triggers = {
 		has_owner = yes
 		is_sapient = yes
@@ -870,9 +872,5 @@ anz_voidframe_meditator_drone = {
 
 	weight = {
 		weight = @complex_drone_job_weight
-		modifier = {
-			factor = 5
-			has_job = anz_voidframe_meditator_drone
-		}
 	}
 }

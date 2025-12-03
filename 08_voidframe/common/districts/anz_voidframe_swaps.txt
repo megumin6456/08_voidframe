@@ -642,14 +642,56 @@ district_giga_voidframe_refinery_se = {
 
 # AMENITIES
 
-# DYSTOPIAN AMENITIES
+# EHOF NEG MASS
+
+# EHOF SENT METAL
 
 # SUPERTENSILES
+district_giga_voidframe_supertensiles_dm = {
+    icon = district_giga_voidframe_supertensiles_dm
+    #overlay_icon = GFX_district_supertensiles
+    gridbox = district_arcology_mixed_industry
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_voidframe_zone_DM_tensiles
+    }
+}
+district_giga_voidframe_supertensiles_de = {
+    icon = district_giga_voidframe_supertensiles_de
+    #overlay_icon = GFX_district_supertensiles
+    gridbox = district_arcology_mixed_industry
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_voidframe_zone_DE_tensiles
+    }
+}
+district_giga_voidframe_supertensiles_pe = {
+    icon = district_giga_voidframe_supertensiles_pe
+    #overlay_icon = GFX_district_supertensiles
+    gridbox = district_arcology_mixed_industry
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_voidframe_zone_PE_tensiles
+    }
+}
+district_giga_voidframe_supertensiles_se = {
+    icon = district_giga_voidframe_supertensiles_se
+    #overlay_icon = GFX_district_supertensiles
+    gridbox = district_arcology_mixed_industry
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_voidframe_zone_SE_tensiles
+    }
+}
 
 # SOLDIER
 
 # MAGINOT BUNKER
 
-# MAGINOT GUN
+# MAGINOT GUNS
 
 # MAGINOT SHIELD

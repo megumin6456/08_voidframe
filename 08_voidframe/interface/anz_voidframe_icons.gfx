@@ -210,4 +210,25 @@ spriteTypes = {
         name = "GFX_anz_voidframe_zone_TE_REFINERY"
         texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_TE_REFINERY.dds"
     }
+
+    spriteType = {
+        name = "GFX_anz_voidframe_zone_DM_TENSILES"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_DM_TENSILES.dds"
+    }
+    spriteType = {
+        name = "GFX_anz_voidframe_zone_DE_TENSILES"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_DE_TENSILES.dds"
+    }
+    spriteType = {
+        name = "GFX_anz_voidframe_zone_PE_TENSILES"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_PE_TENSILES.dds"
+    }
+    spriteType = {
+        name = "GFX_anz_voidframe_zone_SE_TENSILES"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_SE_TENSILES.dds"
+    }
+    spriteType = {
+        name = "GFX_anz_voidframe_zone_TE_TENSILES"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_TE_TENSILES.dds"
+    }
 }
