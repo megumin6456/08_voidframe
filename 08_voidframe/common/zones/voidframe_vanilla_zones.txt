@@ -3340,7 +3340,207 @@ zone_voidframe_zone_SE_refinery = {
     }
 }
 
-# SECURITY
+# SECURITY #todo icon
+zone_voidframe_zone_DM_anticrime = { #AOT locked since we using dm enforcer
+    #icon = GFX_anz_voidframe_zone_DM_FOOD
+
+    swap_type = district_giga_voidframe_anticrime_dm
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_dm_zone_noTech
+        OTHER_REQ = "has_global_flag = has_aot_mod"
+        OTHER_REQ_PLANET = ""
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+            }
+        }
+        job_aot_dm_enforcer_add  = 300
+    }
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        job_aot_dm_enforcer_drone_add  = 300
+    }
+
+    inline_script = {
+        script = zones/anz_voidframe_job_pConstant
+        ACOT_JOB_NORM = job_aot_dm_enforcer_add
+        ACOT_JOB_GEST = job_aot_dm_enforcer_drone_add
+        JOB_NORM = job_enforcer_add
+        JOB_GEST = job_patrol_drone_add
+        AMOUNT = 100
+    }
+
+    included_building_sets = {
+        anticrime
+        urban_automation
+        origin
+    }
+
+    zone_sets = {
+        anticrime
+    }
+}
+zone_voidframe_zone_DE_anticrime = {
+    #icon = GFX_anz_voidframe_zone_DE_FOOD
+
+    swap_type = district_giga_voidframe_anticrime_de
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_de_zone_noTech
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = ""
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+            }
+        }
+        job_acot_enforcer_add   = 300
+    }
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        job_acot_enforcer_drone_add   = 300
+    }
+
+    inline_script = {
+        script = zones/anz_voidframe_job_pConstant
+        ACOT_JOB_NORM = job_acot_enforcer_add
+        ACOT_JOB_GEST = job_acot_enforcer_drone_add
+        JOB_NORM = job_enforcer_add
+        JOB_GEST = job_patrol_drone_add
+        AMOUNT = 100
+    }
+
+    included_building_sets = {
+        anticrime
+        urban_automation
+        origin
+    }
+
+    zone_sets = {
+        anticrime
+    }
+}
+zone_voidframe_zone_PE_anticrime = {
+    #icon = GFX_anz_voidframe_zone_PE_FOOD
+
+    swap_type = district_giga_voidframe_anticrime_pe
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_pe_zone_noTech
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = ""
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+            }
+        }
+        job_phanon_enforcer_add    = 300
+    }
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        job_phanon_enforcer_drone_add    = 300
+    }
+
+    inline_script = {
+        script = zones/anz_voidframe_job_pConstant
+        ACOT_JOB_NORM = job_phanon_enforcer_add
+        ACOT_JOB_GEST = job_phanon_enforcer_drone_add
+        JOB_NORM = job_enforcer_add
+        JOB_GEST = job_patrol_drone_add
+        AMOUNT = 100
+    }
+
+    included_building_sets = {
+        anticrime
+        urban_automation
+        origin
+    }
+
+    zone_sets = {
+        anticrime
+    }
+}
+zone_voidframe_zone_SE_anticrime = {
+    #icon = GFX_anz_voidframe_zone_SE_FOOD
+
+    swap_type = district_giga_voidframe_anticrime_se
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_se_zone_noTech
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = ""
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+            }
+        }
+        job_stellarite_enforcer_add  = 300
+    }
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        job_stellarite_enforcer_drone_add  = 300
+    }
+
+    inline_script = {
+        script = zones/anz_voidframe_job_pConstant
+        ACOT_JOB_NORM = job_stellarite_enforcer_add
+        ACOT_JOB_GEST = job_stellarite_enforcer_drone_add
+        JOB_NORM = job_enforcer_add
+        JOB_GEST = job_patrol_drone_add
+        AMOUNT = 100
+    }
+
+    included_building_sets = {
+        anticrime
+        urban_automation
+        origin
+    }
+
+    zone_sets = {
+        anticrime
+    }
+}
 
 # AMENITIES
 
