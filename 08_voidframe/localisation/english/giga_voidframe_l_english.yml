@@ -1,7 +1,6 @@
 ﻿l_english:
 
 # Misc
-mod_planet_jobs_acot_sr_stellarite_upkeep_mult: "Stellarite Upkeep Multiplier"
 phanon_classified: "§R---CLASSIFIED---§!"
 phanon_classified_nocolor: "---CLASSIFIED---"
 # Walking past classified sign is disrespectful
@@ -113,24 +112,39 @@ phanon_srname_ee: "Runic"
 
 #########################################################################################
 # HOUSING
+  mod_planet_jobs_sr_dark_matter_upkeep_mult: "£dark_matter£Dark Matter Upkeep from £job£Jobs:"
+  mod_planet_jobs_acot_sr_dark_energy_upkeep_mult: "£acot_sr_dark_energy£Dark Energy Upkeep from £job£Jobs:"
+  mod_planet_jobs_acot_sr_stellarite_upkeep_mult: "£acot_sr_stellarite£Stellarite Upkeep from £job£Jobs:"
 
 # Housing - City
 
   district_giga_voidframe_city_dm: "Night Town"
   district_giga_voidframe_city_dm_plural: "Night Towns"
   district_giga_voidframe_city_dm_desc: "It may look cold and dark but it is our home and its much more cozy than it look tho the darkness makes me sleepy... so eepy... must eep..."
+  zone_voidframe_zone_DM_city: "$district_giga_voidframe_city_dm$"
+  zone_voidframe_zone_DM_city_desc: "$district_giga_voidframe_city_dm_desc$"
+  zone_voidframe_zone_DM_city_subtitle: "Delta Frame Capital"
 
   district_giga_voidframe_city_de: "Horizon City"
   district_giga_voidframe_city_de_plural: "Horizon Cities"
   district_giga_voidframe_city_de_desc: "Lots of neon lighting and people floating round. Everything is dark like super dark and um can someone explain why there is like a random black hole in the sky? It's weird!"
+  zone_voidframe_zone_DE_city: "$district_giga_voidframe_city_de$"
+  zone_voidframe_zone_DE_city_desc: "$district_giga_voidframe_city_de_desc$"
+  zone_voidframe_zone_DE_city_subtitle: "Alpha Frame Capital"
 
-  district_giga_voidframe_city_pe: "§REmo Nation§!"
-  district_giga_voidframe_city_pe_plural: "§REmo Nations§!"
+  district_giga_voidframe_city_pe: "§RRunic City§!"
+  district_giga_voidframe_city_pe_plural: "§RRunic City§!"
   district_giga_voidframe_city_pe_desc: "$phanon_classified$"
+  zone_voidframe_zone_PE_city: "$district_giga_voidframe_city_pe$"
+  zone_voidframe_zone_PE_city_desc: "$district_giga_voidframe_city_pe_desc$"
+  zone_voidframe_zone_PE_city_subtitle: "Runic Frame Capital"
 
   district_giga_voidframe_city_se: "§HGolden Paradise§!"
   district_giga_voidframe_city_se_plural: "§HGolden Paradise§!"
   district_giga_voidframe_city_se_desc: "§HCould you switch off the lights please? I'm trying to sleep here! Seriously? Who thought putting a STAR inside my bedroom is a good idea?!§!"
+  zone_voidframe_zone_SE_city: "$district_giga_voidframe_city_se$"
+  zone_voidframe_zone_SE_city_desc: "$district_giga_voidframe_city_se_desc$"
+  zone_voidframe_zone_SE_city_subtitle: "Stellarite Frame Capital"
 
   district_giga_voidframe_city_te: "§MSea of Souls§!"
   district_giga_voidframe_city_te_plural: "§MSea of Souls§!"
@@ -145,18 +159,26 @@ phanon_srname_ee: "Runic"
   district_giga_voidframe_hive_dm: "Dark Nest"
   district_giga_voidframe_hive_dm_plural: "Dark Nests"
   district_giga_voidframe_hive_dm_desc: "Towering structures full of small chambers, each perfectly fit for a drone to rest, heal, and be nourished before being deployed to their assigned task."
+  zone_voidframe_zone_DM_hive: "$district_giga_voidframe_hive_dm$"
+  zone_voidframe_zone_DM_hive_desc: "$district_giga_voidframe_hive_dm_desc$"
 
   district_giga_voidframe_hive_de: "Cool Nest"
   district_giga_voidframe_hive_de_plural: "Cool Nests"
   district_giga_voidframe_hive_de_desc: "Dimensionally folded structures to maximize living space for our drones who could survive living in such compact chambers. For the outsiders this must be a true nightmare!"
-
-  district_giga_voidframe_hive_se: "§HShining Lair§!"
-  district_giga_voidframe_hive_se_plural: "§HShining Lairs§!"
-  district_giga_voidframe_hive_se_desc: "§HWe don't even need to rest anymore yet we enjoy creating marvelous constructs that keep our drones in order. We enjoy the screams of the outsiders...§!"
+  zone_voidframe_zone_DE_hive: "$district_giga_voidframe_hive_de$"
+  zone_voidframe_zone_DE_hive_desc: "$district_giga_voidframe_hive_de_desc$"
 
   district_giga_voidframe_hive_pe: "§REpic Lair§!"
   district_giga_voidframe_hive_pe_plural: "§REpic Lairs§!"
   district_giga_voidframe_hive_pe_desc: "$phanon_classified$"
+  zone_voidframe_zone_PE_hive: "$district_giga_voidframe_hive_pe$"
+  zone_voidframe_zone_PE_hive_desc: "$district_giga_voidframe_hive_pe_desc$"
+
+  district_giga_voidframe_hive_se: "§HShining Lair§!"
+  district_giga_voidframe_hive_se_plural: "§HShining Lairs§!"
+  district_giga_voidframe_hive_se_desc: "§HWe don't even need to rest anymore yet we enjoy creating marvelous constructs that keep our drones in order. We enjoy the screams of the outsiders...§!"
+  zone_voidframe_zone_SE_hive: "$district_giga_voidframe_hive_se$"
+  zone_voidframe_zone_SE_hive_desc: "$district_giga_voidframe_hive_se_desc$"
 
   district_giga_voidframe_hive_te: "§MAwesome Sea§!"
   district_giga_voidframe_hive_te_plural: "§MAwesome Hives§!"
@@ -171,18 +193,26 @@ phanon_srname_ee: "Runic"
   district_giga_voidframe_nexus_dm: "Dark Nexus"
   district_giga_voidframe_nexus_dm_plural: "Dark Nexus"
   district_giga_voidframe_nexus_dm_desc: "Near weightless yet strong, hardlight manufacturing allows us to build more compact drone storage and maintenance hubs."
+  zone_voidframe_zone_DM_nexus: "$district_giga_voidframe_nexus_dm$"
+  zone_voidframe_zone_DM_nexus_desc: "$district_giga_voidframe_nexus_dm_desc$"
 
   district_giga_voidframe_nexus_de: "Alpha Nexus"
   district_giga_voidframe_nexus_de_plural: "Alpha Nexus"
   district_giga_voidframe_nexus_de_desc: "Drones don't need Housing just Maintenance pods. With each pod being almost a perfect fit for their body, we can accommodate much more of them."
-
-  district_giga_voidframe_nexus_se: "§HSolar Hub§!"
-  district_giga_voidframe_nexus_se_plural: "§HSolar Hubs§!"
-  district_giga_voidframe_nexus_se_desc: "§HMake sure to wear sunglasses or you'll go blind... oh wait everyone who live here are drones... never mind then, stay in your pods or whatever.§!"
+  zone_voidframe_zone_DE_nexus: "$district_giga_voidframe_nexus_de$"
+  zone_voidframe_zone_DE_nexus_desc: "$district_giga_voidframe_nexus_de_desc$"
 
   district_giga_voidframe_nexus_pe: "§R$phanon_srname_ee$ Hub§!"
   district_giga_voidframe_nexus_pe_plural: "§R$phanon_srname_ee$ Hubs§!"
   district_giga_voidframe_nexus_pe_desc: "$phanon_classified$"
+  zone_voidframe_zone_PE_nexus: "$district_giga_voidframe_nexus_pe$"
+  zone_voidframe_zone_PE_nexus_desc: "$district_giga_voidframe_nexus_pe_desc$"
+
+  district_giga_voidframe_nexus_se: "§HSolar Hub§!"
+  district_giga_voidframe_nexus_se_plural: "§HSolar Hubs§!"
+  district_giga_voidframe_nexus_se_desc: "§HMake sure to wear sunglasses or you'll go blind... oh wait everyone who live here are drones... never mind then, stay in your pods or whatever.§!"
+  zone_voidframe_zone_SE_nexus: "$district_giga_voidframe_nexus_se$"
+  zone_voidframe_zone_SE_nexus_desc: "$district_giga_voidframe_nexus_se_desc$"
 
   district_giga_voidframe_nexus_te: "§MTheia's Nexus§!"
   district_giga_voidframe_nexus_te_plural: "§MTheia's Nexi§!"

@@ -1,4 +1,169 @@
 #############################################################
+# For the City district
+#############################################################
+zone_voidframe_zone_DM_city = {
+    icon = GFX_anz_voidframe_zone_DM_CITY
+
+    swap_type = district_giga_voidframe_city_dm
+    swap_type_weight = 2
+
+    inline_script = {
+        script = zones/anz_voidframe_dm_zone_housing
+        OTHER_REQ = "
+            is_gestalt = no
+        "
+    }
+}
+zone_voidframe_zone_DE_city = {
+    icon = GFX_anz_voidframe_zone_DE_CITY
+
+    swap_type = district_giga_voidframe_city_de
+    swap_type_weight = 3
+
+    inline_script = {
+        script = zones/anz_voidframe_de_zone_housing
+        OTHER_REQ = "
+            is_gestalt = no
+        "
+    }
+
+}
+zone_voidframe_zone_PE_city = {
+    icon = GFX_anz_voidframe_zone_PE_CITY
+
+    swap_type = district_giga_voidframe_city_pe
+    swap_type_weight = 4
+
+    inline_script = {
+        script = zones/anz_voidframe_pe_zone_housing
+        OTHER_REQ = "
+            is_gestalt = no
+        "
+    }
+}
+zone_voidframe_zone_SE_city = {
+    icon = GFX_anz_voidframe_zone_SE_CITY
+
+    swap_type = district_giga_voidframe_city_se
+    swap_type_weight = 5
+
+    inline_script = {
+        script = zones/anz_voidframe_se_zone_housing
+        OTHER_REQ = "
+            is_gestalt = no
+        "
+    }
+}
+
+zone_voidframe_zone_DM_hive = {
+    icon = GFX_anz_voidframe_zone_DM_CITY
+
+    swap_type = district_giga_voidframe_hive_dm
+    swap_type_weight = 2
+
+    inline_script = {
+        script = zones/anz_voidframe_dm_zone_housing
+        OTHER_REQ = "
+            is_hive_empire = yes
+        "
+    }
+}
+zone_voidframe_zone_DE_hive = {
+    icon = GFX_anz_voidframe_zone_DE_CITY
+
+    swap_type = district_giga_voidframe_hive_de
+    swap_type_weight = 3
+
+    inline_script = {
+        script = zones/anz_voidframe_de_zone_housing
+        OTHER_REQ = "
+            is_hive_empire = yes
+        "
+    }
+
+}
+zone_voidframe_zone_PE_hive = {
+    icon = GFX_anz_voidframe_zone_PE_CITY
+
+    swap_type = district_giga_voidframe_hive_pe
+    swap_type_weight = 4
+
+    inline_script = {
+        script = zones/anz_voidframe_pe_zone_housing
+        OTHER_REQ = "
+            is_hive_empire = yes
+        "
+    }
+}
+zone_voidframe_zone_SE_hive = {
+    icon = GFX_anz_voidframe_zone_SE_CITY
+
+    swap_type = district_giga_voidframe_hive_se
+    swap_type_weight = 5
+
+    inline_script = {
+        script = zones/anz_voidframe_se_zone_housing
+        OTHER_REQ = "
+            is_hive_empire = yes
+        "
+    }
+}
+
+zone_voidframe_zone_DM_nexus = {
+    icon = GFX_anz_voidframe_zone_DM_CITY
+
+    swap_type = district_giga_voidframe_nexus_dm
+    swap_type_weight = 2
+
+    inline_script = {
+        script = zones/anz_voidframe_dm_zone_housing
+        OTHER_REQ = "
+            is_machine_empire = yes
+        "
+    }
+}
+zone_voidframe_zone_DE_nexus = {
+    icon = GFX_anz_voidframe_zone_DE_CITY
+
+    swap_type = district_giga_voidframe_nexus_de
+    swap_type_weight = 3
+
+    inline_script = {
+        script = zones/anz_voidframe_de_zone_housing
+        OTHER_REQ = "
+            is_machine_empire = yes
+        "
+    }
+
+}
+zone_voidframe_zone_PE_nexus = {
+    icon = GFX_anz_voidframe_zone_PE_CITY
+
+    swap_type = district_giga_voidframe_nexus_pe
+    swap_type_weight = 4
+
+    inline_script = {
+        script = zones/anz_voidframe_pe_zone_housing
+        OTHER_REQ = "
+            is_machine_empire = yes
+        "
+    }
+}
+zone_voidframe_zone_SE_nexus = {
+    icon = GFX_anz_voidframe_zone_SE_CITY
+
+    swap_type = district_giga_voidframe_nexus_se
+    swap_type_weight = 5
+
+    inline_script = {
+        script = zones/anz_voidframe_se_zone_housing
+        OTHER_REQ = "
+            is_machine_empire = yes
+        "
+    }
+}
+
+#############################################################
 # Districts that currently have no alpha equivalent just get more jobs
 #############################################################
 #TODO, fix the borked jobs
@@ -279,7 +444,7 @@ zone_voidframe_zone_DM_factory = {
     inline_script = {
         script = zones/shared_city_non_urban_zone_modifiers
     }
-} # no DM gestalt artisan
+} #todo no DM gestalt artisan
 zone_voidframe_zone_DE_factory = {
     icon = GFX_anz_voidframe_zone_DE_CONSUMER_GOODS
 
@@ -335,7 +500,7 @@ zone_voidframe_zone_DE_factory = {
     inline_script = {
         script = zones/shared_city_non_urban_zone_modifiers
     }
-} # no AE artisans or artisan drone
+} #todo no AE artisans or artisan drone
 zone_voidframe_zone_PE_factory = {
     icon = GFX_anz_voidframe_zone_PE_CONSUMER_GOODS
 
@@ -564,7 +729,7 @@ zone_voidframe_zone_DE_trade = {
     zone_sets = {
         trade
     }
-} # NEEDS BETTER JOBS
+} #todo NEEDS BETTER JOBS
 zone_voidframe_zone_PE_trade = {
     icon = GFX_anz_voidframe_zone_PE_TRADE
 
@@ -623,7 +788,7 @@ zone_voidframe_zone_PE_trade = {
     zone_sets = {
         trade
     }
-} # NEEDS BETTER JOBS
+} #todo NEEDS BETTER JOBS
 zone_voidframe_zone_SE_trade = {
     icon = GFX_anz_voidframe_zone_SE_TRADE
 
@@ -682,7 +847,7 @@ zone_voidframe_zone_SE_trade = {
     zone_sets = {
         trade
     }
-} # NEEDS BETTER JOBS
+} #todo NEEDS BETTER JOBS
 
 # ENERGY
 zone_voidframe_zone_DM_generator = {
@@ -1674,7 +1839,7 @@ zone_voidframe_zone_DE_farming = {
     zone_sets = {
         food
     }
-} # no alpha food job
+} #todo no alpha food job
 zone_voidframe_zone_PE_farming = {
     icon = GFX_anz_voidframe_zone_PE_FOOD
 
@@ -2097,7 +2262,7 @@ zone_voidframe_zone_DE_temple = {
     zone_sets = {
         unity
     }
-} # no alpha priest
+} #todo no alpha priest
 zone_voidframe_zone_PE_temple = {
     icon = GFX_anz_voidframe_zone_PE_UNITY
 
@@ -2277,7 +2442,7 @@ zone_voidframe_zone_DE_synapse = {
     zone_sets = {
         unity
     }
-} # no alpha priest
+}
 zone_voidframe_zone_PE_synapse = {
     icon = GFX_anz_voidframe_zone_PE_UNITY
 
@@ -2455,7 +2620,7 @@ zone_voidframe_zone_DE_simulation = {
     zone_sets = {
         unity
     }
-} # no alpha priest
+}
 zone_voidframe_zone_PE_simulation = {
     icon = GFX_anz_voidframe_zone_PE_UNITY
 
@@ -3077,7 +3242,7 @@ zone_voidframe_zone_DE_refinery = {
     zone_sets = {
         refinery
     }
-} #no gestalt or individual
+} #todo no gestalt or individual
 zone_voidframe_zone_PE_refinery = {
     icon = GFX_anz_voidframe_zone_PE_REFINERY
 

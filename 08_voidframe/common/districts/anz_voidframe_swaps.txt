@@ -1,3 +1,129 @@
+### CITY
+district_giga_voidframe_city_dm = {
+    icon = district_giga_voidframe_city_dm
+    overlay_icon = GFX_district_government
+    gridbox = district_city
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_voidframe_zone_DM_city_subtitle
+    }
+}
+district_giga_voidframe_city_de = {
+    icon = district_giga_voidframe_city_de
+    overlay_icon = GFX_district_government
+    gridbox = district_city
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_voidframe_zone_DE_city_subtitle
+    }
+}
+district_giga_voidframe_city_pe = {
+    icon = district_giga_voidframe_city_pe
+    overlay_icon = GFX_district_government
+    gridbox = district_city
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_voidframe_zone_PE_city_subtitle
+    }
+}
+district_giga_voidframe_city_se = {
+    icon = district_giga_voidframe_city_se
+    overlay_icon = GFX_district_government
+    gridbox = district_city
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_voidframe_zone_SE_city_subtitle
+    }
+}
+
+### HIVE
+district_giga_voidframe_hive_dm = {
+    icon = district_giga_voidframe_hive_dm
+    overlay_icon = GFX_district_government
+    gridbox = district_hive
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_voidframe_zone_DM_city_subtitle
+    }
+}
+district_giga_voidframe_hive_de = {
+    icon = district_giga_voidframe_hive_de
+    overlay_icon = GFX_district_government
+    gridbox = district_hive
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_voidframe_zone_DE_city_subtitle
+    }
+}
+district_giga_voidframe_hive_pe = {
+    icon = district_giga_voidframe_hive_pe
+    overlay_icon = GFX_district_government
+    gridbox = district_hive
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_voidframe_zone_PE_city_subtitle
+    }
+}
+district_giga_voidframe_hive_se = {
+    icon = district_giga_voidframe_hive_se
+    overlay_icon = GFX_district_government
+    gridbox = district_hive
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_voidframe_zone_SE_city_subtitle
+    }
+}
+
+### NEXUS
+district_giga_voidframe_nexus_dm = {
+    icon = district_giga_voidframe_nexus_dm
+    overlay_icon = GFX_district_government
+    gridbox = district_nexus
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_voidframe_zone_DM_city_subtitle
+    }
+}
+district_giga_voidframe_nexus_de = {
+    icon = district_giga_voidframe_nexus_de
+    overlay_icon = GFX_district_government
+    gridbox = district_nexus
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_voidframe_zone_DE_city_subtitle
+    }
+}
+district_giga_voidframe_nexus_pe = {
+    icon = district_giga_voidframe_nexus_pe
+    overlay_icon = GFX_district_government
+    gridbox = district_nexus
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_voidframe_zone_PE_city_subtitle
+    }
+}
+district_giga_voidframe_nexus_se = {
+    icon = district_giga_voidframe_nexus_se
+    overlay_icon = GFX_district_government
+    gridbox = district_nexus
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_voidframe_zone_SE_city_subtitle
+    }
+}
+
 ### FOUNDRY
 district_giga_voidframe_foundry_dm = {
     icon = district_giga_voidframe_foundry_dm
