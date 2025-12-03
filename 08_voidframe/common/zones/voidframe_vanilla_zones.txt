@@ -1961,7 +1961,7 @@ zone_voidframe_zone_PE_admin = {
         unity
     }
 }
-zone_voidframe_zone_PE_admin = {
+zone_voidframe_zone_SE_admin = {
     icon = GFX_anz_voidframe_zone_SE_UNITY
 
     swap_type = district_giga_voidframe_admin_se
