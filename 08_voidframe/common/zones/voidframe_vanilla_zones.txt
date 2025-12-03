@@ -2629,7 +2629,7 @@ zone_voidframe_zone_SE_research = {
     }
 }
 
-# REFINERY #TODO ICON
+# REFINERY
 zone_voidframe_zone_DM_refinery = {
     icon = GFX_anz_voidframe_zone_DM_REFINERY
 
@@ -2827,9 +2827,13 @@ zone_voidframe_zone_SE_refinery = {
 
 # AMENITIES
 
-# SOLDIER
+# EHOF NEG MASS
+
+# EHOF SENT METAL
 
 # SUPERTENSILES
+
+# SOLDIER
 
 # MAGINOT BUNKER
 
