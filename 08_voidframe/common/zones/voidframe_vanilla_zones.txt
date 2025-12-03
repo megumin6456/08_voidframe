@@ -3770,6 +3770,11 @@ zone_voidframe_zone_DM_maginotarty = {
         maginot_orbital_defense_grids
     }
 
+    triggered_desc = {
+        trigger = { exists = owner }
+        text = job_maginot_planetary_artillery_effect_desc_dm
+    }
+
 } #this uses acot jobs for dm and it annoys me
 zone_voidframe_zone_DE_maginotarty = {
     #icon = GFX_anz_voidframe_zone_DE_maginotarty
@@ -3808,6 +3813,11 @@ zone_voidframe_zone_DE_maginotarty = {
 
     zone_sets = {
         maginot_orbital_defense_grids
+    }
+
+    triggered_desc = {
+        trigger = { exists = owner }
+        text = job_maginot_planetary_artillery_effect_desc_de
     }
 }
 zone_voidframe_zone_PE_maginotarty = {
@@ -3848,6 +3858,11 @@ zone_voidframe_zone_PE_maginotarty = {
     zone_sets = {
         maginot_orbital_defense_grids
     }
+
+    triggered_desc = {
+        trigger = { exists = owner }
+        text = job_maginot_planetary_artillery_effect_desc_pe
+    }
 }
 zone_voidframe_zone_SE_maginotarty = {
     #icon = GFX_anz_voidframe_zone_SE_maginotarty
@@ -3886,6 +3901,11 @@ zone_voidframe_zone_SE_maginotarty = {
 
     zone_sets = {
         maginot_orbital_defense_grids
+    }
+
+    triggered_desc = {
+        trigger = { exists = owner }
+        text = job_maginot_planetary_artillery_effect_desc_se
     }
 }
 
@@ -3929,6 +3949,10 @@ zone_voidframe_zone_DM_maginotshield = {
         maginot_shield_generators
     }
 
+    triggered_desc = {
+        trigger = { exists = owner }
+        text = job_maginot_planetary_shield_effect_desc_dm
+    }
 } #this uses acot jobs for dm and it annoys me
 zone_voidframe_zone_DE_maginotshield = {
     #icon = GFX_anz_voidframe_zone_DE_maginotshield
@@ -3967,6 +3991,11 @@ zone_voidframe_zone_DE_maginotshield = {
 
     zone_sets = {
         maginot_shield_generators
+    }
+
+    triggered_desc = {
+        trigger = { exists = owner }
+        text = job_maginot_planetary_shield_effect_desc_de
     }
 }
 zone_voidframe_zone_PE_maginotshield = {
@@ -4007,6 +4036,11 @@ zone_voidframe_zone_PE_maginotshield = {
     zone_sets = {
         maginot_shield_generators
     }
+
+    triggered_desc = {
+        trigger = { exists = owner }
+        text = job_maginot_planetary_shield_effect_desc_pe
+    }
 }
 zone_voidframe_zone_SE_maginotshield = {
     #icon = GFX_anz_voidframe_zone_SE_maginotshield
@@ -4045,5 +4079,10 @@ zone_voidframe_zone_SE_maginotshield = {
 
     zone_sets = {
         maginot_shield_generators
+    }
+
+    triggered_desc = {
+        trigger = { exists = owner }
+        text = job_maginot_planetary_shield_effect_desc_se
     }
 }

@@ -870,11 +870,6 @@ district_giga_voidframe_maginotarty_dm = {
         script = districts/voidframe/anz_voidframe_district_swap
         SWAP_NAME = zone_voidframe_zone_DM_maginotarty
     }
-
-    triggered_desc = {
-        trigger = { exists = owner }
-        text = job_maginot_planetary_artillery_effect_desc_dm
-    }
 }
 district_giga_voidframe_maginotarty_de = {
     icon = district_giga_voidframe_maginotarty_de
@@ -884,11 +879,6 @@ district_giga_voidframe_maginotarty_de = {
     inline_script = {
         script = districts/voidframe/anz_voidframe_district_swap
         SWAP_NAME = zone_voidframe_zone_DE_maginotarty
-    }
-
-    triggered_desc = {
-        trigger = { exists = owner }
-        text = job_maginot_planetary_artillery_effect_desc_de
     }
 }
 district_giga_voidframe_maginotarty_pe = {
@@ -900,11 +890,6 @@ district_giga_voidframe_maginotarty_pe = {
         script = districts/voidframe/anz_voidframe_district_swap
         SWAP_NAME = zone_voidframe_zone_PE_maginotarty
     }
-
-    triggered_desc = {
-        trigger = { exists = owner }
-        text = job_maginot_planetary_artillery_effect_desc_pe
-    }
 }
 district_giga_voidframe_maginotarty_se = {
     icon = district_giga_voidframe_maginotarty_se
@@ -914,11 +899,6 @@ district_giga_voidframe_maginotarty_se = {
     inline_script = {
         script = districts/voidframe/anz_voidframe_district_swap
         SWAP_NAME = zone_voidframe_zone_SE_maginotarty
-    }
-
-    triggered_desc = {
-        trigger = { exists = owner }
-        text = job_maginot_planetary_artillery_effect_desc_se
     }
 }
 
@@ -932,11 +912,6 @@ district_giga_voidframe_maginotshield_dm = {
         script = districts/voidframe/anz_voidframe_district_swap
         SWAP_NAME = zone_voidframe_zone_DM_maginotshield
     }
-
-    triggered_desc = {
-        trigger = { exists = owner }
-        text = job_maginot_planetary_shield_effect_desc_dm
-    }
 }
 district_giga_voidframe_maginotshield_de = {
     icon = district_giga_voidframe_maginotshield_de
@@ -946,11 +921,6 @@ district_giga_voidframe_maginotshield_de = {
     inline_script = {
         script = districts/voidframe/anz_voidframe_district_swap
         SWAP_NAME = zone_voidframe_zone_DE_maginotshield
-    }
-
-    triggered_desc = {
-        trigger = { exists = owner }
-        text = job_maginot_planetary_shield_effect_desc_de
     }
 }
 district_giga_voidframe_maginotshield_pe = {
@@ -962,11 +932,6 @@ district_giga_voidframe_maginotshield_pe = {
         script = districts/voidframe/anz_voidframe_district_swap
         SWAP_NAME = zone_voidframe_zone_PE_maginotshield
     }
-
-    triggered_desc = {
-        trigger = { exists = owner }
-        text = job_maginot_planetary_shield_effect_desc_pe
-    }
 }
 district_giga_voidframe_maginotshield_se = {
     icon = district_giga_voidframe_maginotshield_se
@@ -976,10 +941,5 @@ district_giga_voidframe_maginotshield_se = {
     inline_script = {
         script = districts/voidframe/anz_voidframe_district_swap
         SWAP_NAME = zone_voidframe_zone_SE_maginotshield
-    }
-
-    triggered_desc = {
-        trigger = { exists = owner }
-        text = job_maginot_planetary_shield_effect_desc_se
     }
 }

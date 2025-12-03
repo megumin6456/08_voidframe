@@ -34,3 +34,21 @@ slot_anz_voidframe_phanon = {
         always = yes
     }
 }
+
+slot_anz_voidframe_stellarite = {
+
+    include = {
+        zone_anz_voidframe_stellarite
+    }
+
+    included_zone_sets = {
+        frame_stellarite
+    }
+
+    exclude = {
+    }
+
+    unlock = { # planet scope
+        always = yes
+    }
+}

@@ -174,7 +174,7 @@ district_giga_voidframe_enigmatic_ae = {
     }
 }
 
-district_giga_voidframe_phanon = { # Basic Version
+district_giga_voidframe_phanon = {
     base_buildtime = 630
     icon = district_macripp_runic_power_generator
     gridbox = district_macripp_runic_power_generator
@@ -195,7 +195,6 @@ district_giga_voidframe_phanon = { # Basic Version
             # the upgrade doubles the jobs
         has_phanon_capital = yes
         exists = owner
-        owner = { has_technology = tech_phanon_stellar_converter }
     }
 
     prerequisites = {
@@ -275,5 +274,107 @@ district_giga_voidframe_phanon = { # Basic Version
             is_voidframe_pe = yes
         }
         text = "district_giga_voidframe_phanon_ae_subtitle_upgrade"
+    }
+}
+
+district_giga_voidframe_stellarite = {
+    base_buildtime = 630
+    icon = district_hab_stellarite_generator
+    gridbox = district_hab_stellarite_generator
+    is_capped_by_modifier = no
+
+    zone_slots = {
+        slot_anz_voidframe_stellarite
+    }
+
+    show_on_uncolonized = {
+        always = no
+    }
+
+    potential = {
+        uses_district_set = giga_frameworld
+        is_voidframe_pe = yes
+        #appears when pe, upgrades when se
+        # the upgrade doubles the jobs
+        exists = owner
+    }
+
+    prerequisites = {
+        tech_dark_matter_power_core_se
+    }
+
+    show_tech_unlock_if = {
+        giga_has_frameworld_origin = yes
+    }
+
+    resources = {
+        category = planet_districts
+        cost = {
+            alloys = 2000
+        }
+        upkeep = {
+            energy = 10
+        }
+    }
+
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+            }
+        }
+        modifier = {
+            job_aot_ae_stellariteman_add  = 100
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            is_voidframe_se = yes
+            exists = owner
+            owner = {
+                is_gestalt = no
+            }
+        }
+        modifier = {
+            job_sun_master_add   = 200
+        }
+    }
+
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        modifier = {
+            job_aot_ae_stellaritedrone_add  = 100
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            is_voidframe_se = yes
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        modifier = {
+            job_sun_masterdrone_add  = 200
+        }
+    }
+
+    triggered_name = {
+        trigger = {
+            is_voidframe_pe = no
+        }
+        text = "district_giga_voidframe_stellarite_subtitle"
+    }
+    triggered_name = {
+        trigger = {
+            is_voidframe_pe = yes
+        }
+        text = "district_giga_voidframe_stellarite_subtitle_upgrade"
     }
 }

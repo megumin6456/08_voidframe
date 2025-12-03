@@ -269,3 +269,88 @@ zone_anz_voidframe_phanon = {
         frame_phanon
     }
 }
+
+### FOR THE STELLARITE DISTRICT
+zone_anz_voidframe_stellarite = {
+    # icon =
+    # TODO need an icon for this
+
+    base_buildtime = @zone_buildtime
+
+    potential = { # planet scope
+        hidden_trigger = {
+            exists = owner
+            owner = {
+                giga_has_frameworld_origin = yes
+                is_wilderness_empire = no
+            }
+        }
+        is_planet_class = pc_giga_frameworld
+    }
+
+    unlock = { # planet scope
+        hidden_trigger = {
+            exists = owner
+            owner = {
+                is_wilderness_empire = no
+            }
+        }
+    }
+
+    resources = {
+        category = planet_zones
+        cost = {
+            alloys = @zone_cost
+        }
+    }
+
+    planet_modifier = {
+        zone_building_slots_add = 3
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+            }
+        }
+        modifier = {
+            job_aot_ae_stellariteman_add = 100
+        }
+    }
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        modifier = {
+            job_aot_ae_stellaritedrone_add = 100
+        }
+    }
+
+    # i got tired of listing all of them out
+    # TODO use a proper way of only letting acot / aot buildings in once they are tagged
+    include = {
+        all
+    }
+    excluded_building_sets = {
+        generator
+        mining
+        farming
+        knights
+        betharian
+        generator_automation
+        mining_automation
+        farming_automation
+        urban_automation_arcology
+        urban_automation
+        giga_automation
+    }
+
+    zone_sets = {
+        frame_stellarite
+    }
+}
