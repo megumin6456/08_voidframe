@@ -600,6 +600,7 @@ anz_voidframe_synapse_drone_se = {
 # vanilla trader is 8 vs 3 of clerk
 # trader: 16 / 32 / 64 / 128
 # TODO: need gestalt version
+# TODO TODO TODO TODO TODO
 
 anz_voidframe_trader_de = {
 	category = specialist

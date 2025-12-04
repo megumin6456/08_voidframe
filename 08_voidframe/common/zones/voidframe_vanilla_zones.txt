@@ -893,7 +893,7 @@ zone_voidframe_zone_DM_generator = {
 
     included_building_sets = {
         generator
-        urban_automation
+        generator_automation
         origin
     }
 
@@ -948,7 +948,7 @@ zone_voidframe_zone_DE_generator = {
 
     included_building_sets = {
         generator
-        urban_automation
+        generator_automation
         origin
     }
 
@@ -1003,7 +1003,7 @@ zone_voidframe_zone_PE_generator = {
 
     included_building_sets = {
         generator
-        urban_automation
+        generator_automation
         origin
     }
 
@@ -1058,7 +1058,7 @@ zone_voidframe_zone_SE_generator = {
 
     included_building_sets = {
         generator
-        urban_automation
+        generator_automation
         origin
     }
 
@@ -1115,7 +1115,7 @@ zone_voidframe_zone_DM_penrose = {
 
     included_building_sets = {
         generator
-        urban_automation
+        generator_automation
         origin
     }
 
@@ -1170,7 +1170,7 @@ zone_voidframe_zone_DE_penrose = {
 
     included_building_sets = {
         generator
-        urban_automation
+        generator_automation
         origin
     }
 
@@ -1225,7 +1225,7 @@ zone_voidframe_zone_PE_penrose = {
 
     included_building_sets = {
         generator
-        urban_automation
+        generator_automation
         origin
     }
 
@@ -1280,7 +1280,7 @@ zone_voidframe_zone_SE_penrose = {
 
     included_building_sets = {
         generator
-        urban_automation
+        generator_automation
         origin
     }
 
@@ -1337,7 +1337,7 @@ zone_voidframe_zone_DM_mining = {
 
     included_building_sets = {
         mining
-        urban_automation
+        mining_automation
         origin
     }
 
@@ -1392,9 +1392,10 @@ zone_voidframe_zone_DE_mining = {
 
     included_building_sets = {
         mining
-        urban_automation
+        mining_automation
         origin
     }
+
 
     zone_sets = {
         minerals
@@ -1447,9 +1448,10 @@ zone_voidframe_zone_PE_mining = {
 
     included_building_sets = {
         mining
-        urban_automation
+        mining_automation
         origin
     }
+
 
     zone_sets = {
         minerals
@@ -1502,9 +1504,10 @@ zone_voidframe_zone_SE_mining = {
 
     included_building_sets = {
         mining
-        urban_automation
+        mining_automation
         origin
     }
+
 
     zone_sets = {
         minerals
@@ -1559,9 +1562,10 @@ zone_voidframe_zone_DM_decompressor = {
 
     included_building_sets = {
         mining
-        urban_automation
+        mining_automation
         origin
     }
+
 
     zone_sets = {
         minerals
@@ -1614,9 +1618,10 @@ zone_voidframe_zone_DE_decompressor = {
 
     included_building_sets = {
         mining
-        urban_automation
+        mining_automation
         origin
     }
+
 
     zone_sets = {
         minerals
@@ -1669,9 +1674,10 @@ zone_voidframe_zone_PE_decompressor = {
 
     included_building_sets = {
         mining
-        urban_automation
+        mining_automation
         origin
     }
+
 
     zone_sets = {
         minerals
@@ -1724,7 +1730,7 @@ zone_voidframe_zone_SE_decompressor = {
 
     included_building_sets = {
         mining
-        urban_automation
+        mining_automation
         origin
     }
 
@@ -1781,7 +1787,7 @@ zone_voidframe_zone_DM_farming = {
 
     included_building_sets = {
         farming
-        urban_automation
+        farming_automation
         origin
     }
 
@@ -1832,7 +1838,7 @@ zone_voidframe_zone_DE_farming = {
 
     included_building_sets = {
         farming
-        urban_automation
+        farming_automation
         origin
     }
 
@@ -1883,7 +1889,7 @@ zone_voidframe_zone_PE_farming = {
 
     included_building_sets = {
         farming
-        urban_automation
+        farming_automation
         origin
     }
 
@@ -1934,7 +1940,7 @@ zone_voidframe_zone_SE_farming = {
 
     included_building_sets = {
         farming
-        urban_automation
+        farming_automation
         origin
     }
 

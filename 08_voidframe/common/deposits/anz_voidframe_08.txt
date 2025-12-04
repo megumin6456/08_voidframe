@@ -6,8 +6,8 @@ anz_voidframe_delta = {
 	potential = { always = no }
 
 	planet_modifier = {
-		planet_jobs_sr_dark_matter_produces_mult = +4.0
-		planet_jobs_acot_sr_dark_energy_produces_mult = +4.0
+		planet_jobs_sr_dark_matter_produces_mult = 0.20
+		planet_jobs_acot_sr_dark_energy_produces_mult = 0.20
 	}
 	
 	resources = {
@@ -30,8 +30,8 @@ anz_voidframe_alpha = {
 	potential = { always = no }
 
 	planet_modifier = {
-		planet_jobs_sr_dark_matter_produces_mult = +8.0
-		planet_jobs_acot_sr_dark_energy_produces_mult = +8.0
+		planet_jobs_sr_dark_matter_produces_mult = 0.40
+		planet_jobs_acot_sr_dark_energy_produces_mult = 0.40
 	}
 
 	resources = {
@@ -55,9 +55,9 @@ anz_voidframe_phanon = {
 	potential = { always = no }
 
 	planet_modifier = {
-		planet_jobs_sr_dark_matter_produces_mult = +8.0
-		planet_jobs_acot_sr_dark_energy_produces_mult = +8.0
-		planet_jobs_aot_sr_runic_power_produces_mult = +2.0
+		planet_jobs_sr_dark_matter_produces_mult = 0.60
+		planet_jobs_acot_sr_dark_energy_produces_mult = 0.60
+		planet_jobs_aot_sr_runic_power_produces_mult = 0.20
 		planet_jobs_energy_upkeep_mult = -0.1
 	}
 
@@ -81,10 +81,10 @@ anz_voidframe_stellar = {
 	potential = { always = no }
 
 	planet_modifier = {
-		planet_jobs_sr_dark_matter_produces_mult = +8.0
-		planet_jobs_acot_sr_dark_energy_produces_mult = +8.0
-		planet_jobs_aot_sr_runic_power_produces_mult = +4.0
-		planet_jobs_acot_sr_stellarite_produces_mult = +2.0
+		planet_jobs_sr_dark_matter_produces_mult = 0.8
+		planet_jobs_acot_sr_dark_energy_produces_mult = 0.8
+		planet_jobs_aot_sr_runic_power_produces_mult = 0.4
+		planet_jobs_acot_sr_stellarite_produces_mult = 0.2
 		planet_jobs_energy_upkeep_mult = -0.2
 	}
 
