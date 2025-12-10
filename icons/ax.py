@@ -8,11 +8,11 @@ DDS_DIR = "./cvt/" # makes copies overwrite if found
 
 # Using texconv utility from: https://github.com/microsoft/DirectXTex
 TEXCONV_PATH = "E:/soft/utils/texconv.exe"
-PREFIX = "district_giga_voidframe_"
+PREFIX = "district_xhk_"
 
-# must be same size as each other
-RENAME_FROM = ["commercial"]
-RENAME_TO = ["trade"]
+# rename string - must be same size as each other
+RENAME_FROM = []
+RENAME_TO = []
 
 print("Remove exit statement to use")
 exit()
