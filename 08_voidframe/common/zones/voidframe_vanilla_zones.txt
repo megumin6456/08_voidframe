@@ -3391,6 +3391,7 @@ zone_voidframe_zone_DM_anticrime = { #AOT locked since we using dm enforcer
         anticrime
         urban_automation
         origin
+        government
     }
 
     zone_sets = {
@@ -3441,6 +3442,7 @@ zone_voidframe_zone_DE_anticrime = {
         anticrime
         urban_automation
         origin
+        government
     }
 
     zone_sets = {
@@ -3491,6 +3493,7 @@ zone_voidframe_zone_PE_anticrime = {
         anticrime
         urban_automation
         origin
+        government
     }
 
     zone_sets = {
@@ -3541,6 +3544,7 @@ zone_voidframe_zone_SE_anticrime = {
         anticrime
         urban_automation
         origin
+        government
     }
 
     zone_sets = {

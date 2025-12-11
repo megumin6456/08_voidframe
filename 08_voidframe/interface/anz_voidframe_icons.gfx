@@ -1,5 +1,21 @@
 spriteTypes = {
 
+    spriteType = {
+        name = "GFX_anz_voidframe_zone_DELTA"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/voidframe_zone_dm.dds"
+    }
+    spriteType = {
+        name = "GFX_anz_voidframe_zone_ALPHA"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/voidframe_zone_de.dds"
+    }
+    spriteType = {
+        name = "GFX_anz_voidframe_zone_PHANON"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/voidframe_zone_pe.dds"
+    }
+    spriteType = {
+        name = "GFX_anz_voidframe_zone_SIGMA"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/voidframe_zone_se.dds"
+    }
 
     spriteType = {
         name = "GFX_anz_voidframe_zone_DM_ALLOY"

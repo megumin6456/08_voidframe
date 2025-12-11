@@ -1,8 +1,7 @@
 
 ### FOR THE DE / DM DISTRICT
 zone_anz_voidframe_enigmatic = {
-    # icon =
-        # TODO need an icon for this
+    icon = GFX_anz_voidframe_zone_DELTA
 
     base_buildtime = @zone_buildtime
 
@@ -100,8 +99,7 @@ zone_anz_voidframe_enigmatic = {
     }
 }
 zone_anz_voidframe_enigmatic_alpha = {
-    # icon =
-    # TODO need an icon for this
+    icon = GFX_anz_voidframe_zone_ALPHA
 
     base_buildtime = @zone_buildtime
 
@@ -187,8 +185,7 @@ zone_anz_voidframe_enigmatic_alpha = {
 
 ### FOR THE PHANON DISTRICT
 zone_anz_voidframe_phanon = {
-    # icon =
-    # TODO need an icon for this
+    icon = GFX_anz_voidframe_zone_PHANON
 
     base_buildtime = @zone_buildtime
 
@@ -272,8 +269,7 @@ zone_anz_voidframe_phanon = {
 
 ### FOR THE STELLARITE DISTRICT
 zone_anz_voidframe_stellarite = {
-    # icon =
-    # TODO need an icon for this
+    icon = GFX_anz_voidframe_zone_SIGMA
 
     base_buildtime = @zone_buildtime
 
