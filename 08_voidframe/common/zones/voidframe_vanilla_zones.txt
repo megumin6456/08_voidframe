@@ -3475,7 +3475,8 @@ zone_voidframe_zone_DM_anticrime = { #AOT locked since we using dm enforcer
                 is_gestalt = no
             }
         }
-        job_aot_dm_enforcer_add  = 300
+        job_aot_dm_enforcer_add  = 400
+        job_enforcer_add = -100
     }
     triggered_district_planet_modifier = {
         potential = {
@@ -3484,7 +3485,8 @@ zone_voidframe_zone_DM_anticrime = { #AOT locked since we using dm enforcer
                 is_gestalt = yes
             }
         }
-        job_aot_dm_enforcer_drone_add  = 300
+        job_aot_dm_enforcer_drone_add  = 400
+        job_patrol_drone_add = -100
     }
 
     inline_script = {
@@ -3526,7 +3528,8 @@ zone_voidframe_zone_DE_anticrime = {
                 is_gestalt = no
             }
         }
-        job_acot_enforcer_add   = 300
+        job_acot_enforcer_add   = 400
+        job_enforcer_add = -100
     }
     triggered_district_planet_modifier = {
         potential = {
@@ -3535,7 +3538,8 @@ zone_voidframe_zone_DE_anticrime = {
                 is_gestalt = yes
             }
         }
-        job_acot_enforcer_drone_add   = 300
+        job_acot_enforcer_drone_add   = 400
+        job_patrol_drone_add = -100
     }
 
     inline_script = {
@@ -3577,7 +3581,8 @@ zone_voidframe_zone_PE_anticrime = {
                 is_gestalt = no
             }
         }
-        job_phanon_enforcer_add    = 300
+        job_phanon_enforcer_add    = 400
+        job_enforcer_add = -100
     }
     triggered_district_planet_modifier = {
         potential = {
@@ -3586,7 +3591,8 @@ zone_voidframe_zone_PE_anticrime = {
                 is_gestalt = yes
             }
         }
-        job_phanon_enforcer_drone_add    = 300
+        job_phanon_enforcer_drone_add    = 400
+        job_patrol_drone_add = -100
     }
 
     inline_script = {
@@ -3628,7 +3634,8 @@ zone_voidframe_zone_SE_anticrime = {
                 is_gestalt = no
             }
         }
-        job_stellarite_enforcer_add  = 300
+        job_stellarite_enforcer_add  = 400
+        job_enforcer_add = -100
     }
     triggered_district_planet_modifier = {
         potential = {
@@ -3637,7 +3644,8 @@ zone_voidframe_zone_SE_anticrime = {
                 is_gestalt = yes
             }
         }
-        job_stellarite_enforcer_drone_add  = 300
+        job_stellarite_enforcer_drone_add  = 400
+        job_patrol_drone_add = -100
     }
 
     inline_script = {
@@ -3661,7 +3669,9 @@ zone_voidframe_zone_SE_anticrime = {
     }
 }
 
-# AMENITIES
+# AMENITIES #todo needicon
+
+# AMENITIES DYSTOPIAN #todo need icon
 
 # EHOF NEG MASS
 
