@@ -42,3 +42,53 @@ country_event = {
 		}
 	}
 }
+
+# frame upgrade notifs
+country_event = {
+    id = anz_voidframe.10
+    title = anz_voidframe.10.name
+    desc = anz_voidframe.10.desc
+    hide_window = no
+    is_triggered_only = yes
+
+    picture = GFX_acot_fractured_world
+    option = {
+        name = anz_voidframe.10.a
+    }
+}
+country_event = {
+    id = anz_voidframe.11
+    title = anz_voidframe.11.name
+    desc = anz_voidframe.11.desc
+    hide_window = no
+    is_triggered_only = yes
+
+    picture = GFX_acot_fractured_world
+    option = {
+        name = anz_voidframe.11.a
+    }
+}
+country_event = {
+    id = anz_voidframe.12
+    title = anz_voidframe.12.name
+    desc = anz_voidframe.12.desc
+    hide_window = no
+    is_triggered_only = yes
+
+    picture = GFX_acot_fractured_world
+    option = {
+        name = anz_voidframe.12.a
+    }
+}
+country_event = {
+    id = anz_voidframe.13
+    title = anz_voidframe.13.name
+    desc = anz_voidframe.13.desc
+    hide_window = no
+    is_triggered_only = yes
+
+    picture = GFX_acot_fractured_world
+    option = {
+        name = anz_voidframe.13.a
+    }
+}

@@ -1269,7 +1269,7 @@ phanon_srname_ee: "Runic"
   giga_frameworld_docs_voidframe_desc: "$giga_frameworld_docs_voidframe_title$\n\n$giga_frameworld_docs_voidframe_intro1$\n\n$giga_frameworld_docs_voidframe_tiers$\n"
 
   giga_frameworld_docs_voidframe_title: "§YThe Frameworld can upgraded to better utilize the power of ACOT aka Voidframe.§!"
-  giga_frameworld_docs_voidframe_intro1: "§EBefore you upgrade to a new tier§!: Make sure to have stable production of the associated ACOT stratergic resource. Districts that produces these resources will unlock BEFORE you can upgrade the frame itself so build plenty of these.\n\n§EOnce it's upgraded into a voidframe, it cannot be reversed.§!"
+  giga_frameworld_docs_voidframe_intro1: "§EBefore you upgrade to a new tier§!: Make sure to have stable production of the associated ACOT stratergic resource. Districts that produces these resources will unlock BEFORE you can upgrade the frame itself so build plenty of these.\n\n§EOnce it's upgraded into a voidframe, it cannot be reversed.§!\n\n§GThe upgrades unlock the possibility of new Zones for your districts, which will change the given jobs into their proper ACOT/AOT variations.§!"
 
   giga_frameworld_docs_voidframe_tiers: "§YThe tiers you can unlock depends on your modlist§!,\n - §WACOT                      :§! §E£sr_dark_matter£ Delta§! and §B£acot_sr_dark_energy£ Alpha§! tiers.\n - §WACOT + AOT            :§! §R£aot_sr_runic_power£ Phanon§! and §H£acot_sr_stellarite£ Stellarite§! tiers.\n - §WACOT + AOT + SOTS :§! §M£sm_sr_perfect_runic_energy£ Pure Runic§! tier (not released yet)."
 
@@ -1307,6 +1307,27 @@ phanon_srname_ee: "Runic"
   giga_frameworld_docs_voidframe_hook_no1: "" #in use by Frameworld Extra Goodies
   giga_frameworld_docs_voidframe_hook_no2: ""
   giga_frameworld_docs_voidframe_hook_no3: ""
+
+
+
+ ################################################################################################################
+ # EVENTS
+
+ anz_voidframe.10.name: "Delta Voidframe Upgrade Complete"
+ anz_voidframe.10.desc: "Our Delta frame is now complete.\n\n§RMake sure to check if you can swap your zones to Delta variations.§!\n\nSome zones are unlocked automatically, some require the related ACOT building technology."
+ anz_voidframe.10.a: "I will make sure to check my zone swaps."
+
+ anz_voidframe.11.name: "Alpha Voidframe Upgrade Complete"
+ anz_voidframe.11.desc: "Our Alpha frame is now complete.\n\n§RMake sure to check if you can swap your zones to Delta variations.§!\n\nSome zones are unlocked automatically, some require the related ACOT building technology."
+ anz_voidframe.11.a: "I will make sure to check my zone swaps."
+
+ anz_voidframe.12.name: "Phi Voidframe Upgrade Complete"
+ anz_voidframe.12.desc: "Our Phi frame is now complete.\n\n§RMake sure to check if you can swap your zones to Delta variations.§!\n\nSome zones are unlocked automatically, some require the related ACOT building technology."
+ anz_voidframe.12.a: "I will make sure to check my zone swaps."
+
+ anz_voidframe.13.name: "Sigma Voidframe Upgrade Complete"
+ anz_voidframe.13.desc: "Our Sigma frame is now complete.\n\n§RMake sure to check if you can swap your zones to Delta variations.§!\n\nSome zones are unlocked automatically, some require the related ACOT building technology."
+ anz_voidframe.13.a: "I will make sure to check my zone swaps."
 
 ################################################################################################################
 #other

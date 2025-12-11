@@ -1,6 +1,7 @@
 # Used to overwrite gigas & acot
 namespace = acot_digsite_events
 
+# acot digsite fix
 country_event = {
 	id = acot_digsite_events.1
 	title = acot_digsite_events.1.name

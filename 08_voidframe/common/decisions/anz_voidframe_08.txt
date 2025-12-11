@@ -61,11 +61,9 @@ anz_voidframe_enigmatic = {
 				days = -1
 			}
 
-			# add_modifier = {
-			# 	modifier = frameworld_building_wreck_fix
-			# }
 			validate_planet_buildings_and_districts = yes
-			# remove_modifier = frameworld_building_wreck_fix
+
+            from = { country_event = { id = anz_voidframe.10 }}
 		}
 	}
 	
@@ -125,11 +123,9 @@ anz_voidframe_enigmatic_ae = {
 			add_deposit = anz_voidframe_alpha_deposit
 			remove_deposit = anz_voidframe_delta_deposit
 
-			add_modifier = {
-				modifier = frameworld_building_wreck_fix
-			}
-			validate_planet_buildings_and_districts = yes
-			remove_modifier = frameworld_building_wreck_fix
+            validate_planet_buildings_and_districts = yes
+
+            from = { country_event = { id = anz_voidframe.11 }}
 		}
 	}
 	
@@ -189,11 +185,9 @@ anz_voidframe_phanon = {
 			add_deposit = anz_voidframe_phanon_deposit
 			remove_deposit = anz_voidframe_alpha_deposit
 
-			add_modifier = {
-				modifier = frameworld_building_wreck_fix
-			}
 			validate_planet_buildings_and_districts = yes
-			remove_modifier = frameworld_building_wreck_fix
+
+            from = { country_event = { id = anz_voidframe.12 }}
 		}
 	}
 	
@@ -253,11 +247,9 @@ anz_voidframe_stellarite = {
 			add_deposit = anz_voidframe_stellar_deposit
 			remove_deposit = anz_voidframe_phanon_deposit
 
-			add_modifier = {
-				modifier = frameworld_building_wreck_fix
-			}
 			validate_planet_buildings_and_districts = yes
-			remove_modifier = frameworld_building_wreck_fix
+
+            from = { country_event = { id = anz_voidframe.13 }}
 		}
 	}
 	
