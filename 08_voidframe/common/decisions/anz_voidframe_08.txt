@@ -49,7 +49,7 @@ anz_voidframe_enigmatic = {
 
 		hidden_effect = {
 			set_planet_flag = voidframe_enigmatic
-			add_deposit = anz_voidframe_delta
+			add_deposit = anz_voidframe_delta_deposit
 
 			add_modifier = {
 				modifier = "acot_modifier_supercharged_reactor"
@@ -122,8 +122,8 @@ anz_voidframe_enigmatic_ae = {
 
 		hidden_effect = {
 			set_planet_flag = voidframe_enigmatic_ae
-			add_deposit = anz_voidframe_alpha
-			remove_deposit = anz_voidframe_delta
+			add_deposit = anz_voidframe_alpha_deposit
+			remove_deposit = anz_voidframe_delta_deposit
 
 			add_modifier = {
 				modifier = frameworld_building_wreck_fix
@@ -186,8 +186,8 @@ anz_voidframe_phanon = {
 
 		hidden_effect = {
 			set_planet_flag = voidframe_phanon
-			add_deposit = anz_voidframe_phanon
-			remove_deposit = anz_voidframe_alpha
+			add_deposit = anz_voidframe_phanon_deposit
+			remove_deposit = anz_voidframe_alpha_deposit
 
 			add_modifier = {
 				modifier = frameworld_building_wreck_fix
@@ -250,8 +250,8 @@ anz_voidframe_stellarite = {
 
 		hidden_effect = {
 			set_planet_flag = voidframe_stellarite
-			add_deposit = anz_voidframe_stellar
-			remove_deposit = anz_voidframe_phanon
+			add_deposit = anz_voidframe_stellar_deposit
+			remove_deposit = anz_voidframe_phanon_deposit
 
 			add_modifier = {
 				modifier = frameworld_building_wreck_fix

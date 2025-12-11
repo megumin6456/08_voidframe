@@ -1,4 +1,4 @@
-anz_voidframe_delta = {
+anz_voidframe_delta_deposit = {
 	is_for_colonizable = yes
 	category = deposit_cat_energy
 
@@ -22,7 +22,7 @@ anz_voidframe_delta = {
 	}
 }
 
-anz_voidframe_alpha = {
+anz_voidframe_alpha_deposit = {
 	is_for_colonizable = yes
 	category = deposit_cat_energy
 
@@ -47,7 +47,7 @@ anz_voidframe_alpha = {
 
 }
 
-anz_voidframe_phanon = {
+anz_voidframe_phanon_deposit = {
 	is_for_colonizable = yes
 	category = deposit_cat_energy
 
@@ -73,7 +73,7 @@ anz_voidframe_phanon = {
 	}
 }
 
-anz_voidframe_stellar = {
+anz_voidframe_stellar_deposit = {
 	is_for_colonizable = yes
 	category = deposit_cat_energy
 
@@ -100,7 +100,7 @@ anz_voidframe_stellar = {
 	}
 }
 
-anz_voidframe_soul = {
+anz_voidframe_soul_deposit = {
 	is_for_colonizable = yes
 	category = deposit_cat_energy
 
@@ -119,7 +119,7 @@ anz_voidframe_soul = {
 	}
 }
 
-anz_voidframe_light = {
+anz_voidframe_light_deposit = {
 	is_for_colonizable = yes
 	category = deposit_cat_energy
 

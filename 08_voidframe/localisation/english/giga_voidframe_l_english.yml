@@ -1199,26 +1199,26 @@ phanon_srname_ee: "Runic"
 # DEPOSITS
 ################################################################################################################
 
-  anz_voidframe_delta: "§WVOIDFRAME - §!§EDELTA§!"
-  anz_voidframe_delta_desc: "The core of an Dark Matter based voidframe, it allows the frameworld the operate using enigmatic infrastructure."
+  anz_voidframe_delta_deposit: "§WVOIDFRAME - §!§EDELTA§!"
+  anz_voidframe_delta_deposit_desc: "The core of an Dark Matter based voidframe, it allows the frameworld the operate using enigmatic infrastructure."
 
-  anz_voidframe_alpha: "§WVOIDFRAME - §!§BALPHA§!"
-  anz_voidframe_alpha_desc: "Heart of Frameworld that master Precursor technologies, even staring at this marvel gives us inspiration."
+  anz_voidframe_alpha_deposit: "§WVOIDFRAME - §!§BALPHA§!"
+  anz_voidframe_alpha_deposit_desc: "Heart of Frameworld that master Precursor technologies, even staring at this marvel gives us inspiration."
 
-  anz_voidframe_stellar: "§WVOIDFRAME - §!§HSIGMA§!"
-  anz_voidframe_stellar_desc: "§HBuzzing with insane power it Shines with the Might of Stars!"
+  anz_voidframe_stellar_deposit: "§WVOIDFRAME - §!§HSIGMA§!"
+  anz_voidframe_stellar_deposit_desc: "§HBuzzing with insane power it Shines with the Might of Stars!"
 
-  anz_voidframe_pylons: "§WVOIDFRAME - §!§RPYLON LINKS§!"
-  anz_voidframe_pylons_desc: "§RDirect Connection established with $phanon_srname_ee$ Pylons and Voidframe§!"
+  anz_voidframe_pylons_deposit: "§WVOIDFRAME - §!§RPYLON LINKS§!"
+  anz_voidframe_pylons_deposit_desc: "§RDirect Connection established with $phanon_srname_ee$ Pylons and Voidframe§!"
 
-  anz_voidframe_phanon: "§WVOIDFRAME - §!§RPHI§!"
-  anz_voidframe_phanon_desc: "§RHIGH SECURITY SECTION 14C, ONLY FOR AUTHORIZED PERSONNEL.§!"
+  anz_voidframe_phanon_deposit: "§WVOIDFRAME - §!§RPHI§!"
+  anz_voidframe_phanon_deposit_desc: "§RHIGH SECURITY SECTION 14C, ONLY FOR AUTHORIZED PERSONNEL.§!"
 
-  anz_voidframe_soul: "§WVOIDFRAME - §!§MTHETA§!"
-  anz_voidframe_soul_desc: "§MALL HAIL our Shroud Master! We are thy humble servants...§!"
+  anz_voidframe_soul_deposit: "§WVOIDFRAME - §!§MTHETA§!"
+  anz_voidframe_soul_deposit_desc: "§MALL HAIL our Shroud Master! We are thy humble servants...§!"
 
-  anz_voidframe_light: "§WVOIDFRAME - §!§YOMEGA§!"
-  anz_voidframe_light_desc: "§YSo this is the Power of Divine? Truly Phenomenal!§!"
+  anz_voidframe_light_deposit: "§WVOIDFRAME - §!§YOMEGA§!"
+  anz_voidframe_light_deposit_desc: "§YSo this is the Power of Divine? Truly Phenomenal!§!"
 
   mod_district_giga_voidframe_maginot_shield_generators_dm_max: "Max $district_giga_voidframe_maginot_shield_generators_dm_plural$"
   mod_district_giga_voidframe_maginot_shield_generators_de_max: "Max $district_giga_voidframe_maginot_shield_generators_de_plural$"
@@ -1241,14 +1241,14 @@ phanon_srname_ee: "Runic"
   # I split the documentation into two - XHK
 
   giga_frameworld_docs_voidframe: "9A. Voidframe Upgrades"
-  giga_frameworld_docs_voidframe_desc: "$giga_frameworld_docs_voidframe_title$\n\n$giga_frameworld_docs_voidframe_intro1$\n\n$giga_frameworld_docs_voidframe_tiers$\n\n$giga_frameworld_docs_voidframe_tiers_general$"
+  giga_frameworld_docs_voidframe_desc: "$giga_frameworld_docs_voidframe_title$\n\n$giga_frameworld_docs_voidframe_intro1$\n\n$giga_frameworld_docs_voidframe_tiers$\n"
 
   giga_frameworld_docs_voidframe_title: "§YThe Frameworld can upgraded to better utilize the power of ACOT aka Voidframe.§!"
   giga_frameworld_docs_voidframe_intro1: "§EBefore you upgrade to a new tier§!: Make sure to have stable production of the associated ACOT stratergic resource. Districts that produces these resources will unlock BEFORE you can upgrade the frame itself so build plenty of these.\n\n§EOnce it's upgraded into a voidframe, it cannot be reversed.§!"
 
   giga_frameworld_docs_voidframe_tiers: "§YThe tiers you can unlock depends on your modlist§!,\n - §WACOT                      :§! §E£sr_dark_matter£ Delta§! and §B£acot_sr_dark_energy£ Alpha§! tiers.\n - §WACOT + AOT            :§! §R£aot_sr_runic_power£ Phanon§! and §H£acot_sr_stellarite£ Stellarite§! tiers.\n - §WACOT + AOT + SOTS :§! §M£sm_sr_perfect_runic_energy£ Pure Runic§! tier (not released yet)."
 
-  giga_frameworld_docs_voidframe_tiers_general: "§YDistrict Upgrade Rules§!\n - When voidframe is upgraded only some districts will auto upgrade with it.\n   §WHousing, Amenities, Enigmatic, Phanon, Stellarite, Runic$giga_frameworld_docs_voidframe_hook_auto1$$giga_frameworld_docs_voidframe_hook_auto2$$giga_frameworld_docs_voidframe_hook_auto3$$giga_frameworld_docs_voidframe_hook_auto4$$giga_frameworld_docs_voidframe_hook_auto5$$giga_frameworld_docs_voidframe_hook_auto6$.§!\n\n - Some cannot be upgraded as there is no acot equivalent or are still being developed.\n   §WEHOF$giga_frameworld_docs_voidframe_hook_no1$$giga_frameworld_docs_voidframe_hook_no2$$giga_frameworld_docs_voidframe_hook_no3$.§!\n\n - Others require acot buildings of the same tier to be built (can be downgraded).\n    * §WForge§! (Dark Foundry), §WFactory§! (Hard-Light Materials Printer),\n    * §WEnergy§! (Dark Energy Power Grid), §WMinerals§! (Crystal Synthesizer),\n    * §WFood§! (Agri Super-Complex), §WResearch§! (Enigmatic Lab),\n    * §WRefinery§! (Enigmatic Transmutator Dome), §WSupertensiles§! (Dark Molecular Foundry),\n    * §WTrade§! (Dark Shopping Mall), §WSecurity§! (Daedalus Alignment),\n    * §WSoldier§! (Daedalus Alignment),\n    * §WUnity§! (Delphic AI-Gov-Core (non-Spiritualists AOT)) / Empyrean Shrine (Spiritualists)\n      (Delta Maintenance Hub (machine gestalts) / Hive Spire (hive gestalts)\n      (Deluxe Mansion (non-Spiritualists no-AOT)\n    * §WMaginot§! (Delta Giga Fortress - refresh armies/upgrades with decisions after upgrade)$giga_frameworld_docs_voidframe_hook1$$giga_frameworld_docs_voidframe_hook2$$giga_frameworld_docs_voidframe_hook3$$giga_frameworld_docs_voidframe_hook4$$giga_frameworld_docs_voidframe_hook5$$giga_frameworld_docs_voidframe_hook6$"
+  #giga_frameworld_docs_voidframe_tiers_general: "§YDistrict Upgrade Rules§!\n - When voidframe is upgraded only some districts will auto upgrade with it.\n   §WHousing, Amenities, Enigmatic, Phanon, Stellarite, Runic$giga_frameworld_docs_voidframe_hook_auto1$$giga_frameworld_docs_voidframe_hook_auto2$$giga_frameworld_docs_voidframe_hook_auto3$$giga_frameworld_docs_voidframe_hook_auto4$$giga_frameworld_docs_voidframe_hook_auto5$$giga_frameworld_docs_voidframe_hook_auto6$.§!\n\n - Some cannot be upgraded as there is no acot equivalent or are still being developed.\n   §WEHOF$giga_frameworld_docs_voidframe_hook_no1$$giga_frameworld_docs_voidframe_hook_no2$$giga_frameworld_docs_voidframe_hook_no3$.§!\n\n - Others require acot buildings of the same tier to be built (can be downgraded).\n    * §WForge§! (Dark Foundry), §WFactory§! (Hard-Light Materials Printer),\n    * §WEnergy§! (Dark Energy Power Grid), §WMinerals§! (Crystal Synthesizer),\n    * §WFood§! (Agri Super-Complex), §WResearch§! (Enigmatic Lab),\n    * §WRefinery§! (Enigmatic Transmutator Dome), §WSupertensiles§! (Dark Molecular Foundry),\n    * §WTrade§! (Dark Shopping Mall), §WSecurity§! (Daedalus Alignment),\n    * §WSoldier§! (Daedalus Alignment),\n    * §WUnity§! (Delphic AI-Gov-Core (non-Spiritualists AOT)) / Empyrean Shrine (Spiritualists)\n      (Delta Maintenance Hub (machine gestalts) / Hive Spire (hive gestalts)\n      (Deluxe Mansion (non-Spiritualists no-AOT)\n    * §WMaginot§! (Delta Giga Fortress - refresh armies/upgrades with decisions after upgrade)$giga_frameworld_docs_voidframe_hook1$$giga_frameworld_docs_voidframe_hook2$$giga_frameworld_docs_voidframe_hook3$$giga_frameworld_docs_voidframe_hook4$$giga_frameworld_docs_voidframe_hook5$$giga_frameworld_docs_voidframe_hook6$"
 
   giga_frameworld_docs_voidframe_two: "9B. Voidframe Tiers"
   giga_frameworld_docs_voidframe_two_desc: "$giga_frameworld_docs_voidframe_tiers_delta$\n\n$giga_frameworld_docs_voidframe_tiers_alpha$\n\n$giga_frameworld_docs_voidframe_tiers_phi$\n\n$giga_frameworld_docs_voidframe_tiers_sigma$\n\n$giga_frameworld_docs_voidframe_tiers_theta$"
