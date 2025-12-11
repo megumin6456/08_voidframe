@@ -3856,8 +3856,356 @@ zone_voidframe_zone_SE_tensiles = {
 }
 
 # SOLDIER
+zone_voidframe_zone_DM_fortress = {
+    icon = GFX_anz_voidframe_zone_DM_ARMY
+
+    swap_type = district_giga_voidframe_fort_dm
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_dm_zone
+        TECH = "tech_acot_dm_stronghold"
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = "NOT = { has_deposit = d_frameworld_maginot }"
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = no }
+        }
+        job_acot_soldier_add = 200
+        job_soldier_add = -100
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = yes }
+        }
+        job_acot_soldier_drone_add = 200
+        job_warrior_drone_add = -100
+    }
+
+    included_building_sets = {
+        fortress
+    }
+
+    zone_sets = {
+        fortress
+    }
+
+    convert_to = { zone_voidframe_zone_DM_fortress_maginot }
+}
+zone_voidframe_zone_DE_fortress = {
+    icon = GFX_anz_voidframe_zone_DE_ARMY
+
+    swap_type = district_giga_voidframe_fort_de
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_de_zone
+        TECH = "tech_acot_ae_stronghold"
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = "NOT = { has_deposit = d_frameworld_maginot }"
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = no }
+        }
+        job_acot_soldier_add = 300
+        job_soldier_add = -100
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = yes }
+        }
+        job_acot_soldier_drone_add = 300
+        job_warrior_drone_add = -100
+    }
+
+    included_building_sets = {
+        fortress
+    }
+
+    zone_sets = {
+        fortress
+    }
+
+    convert_to = { zone_voidframe_zone_DE_fortress_maginot }
+} #NO AE job, the acot job is AE
+zone_voidframe_zone_PE_fortress = {
+    icon = GFX_anz_voidframe_zone_PE_ARMY
+
+    swap_type = district_giga_voidframe_fort_pe
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_de_zone
+        TECH = "tech_phanon_stronghold"
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = "NOT = { has_deposit = d_frameworld_maginot }"
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = no }
+        }
+        job_phanon_soldier_add = 200
+        job_soldier_add = -100
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = yes }
+        }
+        job_phanon_soldier_drone_add = 200
+        job_warrior_drone_add = -100
+    }
+
+    included_building_sets = {
+        fortress
+    }
+
+    zone_sets = {
+        fortress
+    }
+
+    convert_to = { zone_voidframe_zone_PE_fortress_maginot }
+}
+zone_voidframe_zone_SE_fortress = {
+    icon = GFX_anz_voidframe_zone_SE_ARMY
+
+    swap_type = district_giga_voidframe_fort_se
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_se_zone
+        TECH = "tech_stellarite_stronghold"
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = "NOT = { has_deposit = d_frameworld_maginot }"
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = no }
+        }
+        job_stellarite_soldier_add = 200
+        job_soldier_add = -100
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = yes }
+        }
+        job_stellarite_soldier_drone_add = 200
+        job_warrior_drone_add = -100
+    }
+
+    included_building_sets = {
+        fortress
+    }
+
+    zone_sets = {
+        fortress
+    }
+
+    convert_to = { zone_voidframe_zone_SE_fortress_maginot }
+}
 
 # MAGINOT BUNKER
+zone_voidframe_zone_DM_fortress_maginot = {
+    icon = GFX_anz_voidframe_zone_DM_ARMY
+
+    swap_type = district_giga_voidframe_fort_maginot_dm
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_dm_zone
+        TECH = "tech_acot_dm_stronghold"
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = "has_deposit = d_frameworld_maginot"
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = no }
+        }
+        job_acot_soldier_add = 600
+        job_soldier_add = -400
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = yes }
+        }
+        job_acot_soldier_drone_add = 600
+        job_warrior_drone_add = -400
+    }
+
+    included_building_sets = {
+        fortress
+    }
+
+    zone_sets = {
+        fortress
+    }
+
+    triggered_desc = {
+        trigger = { exists = owner }
+        text = job_maginot_planetary_bunker_effect_desc_dm
+    }
+
+    convert_to = { zone_voidframe_zone_DM_fortress }
+}
+zone_voidframe_zone_DE_fortress_maginot = {
+    icon = GFX_anz_voidframe_zone_DE_ARMY
+
+    swap_type = district_giga_voidframe_fort_maginot_de
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_de_zone
+        TECH = "tech_acot_ae_stronghold"
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = "has_deposit = d_frameworld_maginot"
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = no }
+        }
+        job_acot_soldier_add = 800
+        job_soldier_add = -400
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = yes }
+        }
+        job_acot_soldier_drone_add = 800
+        job_warrior_drone_add = -400
+    }
+
+    included_building_sets = {
+        fortress
+    }
+
+    zone_sets = {
+        fortress
+    }
+
+    triggered_desc = {
+        trigger = { exists = owner }
+        text = job_maginot_planetary_bunker_effect_desc_de
+    }
+
+    convert_to = { zone_voidframe_zone_DE_fortress }
+} #NO AE job, the acot job is AE
+zone_voidframe_zone_PE_fortress_maginot = {
+    icon = GFX_anz_voidframe_zone_PE_ARMY
+
+    swap_type = district_giga_voidframe_fort_maginot_pe
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_de_zone
+        TECH = "tech_phanon_stronghold"
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = "has_deposit = d_frameworld_maginot"
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = no }
+        }
+        job_phanon_soldier_add = 600
+        job_soldier_add = -400
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = yes }
+        }
+        job_phanon_soldier_drone_add = 600
+        job_warrior_drone_add = -400
+    }
+
+    included_building_sets = {
+        fortress
+    }
+
+    zone_sets = {
+        fortress
+    }
+
+    triggered_desc = {
+        trigger = { exists = owner }
+        text = job_maginot_planetary_bunker_effect_desc_pe
+    }
+
+    convert_to = { zone_voidframe_zone_PE_fortress }
+}
+zone_voidframe_zone_SE_fortress_maginot = {
+    icon = GFX_anz_voidframe_zone_SE_ARMY
+
+    swap_type = district_giga_voidframe_fort_maginot_se
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_se_zone
+        TECH = "tech_stellarite_stronghold"
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = "has_deposit = d_frameworld_maginot"
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = no }
+        }
+        job_stellarite_soldier_add = 600
+        job_soldier_add = -400
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = yes }
+        }
+        job_stellarite_soldier_drone_add = 600
+        job_warrior_drone_add = -400
+    }
+
+    included_building_sets = {
+        fortress
+    }
+
+    zone_sets = {
+        fortress
+    }
+
+    triggered_desc = {
+        trigger = { exists = owner }
+        text = job_maginot_planetary_bunker_effect_desc_se
+    }
+
+    convert_to = { zone_voidframe_zone_SE_fortress }
+}
 
 # MAGINOT GUNS #todo icon
 zone_voidframe_zone_DM_maginotarty = {

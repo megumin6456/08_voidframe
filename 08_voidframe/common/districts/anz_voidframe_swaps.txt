@@ -807,8 +807,88 @@ district_giga_voidframe_anticrime_se = {
 }
 
 # AMENITIES
+district_giga_voidframe_amenities_dm = {
+    icon = district_giga_voidframe_maintain_dm
+    overlay_icon = GFX_district_amenities
+    gridbox = district_resort_1
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_voidframe_zone_DM_amenities
+    }
+}
+district_giga_voidframe_amenities_de = {
+    icon = district_giga_voidframe_maintain_de
+    overlay_icon = GFX_district_amenities
+    gridbox = district_resort_1
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_voidframe_zone_DE_amenities
+    }
+}
+district_giga_voidframe_amenities_pe = {
+    icon = district_giga_voidframe_maintain_pe
+    overlay_icon = GFX_district_amenities
+    gridbox = district_resort_1
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_voidframe_zone_PE_amenities
+    }
+}
+district_giga_voidframe_amenities_se = {
+    icon = district_giga_voidframe_maintain_se
+    overlay_icon = GFX_district_amenities
+    gridbox = district_resort_1
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_voidframe_zone_SE_amenities
+    }
+}
 
 # AMENITIES DYSTOPIA
+district_giga_voidframe_amenities_dystopian_dm = {
+    icon = district_giga_voidframe_maintain_dm
+    overlay_icon = GFX_district_amenities
+    gridbox = district_resort_1
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_voidframe_zone_DM_amenities
+    }
+}
+district_giga_voidframe_amenities_dystopian_de = {
+    icon = district_giga_voidframe_maintain_de
+    overlay_icon = GFX_district_amenities
+    gridbox = district_resort_1
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_voidframe_zone_DE_amenities
+    }
+}
+district_giga_voidframe_amenities_dystopian_pe = {
+    icon = district_giga_voidframe_maintain_pe
+    overlay_icon = GFX_district_amenities
+    gridbox = district_resort_1
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_voidframe_zone_PE_amenities
+    }
+}
+district_giga_voidframe_amenities_dystopian_se = {
+    icon = district_giga_voidframe_maintain_se
+    overlay_icon = GFX_district_amenities
+    gridbox = district_resort_1
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_voidframe_zone_SE_amenities
+    }
+}
 
 # EHOF NEG MASS
 
@@ -857,8 +937,88 @@ district_giga_voidframe_supertensiles_se = {
 }
 
 # SOLDIER
+district_giga_voidframe_fort_dm = {
+    icon = district_giga_voidframe_fort_dm
+    #overlay_icon = GFX_district_fortress
+    gridbox = district_arcology_fortress
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_voidframe_zone_DM_fortress
+    }
+}
+district_giga_voidframe_fort_de = {
+    icon = district_giga_voidframe_fort_de
+    #overlay_icon = GFX_district_fortress
+    gridbox = district_arcology_fortress
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_voidframe_zone_DE_fortress
+    }
+}
+district_giga_voidframe_fort_pe = {
+    icon = district_giga_voidframe_fort_pe
+    #overlay_icon = GFX_district_fortress
+    gridbox = district_arcology_fortress
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_voidframe_zone_PE_fortress
+    }
+}
+district_giga_voidframe_fort_se = {
+    icon = district_giga_voidframe_fort_se
+    #overlay_icon = GFX_district_fortress
+    gridbox = district_arcology_fortress
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_voidframe_zone_SE_fortress
+    }
+}
 
 # MAGINOT BUNKER
+district_giga_voidframe_fort_maginot_dm = {
+    icon = district_giga_voidframe_fort_dm
+    #overlay_icon = GFX_district_fortress
+    gridbox = district_arcology_fortress
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_voidframe_zone_DM_fortress
+    }
+}
+district_giga_voidframe_fort_maginot_de = {
+    icon = district_giga_voidframe_fort_de
+    #overlay_icon = GFX_district_fortress
+    gridbox = district_arcology_fortress
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_voidframe_zone_DE_fortress
+    }
+}
+district_giga_voidframe_fort_maginot_pe = {
+    icon = district_giga_voidframe_fort_pe
+    #overlay_icon = GFX_district_fortress
+    gridbox = district_arcology_fortress
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_voidframe_zone_PE_fortress
+    }
+}
+district_giga_voidframe_fort_maginot_se = {
+    icon = district_giga_voidframe_fort_se
+    #overlay_icon = GFX_district_fortress
+    gridbox = district_arcology_fortress
+
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_voidframe_zone_SE_fortress
+    }
+}
 
 # MAGINOT GUNS
 district_giga_voidframe_maginotarty_dm = {

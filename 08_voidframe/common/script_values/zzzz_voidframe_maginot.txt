@@ -24,19 +24,19 @@ maginot_bunker_count = {
     #### multiplies if the zone is there
     modifier = {
         mult = 2
-        has_zone = { zone = zone_voidframe_zone_DM_maginotbunker }
+        has_zone = { zone = zone_voidframe_zone_DM_fortress_maginot }
     }
     modifier = {
         mult = 2
-        has_zone = { zone = zone_voidframe_zone_DE_maginotbunker }
+        has_zone = { zone = zone_voidframe_zone_DE_fortress_maginot }
     }
     modifier = {
         mult = 3
-        has_zone = { zone = zone_voidframe_zone_PE_maginotbunker }
+        has_zone = { zone = zone_voidframe_zone_PE_fortress_maginot }
     }
     modifier = {
         mult = 3
-        has_zone = { zone = zone_voidframe_zone_SE_maginotbunker }
+        has_zone = { zone = zone_voidframe_zone_SE_fortress_maginot }
     }
 
 }
@@ -53,24 +53,23 @@ maginot_bunker_army_count_frameworld = {
     #### multiplies if the zone is there
     modifier = {
         mult = 2
-        has_zone = { zone = zone_voidframe_zone_DM_maginotbunker }
+        has_zone = { zone = zone_voidframe_zone_DM_fortress_maginot }
     }
     modifier = {
         mult = 2
-        has_zone = { zone = zone_voidframe_zone_DE_maginotbunker }
+        has_zone = { zone = zone_voidframe_zone_DE_fortress_maginot }
     }
     modifier = {
         mult = 3
-        has_zone = { zone = zone_voidframe_zone_PE_maginotbunker }
+        has_zone = { zone = zone_voidframe_zone_PE_fortress_maginot }
     }
     modifier = {
         mult = 3
-        has_zone = { zone = zone_voidframe_zone_SE_maginotbunker }
+        has_zone = { zone = zone_voidframe_zone_SE_fortress_maginot }
     }
 }
 
 # NO NEED TO PATCH UPGRADE POINTS, AS THOSE ARE CALCULATED VIA # OF JOBS
-
 # calculate how many shield armies we need on this planet
 maginot_shield_army_count_frameworld = {
     base = 0
@@ -100,6 +99,7 @@ maginot_shield_army_count_frameworld = {
     }
 }
 
+# NO NEED TO PATCH UPGRADE POINTS, AS THOSE ARE CALCULATED VIA # OF JOBS
 # calculate how many artillery armies we need on this planet
 maginot_artillery_army_count_frameworld = {
     base = 0

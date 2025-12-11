@@ -773,18 +773,26 @@ phanon_srname_ee: "Runic"
   district_giga_voidframe_amenities_dm: "Shadow Resort"
   district_giga_voidframe_amenities_dm_plural: "Shadow Resorts"
   district_giga_voidframe_amenities_dm_desc: "Massive resorts filled with the ability to mimic any reasonable environment. What constitutes a reasonable environment depends on how much you are willing to pay."
+  zone_voidframe_zone_DM_amenities: "$building_acot_dm_mansion$"
+  zone_voidframe_zone_DM_amenities_desc: "$building_acot_dm_mansion_desc$"
 
   district_giga_voidframe_amenities_de: "Eclipse Resorts"
   district_giga_voidframe_amenities_de_plural: "Eclipse Resorts"
   district_giga_voidframe_amenities_de_desc: "We have upgraded our resorts in order to add the ability to mimic unreasonable envionments for the strange people who want to do stuff like swim in molten promethium."
+  zone_voidframe_zone_DE_amenities: "$building_acot_ae_mansion$"
+  zone_voidframe_zone_DE_amenities_desc: "$building_acot_ae_mansion_desc$"
 
   district_giga_voidframe_amenities_pe: "§R$phanon_srname_ee$ Amusement Park§!"
   district_giga_voidframe_amenities_pe_plural: "§R$phanon_srname_ee$ Amusement Parks§!"
   district_giga_voidframe_amenities_pe_desc: "$phanon_classified$"
+  zone_voidframe_zone_PE_amenities: "$building_phanon_mansion$"
+  zone_voidframe_zone_PE_amenities_desc: "$building_phanon_mansion_desc$"
 
   district_giga_voidframe_amenities_se: "§HCelestial Colosseum§!"
   district_giga_voidframe_amenities_se_plural: "§HCelestial Colosseums§!"
   district_giga_voidframe_amenities_se_desc: "§HOur resorts no longer just mimic environments, but prevent the occurance of death by any means. Now you can stab that one dude who ate your lunch, in game of course.§!"
+  zone_voidframe_zone_SE_amenities: "$building_stellarite_mansion$"
+  zone_voidframe_zone_SE_amenities_desc: "$building_stellarite_mansion_desc$"
 
   # district_giga_frameworld_amenities_te: "§M §!"
   # district_giga_frameworld_amenities_te_plural: "§M §!"
@@ -929,18 +937,26 @@ phanon_srname_ee: "Runic"
   district_giga_voidframe_fort_dm: "Caladan Barracks" #modified dune reference
   district_giga_voidframe_fort_dm_plural: "Caladan Barracks"
   district_giga_voidframe_fort_dm_desc: "Our troops are trained here not to rely on their technologically superior enigmatic weaponry, but to also keep the fundamentals close at hand."
+  zone_voidframe_zone_DM_fortress: "$building_acot_dm_stronghold$"
+  zone_voidframe_zone_DM_fortress_desc: "$building_acot_dm_stronghold_desc$"
 
-  district_giga_voidframe_fort_de: "Cadian Training Ground" #warwhammer
-  district_giga_voidframe_fort_de_plural: "Cadian Training Grounds"
+  district_giga_voidframe_fort_de: "Cadian Barracks" #warwhammer
+  district_giga_voidframe_fort_de_plural: "Cadian Barracks"
   district_giga_voidframe_fort_de_desc: "Specialized training grounds where our troops are drilled with knowledge of dark energy weaponry to defend their homes against those who would annihilate them."
+  zone_voidframe_zone_DE_fortress: "$building_acot_ae_stronghold$"
+  zone_voidframe_zone_DE_fortress_desc: "$building_acot_ae_stronghold_desc$"
 
   district_giga_voidframe_fort_pe: "§RFortress of Baal§!" #warhammer reference
   district_giga_voidframe_fort_pe_plural: "§RFortresses of Baal!"
   district_giga_voidframe_fort_pe_desc: "$phanon_classified$"
+  zone_voidframe_zone_PE_fortress: "$building_phanon_stronghold$"
+  zone_voidframe_zone_PE_fortress_desc: "$building_phanon_stronghold_desc$"
 
   district_giga_voidframe_fort_se: "§HFortress of Hera§!" #warhammer reference
   district_giga_voidframe_fort_se_plural: "§HFortresses of Hera§!"
   district_giga_voidframe_fort_se_desc: "§HWe March for the Frame!§!"
+  zone_voidframe_zone_SE_fortress: "$building_stellarite_stronghold$"
+  zone_voidframe_zone_SE_fortress_desc: "$building_stellarite_stronghold_desc$"
 
   #district_giga_voidframe_fort_te: "§M §!"
   #district_giga_voidframe_fort_te_plural: "§M §!"
@@ -949,6 +965,31 @@ phanon_srname_ee: "Runic"
   #district_giga_voidframe_fort_oe: "§Y §!"
   #district_giga_voidframe_fort_oe_plural: "§Y §!"
   #district_giga_voidframe_fort_oe_desc: "§Y §!"
+
+ # MAGINOT FORTRESS
+ district_giga_voidframe_fort_maginot_dm: "Maginot Caladan Barracks" #modified dune reference
+ district_giga_voidframe_fort_maginot_dm_plural: "Maginot Caladan Barracks"
+ district_giga_voidframe_fort_maginot_dm_desc: "Our troops are trained here not to rely on their technologically superior enigmatic weaponry, but to also keep the fundamentals close at hand."
+ zone_voidframe_zone_DM_fortress_maginot: "$building_acot_dm_stronghold$"
+ zone_voidframe_zone_DM_fortress_maginot_desc: "$building_acot_dm_stronghold_desc$"
+
+ district_giga_voidframe_fort_maginot_de: "Maginot Cadian Barracks" #warwhammer
+ district_giga_voidframe_fort_maginot_de_plural: "Maginot Cadian Barracks"
+ district_giga_voidframe_fort_maginot_de_desc: "Specialized training grounds where our troops are drilled with knowledge of dark energy weaponry to defend their homes against those who would annihilate them."
+ zone_voidframe_zone_DE_fortress_maginot: "$building_acot_ae_stronghold$"
+ zone_voidframe_zone_DE_fortress_maginot_desc: "$building_acot_ae_stronghold_desc$"
+
+ district_giga_voidframe_fort_maginot_pe: "§RMaginot Fortress of Baal§!" #warhammer reference
+ district_giga_voidframe_fort_maginot_pe_plural: "§RMaginot Fortresses of Baal!"
+ district_giga_voidframe_fort_maginot_pe_desc: "$phanon_classified$"
+ zone_voidframe_zone_PE_fortress_maginot: "$building_phanon_stronghold$"
+ zone_voidframe_zone_PE_fortress_maginot_desc: "$building_phanon_stronghold_desc$"
+
+ district_giga_voidframe_fort_maginot_se: "§HMaginot Fortress of Hera§!" #warhammer reference
+ district_giga_voidframe_fort_maginot_se_plural: "§HMaginot Fortresses of Hera§!"
+ district_giga_voidframe_fort_maginot_se_desc: "§HWe March for the Frame!§!"
+ zone_voidframe_zone_SE_fortress_maginot: "$building_stellarite_stronghold$"
+ zone_voidframe_zone_SE_fortress_maginot_desc: "$building_stellarite_stronghold_desc$"
 
   job_maginot_planetary_bunker_effect_desc_dm: "Provides 2 §YFortification Network§! armies which cripples the morale of enemy troops while inflicting steady damage. Counts as 2 districts when using the §HMaginot Mass Recruitment§! decision"
   job_maginot_planetary_bunker_effect_desc_de: "Provides 2 §YFortification Network§! armies which cripples the morale of enemy troops while inflicting steady damage. Counts as 2 districts when using the §HMaginot Mass Recruitment§! decision"
