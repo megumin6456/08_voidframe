@@ -599,8 +599,6 @@ anz_voidframe_synapse_drone_se = {
 # clerks: 6 / 12 / 25 / 50
 # vanilla trader is 8 vs 3 of clerk
 # trader: 16 / 32 / 64 / 128
-# TODO: need gestalt version
-# TODO TODO TODO TODO TODO
 
 anz_voidframe_trader_de = {
 	category = specialist
@@ -804,6 +802,209 @@ anz_voidframe_trader_se = {
 	inline_script = "jobs/automodding_priority_trade"
 }
 
+# gestalt variations
+
+anz_voidframe_trader_gestalt_de = {
+    category = complex_drone
+    swappable_data = {
+        default = {
+            condition_string = DRONE_JOB_TRIGGER
+            building_icon = building_ae_commercial_megaplex
+            icon = anz_voidframe_trader_de
+        }
+    }
+
+    possible_pre_triggers = {
+        has_owner = yes
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+
+    possible_precalc = can_fill_drone_job
+    possible = { can_think = yes }
+
+    resources = {
+        category = planet_traders
+        produces = {
+            trade = 50
+        }
+        upkeep = {
+            sr_dark_matter = 2
+            acot_sr_dark_energy = 2
+            #vanilla trader has half compared to vanilla bureacrat / researcher, attempted to keep that ratio
+        }
+    }
+
+    triggered_planet_modifier = {
+        potential = {
+            always = yes
+        }
+        planet_amenities_add = 600
+        mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
+    }
+
+    weight = {
+        weight = @complex_drone_job_weight
+        mult = value:job_weights_modifier|JOB|anz_voidframe_trader_de|RESOURCE|trade|
+        mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
+        # crisis purge
+        modifier = {
+            factor = 0.01
+            exists = planet
+            exists = planet.controller
+            planet.controller = {
+                OR = {
+                    is_country_type = swarm
+                    is_country_type = ai_empire
+                }
+            }
+            OR = { # contingency won't purge itself
+                NOT = { exists = event_target:custodian_bot }
+                AND = {
+                    exists = event_target:custodian_bot
+                    NOT = { species = { is_same_value = event_target:custodian_bot } }
+                }
+            }
+        }
+    }
+
+    inline_script = "jobs/automodding_priority_trade"
+}
+
+anz_voidframe_trader_gestalt_pe = {
+    category = complex_drone
+    swappable_data = {
+        default = {
+            condition_string = DRONE_JOB_TRIGGER
+            building_icon = building_phanon_commercial_megaplex
+            icon = anz_voidframe_trader_pe
+        }
+    }
+
+    possible_pre_triggers = {
+        has_owner = yes
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+
+    possible_precalc = can_fill_drone_job
+    possible = { can_think = yes }
+
+    resources = {
+        category = planet_traders
+        produces = {
+            trade = 80
+        }
+        upkeep = {
+            aot_sr_runic_power = 4
+            #vanilla trader has half compared to vanilla bureacrat / researcher, attempted to keep that ratio
+        }
+    }
+
+    triggered_planet_modifier = {
+        potential = {
+            always = yes
+        }
+        planet_amenities_add = 750
+        mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
+    }
+
+    weight = {
+        weight = @complex_drone_job_weight
+        mult = value:job_weights_modifier|JOB|anz_voidframe_trader_gestalt_pe|RESOURCE|trade|
+        mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
+        # crisis purge
+        modifier = {
+            factor = 0.01
+            exists = planet
+            exists = planet.controller
+            planet.controller = {
+                OR = {
+                    is_country_type = swarm
+                    is_country_type = ai_empire
+                }
+            }
+            OR = { # contingency won't purge itself
+                NOT = { exists = event_target:custodian_bot }
+                AND = {
+                    exists = event_target:custodian_bot
+                    NOT = { species = { is_same_value = event_target:custodian_bot } }
+                }
+            }
+        }
+    }
+
+    inline_script = "jobs/automodding_priority_trade"
+}
+
+anz_voidframe_trader_gestalt_se = {
+    category = complex_drone
+    swappable_data = {
+        default = {
+            condition_string = DRONE_JOB_TRIGGER
+            building_icon = building_stellarite_commercial_megaplex
+            icon = anz_voidframe_trader_se
+        }
+    }
+
+    possible_pre_triggers = {
+        has_owner = yes
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+
+    possible_precalc = can_fill_drone_job
+    possible = { can_think = yes }
+
+    resources = {
+        category = planet_traders
+        produces = {
+            trade = 128
+        }
+        upkeep = {
+            acot_sr_stellarite = 4
+            #vanilla trader has half compared to vanilla bureacrat / researcher, attempted to keep that ratio
+        }
+    }
+
+    triggered_planet_modifier = {
+        potential = {
+            always = yes
+        }
+        planet_amenities_add = 900
+        mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
+    }
+
+    weight = {
+        weight = @specialist_job_weight
+        mult = value:job_weights_modifier|JOB|anz_voidframe_trader_gestalt_se|RESOURCE|trade|
+        mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
+        # crisis purge
+        modifier = {
+            factor = 0.01
+            exists = planet
+            exists = planet.controller
+            planet.controller = {
+                OR = {
+                    is_country_type = swarm
+                    is_country_type = ai_empire
+                }
+            }
+            OR = { # contingency won't purge itself
+                NOT = { exists = event_target:custodian_bot }
+                AND = {
+                    exists = event_target:custodian_bot
+                    NOT = { species = { is_same_value = event_target:custodian_bot } }
+                }
+            }
+        }
+    }
+
+    inline_script = "jobs/automodding_priority_trade"
+}
 
 # Theta Basic
 anz_voidframe_meditator = {

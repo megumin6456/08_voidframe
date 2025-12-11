@@ -481,24 +481,32 @@ phanon_srname_ee: "Runic"
   district_giga_voidframe_trade_dm_desc: "These markets are shrouded in a dark aura from the enigmatic technology used in the lights. To the traders working here however, the atmosphere is a bonus, as it helps them keep their transactions anonymous."
   zone_voidframe_zone_DM_trade: "$building_dm_commercial_megaplex$"
   zone_voidframe_zone_DM_trade_desc: "$building_dm_commercial_megaplex_desc$"
+  zone_voidframe_zone_DM_trade_gestalt: "$building_dm_commercial_megaplex$"
+  zone_voidframe_zone_DM_trade_gestalt_desc: "$building_dm_commercial_megaplex_desc$"
 
   district_giga_voidframe_trade_de: "Market of Imagination"
   district_giga_voidframe_trade_de_plural: "Markets of Imagination"
   district_giga_voidframe_trade_de_desc: "Delphic AIs facilitate the transmission and exchange of ideas. The marketplace of ideas is now a physical location, one where we can discuss the workings of the galaxy with other enlightened minds. For a price of course."
   zone_voidframe_zone_DE_trade: "$building_ae_commercial_megaplex$"
   zone_voidframe_zone_DE_trade_desc: "$building_ae_commercial_megaplex_desc$"
+  zone_voidframe_zone_DE_trade_gestalt: "$building_dm_commercial_megaplex$"
+  zone_voidframe_zone_DE_trade_gestalt_desc: "$building_dm_commercial_megaplex_desc$"
 
   district_giga_voidframe_trade_pe: "§R$phanon_srname_ee$ Plaza§!"
   district_giga_voidframe_trade_pe_plural: "§R$phanon_srname_ee$ Plazas§!"
   district_giga_voidframe_trade_pe_desc: "$phanon_classified$"
   zone_voidframe_zone_PE_trade: "$building_phanon_commercial_megaplex$"
   zone_voidframe_zone_PE_trade_desc: "$building_phanon_commercial_megaplex_desc$"
+  zone_voidframe_zone_PE_trade_gestalt: "$building_dm_commercial_megaplex$"
+  zone_voidframe_zone_PE_trade_gestalt_desc: "$building_dm_commercial_megaplex_desc$"
 
   district_giga_voidframe_trade_se: "§HCosmic Bazaar§!"
   district_giga_voidframe_trade_se_plural: "§HCosmic Bazaars§!"
   district_giga_voidframe_trade_se_desc: "§HA market teeming with activity, the traders here do not deal is mundane corporate stocks and goods, but speculate on the fates of the stars themselves.§!"
   zone_voidframe_zone_SE_trade: "$building_stellarite_commercial_megaplex$"
   zone_voidframe_zone_SE_trade_desc: "$building_stellarite_commercial_megaplex_desc$"
+  zone_voidframe_zone_SE_trade_gestalt: "$building_dm_commercial_megaplex$"
+  zone_voidframe_zone_SE_trade_gestalt_desc: "$building_dm_commercial_megaplex_desc$"
 
   # _te: "§M §!"
   # _te_plural: "§M §!"
@@ -1138,6 +1146,23 @@ phanon_srname_ee: "Runic"
   job_anz_voidframe_trader_se_plural: "Cosmic Tycoons"
   job_anz_voidframe_trader_se_desc: "These noble capitalists speculate on the fates of the stars themselves, and their stock machinations can go up to blowing up several star systems to influence a stock."
   mod_job_anz_voidframe_trader_se_add: "Cosmic Tycoons"
+
+ # trader_gestalt
+
+ job_anz_voidframe_trader_gestalt_de: "Shadow Logistician"
+ job_anz_voidframe_trader_gestalt_de_plural: "Shadow Logisticians"
+ job_anz_voidframe_trader_gestalt_de_desc: "Individually, these drones can calculate the logistical requirements of mundane cities. Together, they manage the Frame."
+ mod_job_anz_voidframe_trader_gestalt_de_add: "$job_anz_voidframe_trader_gestalt_de_plural$"
+
+ job_anz_voidframe_trader_gestalt_pe: "$phanon_srname_ee$ Overmind"
+ job_anz_voidframe_trader_gestalt_pe_plural: "$phanon_srname_ee$ Overminds"
+ job_anz_voidframe_trader_gestalt_pe_desc: "A drone fueled by Runic energy, allowing their logistical calculations to take into account the fluctuations of secondary dimensions."
+ mod_job_anz_voidframe_trader_gestalt_pe_add: "$job_anz_voidframe_trader_gestalt_pe_plural$"
+
+ job_anz_voidframe_trader_gestalt_se: "Cosmic Micromanager"
+ job_anz_voidframe_trader_gestalt_se_plural: "Cosmic Micromanager"
+ job_anz_voidframe_trader_gestalt_se_desc: "These drones, fueled by the brilliant power of Stellarite, can manage the cosmos themselves."
+ mod_job_anz_voidframe_trader_gestalt_se_add: "$job_anz_voidframe_trader_gestalt_se_plural$"
 
 # # normal soldiers (not in use)
 #
