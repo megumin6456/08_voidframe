@@ -1,4 +1,4 @@
-anz_voidframe_delta = {
+anz_voidframe_delta_deposit = {
 	is_for_colonizable = yes
 	category = deposit_cat_energy
 
@@ -6,33 +6,8 @@ anz_voidframe_delta = {
 	potential = { always = no }
 
 	planet_modifier = {
-		planet_jobs_sr_dark_matter_produces_mult = +4.0
-		planet_jobs_acot_sr_dark_energy_produces_mult = +4.0
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_regular_empire = yes
-				has_valid_civic = civic_dystopian_society
-			}
-		}
-		#xahkarias was here
-		district_giga_voidframe_amenities_dystopian_dm_max = 0.01
-		multiplier = trigger:num_pops
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner	
-			owner = {
-				is_machine_empire = yes
-				has_valid_civic = civic_machine_servitor
-			}
-			has_district = district_giga_voidframe_sanctuary_dm
-		}
-		pop_category_bio_trophy_unity_produces_add = 2
+		planet_jobs_sr_dark_matter_produces_mult = 0.20
+		planet_jobs_acot_sr_dark_energy_produces_mult = 0.20
 	}
 	
 	resources = {
@@ -45,26 +20,9 @@ anz_voidframe_delta = {
 			minor_artifacts = 4
 		}
 	}
-	
-	### MAGINOT STUFF, WRITING ALL THIS OUT IS NOT OPTIMAL BUT IT WORKS
-	### NEED TO KEEP ALL LOWER LEVEL MAGINOT DISTRICTS FOR DOWNGRADE COMPATIBILITY
-	triggered_planet_modifier = {
-        potential = {
-            is_giga_maginot_frameworld = yes
-        }
-        district_giga_voidframe_maginot_shield_generators_dm_max = @giga_frameworld_maginot_district_factor
-        multiplier = trigger:planet_size
-    }
-    triggered_planet_modifier = {
-        potential = {
-            is_giga_maginot_frameworld = yes
-        }
-        district_giga_voidframe_maginot_planetary_cannons_dm_max = @giga_frameworld_maginot_district_factor
-        multiplier = trigger:planet_size
-    }
 }
 
-anz_voidframe_alpha = {
+anz_voidframe_alpha_deposit = {
 	is_for_colonizable = yes
 	category = deposit_cat_energy
 
@@ -72,45 +30,8 @@ anz_voidframe_alpha = {
 	potential = { always = no }
 
 	planet_modifier = {
-		planet_jobs_sr_dark_matter_produces_mult = +8.0
-		planet_jobs_acot_sr_dark_energy_produces_mult = +8.0
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_regular_empire = yes
-				has_valid_civic = civic_dystopian_society
-			}
-		}
-		#xahkarias was here
-		district_giga_voidframe_amenities_dystopian_de_max = 0.01
-		multiplier = trigger:num_pops
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner	
-			owner = {
-				is_machine_empire = yes
-				has_valid_civic = civic_machine_servitor
-			}
-			has_district = district_giga_voidframe_sanctuary_dm
-		}
-		pop_category_bio_trophy_unity_produces_add = 2
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			has_district = district_giga_voidframe_sanctuary_de
-			owner = {
-				is_machine_empire = yes
-				has_valid_civic = civic_machine_servitor		
-			}
-		}
-		pop_category_bio_trophy_unity_produces_add = 4
+		planet_jobs_sr_dark_matter_produces_mult = 0.40
+		planet_jobs_acot_sr_dark_energy_produces_mult = 0.40
 	}
 
 	resources = {
@@ -123,40 +44,10 @@ anz_voidframe_alpha = {
 			minor_artifacts = 6
 		}
 	}
-	
-	### MAGINOT STUFF, WRITING ALL THIS OUT IS NOT OPTIMAL BUT IT WORKS
-	### NEED TO KEEP ALL LOWER LEVEL MAGINOT DISTRICTS FOR DOWNGRADE COMPATIBILITY
-	triggered_planet_modifier = {
-        potential = {
-            is_giga_maginot_frameworld = yes
-        }
-        district_giga_voidframe_maginot_shield_generators_dm_max = @giga_frameworld_maginot_district_factor
-        multiplier = trigger:planet_size
-    }
-    triggered_planet_modifier = {
-        potential = {
-            is_giga_maginot_frameworld = yes
-        }
-        district_giga_voidframe_maginot_planetary_cannons_dm_max = @giga_frameworld_maginot_district_factor
-        multiplier = trigger:planet_size
-    }
-	triggered_planet_modifier = {
-        potential = {
-            is_giga_maginot_frameworld = yes
-        }
-        district_giga_voidframe_maginot_shield_generators_de_max = @giga_frameworld_maginot_district_factor
-        multiplier = trigger:planet_size
-    }
-    triggered_planet_modifier = {
-        potential = {
-            is_giga_maginot_frameworld = yes
-        }
-        district_giga_voidframe_maginot_planetary_cannons_de_max = @giga_frameworld_maginot_district_factor
-        multiplier = trigger:planet_size
-    }
+
 }
 
-anz_voidframe_phanon = {
+anz_voidframe_phanon_deposit = {
 	is_for_colonizable = yes
 	category = deposit_cat_energy
 
@@ -164,59 +55,10 @@ anz_voidframe_phanon = {
 	potential = { always = no }
 
 	planet_modifier = {
-		planet_jobs_sr_dark_matter_produces_mult = +8.0
-		planet_jobs_acot_sr_dark_energy_produces_mult = +8.0
-		planet_jobs_aot_sr_runic_power_produces_mult = +2.0
+		planet_jobs_sr_dark_matter_produces_mult = 0.60
+		planet_jobs_acot_sr_dark_energy_produces_mult = 0.60
+		planet_jobs_aot_sr_runic_power_produces_mult = 0.20
 		planet_jobs_energy_upkeep_mult = -0.1
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_regular_empire = yes
-				has_valid_civic = civic_dystopian_society
-			}
-		}
-		#xahkarias was here
-		district_giga_voidframe_amenities_dystopian_pe_max = 0.01
-		multiplier = trigger:num_pops
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner	
-			owner = {
-				is_machine_empire = yes
-				has_valid_civic = civic_machine_servitor
-			}
-			has_district = district_giga_voidframe_sanctuary_dm
-		}
-		pop_category_bio_trophy_unity_produces_add = 2
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			has_district = district_giga_voidframe_sanctuary_de
-			owner = {
-				is_machine_empire = yes
-				has_valid_civic = civic_machine_servitor		
-			}
-		}
-		pop_category_bio_trophy_unity_produces_add = 4
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			has_district = district_giga_voidframe_sanctuary_pe
-			owner = {
-				is_machine_empire = yes
-				has_valid_civic = civic_machine_servitor
-			}
-		}
-		pop_category_bio_trophy_unity_produces_add = 8
 	}
 
 	resources = {
@@ -229,54 +71,9 @@ anz_voidframe_phanon = {
 			minor_artifacts = 10
 		}
 	}
-	
-	### MAGINOT STUFF, WRITING ALL THIS OUT IS NOT OPTIMAL BUT IT WORKS
-	### NEED TO KEEP ALL LOWER LEVEL MAGINOT DISTRICTS FOR DOWNGRADE COMPATIBILITY
-	triggered_planet_modifier = {
-        potential = {
-            is_giga_maginot_frameworld = yes
-        }
-        district_giga_voidframe_maginot_shield_generators_dm_max = @giga_frameworld_maginot_district_factor
-        multiplier = trigger:planet_size
-    }
-    triggered_planet_modifier = {
-        potential = {
-            is_giga_maginot_frameworld = yes
-        }
-        district_giga_voidframe_maginot_planetary_cannons_dm_max = @giga_frameworld_maginot_district_factor
-        multiplier = trigger:planet_size
-    }
-	triggered_planet_modifier = {
-        potential = {
-            is_giga_maginot_frameworld = yes
-        }
-        district_giga_voidframe_maginot_shield_generators_de_max = @giga_frameworld_maginot_district_factor
-        multiplier = trigger:planet_size
-    }
-    triggered_planet_modifier = {
-        potential = {
-            is_giga_maginot_frameworld = yes
-        }
-        district_giga_voidframe_maginot_planetary_cannons_de_max = @giga_frameworld_maginot_district_factor
-        multiplier = trigger:planet_size
-    }
-	triggered_planet_modifier = {
-        potential = {
-            is_giga_maginot_frameworld = yes
-        }
-        district_giga_voidframe_maginot_shield_generators_pe_max = @giga_frameworld_maginot_district_factor
-        multiplier = trigger:planet_size
-    }
-    triggered_planet_modifier = {
-        potential = {
-            is_giga_maginot_frameworld = yes
-        }
-        district_giga_voidframe_maginot_planetary_cannons_pe_max = @giga_frameworld_maginot_district_factor
-        multiplier = trigger:planet_size
-    }
 }
 
-anz_voidframe_stellar = {
+anz_voidframe_stellar_deposit = {
 	is_for_colonizable = yes
 	category = deposit_cat_energy
 
@@ -284,72 +81,11 @@ anz_voidframe_stellar = {
 	potential = { always = no }
 
 	planet_modifier = {
-		planet_jobs_sr_dark_matter_produces_mult = +8.0
-		planet_jobs_acot_sr_dark_energy_produces_mult = +8.0
-		planet_jobs_aot_sr_runic_power_produces_mult = +4.0
-		planet_jobs_acot_sr_stellarite_produces_mult = +2.0
+		planet_jobs_sr_dark_matter_produces_mult = 0.8
+		planet_jobs_acot_sr_dark_energy_produces_mult = 0.8
+		planet_jobs_aot_sr_runic_power_produces_mult = 0.4
+		planet_jobs_acot_sr_stellarite_produces_mult = 0.2
 		planet_jobs_energy_upkeep_mult = -0.2
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_regular_empire = yes
-				has_valid_civic = civic_dystopian_society
-			}
-		}
-		#xahkarias was here
-		district_giga_voidframe_amenities_dystopian_se_max = 0.01
-		multiplier = trigger:num_pops
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner	
-			owner = {
-				is_machine_empire = yes
-				has_valid_civic = civic_machine_servitor
-			}
-			has_district = district_giga_voidframe_sanctuary_dm
-		}
-		pop_category_bio_trophy_unity_produces_add = 2
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			has_district = district_giga_voidframe_sanctuary_de
-			owner = {
-				is_machine_empire = yes
-				has_valid_civic = civic_machine_servitor		
-			}
-		}
-		pop_category_bio_trophy_unity_produces_add = 4
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			has_district = district_giga_voidframe_sanctuary_pe
-			owner = {
-				is_machine_empire = yes
-				has_valid_civic = civic_machine_servitor
-			}
-		}
-		pop_category_bio_trophy_unity_produces_add = 8
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			has_district = district_giga_voidframe_sanctuary_se
-			owner = {
-				is_machine_empire = yes
-				has_valid_civic = civic_machine_servitor
-			}
-		}
-		pop_category_bio_trophy_unity_produces_add = 12
 	}
 
 	resources = {
@@ -362,68 +98,9 @@ anz_voidframe_stellar = {
 			minor_artifacts = 8
 		}
 	}
-	
-	### MAGINOT STUFF, WRITING ALL THIS OUT IS NOT OPTIMAL BUT IT WORKS
-	### NEED TO KEEP ALL LOWER LEVEL MAGINOT DISTRICTS FOR DOWNGRADE COMPATIBILITY
-	triggered_planet_modifier = {
-        potential = {
-            is_giga_maginot_frameworld = yes
-        }
-        district_giga_voidframe_maginot_shield_generators_dm_max = @giga_frameworld_maginot_district_factor
-        multiplier = trigger:planet_size
-    }
-    triggered_planet_modifier = {
-        potential = {
-            is_giga_maginot_frameworld = yes
-        }
-        district_giga_voidframe_maginot_planetary_cannons_dm_max = @giga_frameworld_maginot_district_factor
-        multiplier = trigger:planet_size
-    }
-	triggered_planet_modifier = {
-        potential = {
-            is_giga_maginot_frameworld = yes
-        }
-        district_giga_voidframe_maginot_shield_generators_de_max = @giga_frameworld_maginot_district_factor
-        multiplier = trigger:planet_size
-    }
-    triggered_planet_modifier = {
-        potential = {
-            is_giga_maginot_frameworld = yes
-        }
-        district_giga_voidframe_maginot_planetary_cannons_de_max = @giga_frameworld_maginot_district_factor
-        multiplier = trigger:planet_size
-    }
-	triggered_planet_modifier = {
-        potential = {
-            is_giga_maginot_frameworld = yes
-        }
-        district_giga_voidframe_maginot_shield_generators_pe_max = @giga_frameworld_maginot_district_factor
-        multiplier = trigger:planet_size
-    }
-    triggered_planet_modifier = {
-        potential = {
-            is_giga_maginot_frameworld = yes
-        }
-        district_giga_voidframe_maginot_planetary_cannons_pe_max = @giga_frameworld_maginot_district_factor
-        multiplier = trigger:planet_size
-    }
-	triggered_planet_modifier = {
-        potential = {
-            is_giga_maginot_frameworld = yes
-        }
-        district_giga_voidframe_maginot_shield_generators_se_max = @giga_frameworld_maginot_district_factor
-        multiplier = trigger:planet_size
-    }
-    triggered_planet_modifier = {
-        potential = {
-            is_giga_maginot_frameworld = yes
-        }
-        district_giga_voidframe_maginot_planetary_cannons_se_max = @giga_frameworld_maginot_district_factor
-        multiplier = trigger:planet_size
-    }
 }
 
-anz_voidframe_soul = {
+anz_voidframe_soul_deposit = {
 	is_for_colonizable = yes
 	category = deposit_cat_energy
 
@@ -442,7 +119,7 @@ anz_voidframe_soul = {
 	}
 }
 
-anz_voidframe_light = {
+anz_voidframe_light_deposit = {
 	is_for_colonizable = yes
 	category = deposit_cat_energy
 

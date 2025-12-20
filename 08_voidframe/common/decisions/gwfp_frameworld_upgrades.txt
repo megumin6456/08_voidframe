@@ -1,0 +1,150 @@
+gwfp_infuse_black_hole = {
+	icon = decision_phanon_black_hole
+	owned_planets_only = yes
+	
+	prerequisites = {
+		tech_phanon_stellar_converter
+	}
+	
+	show_tech_unlock_if = {
+		gwfp_is_frame_empire = yes
+	}
+	
+	enactment_time = 1800
+	
+	resources = {
+		category = megastructures
+		cost = {
+			aot_sr_runic_power = 15000
+			influence = 300
+		}
+	}
+	
+	potential = {
+		has_global_flag = anz_voidframe_installed
+		owner = {
+			gwfp_is_frame_empire = yes
+		}
+		is_planet_class = pc_giga_frameworld
+		not = {
+			has_planet_flag = frameworld_infused_black_hole
+		}
+	}
+	
+	allow = {
+		custom_tooltip_fail = {
+			not = {
+				has_planet_flag = frameworld_upgrade
+			}
+			text = giga_frameworld_upgrade_fail
+		}
+	}
+	
+	effect = {
+		custom_tooltip = giga_frameworld_upgrade_desc
+		custom_tooltip = giga_frameworld_upgrade_warning
+		custom_tooltip = gwfp_frameworld_infuse_effect
+
+		hidden_effect = {
+
+			set_planet_flag = frameworld_infused_black_hole
+			planet = { add_deposit = d_gwfp_phanon_black_hole }
+			
+			solar_system = {
+				save_event_target_as = giga_system
+			}
+
+			if = {
+				limit = { exists = owner }
+				owner = {
+					country_event = {
+						id = gwfp.001
+					}
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 1000000
+	}
+}
+
+gwfp_build_great_wall = {
+	icon = decision_phanon_black_hole
+	owned_planets_only = yes
+
+	prerequisites = {
+		tech_phanon_great_wall
+	}
+
+	show_tech_unlock_if = {
+		gwfp_is_frame_empire = yes
+	}
+
+	enactment_time = 3600
+
+	resources = {
+		category = megastructures
+		cost = {
+			aot_sr_runic_power = 15000
+			influence = 300
+		}
+	}
+
+	potential = {
+		has_global_flag = anz_voidframe_installed
+		owner = {
+			gwfp_is_frame_empire = yes
+		}
+		is_planet_class = pc_giga_frameworld
+		has_planet_flag = frameworld_infused_black_hole
+		NOT = {
+			has_planet_flag = gwfp_great_wall_built
+		}
+	}
+
+	allow = {
+		custom_tooltip_fail = {
+			NOT = {
+				has_planet_flag = frameworld_upgrade
+			}
+			text = giga_frameworld_upgrade_fail
+		}
+	}
+
+	effect = {
+		custom_tooltip = giga_frameworld_upgrade_desc
+		custom_tooltip = giga_frameworld_upgrade_warning
+		custom_tooltip = gwfp_frameworld_great_wall_effect
+
+		hidden_effect = {
+			set_planet_flag = frameworld_upgrade
+			set_planet_flag = gwfp_great_wall_built
+			solar_system = {
+				spawn_megastructure = {
+					type = phanon_great_wall_0
+					owner = from
+					coords_from = star
+					orbit_angle = 0
+					orbit_distance = 0
+					init_effect = {
+						upgrade_megastructure_to = phanon_great_wall_1
+					}
+				}
+			}
+			if = {
+				limit = { exists = owner }
+				owner = {
+					country_event = {
+						id = gwfp.002
+					}
+				}
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 1000000
+	}
+}

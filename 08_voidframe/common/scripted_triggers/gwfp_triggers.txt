@@ -1,0 +1,8 @@
+gwfp_is_frame_empire = {
+    OR = {
+        has_origin = origin_frameworld
+        capital_scope = {
+            is_planet_class = pc_giga_frameworld
+        }
+    }
+}

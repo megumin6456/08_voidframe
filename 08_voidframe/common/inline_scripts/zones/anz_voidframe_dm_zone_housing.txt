@@ -1,0 +1,63 @@
+base_buildtime = @zone_buildtime
+
+potential = { # planet scope
+    hidden_trigger = {
+        exists = owner
+        owner = {
+            giga_has_frameworld_origin = yes
+            is_wilderness_empire = no
+            $OTHER_REQ$
+        }
+    }
+    is_planet_class = pc_giga_frameworld
+    is_voidframe_dm = yes
+}
+
+unlock = { # planet scope
+    hidden_trigger = {
+        exists = owner
+        owner = {
+            is_wilderness_empire = no
+        }
+    }
+}
+
+resources = {
+    category = planet_zones
+    cost = {
+        minerals = @zone_cost
+        sr_dark_matter = 100
+    }
+}
+
+planet_modifier = {
+    zone_building_slots_add = 3
+}
+
+triggered_district_planet_modifier = {
+    planet_housing_add = 250
+}
+
+triggered_planet_modifier = {
+    planet_jobs_sr_dark_matter_upkeep_mult = -0.05
+}
+
+include = {
+    all
+}
+excluded_building_sets = {
+    generator
+    mining
+    farming
+    knights
+    betharian
+    generator_automation
+    mining_automation
+    farming_automation
+    urban_automation_arcology
+    urban_automation
+}
+
+zone_sets = {
+    frame_urban
+}

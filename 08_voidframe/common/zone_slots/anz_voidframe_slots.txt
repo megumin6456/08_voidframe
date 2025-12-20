@@ -1,0 +1,64 @@
+slot_anz_voidframe_enigmatic = {
+
+    include = {
+        zone_anz_voidframe_enigmatic
+        zone_anz_voidframe_enigmatic_alpha
+    }
+
+    included_zone_sets = {
+        frame_enigmatic
+    }
+
+    exclude = {
+    }
+
+    unlock = { # planet scope
+        always = yes
+    }
+}
+
+slot_anz_voidframe_phanon = {
+
+    include = {
+        zone_anz_voidframe_phanon
+    }
+
+    included_zone_sets = {
+        frame_phanon
+    }
+
+    exclude = {
+    }
+
+    unlock = { # planet scope
+        always = yes
+    }
+}
+
+slot_anz_voidframe_stellarite = {
+
+    include = {
+        zone_anz_voidframe_stellarite
+    }
+
+    included_zone_sets = {
+        frame_stellarite
+    }
+
+    exclude = {
+    }
+
+    unlock = { # planet scope
+        always = yes
+    }
+}
+
+slot_anz_voidframe_soul = {
+    start = zone_anz_voidframe_empty
+    include = {
+        zone_anz_voidframe_empty
+    }
+    unlock = {                              # Trigger that defines whether the slot is unlocked on the planet. Scope = Planet.
+        always = yes
+    }
+}

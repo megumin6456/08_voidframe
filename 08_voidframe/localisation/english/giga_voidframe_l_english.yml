@@ -1,7 +1,6 @@
 ﻿l_english:
 
 # Misc
-mod_planet_jobs_acot_sr_stellarite_upkeep_mult: "Stellarite Upkeep Multiplier"
 phanon_classified: "§R---CLASSIFIED---§!"
 phanon_classified_nocolor: "---CLASSIFIED---"
 # Walking past classified sign is disrespectful
@@ -71,7 +70,9 @@ phanon_srname_ee: "Runic"
   district_giga_voidframe_enigmatic: "Enigmatic Harvester"
   district_giga_voidframe_enigmatic_plural: "Enigmatic Harvesters"
   district_giga_voidframe_enigmatic_desc: "Packed with Dark Matter Harvesters and Dark Energy Pylons, these districts produce enough resources to sustain a Growing Enigmatic Empire."
-
+  zone_anz_voidframe_enigmatic: "$district_giga_voidframe_enigmatic$ Expansion"
+  zone_anz_voidframe_enigmatic_desc: "$district_giga_voidframe_enigmatic_desc$"
+  zone_anz_voidframe_enigmatic_subtitle: "Enigmatic Matter Refinery"
   district_giga_voidframe_enigmatic_unlock_de: "£physics£ §Y$tech_acot_dm_dark_energy_pylon$§!: $mod_job_acot_dark_energy_man_add$ Jobs: §G+2§!"
   district_giga_voidframe_enigmatic_unlock_de_gestalt: "£physics£ §Y$tech_acot_dm_dark_energy_pylon$§!: $mod_job_acot_dark_energy_drone_add$ Jobs: §G+2§!"
   district_giga_voidframe_enigmatic_unlock_dm: "£engineering£ §Y$tech_acot_dm_dark_matter_generator$§!: $mod_job_acot_dark_matter_man_add$ Jobs: §G+2§!"
@@ -80,26 +81,32 @@ phanon_srname_ee: "Runic"
   district_giga_voidframe_enigmatic_ae: "Alpha Harvester"
   district_giga_voidframe_enigmatic_ae_plural: "Alpha Harvesters"
   district_giga_voidframe_enigmatic_ae_desc: "Packed to the brim with Dark Matter Harvesters and Dark Energy Pylons, these districts produce plentiful resources to sustain an Alpha-Tier Precursor Empire."
+  zone_anz_voidframe_enigmatic_alpha: "Alpha Matter Upgrade"
+  zone_anz_voidframe_enigmatic_alpha_desc: "$district_giga_voidframe_enigmatic_ae_desc$"
+  zone_anz_voidframe_enigmatic_upgrade_subtitle: "Alpha Matter Refinery"
 
-  district_giga_voidframe_phanon: "§R$phanon_srname_ee$ Cadet§!"
-  district_giga_voidframe_phanon_plural: "§R$phanon_srname_ee$ Cadets§!"
-  district_giga_voidframe_phanon_desc: "§RTraining... More jobs will be added after upgrade.§!"
+  district_giga_voidframe_phanon: "§R$phanon_srname_ee$ Vortex§!"
+  district_giga_voidframe_phanon_plural: "§R$phanon_srname_ee$ Vortex§!" #intentionally not pluralized
+  district_giga_voidframe_phanon_desc: "§R$phanon_classified$§!"
+  district_giga_voidframe_phanon_ae_subtitle: "Basic Runic Generator"
+  district_giga_voidframe_phanon_ae_subtitle_upgrade: "True Runic Generator"
+  zone_anz_voidframe_phanon: "Runic Purifier"
+  zone_anz_voidframe_phanon_desc: "$district_giga_voidframe_phanon_desc$"
 
-  district_giga_voidframe_phanon_ae: "§R$phanon_srname_ee$ Master§!"
-  district_giga_voidframe_phanon_ae_plural: "§R$phanon_srname_ee$ Masters§!"
-  district_giga_voidframe_phanon_ae_desc: "§R$phanon_classified$§!"
-
-  district_giga_voidframe_stellarite: "§HStellarite Reactor§!"
-  district_giga_voidframe_stellarite_plural: "§HStellarite Reactors§!"
-  district_giga_voidframe_stellarite_desc: "§HStellarite Reactors hidden deep behind reinforced walls capable of taking a nova to the face. Even if they fail we won't suffer any side effects.§!"
-
-  district_giga_voidframe_stellarite_ae: "§HStellarite Array§!"
-  district_giga_voidframe_stellarite_ae_plural: "§HStellarite Arrays§!"
-  district_giga_voidframe_stellarite_ae_desc: "§HArrays of our best Stellarite Reactors giving us infinite power. We may now wield the power of the Stars themselves.§!"
+  district_giga_voidframe_stellarite: "§HStellarite Array§!"
+  district_giga_voidframe_stellarite_plural: "§HStellarite Arrays§!"
+  district_giga_voidframe_stellarite_desc: "§HArrays of our best Stellarite Reactors giving us infinite power. We may now wield the power of the Stars themselves.§!"
+  district_giga_voidframe_stellarite_subtitle: "Basic Stellarite Reactor"
+  district_giga_voidframe_stellarite_subtitle_upgrade: "Pure Stellarite Reactor"
+  zone_anz_voidframe_stellarite: "Stellarite Purifier"
+  zone_anz_voidframe_stellarite_desc: "$district_giga_voidframe_stellarite_desc$"
 
   district_giga_voidframe_soul: "§MMeditation Zone§!"
   district_giga_voidframe_soul_plural: "§MMeditation Zones§!"
   district_giga_voidframe_soul_desc: "§MThe connection between our population on this world and that of our Shroud Master is still weak. Many will be trained to worship them here, meditate in their presence so that one day our destinies will be forged anew.§!"
+  district_giga_voidframe_soul_subtitle: "§MTheta Confluence§!"
+  zone_anz_voidframe_empty: "Empty Zone"
+  zone_anz_voidframe_empty_desc: "This zone is empty. It serves to prevent a game crash from not having a zone. There are no other zones that go into this zone slot."
 
   district_giga_voidframe_soul_ae: "§MDraedon's Forge§!"
   district_giga_voidframe_soul_ae_plural: "§MDraedon's Forge§!"
@@ -111,24 +118,39 @@ phanon_srname_ee: "Runic"
 
 #########################################################################################
 # HOUSING
+  mod_planet_jobs_sr_dark_matter_upkeep_mult: "£dark_matter£Dark Matter Upkeep from £job£Jobs:"
+  mod_planet_jobs_acot_sr_dark_energy_upkeep_mult: "£acot_sr_dark_energy£Dark Energy Upkeep from £job£Jobs:"
+  mod_planet_jobs_acot_sr_stellarite_upkeep_mult: "£acot_sr_stellarite£Stellarite Upkeep from £job£Jobs:"
 
 # Housing - City
 
   district_giga_voidframe_city_dm: "Night Town"
   district_giga_voidframe_city_dm_plural: "Night Towns"
   district_giga_voidframe_city_dm_desc: "It may look cold and dark but it is our home and its much more cozy than it look tho the darkness makes me sleepy... so eepy... must eep..."
+  zone_voidframe_zone_DM_city: "$district_giga_voidframe_city_dm$"
+  zone_voidframe_zone_DM_city_desc: "$district_giga_voidframe_city_dm_desc$"
+  zone_voidframe_zone_DM_city_subtitle: "Delta Frame Capital"
 
   district_giga_voidframe_city_de: "Horizon City"
   district_giga_voidframe_city_de_plural: "Horizon Cities"
   district_giga_voidframe_city_de_desc: "Lots of neon lighting and people floating round. Everything is dark like super dark and um can someone explain why there is like a random black hole in the sky? It's weird!"
+  zone_voidframe_zone_DE_city: "$district_giga_voidframe_city_de$"
+  zone_voidframe_zone_DE_city_desc: "$district_giga_voidframe_city_de_desc$"
+  zone_voidframe_zone_DE_city_subtitle: "Alpha Frame Capital"
 
-  district_giga_voidframe_city_pe: "§REmo Nation§!"
-  district_giga_voidframe_city_pe_plural: "§REmo Nations§!"
+  district_giga_voidframe_city_pe: "§RRunic City§!"
+  district_giga_voidframe_city_pe_plural: "§RRunic City§!"
   district_giga_voidframe_city_pe_desc: "$phanon_classified$"
+  zone_voidframe_zone_PE_city: "$district_giga_voidframe_city_pe$"
+  zone_voidframe_zone_PE_city_desc: "$district_giga_voidframe_city_pe_desc$"
+  zone_voidframe_zone_PE_city_subtitle: "Runic Frame Capital"
 
   district_giga_voidframe_city_se: "§HGolden Paradise§!"
   district_giga_voidframe_city_se_plural: "§HGolden Paradise§!"
   district_giga_voidframe_city_se_desc: "§HCould you switch off the lights please? I'm trying to sleep here! Seriously? Who thought putting a STAR inside my bedroom is a good idea?!§!"
+  zone_voidframe_zone_SE_city: "$district_giga_voidframe_city_se$"
+  zone_voidframe_zone_SE_city_desc: "$district_giga_voidframe_city_se_desc$"
+  zone_voidframe_zone_SE_city_subtitle: "Stellarite Frame Capital"
 
   district_giga_voidframe_city_te: "§MSea of Souls§!"
   district_giga_voidframe_city_te_plural: "§MSea of Souls§!"
@@ -143,18 +165,26 @@ phanon_srname_ee: "Runic"
   district_giga_voidframe_hive_dm: "Dark Nest"
   district_giga_voidframe_hive_dm_plural: "Dark Nests"
   district_giga_voidframe_hive_dm_desc: "Towering structures full of small chambers, each perfectly fit for a drone to rest, heal, and be nourished before being deployed to their assigned task."
+  zone_voidframe_zone_DM_hive: "$district_giga_voidframe_hive_dm$"
+  zone_voidframe_zone_DM_hive_desc: "$district_giga_voidframe_hive_dm_desc$"
 
   district_giga_voidframe_hive_de: "Cool Nest"
   district_giga_voidframe_hive_de_plural: "Cool Nests"
   district_giga_voidframe_hive_de_desc: "Dimensionally folded structures to maximize living space for our drones who could survive living in such compact chambers. For the outsiders this must be a true nightmare!"
-
-  district_giga_voidframe_hive_se: "§HShining Lair§!"
-  district_giga_voidframe_hive_se_plural: "§HShining Lairs§!"
-  district_giga_voidframe_hive_se_desc: "§HWe don't even need to rest anymore yet we enjoy creating marvelous constructs that keep our drones in order. We enjoy the screams of the outsiders...§!"
+  zone_voidframe_zone_DE_hive: "$district_giga_voidframe_hive_de$"
+  zone_voidframe_zone_DE_hive_desc: "$district_giga_voidframe_hive_de_desc$"
 
   district_giga_voidframe_hive_pe: "§REpic Lair§!"
   district_giga_voidframe_hive_pe_plural: "§REpic Lairs§!"
   district_giga_voidframe_hive_pe_desc: "$phanon_classified$"
+  zone_voidframe_zone_PE_hive: "$district_giga_voidframe_hive_pe$"
+  zone_voidframe_zone_PE_hive_desc: "$district_giga_voidframe_hive_pe_desc$"
+
+  district_giga_voidframe_hive_se: "§HShining Lair§!"
+  district_giga_voidframe_hive_se_plural: "§HShining Lairs§!"
+  district_giga_voidframe_hive_se_desc: "§HWe don't even need to rest anymore yet we enjoy creating marvelous constructs that keep our drones in order. We enjoy the screams of the outsiders...§!"
+  zone_voidframe_zone_SE_hive: "$district_giga_voidframe_hive_se$"
+  zone_voidframe_zone_SE_hive_desc: "$district_giga_voidframe_hive_se_desc$"
 
   district_giga_voidframe_hive_te: "§MAwesome Sea§!"
   district_giga_voidframe_hive_te_plural: "§MAwesome Hives§!"
@@ -169,18 +199,26 @@ phanon_srname_ee: "Runic"
   district_giga_voidframe_nexus_dm: "Dark Nexus"
   district_giga_voidframe_nexus_dm_plural: "Dark Nexus"
   district_giga_voidframe_nexus_dm_desc: "Near weightless yet strong, hardlight manufacturing allows us to build more compact drone storage and maintenance hubs."
+  zone_voidframe_zone_DM_nexus: "$district_giga_voidframe_nexus_dm$"
+  zone_voidframe_zone_DM_nexus_desc: "$district_giga_voidframe_nexus_dm_desc$"
 
   district_giga_voidframe_nexus_de: "Alpha Nexus"
   district_giga_voidframe_nexus_de_plural: "Alpha Nexus"
   district_giga_voidframe_nexus_de_desc: "Drones don't need Housing just Maintenance pods. With each pod being almost a perfect fit for their body, we can accommodate much more of them."
-
-  district_giga_voidframe_nexus_se: "§HSolar Hub§!"
-  district_giga_voidframe_nexus_se_plural: "§HSolar Hubs§!"
-  district_giga_voidframe_nexus_se_desc: "§HMake sure to wear sunglasses or you'll go blind... oh wait everyone who live here are drones... never mind then, stay in your pods or whatever.§!"
+  zone_voidframe_zone_DE_nexus: "$district_giga_voidframe_nexus_de$"
+  zone_voidframe_zone_DE_nexus_desc: "$district_giga_voidframe_nexus_de_desc$"
 
   district_giga_voidframe_nexus_pe: "§R$phanon_srname_ee$ Hub§!"
   district_giga_voidframe_nexus_pe_plural: "§R$phanon_srname_ee$ Hubs§!"
   district_giga_voidframe_nexus_pe_desc: "$phanon_classified$"
+  zone_voidframe_zone_PE_nexus: "$district_giga_voidframe_nexus_pe$"
+  zone_voidframe_zone_PE_nexus_desc: "$district_giga_voidframe_nexus_pe_desc$"
+
+  district_giga_voidframe_nexus_se: "§HSolar Hub§!"
+  district_giga_voidframe_nexus_se_plural: "§HSolar Hubs§!"
+  district_giga_voidframe_nexus_se_desc: "§HMake sure to wear sunglasses or you'll go blind... oh wait everyone who live here are drones... never mind then, stay in your pods or whatever.§!"
+  zone_voidframe_zone_SE_nexus: "$district_giga_voidframe_nexus_se$"
+  zone_voidframe_zone_SE_nexus_desc: "$district_giga_voidframe_nexus_se_desc$"
 
   district_giga_voidframe_nexus_te: "§MTheia's Nexus§!"
   district_giga_voidframe_nexus_te_plural: "§MTheia's Nexi§!"
@@ -198,18 +236,26 @@ phanon_srname_ee: "Runic"
   district_giga_voidframe_foundry_dm: "Dark Foundry"
   district_giga_voidframe_foundry_dm_plural: "Dark Foundries"
   district_giga_voidframe_foundry_dm_desc: "Foundries powered using Dark Matter producing massive surplus of Alloys."
+  zone_voidframe_zone_DM_foundry: "$building_acot_dm_alloy_forge$"
+  zone_voidframe_zone_DM_foundry_desc: "$building_acot_dm_alloy_forge_desc$"
 
   district_giga_voidframe_foundry_de: "Alpha Foundry"
   district_giga_voidframe_foundry_de_plural: "Alpha Foundries"
   district_giga_voidframe_foundry_de_desc: "Endless rows of foundries where creepy people use dark arts to summon alloys."
-
-  district_giga_voidframe_foundry_se: "§HSolar Forge§!"
-  district_giga_voidframe_foundry_se_plural: "§HSolar Forges§!"
-  district_giga_voidframe_foundry_se_desc: "§HExplosive forges filled with the incinerating heat of the stars. Step in here without adequate protection and you'll suffer third degree burn or worse.§!"
+  zone_voidframe_zone_DE_foundry: "$building_acot_ae_alloy_forge$"
+  zone_voidframe_zone_DE_foundry_desc: "$building_acot_ae_alloy_forge_desc$"
 
   district_giga_voidframe_foundry_pe: "§R$phanon_srname_ee$ Ultra Forges§!"
   district_giga_voidframe_foundry_pe_plural: "§R$phanon_srname_ee$ Ultra Forges§!"
   district_giga_voidframe_foundry_pe_desc: "$phanon_classified$"
+  zone_voidframe_zone_PE_foundry: "$building_phanon_alloy_forge$"
+  zone_voidframe_zone_PE_foundry_desc: "$building_phanon_alloy_forge_desc$"
+
+  district_giga_voidframe_foundry_se: "§HSolar Forge§!"
+  district_giga_voidframe_foundry_se_plural: "§HSolar Forges§!"
+  district_giga_voidframe_foundry_se_desc: "§HExplosive forges filled with the incinerating heat of the stars. Step in here without adequate protection and you'll suffer third degree burn or worse.§!"
+  zone_voidframe_zone_SE_foundry: "$building_stellarite_alloy_forge$"
+  zone_voidframe_zone_SE_foundry_desc: "$building_stellarite_alloy_forge_desc$"
 
   district_giga_voidframe_foundry_te: "§MNihli's Soulscape§!"
   district_giga_voidframe_foundry_te_plural: "§MNihli's Soulscape§!"
@@ -224,18 +270,26 @@ phanon_srname_ee: "Runic"
   district_giga_voidframe_factory_dm: "Umbral Manufactory"
   district_giga_voidframe_factory_dm_plural: "Umbral Manufactories"
   district_giga_voidframe_factory_dm_desc: "The deep shadows of these manufactories may be strange to the ignorant observer, but the learned know that in the covered machinery lurks light-sensitive production facilities fueled by enigmatic technology."
+  zone_voidframe_zone_DM_factory: "$building_acot_dm_factory$"
+  zone_voidframe_zone_DM_factory_desc: "$building_acot_dm_factory_desc$"
 
   district_giga_voidframe_factory_de: "Rubicon Factory"
   district_giga_voidframe_factory_de_plural: "Rubicon Factories"
   district_giga_voidframe_factory_de_desc: "Upgraded with Alpha technology, our factories can now produce almost anything we can think of. It is now up to our creative minds to think of new goods to produce."
+  zone_voidframe_zone_DE_factory: "$building_acot_ae_factory$"
+  zone_voidframe_zone_DE_factory_desc: "$building_acot_ae_factory_desc$"
 
   district_giga_voidframe_factory_pe: "§R$phanon_srname_ee$ Factory§!"
   district_giga_voidframe_factory_pe_plural: "§R$phanon_srname_ee$ Factories§!"
   district_giga_voidframe_factory_pe_desc: "$phanon_classified$!"
+  zone_voidframe_zone_PE_factory: "$building_phanon_civilian_factory$"
+  zone_voidframe_zone_PE_factory_desc: "$building_phanon_civilian_factory_desc$"
 
-  district_giga_voidframe_factory_se: "§HParadisical Assembly Complex§!"
-  district_giga_voidframe_factory_se_plural: "§HParadisical Assembly Complex§!"
+  district_giga_voidframe_factory_se: "§HParadisical Assembler§!"
+  district_giga_voidframe_factory_se_plural: "§HParadisical Assemblers§!"
   district_giga_voidframe_factory_se_desc: "§HNow we can make unimaginable. Literally. The assembly factories make goods whose concepts did not exist before the machine created them.§!"
+  zone_voidframe_zone_SE_factory: "$building_stellarite_civilian_factory$"
+  zone_voidframe_zone_SE_factory_desc: "$building_stellarite_civilian_factory_desc$"
 
   # district_giga_voidframe_factory_te: "§MTheta Factory§!"
   # district_giga_voidframe_factory_te_plural: "§MTheta Factory§!"
@@ -253,18 +307,26 @@ phanon_srname_ee: "Runic"
   district_giga_voidframe_generator_dm: "Dark Reactors"
   district_giga_voidframe_generator_dm_plural: "Dark Reactors"
   district_giga_voidframe_generator_dm_desc: "Simillar to the ones used by our ship but much larger, these districts harness the great power of Dark Matter."
+  zone_voidframe_zone_DM_generator: "$building_acot_dm_power_hub$"
+  zone_voidframe_zone_DM_generator_desc: "$building_acot_dm_power_hub_desc$"
 
   district_giga_voidframe_generator_de: "Alpha Reactors"
   district_giga_voidframe_generator_de_plural: "Alpha Reactors"
   district_giga_voidframe_generator_de_desc: "Gigantic Alpha Reactors housed here will power our empire."
+  zone_voidframe_zone_DE_generator: "$building_acot_ae_power_hub$"
+  zone_voidframe_zone_DE_generator_desc: "$building_acot_ae_power_hub_desc$"
+
+  district_giga_voidframe_generator_pe: "§R$phanon_srname_ee$ Prisms§!"
+  district_giga_voidframe_generator_pe_plural: "§R$phanon_srname_ee$ Prisms§!"
+  district_giga_voidframe_generator_pe_desc: "$phanon_classified$"
+  zone_voidframe_zone_PE_generator: "$building_phanon_power_hub$"
+  zone_voidframe_zone_PE_generator_desc: "$building_phanon_power_hub_desc$"
 
   district_giga_voidframe_generator_se: "§HSolarite Prisms§!"
   district_giga_voidframe_generator_se_plural: "§HSolarite Prisms§!"
   district_giga_voidframe_generator_se_desc: "§HTitanic Stellarite Reactor Districts producing so much energy.§!"
-
-  district_giga_voidframe_generator_pe: "§R$phanon_srname_ee$ Prisims§!"
-  district_giga_voidframe_generator_pe_plural: "§R$phanon_srname_ee$ Prisims§!"
-  district_giga_voidframe_generator_pe_desc: "$phanon_classified$"
+  zone_voidframe_zone_SE_generator: "$building_stellarite_power_hub$"
+  zone_voidframe_zone_SE_generator_desc: "$building_stellarite_power_hub_desc$"
 
   # district_giga_voidframe_generator_te: "§M §!"
   # district_giga_voidframe_generator_te_plural: "§M §!"
@@ -279,18 +341,26 @@ phanon_srname_ee: "Runic"
   district_giga_voidframe_penrose_dm: "Augmented Penrose"
   district_giga_voidframe_penrose_dm_plural: "Augmented Penrose"
   district_giga_voidframe_penrose_dm_desc: "With out increasing knowledge of Dark Matter and Black Holes, we can put that Penrose Sphere to even better use."
+  zone_voidframe_zone_DM_penrose: "$building_acot_dm_power_hub$"
+  zone_voidframe_zone_DM_penrose_desc: "$building_acot_dm_power_hub_desc$"
 
   district_giga_voidframe_penrose_de: "Void Penrose"
   district_giga_voidframe_penrose_de_plural: "Void Penrose"
   district_giga_voidframe_penrose_de_desc: "Mythical Powers lie behind these Stellar Corpses. Gravity may be the weakest force and yet it's so strong."
-
-  district_giga_voidframe_penrose_se: "§HPenrose Lumine§!"
-  district_giga_voidframe_penrose_se_plural: "§HPenrose Lumine§!"
-  district_giga_voidframe_penrose_se_desc: "§HOnly the most Powerful Stars become Black Holes. Remeber that power for beneath us lie a Dormant Star, a Sleeping Giant!§!"
+  zone_voidframe_zone_DE_penrose: "$building_acot_ae_power_hub$"
+  zone_voidframe_zone_DE_penrose_desc: "$building_acot_ae_power_hub_desc$"
 
   district_giga_voidframe_penrose_pe: "§R$phanon_srname_ee$ Lumine§!"
   district_giga_voidframe_penrose_pe_plural: "§R$phanon_srname_ee$ Lumine§!"
   district_giga_voidframe_penrose_pe_desc: "$phanon_classified$"
+  zone_voidframe_zone_PE_penrose: "$building_phanon_power_hub$"
+  zone_voidframe_zone_PE_penrose_desc: "$building_phanon_power_hub_desc$"
+
+  district_giga_voidframe_penrose_se: "§HPenrose Lumine§!"
+  district_giga_voidframe_penrose_se_plural: "§HPenrose Lumine§!"
+  district_giga_voidframe_penrose_se_desc: "§HOnly the most Powerful Stars become Black Holes. Remember that power for beneath us lie a Dormant Star, a Sleeping Giant!§!"
+  zone_voidframe_zone_SE_penrose: "$building_stellarite_power_hub$"
+  zone_voidframe_zone_SE_penrose_desc: "$building_stellarite_power_hub_desc$"
 
   # district_giga_voidframe_penrose_te: "§M §!"
   # district_giga_voidframe_penrose_te_plural: "§M §!"
@@ -308,18 +378,26 @@ phanon_srname_ee: "Runic"
   district_giga_voidframe_mining_dm: "Dark Mine"
   district_giga_voidframe_mining_dm_plural: "Dark Mines"
   district_giga_voidframe_mining_dm_desc: "Using Enigmatic tools give us the power to rip apart stored matter with ease."
+  zone_voidframe_zone_DM_mining: "$building_acot_dm_mineral_processing_plant$"
+  zone_voidframe_zone_DM_mining_desc: "$building_acot_dm_mineral_processing_plant_desc$"
 
   district_giga_voidframe_mining_de: "Alpha Mineralizer"
   district_giga_voidframe_mining_de_plural: "Alpha Mineralizers"
   district_giga_voidframe_mining_de_desc: "Bigger and Better mining equipment with more optimized logistic systems."
-
-  district_giga_voidframe_mining_se: "§HStellarite Mineralizer§!"
-  district_giga_voidframe_mining_se_plural: "§HStellarite Mineralizers§!"
-  district_giga_voidframe_mining_se_desc: "§HBlast those rocks into shape, give us all the resources we need.§!"
+  zone_voidframe_zone_DE_mining: "$building_acot_ae_mineral_processing_plant$"
+  zone_voidframe_zone_DE_mining_desc: "$building_acot_ae_mineral_processing_plant_desc$"
 
   district_giga_voidframe_mining_pe: "§R$phanon_srname_ee$ Mines§!"
   district_giga_voidframe_mining_pe_plural: "§R$phanon_srname_ee$ Mines§!"
   district_giga_voidframe_mining_pe_desc: "$phanon_classified$"
+  zone_voidframe_zone_PE_mining: "$building_phanon_mineral_processing_plant$"
+  zone_voidframe_zone_PE_mining_desc: "$building_phanon_mineral_processing_plant_desc$"
+
+  district_giga_voidframe_mining_se: "§HStellarite Mineralizer§!"
+  district_giga_voidframe_mining_se_plural: "§HStellarite Mineralizers§!"
+  district_giga_voidframe_mining_se_desc: "§HBlast those rocks into shape, give us all the resources we need.§!"
+  zone_voidframe_zone_SE_mining: "$building_stellarite_mineral_processing_plant$"
+  zone_voidframe_zone_SE_mining_desc: "$building_stellarite_mineral_processing_plant_desc$"
 
   # district_giga_voidframe_mining_te: "§M §!"
   # district_giga_voidframe_mining_te_plural: "§M §!"
@@ -332,20 +410,28 @@ phanon_srname_ee: "Runic"
 # Decompressor
 
   district_giga_voidframe_decompressor_dm: "Dark Decompressor"
-  district_giga_voidframe_decompressor_dm_plural: "Dark  Decompressors"
+  district_giga_voidframe_decompressor_dm_plural: "Dark Decompressors"
   district_giga_voidframe_decompressor_dm_desc: "Most of the mass of this universe is composed of Dark Matter and they tend to concentrate around black holes."
+  zone_voidframe_zone_DM_decompressor: "$building_acot_dm_mineral_processing_plant$"
+  zone_voidframe_zone_DM_decompressor_desc: "$building_acot_dm_mineral_processing_plant_desc$"
 
   district_giga_voidframe_decompressor_de: "Alpha Decompressor"
   district_giga_voidframe_decompressor_de_plural: "Alpha Decompressors"
   district_giga_voidframe_decompressor_de_desc: "With mastery over singularity manipulation and Enigmatic powers, we can extract untold materials out of this black hole."
-
-  district_giga_voidframe_decompressor_se: "§HSigma Decompressor§!"
-  district_giga_voidframe_decompressor_se_plural: "§HSuper Decompressors§!"
-  district_giga_voidframe_decompressor_se_desc: "§HExtracting mass from a dead star to fuel our empire, as well as everything we stored in it of course.§!"
+  zone_voidframe_zone_DE_decompressor: "$building_acot_ae_mineral_processing_plant$"
+  zone_voidframe_zone_DE_decompressor_desc: "$building_acot_ae_mineral_processing_plant_desc$"
 
   district_giga_voidframe_decompressor_pe: "§R$phanon_srname_ee$ Decompressors§!"
   district_giga_voidframe_decompressor_pe_plural: "§R$phanon_srname_ee$ Decompressors§!"
   district_giga_voidframe_decompressor_pe_desc: "$phanon_classified$"
+  zone_voidframe_zone_PE_decompressor: "$building_phanon_mineral_processing_plant$"
+  zone_voidframe_zone_PE_decompressor_desc: "$building_phanon_mineral_processing_plant_desc$"
+
+  district_giga_voidframe_decompressor_se: "§HSigma Decompressor§!"
+  district_giga_voidframe_decompressor_se_plural: "§HSuper Decompressors§!"
+  district_giga_voidframe_decompressor_se_desc: "§HExtracting mass from a dead star to fuel our empire, as well as everything we stored in it of course.§!"
+  zone_voidframe_zone_SE_decompressor: "$building_stellarite_mineral_processing_plant$"
+  zone_voidframe_zone_SE_decompressor_desc: "$building_stellarite_mineral_processing_plant_desc$"
 
   # district_giga_voidframe_decompressor_te: "§M §!"
   # district_giga_voidframe_decompressor_te_plural: "§M §!"
@@ -360,19 +446,27 @@ phanon_srname_ee: "Runic"
 
   district_giga_voidframe_farming_dm: "Enriched Farm"
   district_giga_voidframe_farming_dm_plural: "Enriched Farms"
-  district_giga_voidframe_farming_dm_desc: "Geneticly enhanced crops that trive in the darkness of our empire."
+  district_giga_voidframe_farming_dm_desc: "Genetically enhanced crops that thrive in the darkness of our empire."
+  zone_voidframe_zone_DM_farming: "$building_acot_dm_food_processing_complex$"
+  zone_voidframe_zone_DM_farming_desc: "$building_acot_dm_food_processing_complex_desc$"
 
   district_giga_voidframe_farming_de: "Super Farm"
   district_giga_voidframe_farming_de_plural: "Super Farms"
   district_giga_voidframe_farming_de_desc: "Crops? What crops? We'll just summon the food we need just like that cause we can."
-
-  district_giga_voidframe_farming_se: "§HSolar Farm§!"
-  district_giga_voidframe_farming_se_plural: "§HSolar Farms§!"
-  district_giga_voidframe_farming_se_desc: "§HWith a star that never stops shining, who needs crops anyways when they can be materialized out of thin air.§!"
+  zone_voidframe_zone_DE_farming: "$building_acot_ae_food_processing_complex$"
+  zone_voidframe_zone_DE_farming_desc: "$building_acot_ae_food_processing_complex_desc$"
 
   district_giga_voidframe_farming_pe: "§R$phanon_srname_ee$ Farms§!"
   district_giga_voidframe_farming_pe_plural: "§R$phanon_srname_ee$ Farms§!"
   district_giga_voidframe_farming_pe_desc: "$phanon_classified$"
+  zone_voidframe_zone_PE_farming: "$building_phanon_food_processing_complex$"
+  zone_voidframe_zone_PE_farming_desc: "$building_phanon_food_processing_complex_desc$"
+
+  district_giga_voidframe_farming_se: "§HSolar Farm§!"
+  district_giga_voidframe_farming_se_plural: "§HSolar Farms§!"
+  district_giga_voidframe_farming_se_desc: "§HWith a star that never stops shining, who needs crops anyways when they can be materialized out of thin air.§!"
+  zone_voidframe_zone_SE_farming: "$building_stellarite_food_processing_complex$"
+  zone_voidframe_zone_SE_farming_desc: "$building_stellarite_food_processing_complex_desc$"
 
   # district_giga_voidframe_farming_te: "§M §!"
   # district_giga_voidframe_farming_te_plural: "§M §!"
@@ -388,18 +482,34 @@ phanon_srname_ee: "Runic"
   district_giga_voidframe_trade_dm: "Moonless Market"
   district_giga_voidframe_trade_dm_plural: "Moonless Markets"
   district_giga_voidframe_trade_dm_desc: "These markets are shrouded in a dark aura from the enigmatic technology used in the lights. To the traders working here however, the atmosphere is a bonus, as it helps them keep their transactions anonymous."
+  zone_voidframe_zone_DM_trade: "$building_dm_commercial_megaplex$"
+  zone_voidframe_zone_DM_trade_desc: "$building_dm_commercial_megaplex_desc$"
+  zone_voidframe_zone_DM_trade_gestalt: "$building_dm_commercial_megaplex$"
+  zone_voidframe_zone_DM_trade_gestalt_desc: "$building_dm_commercial_megaplex_desc$"
 
   district_giga_voidframe_trade_de: "Market of Imagination"
   district_giga_voidframe_trade_de_plural: "Markets of Imagination"
   district_giga_voidframe_trade_de_desc: "Delphic AIs facilitate the transmission and exchange of ideas. The marketplace of ideas is now a physical location, one where we can discuss the workings of the galaxy with other enlightened minds. For a price of course."
+  zone_voidframe_zone_DE_trade: "$building_ae_commercial_megaplex$"
+  zone_voidframe_zone_DE_trade_desc: "$building_ae_commercial_megaplex_desc$"
+  zone_voidframe_zone_DE_trade_gestalt: "$building_dm_commercial_megaplex$"
+  zone_voidframe_zone_DE_trade_gestalt_desc: "$building_dm_commercial_megaplex_desc$"
 
   district_giga_voidframe_trade_pe: "§R$phanon_srname_ee$ Plaza§!"
   district_giga_voidframe_trade_pe_plural: "§R$phanon_srname_ee$ Plazas§!"
   district_giga_voidframe_trade_pe_desc: "$phanon_classified$"
+  zone_voidframe_zone_PE_trade: "$building_phanon_commercial_megaplex$"
+  zone_voidframe_zone_PE_trade_desc: "$building_phanon_commercial_megaplex_desc$"
+  zone_voidframe_zone_PE_trade_gestalt: "$building_dm_commercial_megaplex$"
+  zone_voidframe_zone_PE_trade_gestalt_desc: "$building_dm_commercial_megaplex_desc$"
 
   district_giga_voidframe_trade_se: "§HCosmic Bazaar§!"
   district_giga_voidframe_trade_se_plural: "§HCosmic Bazaars§!"
   district_giga_voidframe_trade_se_desc: "§HA market teeming with activity, the traders here do not deal is mundane corporate stocks and goods, but speculate on the fates of the stars themselves.§!"
+  zone_voidframe_zone_SE_trade: "$building_stellarite_commercial_megaplex$"
+  zone_voidframe_zone_SE_trade_desc: "$building_stellarite_commercial_megaplex_desc$"
+  zone_voidframe_zone_SE_trade_gestalt: "$building_dm_commercial_megaplex$"
+  zone_voidframe_zone_SE_trade_gestalt_desc: "$building_dm_commercial_megaplex_desc$"
 
   # _te: "§M §!"
   # _te_plural: "§M §!"
@@ -417,19 +527,27 @@ phanon_srname_ee: "Runic"
   district_giga_voidframe_admin_dm: "Delphic Complex"
   district_giga_voidframe_admin_dm_plural: "Delphic Complexes"
   district_giga_voidframe_admin_dm_desc: "Enigmatic AI has allowed our administrators to sort through the chaff in record time, so that their time is spent on actually important tasks."
+  zone_voidframe_zone_DM_admin: "$building_dm_bureaucratic$"
+  zone_voidframe_zone_DM_admin_desc: "$building_dm_bureaucratic_desc$"
 
-  district_giga_voidframe_admin_de: "Bionic Administration Complex"
-  district_giga_voidframe_admin_de_plural: "Bionic Administration Complexes"
+  district_giga_voidframe_admin_de: "Bionic Administration"
+  district_giga_voidframe_admin_de_plural: "Bionic Administration"
   district_giga_voidframe_admin_de_desc: "The new enigmatic technology requires our administrators to physically interface with their computers for maximum efficiency. Of course, they can still detach themselves when their shift is over. For now."
+  zone_voidframe_zone_DE_admin: "$building_ae_bureaucratic$"
+  zone_voidframe_zone_DE_admin_desc: "$building_ae_bureaucratic_desc$"
 
-  district_giga_voidframe_admin_pe: "§RPhanon Management Center§!"
-  district_giga_voidframe_admin_pe_plural: "§RPhanon Management Centers§!"
+  district_giga_voidframe_admin_pe: "§RPhanon Management§!"
+  district_giga_voidframe_admin_pe_plural: "§RPhanon Management§!"
   district_giga_voidframe_admin_pe_desc: "$phanon_classified$"
+  zone_voidframe_zone_PE_admin: "$building_phanon_bureaucratic$"
+  zone_voidframe_zone_PE_admin_desc: "$building_phanon_bureaucratic_desc$"
 
-  district_giga_voidframe_admin_se: "§HSanctum of the Administratum§!"
-  district_giga_voidframe_admin_se_plural: "§HSanctums of the Administratum§!"
+  district_giga_voidframe_admin_se: "§HAdministratum Sanctum§!"
+  district_giga_voidframe_admin_se_plural: "§HAdministratum Sanctums§!"
   district_giga_voidframe_admin_se_desc: "§HFrom these sanctums, we can administrate not only a galaxy, but the dimensions beyond!§!"
-  #
+  zone_voidframe_zone_SE_admin: "$building_stellarite_bureaucratic$"
+  zone_voidframe_zone_SE_admin_desc: "$building_stellarite_bureaucratic_desc$"
+
   # _te: "§M §!"
   # _te_plural: "§M §!"
   # _te_desc: "§M §!"
@@ -439,33 +557,38 @@ phanon_srname_ee: "Runic"
   # _oe_desc: "§Y §!"
 
 # Admin ACOT
+  district_giga_voidframe_admin_dmacot: "$district_giga_voidframe_admin_dm$"
+  district_giga_voidframe_admin_dmacot_plural: "$district_giga_voidframe_admin_dm_plural$"
+  district_giga_voidframe_admin_dmacot_desc: "$district_giga_voidframe_admin_dm_desc$"
+  zone_voidframe_zone_DMacot_admin: "Delphic Filing Zone"
+  zone_voidframe_zone_DMacot_admin_desc: "Massive rows and rows of supercomputers processing the everyday data of our empire, augmented with enigmatic technology."
 
-  district_giga_voidframe_admin_acot_dm: "$district_giga_voidframe_admin_dm$"
-  district_giga_voidframe_admin_acot_dm_plural: "$district_giga_voidframe_admin_dm_plural$"
-  district_giga_voidframe_admin_acot_dm_desc: "$district_giga_voidframe_admin_dm_desc$"
-
-  district_giga_voidframe_admin_acot_de: "$district_giga_voidframe_admin_de$"
-  district_giga_voidframe_admin_acot_de_plural: "$district_giga_voidframe_admin_de_plural$"
-  district_giga_voidframe_admin_acot_de_desc: "$district_giga_voidframe_admin_de_desc$"
-
-# Temple
+ # Temple
 
   district_giga_voidframe_temple_dm: "Temple of the Night"
   district_giga_voidframe_temple_dm_plural: "Temples of the Night"
   district_giga_voidframe_temple_dm_desc: "With the advent of enigmatic technology, the clergy has found a way to integrate it into their doctrines by adding an emphasis of the divinity of the night."
+  zone_voidframe_zone_DM_temple: "$building_acot_dm_temple$"
+  zone_voidframe_zone_DM_temple_desc: "$building_acot_dm_temple_desc$"
 
   district_giga_voidframe_temple_de: "Cathedral of the Precursors"
   district_giga_voidframe_temple_de_plural: "Cathedrals of the Precursors"
   district_giga_voidframe_temple_de_desc: "The previous doctines have been upgraded to include a healthy reverence for the precursors, and our faith has integrated that into our churches."
+  zone_voidframe_zone_DE_temple: "$building_acot_ae_temple$"
+  zone_voidframe_zone_DE_temple_desc: "$building_acot_ae_temple_desc$"
 
   district_giga_voidframe_temple_pe: "§RPhanon Pantheon§!"
   district_giga_voidframe_temple_pe_plural: "§RPhanon Pantheons§!"
   district_giga_voidframe_temple_pe_desc: "$phanon_classified$"
+  zone_voidframe_zone_PE_temple: "$building_phanon_empyrean_shrine$"
+  zone_voidframe_zone_PE_temple_desc: "$building_phanon_empyrean_shrine_desc$"
 
   district_giga_voidframe_temple_se: "§HShrine of Celestials§!"
   district_giga_voidframe_temple_se_plural: "§HShrines of Celestials§!"
   district_giga_voidframe_temple_se_desc: "§HHere we pray not to a god that is untouchable, but to the gods that are now within our grasp!§!"
-  #
+  zone_voidframe_zone_SE_temple: "$building_stellarite_empyrean_shrine$"
+  zone_voidframe_zone_SE_temple_desc: "$building_stellarite_empyrean_shrine_desc$"
+
   # _te: "§M §!"
   # _te_plural: "§M §!"
   # _te_desc: "§M §!"
@@ -476,21 +599,29 @@ phanon_srname_ee: "Runic"
 
 # Science
 
-  district_giga_voidframe_science_dm: "Enigmatic Lab"
-  district_giga_voidframe_science_dm_plural: "Enigmatic Labs"
-  district_giga_voidframe_science_dm_desc: "Districts filled with research labs designed to experement with enigmatic technologies."
+  district_giga_voidframe_research_dm: "Enigmatic Lab"
+  district_giga_voidframe_research_dm_plural: "Enigmatic Labs"
+  district_giga_voidframe_research_dm_desc: "Districts filled with research labs designed to experement with enigmatic technologies."
+  zone_voidframe_zone_DM_research: "$building_acot_dm_enigmatic_lab$"
+  zone_voidframe_zone_DM_research_desc: "$building_acot_dm_enigmatic_lab_desc$"
 
-  district_giga_voidframe_science_de: "Lorekeeper District"
-  district_giga_voidframe_science_de_plural: "Lorekeeper Districts"
-  district_giga_voidframe_science_de_desc: "Where we gather ancient knowledge from long lost empires and rediscover them."
+  district_giga_voidframe_research_de: "Lorekeeper District"
+  district_giga_voidframe_research_de_plural: "Lorekeeper Districts"
+  district_giga_voidframe_research_de_desc: "Where we gather ancient knowledge from long lost empires and rediscover them."
+  zone_voidframe_zone_DE_research: "$building_acot_ae_enigmatic_lab$"
+  zone_voidframe_zone_DE_research_desc: "$building_acot_ae_enigmatic_lab_desc$"
 
-  district_giga_voidframe_science_se: "§HAperture Knowledge§!"
-  district_giga_voidframe_science_se_plural: "§HAperture Knowledge§!"
-  district_giga_voidframe_science_se_desc: "§HWhere every secret of the universe is discovered.§!"
+  district_giga_voidframe_research_pe: "§R$phanon_srname_ee$ Knowledge§!"
+  district_giga_voidframe_research_pe_plural: "§R$phanon_srname_ee$ Knowledge§!"
+  district_giga_voidframe_research_pe_desc: "$phanon_classified$"
+  zone_voidframe_zone_PE_research: "$building_phanon_enigmatic_lab$"
+  zone_voidframe_zone_PE_research_desc: "$building_phanon_enigmatic_lab_desc$"
 
-  district_giga_voidframe_science_pe: "§R$phanon_srname_ee$ Knowledge§!"
-  district_giga_voidframe_science_pe_plural: "§R$phanon_srname_ee$ Knowledge§!"
-  district_giga_voidframe_science_pe_desc: "$phanon_classified$"
+  district_giga_voidframe_research_se: "§HAperture Knowledge§!"
+  district_giga_voidframe_research_se_plural: "§HAperture Knowledge§!"
+  district_giga_voidframe_research_se_desc: "§HWhere every secret of the universe is discovered.§!"
+  zone_voidframe_zone_SE_research: "$building_stellarite_enigmatic_lab$"
+  zone_voidframe_zone_SE_research_desc: "$building_stellarite_enigmatic_lab_desc$"
 
   # district_giga_voidframe_science_te: "§M §!"
   # district_giga_voidframe_science_te_plural: "§M §!"
@@ -504,18 +635,26 @@ phanon_srname_ee: "Runic"
   district_giga_voidframe_simulation_dm: "Delphic Simulators"
   district_giga_voidframe_simulation_dm_plural: "Delphic Simulators"
   district_giga_voidframe_simulation_dm_desc: "Delphic supercomputer complex where we simulate various future possibilities."
+  zone_voidframe_zone_DM_simulation: "$building_acot_dm_ancient_cryo_chamber$"
+  zone_voidframe_zone_DM_simulation_desc: "$building_acot_dm_ancient_cryo_chamber_desc$"
 
   district_giga_voidframe_simulation_de: "Bionic Simulators"
   district_giga_voidframe_simulation_de_plural: "Bionic Simulators"
   district_giga_voidframe_simulation_de_desc: "Precursor Bionic systems can provide extremely accurate simulation into organic behaviour."
-
-  district_giga_voidframe_simulation_se: "§HSingularity Watchers§!"
-  district_giga_voidframe_simulation_se_plural: "§HSingularity Watchers§!"
-  district_giga_voidframe_simulation_se_desc: "§HIf you listen carefully, whispers can be heard from stellarite orbs. Long forgotten dreams gives us more insight.§!"
+  zone_voidframe_zone_DE_simulation: "$building_acot_ae_ancient_cryo_chamber$"
+  zone_voidframe_zone_DE_simulation_desc: "$building_acot_ae_ancient_cryo_chamber_desc$"
 
   district_giga_voidframe_simulation_pe: "§R$phanon_srname_ee$ Inspectors§!"
   district_giga_voidframe_simulation_pe_plural: "§R$phanon_srname_ee$ Inspectors§!"
   district_giga_voidframe_simulation_pe_desc: "$phanon_classified$"
+  zone_voidframe_zone_PE_simulation: "$building_phanon_ancient_cryo_chamber$"
+  zone_voidframe_zone_PE_simulation_desc: "$building_phanon_ancient_cryo_chamber_desc$"
+
+  district_giga_voidframe_simulation_se: "§HSingularity Watchers§!"
+  district_giga_voidframe_simulation_se_plural: "§HSingularity Watchers§!"
+  district_giga_voidframe_simulation_se_desc: "§HIf you listen carefully, whispers can be heard from stellarite orbs. Long forgotten dreams gives us more insight.§!"
+  zone_voidframe_zone_SE_simulation: "$building_stellarite_ancient_cryo_chamber$"
+  zone_voidframe_zone_SE_simulation_desc: "$building_stellarite_ancient_cryo_chamber_desc$"
 
   district_giga_voidframe_simulation_te: "§MShroud Travelers§!"
   district_giga_voidframe_simulation_te_plural: "§MShroud Travelers§!"
@@ -530,18 +669,26 @@ phanon_srname_ee: "Runic"
   district_giga_voidframe_synapse_dm: "Delphic Processing Nest"
   district_giga_voidframe_synapse_dm_plural: "Delphic Processing Nests"
   district_giga_voidframe_synapse_dm_desc: "By moving our synapse drones into special nests where they are hooked up to the neural fiber with high speed enigmatic neurons, we improve our control over our constituent drones"
+  zone_voidframe_zone_DM_synapse: "$building_acot_dm_hive_depot$"
+  zone_voidframe_zone_DM_synapse_desc: "$building_acot_dm_hive_depot_desc$"
 
   district_giga_voidframe_synapse_de: "Bionic Limbic Zone"
   district_giga_voidframe_synapse_de_plural: "Bionic Limbic Zones"
   district_giga_voidframe_synapse_de_desc: "We have taken the idea of special zones for our synapses to the next level, and have built special neural processing organs that take up an entire zone."
+  zone_voidframe_zone_DE_synapse: "$building_acot_ae_hive_depot$"
+  zone_voidframe_zone_DE_synapse_desc: "$building_acot_ae_hive_depot_desc$"
 
   district_giga_voidframe_synapse_pe: "§R$phanon_srname_ee$ Dendrite§!"
   district_giga_voidframe_synapse_pe_plural: "§R$phanon_srname_ee$ Dendrites§!"
   district_giga_voidframe_synapse_pe_desc: "$phanon_classified$"
+  zone_voidframe_zone_PE_synapse: "$building_phanon_hive_depot$"
+  zone_voidframe_zone_PE_synapse_desc: "$building_phanon_hive_depot_desc$"
 
   district_giga_voidframe_synapse_se: "§HSingularity Junction§!"
   district_giga_voidframe_synapse_se_plural: "§HSingularity Junctions§!"
   district_giga_voidframe_synapse_se_desc: "§HStellarite technology has allowed us to compress a neural junction made of multiple drones into a singularity, thus increasing our synapse density. §!"
+  zone_voidframe_zone_SE_synapse: "$building_stellarite_hive_depot$"
+  zone_voidframe_zone_SE_synapse_desc: "$building_stellarite_hive_depot_desc$"
 
   # _te: "§M §!"
   # _te_plural: "§M §!"
@@ -552,24 +699,32 @@ phanon_srname_ee: "Runic"
   # _oe_desc: "§Y §!"
 
 # Servitors
-  voidframe_sanctuary_biotrophy_scaling: "Biotrophies gain extra base unity output based on the level of this district. Check the Voidframe planetary deposit for the value."
-  pop_category_bio_trophy_unity_produces_add: "£unity£ $unity$ from £job_bio_trophy£ $job_bio_trophy_plural$"
+  #voidframe_sanctuary_biotrophy_scaling: "Biotrophies gain extra base unity output based on the level of this district. Check the Voidframe planetary deposit for the value."
+  #pop_category_bio_trophy_unity_produces_add: "£unity£ $unity$ from £job_bio_trophy£ $job_bio_trophy_plural$"
 
   district_giga_voidframe_sanctuary_dm: "Enigmatic Resort"
   district_giga_voidframe_sanctuary_dm_plural: "Enigmatic Resorts"
   district_giga_voidframe_sanctuary_dm_desc: "The snow is made of dark matter. Don't think too hard about it, cause I didn't when I wrote this."
+  zone_voidframe_zone_DM_sanctuary: "Delta Sanctuary"
+  zone_voidframe_zone_DM_sanctuary_desc: "$district_giga_voidframe_sanctuary_dm_desc$"
 
   district_giga_voidframe_sanctuary_de: "Syzygy Resort"
   district_giga_voidframe_sanctuary_de_plural: "Syzygy Resorts"
-  district_giga_voidframe_sanctuary_de_desc: "Here our organics can watch the mysteries of the cosmos, from a safe position"
+  district_giga_voidframe_sanctuary_de_desc: "Here our organics can watch the mysteries of the cosmos, from a safe position."
+  zone_voidframe_zone_DE_sanctuary: "Alpha Sanctuary"
+  zone_voidframe_zone_DE_sanctuary_desc: "$district_giga_voidframe_sanctuary_de_desc$"
 
   district_giga_voidframe_sanctuary_pe: "§R$phanon_srname_ee$ Racetrack§!"
   district_giga_voidframe_sanctuary_pe_plural: "§R$phanon_srname_ee$ Racetracks§!"
   district_giga_voidframe_sanctuary_pe_desc: "$phanon_classified$"
+  zone_voidframe_zone_PE_sanctuary: "Phi Sanctuary"
+  zone_voidframe_zone_PE_sanctuary_desc: "$district_giga_voidframe_sanctuary_pe_desc$"
 
   district_giga_voidframe_sanctuary_se: "Celestial Stadium"
   district_giga_voidframe_sanctuary_se_plural: "Celestial Stadiums"
   district_giga_voidframe_sanctuary_se_desc: "Here our biothophys may relax as they watch other biothrophies play competitive video games, including the new hit wonder, Stellaris 2."
+  zone_voidframe_zone_SE_sanctuary: "Sigma Sanctuary"
+  zone_voidframe_zone_SE_sanctuary_desc: "$district_giga_voidframe_sanctuary_se_desc$"
 
   # district_giga_frameworld_sanctuary_te: "§M §!"
   # district_giga_frameworld_sanctuary_te_plural: "§M §!"
@@ -587,18 +742,26 @@ phanon_srname_ee: "Runic"
   district_giga_voidframe_anticrime_dm: "Delphic Reform Center"
   district_giga_voidframe_anticrime_dm_plural: "Delphic Reform Centers"
   district_giga_voidframe_anticrime_dm_desc: "By creating a mental model of every criminal, we can figure out the best treatment plan to ensure 99.9% reform rate."
+  zone_voidframe_zone_DM_anticrime: "Delta Enforcers"
+  zone_voidframe_zone_DM_anticrime_desc: "$district_giga_voidframe_anticrime_dm_desc$"
 
   district_giga_voidframe_anticrime_de: "Penitentiary of the Ancients"
   district_giga_voidframe_anticrime_de_plural: "Penitentiaries of the Ancients"
   district_giga_voidframe_anticrime_de_desc: "Combining precursor technology with modern criminal theory, we can catch criminals before they can execute their crimes."
+  zone_voidframe_zone_DE_anticrime: "Alpha Enforcers"
+  zone_voidframe_zone_DE_anticrime_desc: "$district_giga_voidframe_anticrime_de_desc$"
 
   district_giga_voidframe_anticrime_pe: "§R$phanon_srname_ee$ Prison§!"
   district_giga_voidframe_anticrime_pe_plural: "§RRunic Prisons§!"
   district_giga_voidframe_anticrime_pe_desc: "$phanon_classified$"
+  zone_voidframe_zone_PE_anticrime: "Phi Enforcers"
+  zone_voidframe_zone_PE_anticrime_desc: "$district_giga_voidframe_anticrime_pe_desc$"
 
   district_giga_voidframe_anticrime_se: "§HIlluminating Asylum§!"
   district_giga_voidframe_anticrime_se_plural: "§HIlluminating Asylums§!"
   district_giga_voidframe_anticrime_se_desc: "§HIn these halls we reform the galaxy. There are no miscreants that threaten society, for we will make them behave with the power of the stars!§!"
+  zone_voidframe_zone_SE_anticrime: "Sigma Enforcers"
+  zone_voidframe_zone_SE_anticrime_desc: "$district_giga_voidframe_anticrime_se_desc$"
 
   # _te: "§M §!"
   # _te_plural: "§M §!"
@@ -613,18 +776,26 @@ phanon_srname_ee: "Runic"
   district_giga_voidframe_amenities_dm: "Shadow Resort"
   district_giga_voidframe_amenities_dm_plural: "Shadow Resorts"
   district_giga_voidframe_amenities_dm_desc: "Massive resorts filled with the ability to mimic any reasonable environment. What constitutes a reasonable environment depends on how much you are willing to pay."
+  zone_voidframe_zone_DM_amenities: "$building_acot_dm_mansion$"
+  zone_voidframe_zone_DM_amenities_desc: "$building_acot_dm_mansion_desc$"
 
   district_giga_voidframe_amenities_de: "Eclipse Resorts"
   district_giga_voidframe_amenities_de_plural: "Eclipse Resorts"
   district_giga_voidframe_amenities_de_desc: "We have upgraded our resorts in order to add the ability to mimic unreasonable envionments for the strange people who want to do stuff like swim in molten promethium."
+  zone_voidframe_zone_DE_amenities: "$building_acot_ae_mansion$"
+  zone_voidframe_zone_DE_amenities_desc: "$building_acot_ae_mansion_desc$"
 
   district_giga_voidframe_amenities_pe: "§R$phanon_srname_ee$ Amusement Park§!"
   district_giga_voidframe_amenities_pe_plural: "§R$phanon_srname_ee$ Amusement Parks§!"
   district_giga_voidframe_amenities_pe_desc: "$phanon_classified$"
+  zone_voidframe_zone_PE_amenities: "$building_phanon_mansion$"
+  zone_voidframe_zone_PE_amenities_desc: "$building_phanon_mansion_desc$"
 
   district_giga_voidframe_amenities_se: "§HCelestial Colosseum§!"
   district_giga_voidframe_amenities_se_plural: "§HCelestial Colosseums§!"
   district_giga_voidframe_amenities_se_desc: "§HOur resorts no longer just mimic environments, but prevent the occurance of death by any means. Now you can stab that one dude who ate your lunch, in game of course.§!"
+  zone_voidframe_zone_SE_amenities: "$building_stellarite_mansion$"
+  zone_voidframe_zone_SE_amenities_desc: "$building_stellarite_mansion_desc$"
 
   # district_giga_frameworld_amenities_te: "§M §!"
   # district_giga_frameworld_amenities_te_plural: "§M §!"
@@ -661,26 +832,34 @@ phanon_srname_ee: "Runic"
   # district_giga_frameworld_amenities_oe_desc: "§Y §!"
 
 # Dystopia
-  mod_district_giga_voidframe_amenities_dystopian_dm_max: "Max Enigmatic Resort Districts"
-  mod_district_giga_voidframe_amenities_dystopian_de_max: "Max Alpha Skiing Slope Districts"
-  mod_district_giga_voidframe_amenities_dystopian_pe_max: "§RMax $phanon_srname_ee$ Spa Districts§!"
-  mod_district_giga_voidframe_amenities_dystopian_se_max: "§HMax Stellaris Resort Districts§!"
+#   mod_district_giga_voidframe_amenities_dystopian_dm_max_add: "Max Enigmatic Resort Districts"
+#   mod_district_giga_voidframe_amenities_dystopian_de_max_add: "Max Alpha Skiing Slope Districts"
+#   mod_district_giga_voidframe_amenities_dystopian_pe_max_add: "§RMax $phanon_srname_ee$ Spa Districts§!"
+#   mod_district_giga_voidframe_amenities_dystopian_se_max_add: "§HMax Stellaris Resort Districts§!"
 
   district_giga_voidframe_amenities_dystopian_dm: "Enigmatic Resort"
   district_giga_voidframe_amenities_dystopian_dm_plural: "Enigmatic Resorts"
   district_giga_voidframe_amenities_dystopian_dm_desc: "Massive resorts, equipped with the newest luxuries that is possible."
+  zone_voidframe_zone_DM_amenities_dystopian: "$building_acot_dm_mansion$"
+  zone_voidframe_zone_DM_amenities_dystopian_desc: "$building_acot_dm_mansion_desc$"
 
   district_giga_voidframe_amenities_dystopian_de: "Alpha Skiing Slope"
   district_giga_voidframe_amenities_dystopian_de_plural: "Alpha Skiing Slopes"
   district_giga_voidframe_amenities_dystopian_de_desc: "The snow is made of dark matter. Don't think too hard about it, cause I didn't when I wrote this."
+  zone_voidframe_zone_DE_amenities_dystopian: "$building_acot_ae_mansion$"
+  zone_voidframe_zone_DE_amenities_dystopian_desc: "$building_acot_ae_mansion_desc$"
 
   district_giga_voidframe_amenities_dystopian_pe: "§R$phanon_srname_ee$ Spa§!"
   district_giga_voidframe_amenities_dystopian_pe_plural: "§R$phanon_srname_ee$ Spas§!"
   district_giga_voidframe_amenities_dystopian_pe_desc: "$phanon_classified$"
+  zone_voidframe_zone_PE_amenities_dystopian: "$building_phanon_mansion$"
+  zone_voidframe_zone_PE_amenities_dystopian_desc: "$building_phanon_mansion_desc$"
 
   district_giga_voidframe_amenities_dystopian_se: "§HStellaris Resort§!"
   district_giga_voidframe_amenities_dystopian_se_plural: "§HStellaris Resorts§!"
   district_giga_voidframe_amenities_dystopian_se_desc: "§HHere the priviledged few may relax as they play the hit strategy game Stellaris 5.§!"
+  zone_voidframe_zone_SE_amenities_dystopian: "$building_stellarite_mansion$"
+  zone_voidframe_zone_SE_amenities_dystopian_desc: "$building_stellarite_mansion_desc$"
 
   # district_giga_frameworld_amenities_te: "§M §!"
   # district_giga_frameworld_amenities_te_plural: "§M §!"
@@ -698,18 +877,27 @@ phanon_srname_ee: "Runic"
   district_giga_voidframe_refinery_dm: "Enigmatic Refinery"
   district_giga_voidframe_refinery_dm_plural: "Enigmatic Refineries"
   district_giga_voidframe_refinery_dm_desc: "Each Dome perfectly sealed to prevent any uncontrolled chain reactions."
+  zone_voidframe_zone_DM_refinery: "$building_acot_dm_transmutor$"
+  zone_voidframe_zone_DM_refinery_desc: "$building_acot_dm_transmutor_desc$"
 
   district_giga_voidframe_refinery_de: "Alpha Refinery"
   district_giga_voidframe_refinery_de_plural: "Alpha Refineries"
   district_giga_voidframe_refinery_de_desc: "Creepy looking people with their creepy little rituals doing alchemy"
-
-  district_giga_voidframe_refinery_se: "§HStellar Transmuter§!"
-  district_giga_voidframe_refinery_se_plural: "§HStellar Transmuters§!"
-  district_giga_voidframe_refinery_se_desc: "§HUse Stellarite to transmute them into anything we could ever want§!"
+  zone_voidframe_zone_DE_refinery: "$building_acot_ae_transmutor$"
+  zone_voidframe_zone_DE_refinery_desc: "$building_acot_ae_transmutor_desc$"
 
   district_giga_voidframe_refinery_pe: "§R$phanon_srname_ee$ Printers§!"
   district_giga_voidframe_refinery_pe_plural: "§R$phanon_srname_ee$ Printers§!"
   district_giga_voidframe_refinery_pe_desc: "$phanon_classified$"
+  zone_voidframe_zone_PE_refinery: "$building_phanon_transmutor$"
+  zone_voidframe_zone_PE_refinery_desc: "$building_phanon_transmutor_desc$"
+
+  district_giga_voidframe_refinery_se: "§HStellar Transmuter§!"
+  district_giga_voidframe_refinery_se_plural: "§HStellar Transmuters§!"
+  district_giga_voidframe_refinery_se_desc: "§HUse Stellarite to transmute them into anything we could ever want§!"
+  zone_voidframe_zone_SE_refinery: "$building_stellarite_transmutor$"
+  zone_voidframe_zone_SE_refinery_desc: "$building_stellarite_transmutor_desc$"
+
 
   # district_giga_voidframe_refinery_te: "§M §!"
   # district_giga_voidframe_refinery_te_plural: "§M §!"
@@ -724,18 +912,26 @@ phanon_srname_ee: "Runic"
   district_giga_voidframe_supertensiles_dm: "$building_giga_megaworkshop_acot_delta$"
   district_giga_voidframe_supertensiles_dm_plural: "$building_giga_megaworkshop_acot_delta_plural$"
   district_giga_voidframe_supertensiles_dm_desc: "$building_giga_megaworkshop_acot_delta_desc$"
+  zone_voidframe_zone_DM_tensiles: "Hardlight Matter Printer"
+  zone_voidframe_zone_DM_tensiles_desc: "$building_giga_megaworkshop_acot_delta_desc$"
 
   district_giga_voidframe_supertensiles_de: "$building_giga_megaworkshop_acot_alpha$"
   district_giga_voidframe_supertensiles_de_plural: "$building_giga_megaworkshop_acot_alpha_plural$"
   district_giga_voidframe_supertensiles_de_desc: "$building_giga_megaworkshop_acot_alpha_desc$"
+  zone_voidframe_zone_DE_tensiles: "Enigmatic Matter Synthesizer"
+  zone_voidframe_zone_DE_tensiles_desc: "$building_giga_megaworkshop_acot_alpha_desc$"
 
   district_giga_voidframe_supertensiles_pe: "§R$building_giga_megaworkshop_acot_phanon$§!"
   district_giga_voidframe_supertensiles_pe_plural: "§R$building_giga_megaworkshop_acot_phanon_plural$§!"
   district_giga_voidframe_supertensiles_pe_desc: "§R$building_giga_megaworkshop_acot_phanon_desc$§!"
+  zone_voidframe_zone_PE_tensiles: "Runic Matter Daemon"
+  zone_voidframe_zone_PE_tensiles_desc: "$building_giga_megaworkshop_acot_phanon_desc$"
 
   district_giga_voidframe_supertensiles_se: "§H$building_giga_megaworkshop_acot_sigma$§!"
   district_giga_voidframe_supertensiles_se_plural: "§H$building_giga_megaworkshop_acot_sigma_plural$§!"
   district_giga_voidframe_supertensiles_se_desc: "§H$building_giga_megaworkshop_acot_sigma_desc$§!"
+  zone_voidframe_zone_SE_tensiles: "Celestial Matter Fabricator"
+  zone_voidframe_zone_SE_tensiles_desc: "$building_giga_megaworkshop_acot_sigma_desc$"
 
   # district_giga_voidframe_supertensiles_te: "§MTheta Supertensiles§!"
   # district_giga_voidframe_supertensiles_te_plural: "§MTheta Supertensiles§!"
@@ -752,18 +948,26 @@ phanon_srname_ee: "Runic"
   district_giga_voidframe_fort_dm: "Caladan Barracks" #modified dune reference
   district_giga_voidframe_fort_dm_plural: "Caladan Barracks"
   district_giga_voidframe_fort_dm_desc: "Our troops are trained here not to rely on their technologically superior enigmatic weaponry, but to also keep the fundamentals close at hand."
+  zone_voidframe_zone_DM_fortress: "$building_acot_dm_stronghold$"
+  zone_voidframe_zone_DM_fortress_desc: "$building_acot_dm_stronghold_desc$"
 
-  district_giga_voidframe_fort_de: "Cadian Training Ground" #warwhammer
-  district_giga_voidframe_fort_de_plural: "Cadian Training Grounds"
+  district_giga_voidframe_fort_de: "Cadian Barracks" #warwhammer
+  district_giga_voidframe_fort_de_plural: "Cadian Barracks"
   district_giga_voidframe_fort_de_desc: "Specialized training grounds where our troops are drilled with knowledge of dark energy weaponry to defend their homes against those who would annihilate them."
+  zone_voidframe_zone_DE_fortress: "$building_acot_ae_stronghold$"
+  zone_voidframe_zone_DE_fortress_desc: "$building_acot_ae_stronghold_desc$"
 
   district_giga_voidframe_fort_pe: "§RFortress of Baal§!" #warhammer reference
   district_giga_voidframe_fort_pe_plural: "§RFortresses of Baal!"
   district_giga_voidframe_fort_pe_desc: "$phanon_classified$"
+  zone_voidframe_zone_PE_fortress: "$building_phanon_stronghold$"
+  zone_voidframe_zone_PE_fortress_desc: "$building_phanon_stronghold_desc$"
 
   district_giga_voidframe_fort_se: "§HFortress of Hera§!" #warhammer reference
   district_giga_voidframe_fort_se_plural: "§HFortresses of Hera§!"
   district_giga_voidframe_fort_se_desc: "§HWe March for the Frame!§!"
+  zone_voidframe_zone_SE_fortress: "$building_stellarite_stronghold$"
+  zone_voidframe_zone_SE_fortress_desc: "$building_stellarite_stronghold_desc$"
 
   #district_giga_voidframe_fort_te: "§M §!"
   #district_giga_voidframe_fort_te_plural: "§M §!"
@@ -773,6 +977,31 @@ phanon_srname_ee: "Runic"
   #district_giga_voidframe_fort_oe_plural: "§Y §!"
   #district_giga_voidframe_fort_oe_desc: "§Y §!"
 
+ # MAGINOT FORTRESS
+ district_giga_voidframe_fort_maginot_dm: "Maginot Caladan Barracks" #modified dune reference
+ district_giga_voidframe_fort_maginot_dm_plural: "Maginot Caladan Barracks"
+ district_giga_voidframe_fort_maginot_dm_desc: "Our troops are trained here not to rely on their technologically superior enigmatic weaponry, but to also keep the fundamentals close at hand."
+ zone_voidframe_zone_DM_fortress_maginot: "$building_acot_dm_stronghold$"
+ zone_voidframe_zone_DM_fortress_maginot_desc: "$building_acot_dm_stronghold_desc$"
+
+ district_giga_voidframe_fort_maginot_de: "Maginot Cadian Barracks" #warwhammer
+ district_giga_voidframe_fort_maginot_de_plural: "Maginot Cadian Barracks"
+ district_giga_voidframe_fort_maginot_de_desc: "Specialized training grounds where our troops are drilled with knowledge of dark energy weaponry to defend their homes against those who would annihilate them."
+ zone_voidframe_zone_DE_fortress_maginot: "$building_acot_ae_stronghold$"
+ zone_voidframe_zone_DE_fortress_maginot_desc: "$building_acot_ae_stronghold_desc$"
+
+ district_giga_voidframe_fort_maginot_pe: "§RMaginot Fortress of Baal§!" #warhammer reference
+ district_giga_voidframe_fort_maginot_pe_plural: "§RMaginot Fortresses of Baal!"
+ district_giga_voidframe_fort_maginot_pe_desc: "$phanon_classified$"
+ zone_voidframe_zone_PE_fortress_maginot: "$building_phanon_stronghold$"
+ zone_voidframe_zone_PE_fortress_maginot_desc: "$building_phanon_stronghold_desc$"
+
+ district_giga_voidframe_fort_maginot_se: "§HMaginot Fortress of Hera§!" #warhammer reference
+ district_giga_voidframe_fort_maginot_se_plural: "§HMaginot Fortresses of Hera§!"
+ district_giga_voidframe_fort_maginot_se_desc: "§HWe March for the Frame!§!"
+ zone_voidframe_zone_SE_fortress_maginot: "$building_stellarite_stronghold$"
+ zone_voidframe_zone_SE_fortress_maginot_desc: "$building_stellarite_stronghold_desc$"
+
   job_maginot_planetary_bunker_effect_desc_dm: "Provides 2 §YFortification Network§! armies which cripples the morale of enemy troops while inflicting steady damage. Counts as 2 districts when using the §HMaginot Mass Recruitment§! decision"
   job_maginot_planetary_bunker_effect_desc_de: "Provides 2 §YFortification Network§! armies which cripples the morale of enemy troops while inflicting steady damage. Counts as 2 districts when using the §HMaginot Mass Recruitment§! decision"
   job_maginot_planetary_bunker_effect_desc_pe: "Provides 3 §YFortification Network§! armies which cripples the morale of enemy troops while inflicting steady damage. Counts as 3 districts when using the §HMaginot Mass Recruitment§! decision"
@@ -780,21 +1009,29 @@ phanon_srname_ee: "Runic"
 
 # MAGINOT GUN
 
-  district_giga_voidframe_maginot_planetary_cannons_dm: "Guns of Urban" #eu4 moment
-  district_giga_voidframe_maginot_planetary_cannons_dm_plural: "Guns of Urban"
-  district_giga_voidframe_maginot_planetary_cannons_dm_desc: "Inspired by a relic found on a tomb world, these guns fire not mundane cannonballs, but blasts of dark matter."
+  district_giga_voidframe_maginotarty_dm: "Guns of Urban" #eu4 moment
+  district_giga_voidframe_maginotarty_dm_plural: "Guns of Urban"
+  district_giga_voidframe_maginotarty_dm_desc: "Inspired by a relic found on a tomb world, these guns fire not mundane cannonballs, but blasts of dark matter."
+  zone_voidframe_zone_DM_maginotarty: "Delta Artillery"
+  zone_voidframe_zone_DM_maginotarty_desc: "$district_giga_voidframe_maginotarty_dm_desc$"
 
-  district_giga_voidframe_maginot_planetary_cannons_de: "Novalith Cannon Array" #sins of a solar empire
-  district_giga_voidframe_maginot_planetary_cannons_de_plural: "Novalith Cannon Arrays"
-  district_giga_voidframe_maginot_planetary_cannons_de_desc: "Some say that firing nuclear cannons close to your planet is a bad idea. Those people have never seen the destructive, yet focused firepower of a dark energy boosted nuclear shell."
+  district_giga_voidframe_maginotarty_de: "Novalith Cannon Array" #sins of a solar empire
+  district_giga_voidframe_maginotarty_de_plural: "Novalith Cannon Arrays"
+  district_giga_voidframe_maginotarty_de_desc: "Some say that firing nuclear cannons close to your planet is a bad idea. Those people have never seen the destructive, yet focused firepower of a dark energy boosted nuclear shell."
+  zone_voidframe_zone_DE_maginotarty: "Alpha Artillery"
+  zone_voidframe_zone_DE_maginotarty_desc: "$district_giga_voidframe_maginotarty_de_desc$"
 
-  district_giga_voidframe_maginot_planetary_cannons_pe: "§RLance of Morskittar§!" #warhammer reference
-  district_giga_voidframe_maginot_planetary_cannons_pe_plural: "§RLances of Morskittar§!"
-  district_giga_voidframe_maginot_planetary_cannons_pe_desc: "$phanon_classified$"
+  district_giga_voidframe_maginotarty_pe: "§RLance of Morskittar§!" #warhammer reference
+  district_giga_voidframe_maginotarty_pe_plural: "§RLances of Morskittar§!"
+  district_giga_voidframe_maginotarty_pe_desc: "$phanon_classified$"
+  zone_voidframe_zone_PE_maginotarty: "Runic Artillery"
+  zone_voidframe_zone_PE_maginotarty_desc: "$district_giga_voidframe_maginotarty_pe_desc$"
 
-  district_giga_voidframe_maginot_planetary_cannons_se: "§HLion's Gate Defenses§!" #warhammer reference
-  district_giga_voidframe_maginot_planetary_cannons_se_plural: "§HLion's Gate Defenses§!"
-  district_giga_voidframe_maginot_planetary_cannons_se_desc: "§HAugmented with stellarite energy, every shot fired from these batteries carries the screaming echoes of a dying star§!."
+  district_giga_voidframe_maginotarty_se: "§HLion's Gate Defenses§!" #warhammer reference
+  district_giga_voidframe_maginotarty_se_plural: "§HLion's Gate Defenses§!"
+  district_giga_voidframe_maginotarty_se_desc: "§HAugmented with stellarite energy, every shot fired from these batteries carries the screaming echoes of a dying star§!."
+  zone_voidframe_zone_SE_maginotarty: "Sigma Artillery"
+  zone_voidframe_zone_SE_maginotarty_desc: "$district_giga_voidframe_maginotarty_se_desc$"
 
   #district_giga_voidframe_maginot_planetary_cannons_te: "§M §!"
   #district_giga_voidframe_maginot_planetary_cannons_te_plural: "§M §!"
@@ -811,21 +1048,29 @@ phanon_srname_ee: "Runic"
 
 # MAGINOT SHIELD
 
-  district_giga_voidframe_maginot_shield_generators_dm: "Walls of Camelot" #i dont need to tell you what this references
-  district_giga_voidframe_maginot_shield_generators_dm_plural: "Walls of Camelot"
-  district_giga_voidframe_maginot_shield_generators_dm_desc: "Reinforced with dark matter energy shields, our frame defenses are as strong as the legendary walls of Camelot!"
+  district_giga_voidframe_maginotshield_dm: "Walls of Camelot" #i dont need to tell you what this references
+  district_giga_voidframe_maginotshield_dm_plural: "Walls of Camelot"
+  district_giga_voidframe_maginotshield_dm_desc: "Reinforced with dark matter energy shields, our frame defenses are as strong as the legendary walls of Camelot!"
+  zone_voidframe_zone_DM_maginotshield: "Delta Shields"
+  zone_voidframe_zone_DM_maginotshield_desc: "$district_giga_voidframe_maginotshield_dm_desc$"
 
-  district_giga_voidframe_maginot_shield_generators_de: "Walls of Mordor" #i dont need to tell you what this references
-  district_giga_voidframe_maginot_shield_generators_de_plural: "Walls of Mordor"
-  district_giga_voidframe_maginot_shield_generators_de_desc: "Adding large burning eyes to our energy shields may look strange, but the dark energy beams that they fire to neutralize projectiles prove their worth."
+  district_giga_voidframe_maginotshield_de: "Walls of Mordor" #i dont need to tell you what this references
+  district_giga_voidframe_maginotshield_de_plural: "Walls of Mordor"
+  district_giga_voidframe_maginotshield_de_desc: "Adding large burning eyes to our energy shields may look strange, but the dark energy beams that they fire to neutralize projectiles prove their worth."
+  zone_voidframe_zone_DE_maginotshield: "Alpha Shields"
+  zone_voidframe_zone_DE_maginotshield_desc: "$district_giga_voidframe_maginotshield_de_desc$"
 
-  district_giga_voidframe_maginot_shield_generators_pe: "§RSefirah Castle§!" #lord of the mysteries
-  district_giga_voidframe_maginot_shield_generators_pe_plural: "§RSefirah Castle§!"
-  district_giga_voidframe_maginot_shield_generators_pe_desc: "$phanon_classified$"
+  district_giga_voidframe_maginotshield_pe: "§RWalls of Eryx§!" #lovecraft
+  district_giga_voidframe_maginotshield_pe_plural: "§RWalls of Eryx§!"
+  district_giga_voidframe_maginotshield_pe_desc: "$phanon_classified$"
+  zone_voidframe_zone_PE_maginotshield: "Runic Shields"
+  zone_voidframe_zone_PE_maginotshield_desc: "$district_giga_voidframe_maginotshield_pe_desc$"
 
-  district_giga_voidframe_maginot_shield_generators_se: "§HWalls of Eryx§!" #lovecraft
-  district_giga_voidframe_maginot_shield_generators_se_plural: "§HWalls of Eryx§!"
-  district_giga_voidframe_maginot_shield_generators_se_desc: "§HThese walls are reinforced with multiple dimensional pockets, so enemy attacks have to travel through several places where the laws of physics may not even work properly before they can impact our fortress.§!"
+  district_giga_voidframe_maginotshield_se: "§HSefirah Castle§!" #LOTM
+  district_giga_voidframe_maginotshield_se_plural: "§HSefirah Castle§!"
+  district_giga_voidframe_maginotshield_se_desc: "§HThese walls are reinforced with multiple dimensional pockets, so enemy attacks have to travel through several places where the laws of physics may not even work properly before they can impact our fortress.§!"
+  zone_voidframe_zone_SE_maginotshield: "Sigma Shields"
+  zone_voidframe_zone_SE_maginotshield_desc: "$district_giga_voidframe_maginotshield_se_desc$"
 
   #district_giga_voidframe_maginot_shield_generators_te: "§M §!"
   #district_giga_voidframe_maginot_shield_generators_te_plural: "§M §!"
@@ -912,25 +1157,25 @@ phanon_srname_ee: "Runic"
 
 # gest super amenities
 
-  job_anz_voidframe_frame_overseer_drone_dm: "Awakened Overseer"
-  job_anz_voidframe_frame_overseer_drone_dm_plural: "Awakened Overseers"
-  job_anz_voidframe_frame_overseer_drone_dm_desc: "Specialized drones created using dark matter, they have intimate knowledge of both their fellow drones and the frame, and how to fix issues that arise."
-  mod_job_anz_voidframe_frame_overseer_drone_dm_add: "Awakened Overseers"
-
-  job_anz_voidframe_frame_overseer_drone_de: "Ascended Overseer"
-  job_anz_voidframe_frame_overseer_drone_de_plural: "Ascended Overseers"
-  job_anz_voidframe_frame_overseer_drone_de_desc: "Adding dark energy to the formation process of these superior maintenance drones has increased their efficiency."
-  mod_job_anz_voidframe_frame_overseer_drone_de_add: "Ascended Overseers"
-
-  job_anz_voidframe_frame_overseer_drone_pe: "$phanon_srname_ee$ Supervisor"
-  job_anz_voidframe_frame_overseer_drone_pe_plural: "$phanon_srname_ee$ Supervisors"
-  job_anz_voidframe_frame_overseer_drone_pe_desc: "$phanon_classified$"
-  mod_job_anz_voidframe_frame_overseer_drone_pe_add: "$phanon_srname_ee$ Supervisors"
-
-  job_anz_voidframe_frame_overseer_drone_se: "Supreme Overseer"
-  job_anz_voidframe_frame_overseer_drone_se_plural: "Supreme Overseers"
-  job_anz_voidframe_frame_overseer_drone_se_desc: "The ultimate in frame maintenance, these drones command systems that can remake stars."
-  mod_job_anz_voidframe_frame_overseer_drone_se_add: "Supreme Overseers"
+  # job_anz_voidframe_frame_overseer_drone_dm: "Awakened Overseer"
+  # job_anz_voidframe_frame_overseer_drone_dm_plural: "Awakened Overseers"
+  # job_anz_voidframe_frame_overseer_drone_dm_desc: "Specialized drones created using dark matter, they have intimate knowledge of both their fellow drones and the frame, and how to fix issues that arise."
+  # mod_job_anz_voidframe_frame_overseer_drone_dm_add: "Awakened Overseers"
+  #
+  # job_anz_voidframe_frame_overseer_drone_de: "Ascended Overseer"
+  # job_anz_voidframe_frame_overseer_drone_de_plural: "Ascended Overseers"
+  # job_anz_voidframe_frame_overseer_drone_de_desc: "Adding dark energy to the formation process of these superior maintenance drones has increased their efficiency."
+  # mod_job_anz_voidframe_frame_overseer_drone_de_add: "Ascended Overseers"
+  #
+  # job_anz_voidframe_frame_overseer_drone_pe: "$phanon_srname_ee$ Supervisor"
+  # job_anz_voidframe_frame_overseer_drone_pe_plural: "$phanon_srname_ee$ Supervisors"
+  # job_anz_voidframe_frame_overseer_drone_pe_desc: "$phanon_classified$"
+  # mod_job_anz_voidframe_frame_overseer_drone_pe_add: "$phanon_srname_ee$ Supervisors"
+  #
+  # job_anz_voidframe_frame_overseer_drone_se: "Supreme Overseer"
+  # job_anz_voidframe_frame_overseer_drone_se_plural: "Supreme Overseers"
+  # job_anz_voidframe_frame_overseer_drone_se_desc: "The ultimate in frame maintenance, these drones command systems that can remake stars."
+  # mod_job_anz_voidframe_frame_overseer_drone_se_add: "Supreme Overseers"
 
 # trader
 
@@ -954,49 +1199,66 @@ phanon_srname_ee: "Runic"
   job_anz_voidframe_trader_se_desc: "These noble capitalists speculate on the fates of the stars themselves, and their stock machinations can go up to blowing up several star systems to influence a stock."
   mod_job_anz_voidframe_trader_se_add: "Cosmic Tycoons"
 
-# normal soldiers (not in use)
+ # trader_gestalt
 
-  job_anz_voidframe_soldier_dm: "Shadow Shade"
-  job_anz_voidframe_soldier_dm_plural: "Shadow Shades"
-  job_anz_voidframe_soldier_dm_desc: "These soldiers are taught to take advantage of the frame's defensive systems, hiding in the artificial shadows created with dark matter before striking with enigmatic weaponry."
-  mod_job_anz_voidframe_soldier_dm_add: "Shadow Shades"
+ job_anz_voidframe_trader_gestalt_de: "Shadow Logistician"
+ job_anz_voidframe_trader_gestalt_de_plural: "Shadow Logisticians"
+ job_anz_voidframe_trader_gestalt_de_desc: "Individually, these drones can calculate the logistical requirements of mundane cities. Together, they manage the Frame."
+ mod_job_anz_voidframe_trader_gestalt_de_add: "$job_anz_voidframe_trader_gestalt_de_plural$"
 
-  job_anz_voidframe_soldier_de: "Nightfall Trooper"
-  job_anz_voidframe_soldier_de_plural: "Nightfall Troopers"
-  job_anz_voidframe_soldier_de_desc: "These soldiers cast a pall of shadow in their vicinity, plunging the enemy in unnatural, unpiercable darkness within the fortified zones of the frame."
-  mod_job_anz_voidframe_soldier_de_add: "Nightfall Troopers"
+ job_anz_voidframe_trader_gestalt_pe: "$phanon_srname_ee$ Overmind"
+ job_anz_voidframe_trader_gestalt_pe_plural: "$phanon_srname_ee$ Overminds"
+ job_anz_voidframe_trader_gestalt_pe_desc: "A drone fueled by Runic energy, allowing their logistical calculations to take into account the fluctuations of secondary dimensions."
+ mod_job_anz_voidframe_trader_gestalt_pe_add: "$job_anz_voidframe_trader_gestalt_pe_plural$"
 
-  job_anz_voidframe_soldier_pe: "$phanon_srname_ee$ Jaeger"
-  job_anz_voidframe_soldier_pe_plural: "$phanon_srname_ee$ Jaegers"
-  job_anz_voidframe_soldier_pe_desc: "$phanon_classified$"
-  mod_job_anz_voidframe_soldier_pe_add: "$phanon_srname_ee$ Jaegers"
+ job_anz_voidframe_trader_gestalt_se: "Cosmic Micromanager"
+ job_anz_voidframe_trader_gestalt_se_plural: "Cosmic Micromanager"
+ job_anz_voidframe_trader_gestalt_se_desc: "These drones, fueled by the brilliant power of Stellarite, can manage the cosmos themselves."
+ mod_job_anz_voidframe_trader_gestalt_se_add: "$job_anz_voidframe_trader_gestalt_se_plural$"
 
-  job_anz_voidframe_soldier_se: "Quasar Ranger"
-  job_anz_voidframe_soldier_se_plural: "Quasar Rangers"
-  job_anz_voidframe_soldier_se_desc: "To be part of this elite defense force, prospective members must first serve several tours around active black holes, not for the faint of heart."
-  mod_job_anz_voidframe_soldier_se_add: "Quasar Rangers"
-
-# gestalt soldiers (not in use)
-
-  job_anz_voidframe_soldier_drone_dm: "Shadow Shade"
-  job_anz_voidframe_soldier_drone_dm_plural: "Shadow Shades"
-  job_anz_voidframe_soldier_drone_dm_desc: "These drones are interface with the frame's defensive systems, hiding in the artificial shadows created with dark matter before striking with enigmatic weaponry."
-  mod_job_anz_voidframe_soldier_drone_dm_add: "Shadow Shades"
-
-  job_anz_voidframe_soldier_drone_de: "Nightfall Drone"
-  job_anz_voidframe_soldier_drone_de_plural: "Nightfall Drones"
-  job_anz_voidframe_soldier_drone_de_desc: "These drones cast a pall of shadow in their vicinity, plunging the enemy in unnatural, unpiercable darkness within the fortified zones of the frame."
-  mod_job_anz_voidframe_soldier_drone_de_add: "Nightfall Drones"
-
-  job_anz_voidframe_soldier_drone_pe: "$phanon_srname_ee$ Jaeger"
-  job_anz_voidframe_soldier_drone_pe_plural: "$phanon_srname_ee$ Jaegers"
-  job_anz_voidframe_soldier_drone_pe_desc: "$phanon_classified$"
-  mod_job_anz_voidframe_soldier_drone_pe_add: "$phanon_srname_ee$ Jaegers"
-
-  job_anz_voidframe_soldier_drone_se: "Quasar Guard"
-  job_anz_voidframe_soldier_drone_se_plural: "Quasar Guards"
-  job_anz_voidframe_soldier_drone_se_desc: "To be part of this elite defense force, prospective drones must first serve several guard cycles around active black holes. This screens out latent mental / physical defects in the drones."
-  mod_job_anz_voidframe_soldier_drone_se_add: "Quasar Guards"
+# # normal soldiers (not in use)
+#
+#   job_anz_voidframe_soldier_dm: "Shadow Shade"
+#   job_anz_voidframe_soldier_dm_plural: "Shadow Shades"
+#   job_anz_voidframe_soldier_dm_desc: "These soldiers are taught to take advantage of the frame's defensive systems, hiding in the artificial shadows created with dark matter before striking with enigmatic weaponry."
+#   mod_job_anz_voidframe_soldier_dm_add: "Shadow Shades"
+#
+#   job_anz_voidframe_soldier_de: "Nightfall Trooper"
+#   job_anz_voidframe_soldier_de_plural: "Nightfall Troopers"
+#   job_anz_voidframe_soldier_de_desc: "These soldiers cast a pall of shadow in their vicinity, plunging the enemy in unnatural, unpiercable darkness within the fortified zones of the frame."
+#   mod_job_anz_voidframe_soldier_de_add: "Nightfall Troopers"
+#
+#   job_anz_voidframe_soldier_pe: "$phanon_srname_ee$ Jaeger"
+#   job_anz_voidframe_soldier_pe_plural: "$phanon_srname_ee$ Jaegers"
+#   job_anz_voidframe_soldier_pe_desc: "$phanon_classified$"
+#   mod_job_anz_voidframe_soldier_pe_add: "$phanon_srname_ee$ Jaegers"
+#
+#   job_anz_voidframe_soldier_se: "Quasar Ranger"
+#   job_anz_voidframe_soldier_se_plural: "Quasar Rangers"
+#   job_anz_voidframe_soldier_se_desc: "To be part of this elite defense force, prospective members must first serve several tours around active black holes, not for the faint of heart."
+#   mod_job_anz_voidframe_soldier_se_add: "Quasar Rangers"
+#
+# # gestalt soldiers (not in use)
+#
+#   job_anz_voidframe_soldier_drone_dm: "Shadow Shade"
+#   job_anz_voidframe_soldier_drone_dm_plural: "Shadow Shades"
+#   job_anz_voidframe_soldier_drone_dm_desc: "These drones are interface with the frame's defensive systems, hiding in the artificial shadows created with dark matter before striking with enigmatic weaponry."
+#   mod_job_anz_voidframe_soldier_drone_dm_add: "Shadow Shades"
+#
+#   job_anz_voidframe_soldier_drone_de: "Nightfall Drone"
+#   job_anz_voidframe_soldier_drone_de_plural: "Nightfall Drones"
+#   job_anz_voidframe_soldier_drone_de_desc: "These drones cast a pall of shadow in their vicinity, plunging the enemy in unnatural, unpiercable darkness within the fortified zones of the frame."
+#   mod_job_anz_voidframe_soldier_drone_de_add: "Nightfall Drones"
+#
+#   job_anz_voidframe_soldier_drone_pe: "$phanon_srname_ee$ Jaeger"
+#   job_anz_voidframe_soldier_drone_pe_plural: "$phanon_srname_ee$ Jaegers"
+#   job_anz_voidframe_soldier_drone_pe_desc: "$phanon_classified$"
+#   mod_job_anz_voidframe_soldier_drone_pe_add: "$phanon_srname_ee$ Jaegers"
+#
+#   job_anz_voidframe_soldier_drone_se: "Quasar Guard"
+#   job_anz_voidframe_soldier_drone_se_plural: "Quasar Guards"
+#   job_anz_voidframe_soldier_drone_se_desc: "To be part of this elite defense force, prospective drones must first serve several guard cycles around active black holes. This screens out latent mental / physical defects in the drones."
+#   mod_job_anz_voidframe_soldier_drone_se_add: "Quasar Guards"
 
 # Shroud resource
 
@@ -1014,26 +1276,26 @@ phanon_srname_ee: "Runic"
 # DEPOSITS
 ################################################################################################################
 
-  anz_voidframe_delta: "§WVOIDFRAME - §!§EDELTA§!"
-  anz_voidframe_delta_desc: "The core of an Dark Matter based voidframe, it allows the frameworld the operate using enigmatic infrastructure."
+  anz_voidframe_delta_deposit: "§WVOIDFRAME - §!§EDELTA§!"
+  anz_voidframe_delta_deposit_desc: "The core of an Dark Matter based voidframe, it allows the frameworld the operate using enigmatic infrastructure."
 
-  anz_voidframe_alpha: "§WVOIDFRAME - §!§BALPHA§!"
-  anz_voidframe_alpha_desc: "Heart of Frameworld that master Precursor technologies, even staring at this marvel gives us inspiration."
+  anz_voidframe_alpha_deposit: "§WVOIDFRAME - §!§BALPHA§!"
+  anz_voidframe_alpha_deposit_desc: "Heart of Frameworld that master Precursor technologies, even staring at this marvel gives us inspiration."
 
-  anz_voidframe_stellar: "§WVOIDFRAME - §!§HSIGMA§!"
-  anz_voidframe_stellar_desc: "§HBuzzing with insane power it Shines with the Might of Stars!"
+  anz_voidframe_stellar_deposit: "§WVOIDFRAME - §!§HSIGMA§!"
+  anz_voidframe_stellar_deposit_desc: "§HBuzzing with insane power it Shines with the Might of Stars!"
 
-  anz_voidframe_pylons: "§WVOIDFRAME - §!§RPYLON LINKS§!"
-  anz_voidframe_pylons_desc: "§RDirect Connection established with $phanon_srname_ee$ Pylons and Voidframe§!"
+  anz_voidframe_pylons_deposit: "§WVOIDFRAME - §!§RPYLON LINKS§!"
+  anz_voidframe_pylons_deposit_desc: "§RDirect Connection established with $phanon_srname_ee$ Pylons and Voidframe§!"
 
-  anz_voidframe_phanon: "§WVOIDFRAME - §!§RPHI§!"
-  anz_voidframe_phanon_desc: "§RHIGH SECURITY SECTION 14C, ONLY FOR AUTHORIZED PERSONNEL.§!"
+  anz_voidframe_phanon_deposit: "§WVOIDFRAME - §!§RPHI§!"
+  anz_voidframe_phanon_deposit_desc: "§RHIGH SECURITY SECTION 14C, ONLY FOR AUTHORIZED PERSONNEL.§!"
 
-  anz_voidframe_soul: "§WVOIDFRAME - §!§MTHETA§!"
-  anz_voidframe_soul_desc: "§MALL HAIL our Shroud Master! We are thy humble servants...§!"
+  anz_voidframe_soul_deposit: "§WVOIDFRAME - §!§MTHETA§!"
+  anz_voidframe_soul_deposit_desc: "§MALL HAIL our Shroud Master! We are thy humble servants...§!"
 
-  anz_voidframe_light: "§WVOIDFRAME - §!§YOMEGA§!"
-  anz_voidframe_light_desc: "§YSo this is the Power of Divine? Truly Phenomenal!§!"
+  anz_voidframe_light_deposit: "§WVOIDFRAME - §!§YOMEGA§!"
+  anz_voidframe_light_deposit_desc: "§YSo this is the Power of Divine? Truly Phenomenal!§!"
 
   mod_district_giga_voidframe_maginot_shield_generators_dm_max: "Max $district_giga_voidframe_maginot_shield_generators_dm_plural$"
   mod_district_giga_voidframe_maginot_shield_generators_de_max: "Max $district_giga_voidframe_maginot_shield_generators_de_plural$"
@@ -1056,14 +1318,14 @@ phanon_srname_ee: "Runic"
   # I split the documentation into two - XHK
 
   giga_frameworld_docs_voidframe: "9A. Voidframe Upgrades"
-  giga_frameworld_docs_voidframe_desc: "$giga_frameworld_docs_voidframe_title$\n\n$giga_frameworld_docs_voidframe_intro1$\n\n$giga_frameworld_docs_voidframe_tiers$\n\n$giga_frameworld_docs_voidframe_tiers_general$"
+  giga_frameworld_docs_voidframe_desc: "$giga_frameworld_docs_voidframe_title$\n\n$giga_frameworld_docs_voidframe_intro1$\n\n$giga_frameworld_docs_voidframe_tiers$\n"
 
   giga_frameworld_docs_voidframe_title: "§YThe Frameworld can upgraded to better utilize the power of ACOT aka Voidframe.§!"
-  giga_frameworld_docs_voidframe_intro1: "§EBefore you upgrade to a new tier§!: Make sure to have stable production of the associated ACOT stratergic resource. Districts that produces these resources will unlock BEFORE you can upgrade the frame itself so build plenty of these.\n\n§EOnce it's upgraded into a voidframe, it cannot be reversed.§!"
+  giga_frameworld_docs_voidframe_intro1: "§EBefore you upgrade to a new tier§!: Make sure to have stable production of the associated ACOT stratergic resource. Districts that produces these resources will unlock BEFORE you can upgrade the frame itself so build plenty of these.\n\n§EOnce it's upgraded into a voidframe, it cannot be reversed.§!\n\n§GThe upgrades unlock the possibility of new Zones for your districts, which will change the given jobs into their proper ACOT/AOT variations.§!"
 
   giga_frameworld_docs_voidframe_tiers: "§YThe tiers you can unlock depends on your modlist§!,\n - §WACOT                      :§! §E£sr_dark_matter£ Delta§! and §B£acot_sr_dark_energy£ Alpha§! tiers.\n - §WACOT + AOT            :§! §R£aot_sr_runic_power£ Phanon§! and §H£acot_sr_stellarite£ Stellarite§! tiers.\n - §WACOT + AOT + SOTS :§! §M£sm_sr_perfect_runic_energy£ Pure Runic§! tier (not released yet)."
 
-  giga_frameworld_docs_voidframe_tiers_general: "§YDistrict Upgrade Rules§!\n - When voidframe is upgraded only some districts will auto upgrade with it.\n   §WHousing, Amenities, Enigmatic, Phanon, Stellarite, Runic$giga_frameworld_docs_voidframe_hook_auto1$$giga_frameworld_docs_voidframe_hook_auto2$$giga_frameworld_docs_voidframe_hook_auto3$$giga_frameworld_docs_voidframe_hook_auto4$$giga_frameworld_docs_voidframe_hook_auto5$$giga_frameworld_docs_voidframe_hook_auto6$.§!\n\n - Some cannot be upgraded as there is no acot equivalent or are still being developed.\n   §WEHOF$giga_frameworld_docs_voidframe_hook_no1$$giga_frameworld_docs_voidframe_hook_no2$$giga_frameworld_docs_voidframe_hook_no3$.§!\n\n - Others require acot buildings of the same tier to be built (can be downgraded).\n    * §WForge§! (Dark Foundry), §WFactory§! (Hard-Light Materials Printer),\n    * §WEnergy§! (Dark Energy Power Grid), §WMinerals§! (Crystal Synthesizer),\n    * §WFood§! (Agri Super-Complex), §WResearch§! (Enigmatic Lab),\n    * §WRefinery§! (Enigmatic Transmutator Dome), §WSupertensiles§! (Dark Molecular Foundry),\n    * §WTrade§! (Dark Shopping Mall), §WSecurity§! (Daedalus Alignment),\n    * §WSoldier§! (Daedalus Alignment),\n    * §WUnity§! (Delphic AI-Gov-Core (non-Spiritualists AOT)) / Empyrean Shrine (Spiritualists)\n      (Delta Maintenance Hub (machine gestalts) / Hive Spire (hive gestalts)\n      (Deluxe Mansion (non-Spiritualists no-AOT)\n    * §WMaginot§! (Delta Giga Fortress - refresh armies/upgrades with decisions after upgrade)$giga_frameworld_docs_voidframe_hook1$$giga_frameworld_docs_voidframe_hook2$$giga_frameworld_docs_voidframe_hook3$$giga_frameworld_docs_voidframe_hook4$$giga_frameworld_docs_voidframe_hook5$$giga_frameworld_docs_voidframe_hook6$"
+  #giga_frameworld_docs_voidframe_tiers_general: "§YDistrict Upgrade Rules§!\n - When voidframe is upgraded only some districts will auto upgrade with it.\n   §WHousing, Amenities, Enigmatic, Phanon, Stellarite, Runic$giga_frameworld_docs_voidframe_hook_auto1$$giga_frameworld_docs_voidframe_hook_auto2$$giga_frameworld_docs_voidframe_hook_auto3$$giga_frameworld_docs_voidframe_hook_auto4$$giga_frameworld_docs_voidframe_hook_auto5$$giga_frameworld_docs_voidframe_hook_auto6$.§!\n\n - Some cannot be upgraded as there is no acot equivalent or are still being developed.\n   §WEHOF$giga_frameworld_docs_voidframe_hook_no1$$giga_frameworld_docs_voidframe_hook_no2$$giga_frameworld_docs_voidframe_hook_no3$.§!\n\n - Others require acot buildings of the same tier to be built (can be downgraded).\n    * §WForge§! (Dark Foundry), §WFactory§! (Hard-Light Materials Printer),\n    * §WEnergy§! (Dark Energy Power Grid), §WMinerals§! (Crystal Synthesizer),\n    * §WFood§! (Agri Super-Complex), §WResearch§! (Enigmatic Lab),\n    * §WRefinery§! (Enigmatic Transmutator Dome), §WSupertensiles§! (Dark Molecular Foundry),\n    * §WTrade§! (Dark Shopping Mall), §WSecurity§! (Daedalus Alignment),\n    * §WSoldier§! (Daedalus Alignment),\n    * §WUnity§! (Delphic AI-Gov-Core (non-Spiritualists AOT)) / Empyrean Shrine (Spiritualists)\n      (Delta Maintenance Hub (machine gestalts) / Hive Spire (hive gestalts)\n      (Deluxe Mansion (non-Spiritualists no-AOT)\n    * §WMaginot§! (Delta Giga Fortress - refresh armies/upgrades with decisions after upgrade)$giga_frameworld_docs_voidframe_hook1$$giga_frameworld_docs_voidframe_hook2$$giga_frameworld_docs_voidframe_hook3$$giga_frameworld_docs_voidframe_hook4$$giga_frameworld_docs_voidframe_hook5$$giga_frameworld_docs_voidframe_hook6$"
 
   giga_frameworld_docs_voidframe_two: "9B. Voidframe Tiers"
   giga_frameworld_docs_voidframe_two_desc: "$giga_frameworld_docs_voidframe_tiers_delta$\n\n$giga_frameworld_docs_voidframe_tiers_alpha$\n\n$giga_frameworld_docs_voidframe_tiers_phi$\n\n$giga_frameworld_docs_voidframe_tiers_sigma$\n\n$giga_frameworld_docs_voidframe_tiers_theta$"
@@ -1097,6 +1359,27 @@ phanon_srname_ee: "Runic"
   giga_frameworld_docs_voidframe_hook_no1: "" #in use by Frameworld Extra Goodies
   giga_frameworld_docs_voidframe_hook_no2: ""
   giga_frameworld_docs_voidframe_hook_no3: ""
+
+
+
+ ################################################################################################################
+ # EVENTS
+
+ anz_voidframe.10.name: "Delta Voidframe Upgrade Complete"
+ anz_voidframe.10.desc: "Our Delta frame is now complete.\n\n§RMake sure to check if you can swap your zones to Delta variations.§!\n\nSome zones are unlocked automatically, some require the related ACOT building technology."
+ anz_voidframe.10.a: "I will make sure to check my zone swaps."
+
+ anz_voidframe.11.name: "Alpha Voidframe Upgrade Complete"
+ anz_voidframe.11.desc: "Our Alpha frame is now complete.\n\n§RMake sure to check if you can swap your zones to Alpha variations.§!\n\nSome zones are unlocked automatically, some require the related ACOT building technology."
+ anz_voidframe.11.a: "I will make sure to check my zone swaps."
+
+ anz_voidframe.12.name: "Phi Voidframe Upgrade Complete"
+ anz_voidframe.12.desc: "Our Phi frame is now complete.\n\n§RMake sure to check if you can swap your zones to Phi variations.§!\n\nSome zones are unlocked automatically, some require the related ACOT building technology."
+ anz_voidframe.12.a: "I will make sure to check my zone swaps."
+
+ anz_voidframe.13.name: "Sigma Voidframe Upgrade Complete"
+ anz_voidframe.13.desc: "Our Sigma frame is now complete.\n\n§RMake sure to check if you can swap your zones to Sigma variations.§!\n\nSome zones are unlocked automatically, some require the related ACOT building technology."
+ anz_voidframe.13.a: "I will make sure to check my zone swaps."
 
 ################################################################################################################
 #other

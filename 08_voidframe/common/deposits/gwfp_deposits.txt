@@ -1,0 +1,15 @@
+d_gwfp_phanon_black_hole = {
+	is_for_colonizable = yes
+	icon = d_phanon_black_hole
+  	category = deposit_cat_rare
+
+	drop_weight = { weight = 0 }
+	potential = { always = no }
+
+	resources = {
+		category = planet_deposits
+		produces = {
+			aot_sr_runic_power = 50
+		}
+	}
+}

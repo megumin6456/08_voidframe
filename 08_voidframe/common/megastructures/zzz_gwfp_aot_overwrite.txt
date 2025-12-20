@@ -1,0 +1,160 @@
+phanon_great_wall_2 = {
+    entity = "phanon_great_wall_stage_2_entity"
+    construction_entity = "phanon_great_wall_stage_2_construction_entity"
+    portrait = "GFX_megastructure_construction_background"
+    build_time = 3600
+    resources = {
+        category = megastructures
+        inline_script = {
+            script = resources/convert_to_food
+            SCOPE = this.owner
+            MODE = cost
+            AMOUNT = 300000
+            RESOURCE = alloys
+        }
+        cost = {
+            aot_sr_runic_power = 10000
+        }
+        upkeep = {
+            energy = 4000
+        }
+    }
+    upgrade_from = {
+        phanon_great_wall_1
+    }
+    prerequisites = {
+        tech_phanon_great_wall
+    }
+    ai_weight = {
+        factor = 15
+        modifier = {
+            factor = 3
+            any_neighbor_system = {
+                owner = {
+                    is_rival = from
+                }
+            }
+        }
+        modifier = {
+            factor = 0
+            owner = {
+                has_monthly_income = {
+                    resource = alloys
+                    value < 5000
+                }
+            }
+        }
+        modifier = {
+            factor = 0
+            owner = {
+                has_monthly_income = {
+                    resource = aot_sr_runic_power
+                    value < 2500
+                }
+            }
+        }
+        modifier = {
+            factor = 0
+            owner = {
+                has_monthly_income = {
+                    resource = energy
+                    value < 8000
+                }
+            }
+        }
+    }
+    on_build_complete = {
+        spawn_great_wall_macripps = yes
+        if = {
+            limit = {
+                from = {
+                    gwfp_is_frame_empire = yes
+                }
+            }
+            gwfp_frame_ripp = yes
+        }
+    }
+}
+
+phanon_great_wall_4 = {
+    entity = "phanon_great_wall_stage_4_entity"
+    construction_entity = "phanon_great_wall_stage_4_construction_entity"
+    portrait = "GFX_megastructure_construction_background"
+    build_time = 3600
+    resources = {
+        category = megastructures
+        inline_script = {
+            script = resources/convert_to_food
+            SCOPE = this.owner
+            MODE = cost
+            AMOUNT = 200000
+            RESOURCE = alloys
+        }
+        cost = {
+            aot_sr_runic_power = 10000
+        }
+        produces = {
+            aot_sr_runic_power = 100
+        }
+    }
+    upgrade_from = {
+        phanon_great_wall_3
+    }
+    prerequisites = {
+        tech_phanon_great_wall
+    }
+    ai_weight = {
+        factor = 15
+        modifier = {
+            factor = 3
+            any_neighbor_system = {
+                owner = {
+                    is_rival = from
+                }
+            }
+        }
+        modifier = {
+            factor = 0
+            owner = {
+                has_monthly_income = {
+                    resource = alloys
+                    value < 5000
+                }
+            }
+        }
+        modifier = {
+            factor = 0
+            owner = {
+                has_monthly_income = {
+                    resource = aot_sr_runic_power
+                    value < 2500
+                }
+            }
+        }
+        modifier = {
+            factor = 0
+            owner = {
+                has_monthly_income = {
+                    resource = energy
+                    value < 8000
+                }
+            }
+        }
+    }
+    on_build_complete = {
+        from = {
+            set_country_flag = has_built_or_repaired_megastructure
+        }
+        spawn_outer_phanon_mega_turrets = yes
+        every_system_planet = {
+            limit = {
+                exists = owner
+                owner = {
+                    gwfp_is_frame_empire = yes
+                }
+                giga_is_frame_world = yes
+            }
+            remove_planet_flag = frameworld_upgrade
+        }
+    }
+}

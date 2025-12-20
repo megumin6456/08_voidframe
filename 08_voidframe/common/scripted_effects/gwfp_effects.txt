@@ -1,0 +1,70 @@
+gwfp_destroy_system = {
+	solar_system = {
+		set_star_class = sc_phanon_black_hole
+		set_asteroid_belt = {
+			radius = 0
+		}
+	}
+
+	every_system_planet = {
+		limit = {
+			is_star = yes
+		}
+		save_event_target_as = last_created_phanon_pylon
+		create_ambient_object = {
+			type = "star_explosion"
+			play_animation_once = yes
+			location = this
+		}
+		last_created_ambient_object = {
+			set_location = {
+				target = prev
+				distance = 0
+				angle = random
+			}
+		}
+
+		change_pc = pc_phanon_black_hole
+		remove_modifier = giga_o_star_modifier
+		clear_planet_modifiers = yes
+	}
+
+	event_target:last_created_phanon_pylon = {
+		create_ambient_object = {
+			type = "phanon_dimensional_rift_portal"
+			location = this
+		}
+		last_created_ambient_object = {
+			set_ambient_object_flag = phanon_dimensional_rift_system_effect
+			set_location = {
+				target = prev
+				distance = 0
+				angle = random
+			}
+		}
+	}
+}
+
+gwfp_frame_ripp = {
+	every_system_planet = {
+		limit = {
+			AND = {
+				is_star = no
+				is_planet_class = pc_phanon_macripp
+			}
+		}
+
+		solar_system = {
+			spawn_megastructure = {
+				type = frameripp_0
+				orbit_angle = 0
+				orbit_distance = 0
+				owner = from
+				planet = prev
+			}
+		}
+
+		remove_planet = yes
+	}
+}
+

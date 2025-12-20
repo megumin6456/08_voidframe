@@ -1,643 +1,454 @@
-## District Set: giga_frameworld
-## Triggers: is_voidframe_** = yes/no
-##
-## FRAMEWORLD REPLACEMENT DISTRICTS MUST BE MERGED WITH ORGINIAL
-## ONLY NEW DISTRICTS IN THIS FILE
-##
-
-@acot_cost = 500
-@acot_cost2 = 800
-@acot_upkeep = 30
-@acot_upkeep2 = 10
-
-@base_cost = 300
-@city_cost = 500
-@advanced_cost = 1000
-@advanced_rare_cost = 50
-@advanced_double_cost = 2000
-@advanced_double_rare_cost = 100
-@mega_cost = 2000
-@mega_alloy_cost = 500
-@mega_rare_cost = 250
-
-@base_upkeep = 1
-@city_upkeep = 2
-@advanced_upkeep = 5
-@advanced_rare_upkeep = 1
-@advanced_double_upkeep = 10
-@advanced_double_rare_upkeep = 2
-@mega_upkeep = 20
-@mega_alloy_upkeep = 5
-@mega_rare_upkeep = 5
-
-@base_time = 240
-@city_time = 480
-@advanced_time = 720
-@mega_time = 960
-
-## ACOT SR Districts
-###############################################################################################################
 
 district_giga_voidframe_enigmatic = {
-	base_buildtime = 480
-	icon = district_dm_hab_dark_matter_energy
-	is_capped_by_modifier = no
-	
-	show_on_uncolonized = {
-		always = no
-	}
-	
-	potential = {
-		uses_district_set = giga_frameworld
-		OR = {
-			is_voidframe_upgraded = no
-			is_voidframe_exclusive_dm = yes
-		}
-		owner = {
-			OR = {
-				has_technology = tech_acot_dm_dark_energy_pylon
-				has_technology = tech_acot_dm_dark_matter_generator
-			}
-		}
-		has_enigmatic_capital = yes
-	}
+    base_buildtime = 480
+    icon = district_dm_hab_dark_matter_energy
+    gridbox = district_dm_hab_dark_matter_energy
 
-	conversion_ratio = 0.5
-	convert_to = {
-		district_giga_voidframe_enigmatic_ae
-	}
+    zone_slots = {
+        slot_anz_voidframe_enigmatic
+    }
 
-	# Unlock Jobs Desc
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				NAND = {
-					has_technology = "tech_acot_dm_dark_energy_pylon"
-					has_technology = "tech_acot_dm_dark_matter_generator"
-				}
-			}
-		}
-		text = district_giga_frameworld_refinery_unlocks
-	}
-	
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { 
-				is_regular_empire = yes
-				not = { has_technology = "tech_acot_dm_dark_energy_pylon" } 
-			}
-		}
-		text = district_giga_voidframe_enigmatic_unlock_de
-	}
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { 
-				is_gestalt = yes
-				not = { has_technology = "tech_acot_dm_dark_energy_pylon" } 
-			}
-		}
-		text = district_giga_voidframe_enigmatic_unlock_de_gestalt
-	}
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { 
-				is_regular_empire = yes
-				not = { has_technology = "tech_acot_dm_dark_matter_generator" } 
-			}
-		}
-		text = district_giga_voidframe_enigmatic_unlock_dm
-	}
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { 
-				is_gestalt = yes
-				not = { has_technology = "tech_acot_dm_dark_matter_generator" } 
-			}
-		}
-		text = district_giga_voidframe_enigmatic_unlock_dm_gestalt
-	}
+    show_on_uncolonized = {
+        always = no
+    }
 
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				NAND = {
-					has_technology = "tech_acot_dm_dark_energy_pylon"
-					has_technology = "tech_acot_dm_dark_matter_generator"
-				}
-			}
-		}
-		text = district_giga_frameworld_refinery_empty
-	}
-	# End Unlock Jobs Desc
-	
-	resources = {
-		category = planet_districts
-		cost = {
-			minerals = 1000
-		}
-		upkeep = {
-			energy = 10
-		}
-	}
-	
-	planet_modifier = {
-		planet_housing_add = 4
-	}
+    potential = {
+        uses_district_set = giga_frameworld
+        owner = {
+            OR = {
+                has_technology = tech_acot_dm_dark_energy_pylon
+                has_technology = tech_acot_dm_dark_matter_generator
+            }
+        }
+        has_enigmatic_capital = yes
+    }
 
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_gestalt = no
-				has_technology = "tech_acot_dm_dark_energy_pylon"
-			}
-		}
-		modifier = {
-			job_acot_dark_energy_man_add = 2
-		}
-	}
+    # Unlock Jobs Desc
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = {
+                NAND = {
+                    has_technology = "tech_acot_dm_dark_energy_pylon"
+                    has_technology = "tech_acot_dm_dark_matter_generator"
+                }
+            }
+        }
+        text = district_giga_frameworld_refinery_unlocks
+    }
 
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_gestalt = no
-				has_technology = "tech_acot_dm_dark_matter_generator"
-			}
-		}
-		modifier = {
-			job_acot_dark_matter_man_add = 2
-		}
-	}
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = {
+                is_regular_empire = yes
+                not = { has_technology = "tech_acot_dm_dark_energy_pylon" }
+            }
+        }
+        text = district_giga_voidframe_enigmatic_unlock_de
+    }
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+                not = { has_technology = "tech_acot_dm_dark_energy_pylon" }
+            }
+        }
+        text = district_giga_voidframe_enigmatic_unlock_de_gestalt
+    }
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = {
+                is_regular_empire = yes
+                not = { has_technology = "tech_acot_dm_dark_matter_generator" }
+            }
+        }
+        text = district_giga_voidframe_enigmatic_unlock_dm
+    }
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+                not = { has_technology = "tech_acot_dm_dark_matter_generator" }
+            }
+        }
+        text = district_giga_voidframe_enigmatic_unlock_dm_gestalt
+    }
 
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_gestalt = yes
-				has_technology = "tech_acot_dm_dark_energy_pylon"
-			}
-		}
-		modifier = {
-			job_acot_dark_energy_drone_add = 2
-		}
-	}
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = {
+                NAND = {
+                    has_technology = "tech_acot_dm_dark_energy_pylon"
+                    has_technology = "tech_acot_dm_dark_matter_generator"
+                }
+            }
+        }
+        text = district_giga_frameworld_refinery_empty
+    }
+    # End Unlock Jobs Desc
 
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_gestalt = yes
-				has_technology = "tech_acot_dm_dark_matter_generator"
-			}
-		}
-		modifier = {
-			job_acot_dark_matter_drone_add = 2
-		}
-	}
+    resources = {
+        category = planet_districts
+        cost = {
+            minerals = 1000
+        }
+        upkeep = {
+            energy = 10
+        }
+    }
+
+    planet_modifier = {
+        planet_housing_add = 500
+    }
+
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+                has_technology = "tech_acot_dm_dark_energy_pylon"
+            }
+        }
+        modifier = {
+            job_acot_dark_energy_man_add = 50
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+                has_technology = "tech_acot_dm_dark_matter_generator"
+            }
+        }
+        modifier = {
+            job_acot_dark_matter_man_add = 50
+        }
+    }
+
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+                has_technology = "tech_acot_dm_dark_energy_pylon"
+            }
+        }
+        modifier = {
+            job_acot_dark_energy_drone_add = 50
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+                has_technology = "tech_acot_dm_dark_matter_generator"
+            }
+        }
+        modifier = {
+            job_acot_dark_matter_drone_add = 50
+        }
+    }
+
+    triggered_name = {
+        trigger = {
+            always = yes
+        }
+        text = zone_anz_voidframe_enigmatic_subtitle
+    }
 }
-
 district_giga_voidframe_enigmatic_ae = {
-	base_buildtime = 540
-	icon = district_ae_hab_dark_matter_energy
-	is_capped_by_modifier = no
-	
-	show_on_uncolonized = {
-		always = no
-	}
-	
-	potential = {
-		uses_district_set = giga_frameworld
-		is_voidframe_de = yes
-	}
+    icon = district_ae_hab_dark_matter_energy
+    #overlay_icon = GFX_district_unity
+    gridbox = district_dm_hab_dark_matter_energy
 
-	prerequisites = {
-		tech_acot_ae_dark_matter_synthersizer
-	}
-
-	show_tech_unlock_if = {
-		giga_has_frameworld_origin = yes
-	}
-	
-	resources = {
-		category = planet_districts
-		cost = {
-			minerals = 2000
-		}
-		upkeep = {
-			energy = 10
-		}
-	}
-	
-	planet_modifier = {
-		planet_housing_add = 2
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_gestalt = no
-			}
-			has_voidframe_mods_aot = yes
-		}
-		modifier = {
-			job_ae_dark_energy_man_add = 4
-			job_ae_dark_matter_man_add = 4
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_gestalt = yes
-			}
-			has_voidframe_mods_aot = yes
-		}
-		modifier = {
-			job_ae_dark_energy_drone_add = 4
-			job_ae_dark_matter_drone_add = 4
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_gestalt = no
-			}
-			has_voidframe_mods_aot = no
-		}
-		modifier = {
-			job_acot_dark_energy_man_add = 4
-			job_acot_dark_matter_man_add = 4
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_gestalt = yes
-			}
-			has_voidframe_mods_aot = no
-		}
-		modifier = {
-			job_acot_dark_energy_drone_add = 4
-			job_acot_dark_matter_drone_add = 4
-		}
-	}
+    inline_script = {
+        script = districts/voidframe/anz_voidframe_district_swap
+        SWAP_NAME = zone_anz_voidframe_enigmatic_upgrade_subtitle
+    }
 }
 
-district_giga_voidframe_phanon = { # Basic Version
-	base_buildtime = 630
-	icon = district_macripp_runic_power_generator
-	is_capped_by_modifier = no
-	
-	show_on_uncolonized = {
-		always = no
-	}
-	
-	potential = {
-		uses_district_set = giga_frameworld
-		is_voidframe_exclusive_de = yes
-		has_phanon_capital = yes
-		exists = owner
-		owner = { has_technology = tech_phanon_stellar_converter }
-	}
+district_giga_voidframe_phanon = {
+    base_buildtime = 630
+    icon = district_macripp_runic_power_generator
+    gridbox = district_macripp_runic_power_generator
+    is_capped_by_modifier = no
 
-	prerequisites = {
-		tech_phanon_stellar_converter
-	}
+    zone_slots = {
+        slot_anz_voidframe_phanon
+    }
 
-	conversion_ratio = 1
-	convert_to = {
-		district_giga_voidframe_phanon_ae
-	}
+    show_on_uncolonized = {
+        always = no
+    }
 
-	show_tech_unlock_if = {
-		giga_has_frameworld_origin = yes
-	}
+    potential = {
+        uses_district_set = giga_frameworld
+        is_voidframe_de = yes
+            #appears when de, upgrades when pe
+            # the upgrade doubles the jobs
+        has_phanon_capital = yes
+        exists = owner
+    }
 
-	resources = {
-		category = planet_districts
-		cost = {
-			alloys = 1000
-		}
-		upkeep = {
-			energy = 10
-		}
-	}
+    prerequisites = {
+        tech_phanon_stellar_converter
+    }
 
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_gestalt = no
-			}
-		}
-		modifier = {
-			job_phanon_dimension_folder_add = 2
-		}
-	}
+    show_tech_unlock_if = {
+        giga_has_frameworld_origin = yes
+    }
 
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_gestalt = yes
-			}
-		}
-		modifier = {
-			job_phanon_dimension_folderdrone_add = 2
-		}
-	}
+    resources = {
+        category = planet_districts
+        cost = {
+            alloys = 1000
+        }
+        upkeep = {
+            energy = 10
+        }
+    }
+
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+            }
+        }
+        modifier = {
+            job_phanon_dimension_folder_add = 100
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            is_voidframe_pe = yes
+            exists = owner
+            owner = {
+                is_gestalt = no
+            }
+        }
+        modifier = {
+            job_phanon_dimension_folder_add = 200
+        }
+    }
+
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        modifier = {
+            job_phanon_dimension_folderdrone_add = 100
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            is_voidframe_pe = yes
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        modifier = {
+            job_phanon_dimension_folderdrone_add = 200
+        }
+    }
+
+    triggered_name = {
+        trigger = {
+            is_voidframe_pe = no
+        }
+        text = "district_giga_voidframe_phanon_ae_subtitle"
+    }
+    triggered_name = {
+        trigger = {
+            is_voidframe_pe = yes
+        }
+        text = "district_giga_voidframe_phanon_ae_subtitle_upgrade"
+    }
 }
 
-district_giga_voidframe_phanon_ae = { # Proper Version
-	base_buildtime = 630
-	icon = district_macripp_runic_power_generator
-	is_capped_by_modifier = no
-	
-	show_on_uncolonized = {
-		always = no
-	}
-	
-	potential = {
-		uses_district_set = giga_frameworld
-		is_voidframe_pe = yes
-		exists = owner
-		owner = { has_technology = tech_precursor_phanon_design }
-	}
+district_giga_voidframe_stellarite = {
+    base_buildtime = 630
+    icon = district_hab_stellarite_generator
+    gridbox = district_hab_stellarite_generator
+    is_capped_by_modifier = no
 
-	prerequisites = {
-		tech_precursor_phanon_design
-	}
+    zone_slots = {
+        slot_anz_voidframe_stellarite
+    }
 
-	show_tech_unlock_if = {
-		giga_has_frameworld_origin = yes
-	}
+    show_on_uncolonized = {
+        always = no
+    }
 
-	resources = {
-		category = planet_districts
-		cost = {
-			alloys = 1200
-		}
-		upkeep = {
-			energy = 10
-		}
-	}
+    potential = {
+        uses_district_set = giga_frameworld
+        is_voidframe_pe = yes
+        #appears when pe, upgrades when se
+        # the upgrade doubles the jobs
+        exists = owner
+    }
 
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_gestalt = no
-			}
-		}
-		modifier = {
-			job_phanon_dimension_folder_add = 8
-		}
-	}
+    prerequisites = {
+        tech_dark_matter_power_core_se
+    }
 
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_gestalt = yes
-			}
-		}
-		modifier = {
-			job_phanon_dimension_folderdrone_add = 8
-		}
-	}
+    show_tech_unlock_if = {
+        giga_has_frameworld_origin = yes
+    }
 
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_gestalt = no
-			}
-			has_active_building = building_phanon_runic_generator
-		}
-		modifier = {
-			job_phanon_dimension_folder_add = 2
-		}
-	}
+    resources = {
+        category = planet_districts
+        cost = {
+            alloys = 2000
+        }
+        upkeep = {
+            energy = 10
+        }
+    }
 
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_gestalt = yes
-			}
-			has_active_building = building_phanon_runic_generator
-		}
-		modifier = {
-			job_phanon_dimension_folderdrone_add = 2
-		}
-	}
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+            }
+        }
+        modifier = {
+            job_aot_ae_stellariteman_add  = 100
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            is_voidframe_se = yes
+            exists = owner
+            owner = {
+                is_gestalt = no
+            }
+        }
+        modifier = {
+            job_sun_master_add   = 200
+        }
+    }
+
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        modifier = {
+            job_aot_ae_stellaritedrone_add  = 100
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            is_voidframe_se = yes
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        modifier = {
+            job_sun_masterdrone_add  = 200
+        }
+    }
+
+    triggered_name = {
+        trigger = {
+            is_voidframe_pe = no
+        }
+        text = "district_giga_voidframe_stellarite_subtitle"
+    }
+    triggered_name = {
+        trigger = {
+            is_voidframe_pe = yes
+        }
+        text = "district_giga_voidframe_stellarite_subtitle_upgrade"
+    }
 }
 
-district_giga_voidframe_stellarite = { # Basic Version
-	base_buildtime = 720
-	icon = district_hab_stellarite_generator
-	is_capped_by_modifier = no
-	
-	show_on_uncolonized = {
-		always = no
-	}
-	
-	potential = {
-		uses_district_set = giga_frameworld
-		is_voidframe_exclusive_pe = yes
-		exists = owner
-		owner = { has_technology = tech_dark_matter_power_core_se }
-	}
+district_giga_voidframe_soul = {
+    base_buildtime = 630
+    icon = district_giga_voidframe_soul
+    gridbox = district_resort
+    district_background = district_resort
+    is_uncapped = {
+        always = no
+    }
+    base_cap_amount = 10
 
-	prerequisites = {
-		tech_dark_matter_power_core_se
-	}
+    zone_slots = {
+        slot_anz_voidframe_soul
+    }
 
-	show_tech_unlock_if = {
-		giga_has_frameworld_origin = yes
-	}
+    show_on_uncolonized = {
+        always = no
+    }
 
-	conversion_ratio = 1
-	convert_to = {
-		district_giga_voidframe_stellarite_ae
-	}
-	
-	resources = {
-		category = planet_districts
-		cost = {
-			alloys = 2000
-		}
-		upkeep = {
-			energy = 10
-		}
-	}
-	
-	planet_modifier = {
-		planet_housing_add = 4
-	}
+    potential = {
+        uses_district_set = giga_frameworld
+        is_voidframe_se = yes
+        exists = owner
+        owner = { has_technology = tech_dark_matter_power_core_theta }
+    }
 
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_gestalt = no
-			}
-		}
-		modifier = {
-			job_aot_ae_stellariteman_add = 2
-		}
-	}
+    prerequisites = {
+        tech_dark_matter_power_core_theta
+    }
 
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_gestalt = yes
-			}
-		}
-		modifier = {
-			job_aot_ae_stellaritedrone_add = 2
-		}
-	}
-}
+    show_tech_unlock_if = {
+        giga_has_frameworld_origin = yes
+    }
 
-district_giga_voidframe_stellarite_ae = { # Proper Version
-	base_buildtime = 720
-	icon = district_hab_stellarite_generator
-	is_capped_by_modifier = no
-	
-	show_on_uncolonized = {
-		always = no
-	}
-	
-	potential = {
-		uses_district_set = giga_frameworld
-		is_voidframe_se = yes
-	}
+    resources = {
+        category = planet_districts
+        cost = {
+            alloys = 20000
+        }
+        upkeep = {
+            energy = 100
+        }
+    }
 
-	prerequisites = {
-		tech_stellarite_generator_lvl3
-	}
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+            }
+        }
+        modifier = {
+            job_anz_voidframe_meditator_add  = 100
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        modifier = {
+            job_anz_voidframe_meditator_drone_add = 100
+        }
+    }
 
-	show_tech_unlock_if = {
-		giga_has_frameworld_origin = yes
-	}
-	
-	resources = {
-		category = planet_districts
-		cost = {
-			alloys = 2000
-		}
-		upkeep = {
-			energy = 10
-		}
-	}
-	
-	planet_modifier = {
-		planet_housing_add = 4
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_gestalt = no
-			}
-		}
-		modifier = {
-			job_sun_master_add = 4
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_gestalt = yes
-			}
-		}
-		modifier = {
-			job_sun_masterdrone_add = 4
-		}
-	}
-}
-
-district_giga_voidframe_soul = { # Basic Version
-	base_buildtime = 720
-	is_capped_by_modifier = no
-	
-	show_on_uncolonized = {
-		always = no
-	}
-	
-	potential = {
-		uses_district_set = giga_frameworld
-		is_voidframe_exclusive_se = yes
-		exists = owner
-		owner = { has_technology = tech_dark_matter_power_core_theta }
-	}
-
-	prerequisites = {
-		tech_dark_matter_power_core_theta
-	}
-
-	show_tech_unlock_if = {
-		giga_has_frameworld_origin = yes
-	}
-
-	# conversion_ratio = 1
-	# convert_to = {
-		
-	# }
-	
-	resources = {
-		category = planet_districts
-		cost = {
-			alloys = 20000
-		}
-		upkeep = {
-			energy = 10
-		}
-	}
-	
-	planet_modifier = {
-		planet_housing_add = 4
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_gestalt = no
-			}
-		}
-		modifier = {
-			job_anz_voidframe_meditator_add = 2
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_gestalt = yes
-			}
-		}
-		modifier = {
-			job_anz_voidframe_meditator_drone_add = 2
-		}
-	}
+    triggered_name = {
+        trigger = {
+            always = yes
+        }
+        text = "district_giga_voidframe_soul_subtitle"
+    }
 }
