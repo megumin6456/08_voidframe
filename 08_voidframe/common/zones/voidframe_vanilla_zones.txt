@@ -872,7 +872,7 @@ zone_voidframe_zone_DE_trade_gestalt = {
     zone_sets = {
         trade
     }
-} # this and below requires no tech cause aot doesnt have gestalt trade buildings
+} #todo this and below requires no tech cause aot doesnt have gestalt trade buildings
 zone_voidframe_zone_PE_trade_gestalt = {
     icon = GFX_anz_voidframe_zone_PE_TRADE
 
@@ -3455,9 +3455,9 @@ zone_voidframe_zone_SE_refinery = {
     }
 }
 
-# SECURITY #todo icon
+# SECURITY
 zone_voidframe_zone_DM_anticrime = { #AOT locked since we using dm enforcer
-    #icon = GFX_anz_voidframe_zone_DM_FOOD
+    icon = GFX_anz_voidframe_zone_DM_CITY
 
     swap_type = district_giga_voidframe_anticrime_dm
     swap_type_weight = 10
@@ -3489,15 +3489,6 @@ zone_voidframe_zone_DM_anticrime = { #AOT locked since we using dm enforcer
         job_patrol_drone_add = -100
     }
 
-    inline_script = {
-        script = zones/anz_voidframe_job_pConstant
-        ACOT_JOB_NORM = job_aot_dm_enforcer_add
-        ACOT_JOB_GEST = job_aot_dm_enforcer_drone_add
-        JOB_NORM = job_enforcer_add
-        JOB_GEST = job_patrol_drone_add
-        AMOUNT = 100
-    }
-
     included_building_sets = {
         anticrime
         urban_automation
@@ -3510,7 +3501,7 @@ zone_voidframe_zone_DM_anticrime = { #AOT locked since we using dm enforcer
     }
 }  #AOT locked since we using dm enforcer
 zone_voidframe_zone_DE_anticrime = {
-    #icon = GFX_anz_voidframe_zone_DE_FOOD
+    icon = GFX_anz_voidframe_zone_DE_CITY
 
     swap_type = district_giga_voidframe_anticrime_de
     swap_type_weight = 10
@@ -3542,15 +3533,6 @@ zone_voidframe_zone_DE_anticrime = {
         job_patrol_drone_add = -100
     }
 
-    inline_script = {
-        script = zones/anz_voidframe_job_pConstant
-        ACOT_JOB_NORM = job_acot_enforcer_add
-        ACOT_JOB_GEST = job_acot_enforcer_drone_add
-        JOB_NORM = job_enforcer_add
-        JOB_GEST = job_patrol_drone_add
-        AMOUNT = 100
-    }
-
     included_building_sets = {
         anticrime
         urban_automation
@@ -3563,7 +3545,7 @@ zone_voidframe_zone_DE_anticrime = {
     }
 }
 zone_voidframe_zone_PE_anticrime = {
-    #icon = GFX_anz_voidframe_zone_PE_FOOD
+    icon = GFX_anz_voidframe_zone_PE_CITY
 
     swap_type = district_giga_voidframe_anticrime_pe
     swap_type_weight = 10
@@ -3595,15 +3577,6 @@ zone_voidframe_zone_PE_anticrime = {
         job_patrol_drone_add = -100
     }
 
-    inline_script = {
-        script = zones/anz_voidframe_job_pConstant
-        ACOT_JOB_NORM = job_phanon_enforcer_add
-        ACOT_JOB_GEST = job_phanon_enforcer_drone_add
-        JOB_NORM = job_enforcer_add
-        JOB_GEST = job_patrol_drone_add
-        AMOUNT = 100
-    }
-
     included_building_sets = {
         anticrime
         urban_automation
@@ -3616,7 +3589,7 @@ zone_voidframe_zone_PE_anticrime = {
     }
 }
 zone_voidframe_zone_SE_anticrime = {
-    #icon = GFX_anz_voidframe_zone_SE_FOOD
+    icon = GFX_anz_voidframe_zone_SE_CITY
 
     swap_type = district_giga_voidframe_anticrime_se
     swap_type_weight = 10
@@ -3648,14 +3621,6 @@ zone_voidframe_zone_SE_anticrime = {
         job_patrol_drone_add = -100
     }
 
-    inline_script = {
-        script = zones/anz_voidframe_job_pConstant
-        ACOT_JOB_NORM = job_stellarite_enforcer_add
-        ACOT_JOB_GEST = job_stellarite_enforcer_drone_add
-        JOB_NORM = job_enforcer_add
-        JOB_GEST = job_patrol_drone_add
-        AMOUNT = 100
-    }
 
     included_building_sets = {
         anticrime
@@ -3669,9 +3634,537 @@ zone_voidframe_zone_SE_anticrime = {
     }
 }
 
-# AMENITIES #todo needicon
+# AMENITIES
+zone_voidframe_zone_DM_amenities = { #AOT locked since we using dm enforcer
+    icon = GFX_anz_voidframe_zone_DM_AMENITIES
 
-# AMENITIES DYSTOPIAN #todo need icon
+    swap_type = district_giga_voidframe_amenities_dm
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_dm_zone
+        TECH = "tech_acot_dm_mansion"
+        OTHER_REQ = "
+            NOT = { has_valid_civic = civic_dystopian_society }
+            is_gestalt = no
+        "
+        OTHER_REQ_PLANET = ""
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+            }
+        }
+        job_acot_entertainer_add  = 200
+        job_entertainer_add = -100
+    }
+
+    included_building_sets = {
+        amenities
+        urban_automation
+    }
+    include = {
+        building_luxury_residence
+        building_paradise_dome
+        building_communal_housing
+        building_communal_housing_large
+        # no gestalt stuff here nope
+        building_holo_theatres
+        building_hyper_entertainment_forum
+        building_medical_1
+        building_medical_2
+        building_genomic_facility
+        building_noble_estates
+        building_augmentation_bazaars
+        building_transcendental_retreat
+        building_augmentation_center
+        building_cyberdome
+        building_xeno_zoo
+        building_fe_clinic_1
+        building_fe_clinic_2
+        building_fe_entertainment_1
+        building_fe_entertainment_2
+        building_acot_ae_mansion
+        building_acot_dm_mansion
+        building_stellarite_mansion
+        building_phanon_mansion
+
+        #PD
+        building_pd_eludium_floating_resort
+        building_pd_acean_medical_center
+    }
+
+    zone_sets = {
+        amenities
+    }
+}
+zone_voidframe_zone_DE_amenities = {
+    icon = GFX_anz_voidframe_zone_DE_AMENITIES
+
+    swap_type = district_giga_voidframe_amenities_de
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_de_zone
+        TECH = "tech_acot_ae_mansion"
+        OTHER_REQ = "
+            NOT = { has_valid_civic = civic_dystopian_society }
+            is_gestalt = no
+        "
+        OTHER_REQ_PLANET = ""
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+            }
+        }
+        job_acot_entertainer_add  = 300
+        job_entertainer_add = -100
+    }
+
+    included_building_sets = {
+        amenities
+        urban_automation
+    }
+    include = {
+        building_luxury_residence
+        building_paradise_dome
+        building_communal_housing
+        building_communal_housing_large
+        # no gestalt stuff here nope
+        building_holo_theatres
+        building_hyper_entertainment_forum
+        building_medical_1
+        building_medical_2
+        building_genomic_facility
+        building_noble_estates
+        building_augmentation_bazaars
+        building_transcendental_retreat
+        building_augmentation_center
+        building_cyberdome
+        building_xeno_zoo
+        building_fe_clinic_1
+        building_fe_clinic_2
+        building_fe_entertainment_1
+        building_fe_entertainment_2
+        building_acot_ae_mansion
+        building_acot_dm_mansion
+        building_stellarite_mansion
+        building_phanon_mansion
+
+        #PD
+        building_pd_eludium_floating_resort
+        building_pd_acean_medical_center
+    }
+
+    zone_sets = {
+        amenities
+    }
+} # no alpha entertainer
+zone_voidframe_zone_PE_amenities = {
+    icon = GFX_anz_voidframe_zone_PE_AMENITIES
+
+    swap_type = district_giga_voidframe_amenities_pe
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_pe_zone
+        TECH = "tech_phanon_mansion"
+        OTHER_REQ = "
+            NOT = { has_valid_civic = civic_dystopian_society }
+            is_gestalt = no
+        "
+        OTHER_REQ_PLANET = ""
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+            }
+        }
+        job_phanon_entertainer_add  = 200
+        job_entertainer_add = -100
+    }
+
+    included_building_sets = {
+        amenities
+        urban_automation
+    }
+    include = {
+        building_luxury_residence
+        building_paradise_dome
+        building_communal_housing
+        building_communal_housing_large
+        # no gestalt stuff here nope
+        building_holo_theatres
+        building_hyper_entertainment_forum
+        building_medical_1
+        building_medical_2
+        building_genomic_facility
+        building_noble_estates
+        building_augmentation_bazaars
+        building_transcendental_retreat
+        building_augmentation_center
+        building_cyberdome
+        building_xeno_zoo
+        building_fe_clinic_1
+        building_fe_clinic_2
+        building_fe_entertainment_1
+        building_fe_entertainment_2
+        building_acot_ae_mansion
+        building_acot_dm_mansion
+        building_stellarite_mansion
+        building_phanon_mansion
+
+        #PD
+        building_pd_eludium_floating_resort
+        building_pd_acean_medical_center
+    }
+
+    zone_sets = {
+        amenities
+    }
+}
+zone_voidframe_zone_SE_amenities = {
+    icon = GFX_anz_voidframe_zone_SE_AMENITIES
+
+    swap_type = district_giga_voidframe_amenities_se
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_se_zone
+        TECH = "tech_stellarite_mansion"
+        OTHER_REQ = "
+            NOT = { has_valid_civic = civic_dystopian_society }
+            is_gestalt = no
+        "
+        OTHER_REQ_PLANET = ""
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+            }
+        }
+        job_stellarite_entertainer_add  = 200
+        job_entertainer_add = -100
+    }
+
+    included_building_sets = {
+        amenities
+        urban_automation
+    }
+    include = {
+        building_luxury_residence
+        building_paradise_dome
+        building_communal_housing
+        building_communal_housing_large
+        # no gestalt stuff here nope
+        building_holo_theatres
+        building_hyper_entertainment_forum
+        building_medical_1
+        building_medical_2
+        building_genomic_facility
+        building_noble_estates
+        building_augmentation_bazaars
+        building_transcendental_retreat
+        building_augmentation_center
+        building_cyberdome
+        building_xeno_zoo
+        building_fe_clinic_1
+        building_fe_clinic_2
+        building_fe_entertainment_1
+        building_fe_entertainment_2
+        building_acot_ae_mansion
+        building_acot_dm_mansion
+        building_stellarite_mansion
+        building_phanon_mansion
+
+        #PD
+        building_pd_eludium_floating_resort
+        building_pd_acean_medical_center
+    }
+
+    zone_sets = {
+        amenities
+    }
+}
+
+# AMENITIES DYSTOPIAN
+zone_voidframe_zone_DM_amenities_dystopian = {
+    icon = GFX_anz_voidframe_zone_DM_AMENITIES
+
+    swap_type = district_giga_voidframe_amenities_dystopian_dm
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_dm_zone
+        TECH = "tech_acot_dm_mansion"
+        OTHER_REQ = "
+            has_valid_civic = civic_dystopian_society
+            is_gestalt = no
+        "
+        OTHER_REQ_PLANET = ""
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+            }
+        }
+        job_acot_overlord_add = 100
+        job_politician_add = -50
+    }
+
+    included_building_sets = {
+        amenities
+        urban_automation
+    }
+    include = {
+        building_luxury_residence
+        building_paradise_dome
+        building_communal_housing
+        building_communal_housing_large
+        # no gestalt stuff here nope
+        building_holo_theatres
+        building_hyper_entertainment_forum
+        building_medical_1
+        building_medical_2
+        building_genomic_facility
+        building_noble_estates
+        building_augmentation_bazaars
+        building_transcendental_retreat
+        building_augmentation_center
+        building_cyberdome
+        building_xeno_zoo
+        building_fe_clinic_1
+        building_fe_clinic_2
+        building_fe_entertainment_1
+        building_fe_entertainment_2
+        building_acot_ae_mansion
+        building_acot_dm_mansion
+        building_stellarite_mansion
+        building_phanon_mansion
+
+        #PD
+        building_pd_eludium_floating_resort
+        building_pd_acean_medical_center
+    }
+
+    zone_sets = {
+        amenities
+    }
+}
+zone_voidframe_zone_DE_amenities_dystopian = {
+    icon = GFX_anz_voidframe_zone_DE_AMENITIES
+
+    swap_type = district_giga_voidframe_amenities_de
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_de_zone
+        TECH = "tech_acot_ae_mansion"
+        OTHER_REQ = "
+            has_valid_civic = civic_dystopian_society
+            is_gestalt = no
+        "
+        OTHER_REQ_PLANET = ""
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+            }
+        }
+        job_acot_overlord_add = 150
+        job_politician_add = -50
+    }
+
+    included_building_sets = {
+        amenities
+        urban_automation
+    }
+    include = {
+        building_luxury_residence
+        building_paradise_dome
+        building_communal_housing
+        building_communal_housing_large
+        # no gestalt stuff here nope
+        building_holo_theatres
+        building_hyper_entertainment_forum
+        building_medical_1
+        building_medical_2
+        building_genomic_facility
+        building_noble_estates
+        building_augmentation_bazaars
+        building_transcendental_retreat
+        building_augmentation_center
+        building_cyberdome
+        building_xeno_zoo
+        building_fe_clinic_1
+        building_fe_clinic_2
+        building_fe_entertainment_1
+        building_fe_entertainment_2
+        building_acot_ae_mansion
+        building_acot_dm_mansion
+        building_stellarite_mansion
+        building_phanon_mansion
+
+        #PD
+        building_pd_eludium_floating_resort
+        building_pd_acean_medical_center
+    }
+
+    zone_sets = {
+        amenities
+    }
+} # no alpha overlord
+zone_voidframe_zone_PE_amenities_dystopian = {
+    icon = GFX_anz_voidframe_zone_PE_AMENITIES
+
+    swap_type = district_giga_voidframe_amenities_pe
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_pe_zone
+        TECH = "tech_phanon_mansion"
+        OTHER_REQ = "
+            has_valid_civic = civic_dystopian_society
+            is_gestalt = no
+        "
+        OTHER_REQ_PLANET = ""
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+            }
+        }
+        job_phanon_overlord_add = 100
+        job_politician_add = -50
+    }
+
+    included_building_sets = {
+        amenities
+        urban_automation
+    }
+    include = {
+        building_luxury_residence
+        building_paradise_dome
+        building_communal_housing
+        building_communal_housing_large
+        # no gestalt stuff here nope
+        building_holo_theatres
+        building_hyper_entertainment_forum
+        building_medical_1
+        building_medical_2
+        building_genomic_facility
+        building_noble_estates
+        building_augmentation_bazaars
+        building_transcendental_retreat
+        building_augmentation_center
+        building_cyberdome
+        building_xeno_zoo
+        building_fe_clinic_1
+        building_fe_clinic_2
+        building_fe_entertainment_1
+        building_fe_entertainment_2
+        building_acot_ae_mansion
+        building_acot_dm_mansion
+        building_stellarite_mansion
+        building_phanon_mansion
+
+        #PD
+        building_pd_eludium_floating_resort
+        building_pd_acean_medical_center
+    }
+
+    zone_sets = {
+        amenities
+    }
+}
+zone_voidframe_zone_SE_amenities_dystopian = {
+    icon = GFX_anz_voidframe_zone_SE_AMENITIES
+
+    swap_type = district_giga_voidframe_amenities_se
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/anz_voidframe_se_zone
+        TECH = "tech_stellarite_mansion"
+        OTHER_REQ = "
+            has_valid_civic = civic_dystopian_society
+            is_gestalt = no
+        "
+        OTHER_REQ_PLANET = ""
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+            }
+        }
+        job_stellarite_overlord_add  = 100
+        job_politician_add = -50
+    }
+
+    included_building_sets = {
+        amenities
+        urban_automation
+    }
+    include = {
+        building_luxury_residence
+        building_paradise_dome
+        building_communal_housing
+        building_communal_housing_large
+        # no gestalt stuff here nope
+        building_holo_theatres
+        building_hyper_entertainment_forum
+        building_medical_1
+        building_medical_2
+        building_genomic_facility
+        building_noble_estates
+        building_augmentation_bazaars
+        building_transcendental_retreat
+        building_augmentation_center
+        building_cyberdome
+        building_xeno_zoo
+        building_fe_clinic_1
+        building_fe_clinic_2
+        building_fe_entertainment_1
+        building_fe_entertainment_2
+        building_acot_ae_mansion
+        building_acot_dm_mansion
+        building_stellarite_mansion
+        building_phanon_mansion
+
+        #PD
+        building_pd_eludium_floating_resort
+        building_pd_acean_medical_center
+    }
+
+    zone_sets = {
+        amenities
+    }
+}
 
 # EHOF NEG MASS
 

@@ -268,4 +268,25 @@ spriteTypes = {
         name = "GFX_anz_voidframe_zone_TE_CITY"
         texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_TE_CITY.dds"
     }
+
+    spriteType = {
+        name = "GFX_anz_voidframe_zone_DM_AMENITIES"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_DM_AMENITIES.dds"
+    }
+    spriteType = {
+        name = "GFX_anz_voidframe_zone_DE_AMENITIES"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_DE_AMENITIES.dds"
+    }
+    spriteType = {
+        name = "GFX_anz_voidframe_zone_PE_AMENITIES"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_PE_AMENITIES.dds"
+    }
+    spriteType = {
+        name = "GFX_anz_voidframe_zone_SE_AMENITIES"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_SE_AMENITIES.dds"
+    }
+    spriteType = {
+        name = "GFX_anz_voidframe_zone_TE_AMENITIES"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_TE_AMENITIES.dds"
+    }
 }

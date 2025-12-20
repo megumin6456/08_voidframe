@@ -829,26 +829,34 @@ phanon_srname_ee: "Runic"
   # district_giga_frameworld_amenities_oe_desc: "§Y §!"
 
 # Dystopia
-  mod_district_giga_voidframe_amenities_dystopian_dm_max_add: "Max Enigmatic Resort Districts"
-  mod_district_giga_voidframe_amenities_dystopian_de_max_add: "Max Alpha Skiing Slope Districts"
-  mod_district_giga_voidframe_amenities_dystopian_pe_max_add: "§RMax $phanon_srname_ee$ Spa Districts§!"
-  mod_district_giga_voidframe_amenities_dystopian_se_max_add: "§HMax Stellaris Resort Districts§!"
+#   mod_district_giga_voidframe_amenities_dystopian_dm_max_add: "Max Enigmatic Resort Districts"
+#   mod_district_giga_voidframe_amenities_dystopian_de_max_add: "Max Alpha Skiing Slope Districts"
+#   mod_district_giga_voidframe_amenities_dystopian_pe_max_add: "§RMax $phanon_srname_ee$ Spa Districts§!"
+#   mod_district_giga_voidframe_amenities_dystopian_se_max_add: "§HMax Stellaris Resort Districts§!"
 
   district_giga_voidframe_amenities_dystopian_dm: "Enigmatic Resort"
   district_giga_voidframe_amenities_dystopian_dm_plural: "Enigmatic Resorts"
   district_giga_voidframe_amenities_dystopian_dm_desc: "Massive resorts, equipped with the newest luxuries that is possible."
+  zone_voidframe_zone_DM_amenities_dystopian: "$building_acot_dm_mansion$"
+  zone_voidframe_zone_DM_amenities_dystopian_desc: "$building_acot_dm_mansion_desc$"
 
   district_giga_voidframe_amenities_dystopian_de: "Alpha Skiing Slope"
   district_giga_voidframe_amenities_dystopian_de_plural: "Alpha Skiing Slopes"
   district_giga_voidframe_amenities_dystopian_de_desc: "The snow is made of dark matter. Don't think too hard about it, cause I didn't when I wrote this."
+  zone_voidframe_zone_DE_amenities_dystopian: "$building_acot_ae_mansion$"
+  zone_voidframe_zone_DE_amenities_dystopian_desc: "$building_acot_ae_mansion_desc$"
 
   district_giga_voidframe_amenities_dystopian_pe: "§R$phanon_srname_ee$ Spa§!"
   district_giga_voidframe_amenities_dystopian_pe_plural: "§R$phanon_srname_ee$ Spas§!"
   district_giga_voidframe_amenities_dystopian_pe_desc: "$phanon_classified$"
+  zone_voidframe_zone_PE_amenities_dystopian: "$building_phanon_mansion$"
+  zone_voidframe_zone_PE_amenities_dystopian_desc: "$building_phanon_mansion_desc$"
 
   district_giga_voidframe_amenities_dystopian_se: "§HStellaris Resort§!"
   district_giga_voidframe_amenities_dystopian_se_plural: "§HStellaris Resorts§!"
   district_giga_voidframe_amenities_dystopian_se_desc: "§HHere the priviledged few may relax as they play the hit strategy game Stellaris 5.§!"
+  zone_voidframe_zone_SE_amenities_dystopian: "$building_stellarite_mansion$"
+  zone_voidframe_zone_SE_amenities_dystopian_desc: "$building_stellarite_mansion_desc$"
 
   # district_giga_frameworld_amenities_te: "§M §!"
   # district_giga_frameworld_amenities_te_plural: "§M §!"

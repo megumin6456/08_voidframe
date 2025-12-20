@@ -2,6 +2,8 @@
 # and then removes 100 or 300 of a job
 # this is to counter a base district
 
+# specifically for districts that can be boosted with the planetary computer upgrade
+
 # ADDING ACOT JOB
 triggered_district_planet_modifier = {
     potential = {

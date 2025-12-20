@@ -2,6 +2,8 @@
 # and then removes 200 of a job
 # this is to counter a base district
 
+# used in the rurals
+
 # ADDING ACOT JOB
 triggered_district_planet_modifier = {
     potential = {
