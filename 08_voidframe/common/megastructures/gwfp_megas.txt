@@ -1,0 +1,18 @@
+frameripp_0 = {
+	entity = "phanon_macRIPP_stage_3_entity"
+	construction_entity = "phanon_macRIPP_stage_3_construction_entity"
+	build_time = 0
+	show_in_outliner = no
+	resources = {
+		category = megastructures
+		produces = {
+			alloys = 5000
+			aot_sr_runic_power = 500
+			energy = 5000
+		}
+	}
+
+	potential = {
+		always = no
+	}
+}

@@ -1,0 +1,32 @@
+namespace = gwfp
+
+country_event = {
+	id = gwfp.001
+	title = gwfp.001.name
+	desc = gwfp.001.desc
+	picture = GFX_evt_black_hole
+	show_sound = event_dyson_sphere_build_start
+	location = event_target:giga_planet
+	is_triggered_only = yes
+	option = { 
+		name = gwfp.001.a
+		hidden_effect = {
+			solar_system = {
+				gwfp_destroy_system = yes
+			}
+		}
+	}
+}
+
+country_event = {
+	id = gwfp.002
+	title = gwfp.002.name
+	desc = gwfp.002.desc
+	picture = GFX_evt_great_wall_construction
+	show_sound = event_dyson_sphere_build_start
+	location = event_target:giga_planet
+	is_triggered_only = yes
+	option = {
+		name = gwfp.002.a
+	}
+}

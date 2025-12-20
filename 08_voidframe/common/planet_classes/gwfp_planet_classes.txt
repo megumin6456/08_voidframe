@@ -1,0 +1,29 @@
+pc_phanon_black_hole = {
+	entity = "black_hole_entity"
+	entity_scale = 20.0
+	icon = GFX_planet_type_black_hole
+
+	atmosphere_color = {
+		0.9
+		0.1
+		0.1
+	}
+	atmosphere_intensity	= 1000.0
+	atmosphere_width		= 1000.0
+
+	star = yes
+
+	min_distance_from_sun = 0
+	max_distance_from_sun = 0
+
+	spawn_odds = 0
+
+	extra_orbit_size = 0
+	extra_planet_count = 0
+
+	chance_of_ring = 0
+
+	planet_size = { min = 10 max = 10 }
+
+	colonizable = no
+}

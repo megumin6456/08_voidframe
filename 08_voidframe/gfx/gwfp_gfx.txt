@@ -1,0 +1,4 @@
+spriteType = {
+	name = "GFX_portrait_env_pc_phanon_macripp_sky"
+	texturefile = "gfx/portraits/environments/pc_phanon_macripp_sky.dds"
+}
