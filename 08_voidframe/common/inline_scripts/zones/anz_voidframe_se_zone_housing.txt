@@ -27,7 +27,7 @@ resources = {
     category = planet_zones
     cost = {
         minerals = @zone_cost
-        aot_sr_stellarite = 100
+        acot_sr_stellarite = 100
     }
 }
 
