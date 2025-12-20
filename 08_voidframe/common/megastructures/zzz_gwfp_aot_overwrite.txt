@@ -5,8 +5,14 @@ phanon_great_wall_2 = {
     build_time = 3600
     resources = {
         category = megastructures
+        inline_script = {
+            script = resources/convert_to_food
+            SCOPE = this.owner
+            MODE = cost
+            AMOUNT = 300000
+            RESOURCE = alloys
+        }
         cost = {
-            alloys = 300000
             aot_sr_runic_power = 10000
         }
         upkeep = {
@@ -77,12 +83,15 @@ phanon_great_wall_4 = {
     build_time = 3600
     resources = {
         category = megastructures
-        cost = {
-            alloys = 200000
-            aot_sr_runic_power = 10000
+        inline_script = {
+            script = resources/convert_to_food
+            SCOPE = this.owner
+            MODE = cost
+            AMOUNT = 200000
+            RESOURCE = alloys
         }
-        upkeep = {
-            energy = 8000
+        cost = {
+            aot_sr_runic_power = 10000
         }
         produces = {
             aot_sr_runic_power = 100
