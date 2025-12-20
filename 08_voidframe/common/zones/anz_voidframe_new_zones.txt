@@ -1,4 +1,29 @@
 
+# empty zone
+zone_anz_voidframe_empty = {
+    icon = GFX_district_specialization_urban
+    base_buildtime = @zone_buildtime
+
+    unlock = {
+        always = yes
+    }
+
+    # swap_type_weight = 5
+
+    resources = {
+        category = planet_zones
+        cost = {
+            minerals = 0
+        }
+    }
+
+    max_buildings = 0
+    planet_modifier = {
+        zone_building_slots_add = 0
+    }
+
+}
+
 ### FOR THE DE / DM DISTRICT
 zone_anz_voidframe_enigmatic = {
     icon = GFX_anz_voidframe_zone_DELTA

@@ -104,6 +104,9 @@ phanon_srname_ee: "Runic"
   district_giga_voidframe_soul: "§MMeditation Zone§!"
   district_giga_voidframe_soul_plural: "§MMeditation Zones§!"
   district_giga_voidframe_soul_desc: "§MThe connection between our population on this world and that of our Shroud Master is still weak. Many will be trained to worship them here, meditate in their presence so that one day our destinies will be forged anew.§!"
+  district_giga_voidframe_soul_subtitle: "§MTheta Confluence§!"
+  zone_anz_voidframe_empty: "Empty Zone"
+  zone_anz_voidframe_empty_desc: "This zone is empty. It serves to prevent a game crash from not having a zone. There are no other zones that go into this zone slot."
 
   district_giga_voidframe_soul_ae: "§MDraedon's Forge§!"
   district_giga_voidframe_soul_ae_plural: "§MDraedon's Forge§!"
@@ -1367,15 +1370,15 @@ phanon_srname_ee: "Runic"
  anz_voidframe.10.a: "I will make sure to check my zone swaps."
 
  anz_voidframe.11.name: "Alpha Voidframe Upgrade Complete"
- anz_voidframe.11.desc: "Our Alpha frame is now complete.\n\n§RMake sure to check if you can swap your zones to Delta variations.§!\n\nSome zones are unlocked automatically, some require the related ACOT building technology."
+ anz_voidframe.11.desc: "Our Alpha frame is now complete.\n\n§RMake sure to check if you can swap your zones to Alpha variations.§!\n\nSome zones are unlocked automatically, some require the related ACOT building technology."
  anz_voidframe.11.a: "I will make sure to check my zone swaps."
 
  anz_voidframe.12.name: "Phi Voidframe Upgrade Complete"
- anz_voidframe.12.desc: "Our Phi frame is now complete.\n\n§RMake sure to check if you can swap your zones to Delta variations.§!\n\nSome zones are unlocked automatically, some require the related ACOT building technology."
+ anz_voidframe.12.desc: "Our Phi frame is now complete.\n\n§RMake sure to check if you can swap your zones to Phi variations.§!\n\nSome zones are unlocked automatically, some require the related ACOT building technology."
  anz_voidframe.12.a: "I will make sure to check my zone swaps."
 
  anz_voidframe.13.name: "Sigma Voidframe Upgrade Complete"
- anz_voidframe.13.desc: "Our Sigma frame is now complete.\n\n§RMake sure to check if you can swap your zones to Delta variations.§!\n\nSome zones are unlocked automatically, some require the related ACOT building technology."
+ anz_voidframe.13.desc: "Our Sigma frame is now complete.\n\n§RMake sure to check if you can swap your zones to Sigma variations.§!\n\nSome zones are unlocked automatically, some require the related ACOT building technology."
  anz_voidframe.13.a: "I will make sure to check my zone swaps."
 
 ################################################################################################################

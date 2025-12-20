@@ -378,3 +378,77 @@ district_giga_voidframe_stellarite = {
         text = "district_giga_voidframe_stellarite_subtitle_upgrade"
     }
 }
+
+district_giga_voidframe_soul = {
+    base_buildtime = 630
+    icon = district_giga_voidframe_soul
+    gridbox = district_resort
+    district_background = district_resort
+    is_uncapped = {
+        always = no
+    }
+    base_cap_amount = 10
+
+    zone_slots = {
+        slot_anz_voidframe_soul
+    }
+
+    show_on_uncolonized = {
+        always = no
+    }
+
+    potential = {
+        uses_district_set = giga_frameworld
+        is_voidframe_se = yes
+        exists = owner
+        owner = { has_technology = tech_dark_matter_power_core_theta }
+    }
+
+    prerequisites = {
+        tech_dark_matter_power_core_theta
+    }
+
+    show_tech_unlock_if = {
+        giga_has_frameworld_origin = yes
+    }
+
+    resources = {
+        category = planet_districts
+        cost = {
+            alloys = 20000
+        }
+        upkeep = {
+            energy = 100
+        }
+    }
+
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+            }
+        }
+        modifier = {
+            job_anz_voidframe_meditator_add  = 100
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        modifier = {
+            job_anz_voidframe_meditator_drone_add = 100
+        }
+    }
+
+    triggered_name = {
+        trigger = {
+            always = yes
+        }
+        text = "district_giga_voidframe_soul_subtitle"
+    }
+}

@@ -52,3 +52,13 @@ slot_anz_voidframe_stellarite = {
         always = yes
     }
 }
+
+slot_anz_voidframe_soul = {
+    start = zone_anz_voidframe_empty
+    include = {
+        zone_anz_voidframe_empty
+    }
+    unlock = {                              # Trigger that defines whether the slot is unlocked on the planet. Scope = Planet.
+        always = yes
+    }
+}
