@@ -465,9 +465,8 @@ zone_voidframe_zone_DE_factory = {
                 is_gestalt = no
             }
         }
-        job_acot_artisan_add = 300
+        job_ae_artisan_add = @scaling_district_1_job
     }
-    # WHY DOES THE AE ARTISAN JOB NOT EXIST
     triggered_district_planet_modifier = {
         potential = {
             exists = owner
@@ -475,7 +474,16 @@ zone_voidframe_zone_DE_factory = {
                 is_gestalt = yes
             }
         }
-        job_acot_artisan_add = 300
+        job_ae_artisan_drone_add = @scaling_district_1_job
+    }
+
+    inline_script = {
+        script = zones/anz_voidframe_job_p100_or_p300
+        ACOT_JOB_NORM = job_ae_artisan_add
+        ACOT_JOB_GEST = job_ae_artisan_drone_add
+        JOB_NORM = job_artisan_add
+        JOB_GEST = job_artisan_drone_add
+        TRIGGER = "has_deposit = d_frameworld_advanced_industrial"
     }
 
     inline_script = {
@@ -500,7 +508,7 @@ zone_voidframe_zone_DE_factory = {
     inline_script = {
         script = zones/shared_city_non_urban_zone_modifiers
     }
-} #todo no AE artisans or artisan drone
+}
 zone_voidframe_zone_PE_factory = {
     icon = GFX_anz_voidframe_zone_PE_CONSUMER_GOODS
 
@@ -622,8 +630,6 @@ zone_voidframe_zone_DM_trade = {
         script = zones/anz_voidframe_dm_zone
         TECH = "tech_acot_dm_trade_center"
         OTHER_REQ = "
-            has_global_flag = has_aot_mod
-            is_gestalt = no
         "
         OTHER_REQ_PLANET = ""
     }
@@ -644,6 +650,24 @@ zone_voidframe_zone_DM_trade = {
         }
         job_acot_trader_add = 200
         job_trader_add = -200
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = yes }
+        }
+        job_acot_trader_drone_add = 200
+        job_logistics_drone_add = -100
+    }
+    triggered_district_planet_modifier = {
+        potential = {
+            has_deposit = d_frameworld_computing_complex
+            exists = owner
+            owner = { is_gestalt = yes }
+        }
+        job_acot_trader_drone_add = 200
+        job_logistics_drone_add = -200
     }
 
     included_building_sets = {
@@ -666,7 +690,6 @@ zone_voidframe_zone_DE_trade = {
         script = zones/anz_voidframe_de_zone
         TECH = "tech_ae_commercial_megaplex"
         OTHER_REQ = "
-            is_gestalt = no
         "
         OTHER_REQ_PLANET = ""
     }
@@ -676,7 +699,7 @@ zone_voidframe_zone_DE_trade = {
             exists = owner
             owner = { is_gestalt = no }
         }
-        job_anz_voidframe_trader_de_add = 200
+        job_ae_trader_add = 200
         job_trader_add = -100
     }
     triggered_district_planet_modifier = {
@@ -685,8 +708,26 @@ zone_voidframe_zone_DE_trade = {
             exists = owner
             owner = { is_gestalt = no }
         }
-        job_anz_voidframe_trader_de_add = 200
+        job_ae_trader_add = 200
         job_trader_add = -200
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = yes }
+        }
+        job_ae_trader_drone_add = 200
+        job_logistics_drone_add = -100
+    }
+    triggered_district_planet_modifier = {
+        potential = {
+            has_deposit = d_frameworld_computing_complex
+            exists = owner
+            owner = { is_gestalt = yes }
+        }
+        job_ae_trader_drone_add = 200
+        job_logistics_drone_add = -200
     }
 
     included_building_sets = {
@@ -709,7 +750,6 @@ zone_voidframe_zone_PE_trade = {
         script = zones/anz_voidframe_pe_zone
         TECH = "tech_phanon_commercial_megaplex"
         OTHER_REQ = "
-            is_gestalt = no
         "
         OTHER_REQ_PLANET = ""
     }
@@ -719,7 +759,7 @@ zone_voidframe_zone_PE_trade = {
             exists = owner
             owner = { is_gestalt = no }
         }
-        job_anz_voidframe_trader_pe_add = 200
+        job_phanon_trader_add = 200
         job_trader_add = -100
     }
     triggered_district_planet_modifier = {
@@ -728,8 +768,26 @@ zone_voidframe_zone_PE_trade = {
             exists = owner
             owner = { is_gestalt = no }
         }
-        job_anz_voidframe_trader_pe_add = 200
+        job_phanon_trader_add = 200
         job_trader_add = -200
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = yes }
+        }
+        job_phanon_trader_drone_add = 200
+        job_logistics_drone_add = -100
+    }
+    triggered_district_planet_modifier = {
+        potential = {
+            has_deposit = d_frameworld_computing_complex
+            exists = owner
+            owner = { is_gestalt = yes }
+        }
+        job_phanon_trader_drone_add = 200
+        job_logistics_drone_add = -200
     }
 
     included_building_sets = {
@@ -752,7 +810,6 @@ zone_voidframe_zone_SE_trade = {
         script = zones/anz_voidframe_se_zone
         TECH = "tech_stellarite_commercial_megaplex"
         OTHER_REQ = "
-            is_gestalt = no
         "
         OTHER_REQ_PLANET = ""
     }
@@ -762,7 +819,7 @@ zone_voidframe_zone_SE_trade = {
             exists = owner
             owner = { is_gestalt = no }
         }
-        job_anz_voidframe_trader_se_add = 200
+        job_stellarite_trader_add = 200
         job_trader_add = -100
     }
     triggered_district_planet_modifier = {
@@ -771,44 +828,16 @@ zone_voidframe_zone_SE_trade = {
             exists = owner
             owner = { is_gestalt = no }
         }
-        job_anz_voidframe_trader_se_add = 200
+        job_stellarite_trader_add = 200
         job_trader_add = -200
     }
 
-    included_building_sets = {
-        trade
-        urban_automation
-        origin
-    }
-
-    zone_sets = {
-        trade
-    }
-}
-
-# TRADE (GESTALT)
-zone_voidframe_zone_DM_trade_gestalt = {
-    icon = GFX_anz_voidframe_zone_DM_TRADE
-
-    swap_type = district_giga_voidframe_trade_dm
-    swap_type_weight = 10
-
-    inline_script = {
-        script = zones/anz_voidframe_dm_zone
-        TECH = "tech_acot_dm_trade_center"
-        OTHER_REQ = "
-            has_global_flag = has_aot_mod
-            is_gestalt = yes
-        "
-        OTHER_REQ_PLANET = ""
-    }
-
     triggered_district_planet_modifier = {
         potential = {
             exists = owner
             owner = { is_gestalt = yes }
         }
-        job_acot_trader_drone_add = 200
+        job_stellarite_trader_drone_add = 200
         job_logistics_drone_add = -100
     }
     triggered_district_planet_modifier = {
@@ -817,133 +846,7 @@ zone_voidframe_zone_DM_trade_gestalt = {
             exists = owner
             owner = { is_gestalt = yes }
         }
-        job_acot_trader_drone_add = 200
-        job_logistics_drone_add = -200
-    }
-
-    included_building_sets = {
-        trade
-        urban_automation
-        origin
-    }
-
-    zone_sets = {
-        trade
-    }
-}
-zone_voidframe_zone_DE_trade_gestalt = {
-    icon = GFX_anz_voidframe_zone_DE_TRADE
-
-    swap_type = district_giga_voidframe_trade_de
-    swap_type_weight = 10
-
-    inline_script = {
-        script = zones/anz_voidframe_de_zone_noTech
-        OTHER_REQ = "
-            is_gestalt = yes
-        "
-        OTHER_REQ_PLANET = ""
-    }
-
-    triggered_district_planet_modifier = {
-        potential = {
-            exists = owner
-            owner = { is_gestalt = yes }
-        }
-        job_anz_voidframe_trader_gestalt_de_add = 200
-        job_logistics_drone_add = -100
-    }
-    triggered_district_planet_modifier = {
-        potential = {
-            has_deposit = d_frameworld_computing_complex
-            exists = owner
-            owner = { is_gestalt = yes }
-        }
-        job_anz_voidframe_trader_gestalt_de_add = 200
-        job_logistics_drone_add = -200
-    }
-
-    included_building_sets = {
-        trade
-        urban_automation
-        origin
-    }
-
-    zone_sets = {
-        trade
-    }
-} #todo this and below requires no tech cause aot doesnt have gestalt trade buildings
-zone_voidframe_zone_PE_trade_gestalt = {
-    icon = GFX_anz_voidframe_zone_PE_TRADE
-
-    swap_type = district_giga_voidframe_trade_pe
-    swap_type_weight = 10
-
-    inline_script = {
-        script = zones/anz_voidframe_pe_zone_noTech
-        OTHER_REQ = "
-            is_gestalt = yes
-        "
-        OTHER_REQ_PLANET = ""
-    }
-
-    triggered_district_planet_modifier = {
-        potential = {
-            exists = owner
-            owner = { is_gestalt = yes }
-        }
-        job_anz_voidframe_trader_gestalt_pe_add = 200
-        job_logistics_drone_add = -100
-    }
-    triggered_district_planet_modifier = {
-        potential = {
-            has_deposit = d_frameworld_computing_complex
-            exists = owner
-            owner = { is_gestalt = yes }
-        }
-        job_anz_voidframe_trader_gestalt_pe_add = 200
-        job_logistics_drone_add = -200
-    }
-
-    included_building_sets = {
-        trade
-        urban_automation
-        origin
-    }
-
-    zone_sets = {
-        trade
-    }
-}
-zone_voidframe_zone_SE_trade_gestalt = {
-    icon = GFX_anz_voidframe_zone_SE_TRADE
-
-    swap_type = district_giga_voidframe_trade_se
-    swap_type_weight = 10
-
-    inline_script = {
-        script = zones/anz_voidframe_se_zone_noTech
-        OTHER_REQ = "
-            is_gestalt = yes
-        "
-        OTHER_REQ_PLANET = ""
-    }
-
-    triggered_district_planet_modifier = {
-        potential = {
-            exists = owner
-            owner = { is_gestalt = yes }
-        }
-        job_anz_voidframe_trader_gestalt_se_add = 200
-        job_logistics_drone_add = -100
-    }
-    triggered_district_planet_modifier = {
-        potential = {
-            has_deposit = d_frameworld_computing_complex
-            exists = owner
-            owner = { is_gestalt = yes }
-        }
-        job_anz_voidframe_trader_gestalt_se_add = 200
+        job_stellarite_trader_drone_add = 200
         job_logistics_drone_add = -200
     }
 
@@ -1924,7 +1827,7 @@ zone_voidframe_zone_DE_farming = {
                 is_gestalt = no
             }
         }
-        job_acot_foodman_add = 300
+        job_ae_foodman_add = @scaling_district_1_job
     }
     triggered_district_planet_modifier = {
         potential = {
@@ -1933,13 +1836,13 @@ zone_voidframe_zone_DE_farming = {
                 is_gestalt = yes
             }
         }
-        job_acot_fooddrone_add = 300
+        job_ae_fooddrone_add = @scaling_district_1_job
     }
 
     inline_script = {
         script = zones/anz_voidframe_job_pConstant
-        ACOT_JOB_NORM = job_acot_foodman_add
-        ACOT_JOB_GEST = job_acot_fooddrone_add
+        ACOT_JOB_NORM = job_ae_foodman_add
+        ACOT_JOB_GEST = job_ae_fooddrone_add
         JOB_NORM = job_farmer_add
         JOB_GEST = job_farmer_drone_add
         AMOUNT = 200
@@ -1954,7 +1857,7 @@ zone_voidframe_zone_DE_farming = {
     zone_sets = {
         food
     }
-} #todo no alpha food job
+}
 zone_voidframe_zone_PE_farming = {
     icon = GFX_anz_voidframe_zone_PE_FOOD
 
