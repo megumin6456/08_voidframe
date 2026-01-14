@@ -19,274 +19,274 @@ spriteTypes = {
 
     spriteType = {
         name = "GFX_anz_voidframe_zone_DM_ALLOY"
-        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_DM_ALLOY.dds"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_DM_ALLOY.dds"
     }
     spriteType = {
         name = "GFX_anz_voidframe_zone_DE_ALLOY"
-        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_DE_ALLOY.dds"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_DE_ALLOY.dds"
     }
     spriteType = {
         name = "GFX_anz_voidframe_zone_PE_ALLOY"
-        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_PE_ALLOY.dds"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_PE_ALLOY.dds"
     }
     spriteType = {
         name = "GFX_anz_voidframe_zone_SE_ALLOY"
-        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_SE_ALLOY.dds"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_SE_ALLOY.dds"
     }
     spriteType = {
         name = "GFX_anz_voidframe_zone_TE_ALLOY"
-        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_TE_ALLOY.dds"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_TE_ALLOY.dds"
     }
 
     spriteType = {
         name = "GFX_anz_voidframe_zone_DM_MINERAL"
-        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_DM_MINERAL.dds"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_DM_MINERAL.dds"
     }
     spriteType = {
         name = "GFX_anz_voidframe_zone_DE_MINERAL"
-        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_DE_MINERAL.dds"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_DE_MINERAL.dds"
     }
     spriteType = {
         name = "GFX_anz_voidframe_zone_PE_MINERAL"
-        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_PE_MINERAL.dds"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_PE_MINERAL.dds"
     }
     spriteType = {
         name = "GFX_anz_voidframe_zone_SE_MINERAL"
-        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_SE_MINERAL.dds"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_SE_MINERAL.dds"
     }
     spriteType = {
         name = "GFX_anz_voidframe_zone_TE_MINERAL"
-        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_TE_MINERAL.dds"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_TE_MINERAL.dds"
     }
 
     spriteType = {
         name = "GFX_anz_voidframe_zone_DM_ENERGY"
-        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_DM_ENERGY.dds"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_DM_ENERGY.dds"
     }
     spriteType = {
         name = "GFX_anz_voidframe_zone_DE_ENERGY"
-        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_DE_ENERGY.dds"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_DE_ENERGY.dds"
     }
     spriteType = {
         name = "GFX_anz_voidframe_zone_PE_ENERGY"
-        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_PE_ENERGY.dds"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_PE_ENERGY.dds"
     }
     spriteType = {
         name = "GFX_anz_voidframe_zone_SE_ENERGY"
-        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_SE_ENERGY.dds"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_SE_ENERGY.dds"
     }
     spriteType = {
         name = "GFX_anz_voidframe_zone_TE_ENERGY"
-        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_TE_ENERGY.dds"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_TE_ENERGY.dds"
     }
 
     spriteType = {
         name = "GFX_anz_voidframe_zone_DM_FOOD"
-        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_DM_FOOD.dds"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_DM_FOOD.dds"
     }
     spriteType = {
         name = "GFX_anz_voidframe_zone_DE_FOOD"
-        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_DE_FOOD.dds"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_DE_FOOD.dds"
     }
     spriteType = {
         name = "GFX_anz_voidframe_zone_PE_FOOD"
-        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_PE_FOOD.dds"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_PE_FOOD.dds"
     }
     spriteType = {
         name = "GFX_anz_voidframe_zone_SE_FOOD"
-        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_SE_FOOD.dds"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_SE_FOOD.dds"
     }
     spriteType = {
         name = "GFX_anz_voidframe_zone_TE_FOOD"
-        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_TE_FOOD.dds"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_TE_FOOD.dds"
     }
 
     spriteType = {
         name = "GFX_anz_voidframe_zone_DM_CONSUMER_GOODS"
-        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_DM_CONSUMER_GOODS.dds"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_DM_CONSUMER_GOODS.dds"
     }
     spriteType = {
         name = "GFX_anz_voidframe_zone_DE_CONSUMER_GOODS"
-        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_DE_CONSUMER_GOODS.dds"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_DE_CONSUMER_GOODS.dds"
     }
     spriteType = {
         name = "GFX_anz_voidframe_zone_PE_CONSUMER_GOODS"
-        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_PE_CONSUMER_GOODS.dds"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_PE_CONSUMER_GOODS.dds"
     }
     spriteType = {
         name = "GFX_anz_voidframe_zone_SE_CONSUMER_GOODS"
-        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_SE_CONSUMER_GOODS.dds"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_SE_CONSUMER_GOODS.dds"
     }
     spriteType = {
         name = "GFX_anz_voidframe_zone_TE_CONSUMER_GOODS"
-        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_TE_CONSUMER_GOODS.dds"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_TE_CONSUMER_GOODS.dds"
     }
 
     spriteType = {
         name = "GFX_anz_voidframe_zone_DM_TRADE"
-        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_DM_TRADE.dds"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_DM_TRADE.dds"
     }
     spriteType = {
         name = "GFX_anz_voidframe_zone_DE_TRADE"
-        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_DE_TRADE.dds"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_DE_TRADE.dds"
     }
     spriteType = {
         name = "GFX_anz_voidframe_zone_PE_TRADE"
-        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_PE_TRADE.dds"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_PE_TRADE.dds"
     }
     spriteType = {
         name = "GFX_anz_voidframe_zone_SE_TRADE"
-        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_SE_TRADE.dds"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_SE_TRADE.dds"
     }
     spriteType = {
         name = "GFX_anz_voidframe_zone_TE_TRADE"
-        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_TE_TRADE.dds"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_TE_TRADE.dds"
     }
 
     spriteType = {
         name = "GFX_anz_voidframe_zone_DM_RESEARCH"
-        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_DM_RESEARCH.dds"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_DM_RESEARCH.dds"
     }
     spriteType = {
         name = "GFX_anz_voidframe_zone_DE_RESEARCH"
-        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_DE_RESEARCH.dds"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_DE_RESEARCH.dds"
     }
     spriteType = {
         name = "GFX_anz_voidframe_zone_PE_RESEARCH"
-        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_PE_RESEARCH.dds"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_PE_RESEARCH.dds"
     }
     spriteType = {
         name = "GFX_anz_voidframe_zone_SE_RESEARCH"
-        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_SE_RESEARCH.dds"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_SE_RESEARCH.dds"
     }
     spriteType = {
         name = "GFX_anz_voidframe_zone_TE_RESEARCH"
-        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_TE_RESEARCH.dds"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_TE_RESEARCH.dds"
     }
 
     spriteType = {
         name = "GFX_anz_voidframe_zone_DM_ARMY"
-        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_DM_ARMY.dds"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_DM_ARMY.dds"
     }
     spriteType = {
         name = "GFX_anz_voidframe_zone_DE_ARMY"
-        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_DE_ARMY.dds"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_DE_ARMY.dds"
     }
     spriteType = {
         name = "GFX_anz_voidframe_zone_PE_ARMY"
-        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_PE_ARMY.dds"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_PE_ARMY.dds"
     }
     spriteType = {
         name = "GFX_anz_voidframe_zone_SE_ARMY"
-        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_SE_ARMY.dds"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_SE_ARMY.dds"
     }
     spriteType = {
         name = "GFX_anz_voidframe_zone_TE_ARMY"
-        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_TE_ARMY.dds"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_TE_ARMY.dds"
     }
 
     spriteType = {
         name = "GFX_anz_voidframe_zone_DM_UNITY"
-        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_DM_UNITY.dds"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_DM_UNITY.dds"
     }
     spriteType = {
         name = "GFX_anz_voidframe_zone_DE_UNITY"
-        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_DE_UNITY.dds"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_DE_UNITY.dds"
     }
     spriteType = {
         name = "GFX_anz_voidframe_zone_PE_UNITY"
-        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_PE_UNITY.dds"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_PE_UNITY.dds"
     }
     spriteType = {
         name = "GFX_anz_voidframe_zone_SE_UNITY"
-        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_SE_UNITY.dds"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_SE_UNITY.dds"
     }
     spriteType = {
         name = "GFX_anz_voidframe_zone_TE_UNITY"
-        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_TE_UNITY.dds"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_TE_UNITY.dds"
     }
 
     spriteType = {
         name = "GFX_anz_voidframe_zone_DM_REFINERY"
-        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_DM_REFINERY.dds"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_DM_REFINERY.dds"
     }
     spriteType = {
         name = "GFX_anz_voidframe_zone_DE_REFINERY"
-        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_DE_REFINERY.dds"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_DE_REFINERY.dds"
     }
     spriteType = {
         name = "GFX_anz_voidframe_zone_PE_REFINERY"
-        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_PE_REFINERY.dds"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_PE_REFINERY.dds"
     }
     spriteType = {
         name = "GFX_anz_voidframe_zone_SE_REFINERY"
-        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_SE_REFINERY.dds"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_SE_REFINERY.dds"
     }
     spriteType = {
         name = "GFX_anz_voidframe_zone_TE_REFINERY"
-        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_TE_REFINERY.dds"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_TE_REFINERY.dds"
     }
 
     spriteType = {
         name = "GFX_anz_voidframe_zone_DM_TENSILES"
-        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_DM_TENSILES.dds"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_DM_TENSILES.dds"
     }
     spriteType = {
         name = "GFX_anz_voidframe_zone_DE_TENSILES"
-        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_DE_TENSILES.dds"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_DE_TENSILES.dds"
     }
     spriteType = {
         name = "GFX_anz_voidframe_zone_PE_TENSILES"
-        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_PE_TENSILES.dds"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_PE_TENSILES.dds"
     }
     spriteType = {
         name = "GFX_anz_voidframe_zone_SE_TENSILES"
-        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_SE_TENSILES.dds"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_SE_TENSILES.dds"
     }
     spriteType = {
         name = "GFX_anz_voidframe_zone_TE_TENSILES"
-        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_TE_TENSILES.dds"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_TE_TENSILES.dds"
     }
 
     spriteType = {
         name = "GFX_anz_voidframe_zone_DM_CITY"
-        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_DM_CITY.dds"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_DM_CITY.dds"
     }
     spriteType = {
         name = "GFX_anz_voidframe_zone_DE_CITY"
-        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_DE_CITY.dds"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_DE_CITY.dds"
     }
     spriteType = {
         name = "GFX_anz_voidframe_zone_PE_CITY"
-        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_PE_CITY.dds"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_PE_CITY.dds"
     }
     spriteType = {
         name = "GFX_anz_voidframe_zone_SE_CITY"
-        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_SE_CITY.dds"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_SE_CITY.dds"
     }
     spriteType = {
         name = "GFX_anz_voidframe_zone_TE_CITY"
-        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_TE_CITY.dds"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_TE_CITY.dds"
     }
 
     spriteType = {
         name = "GFX_anz_voidframe_zone_DM_AMENITIES"
-        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_DM_AMENITIES.dds"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_DM_AMENITIES.dds"
     }
     spriteType = {
         name = "GFX_anz_voidframe_zone_DE_AMENITIES"
-        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_DE_AMENITIES.dds"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_DE_AMENITIES.dds"
     }
     spriteType = {
         name = "GFX_anz_voidframe_zone_PE_AMENITIES"
-        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_PE_AMENITIES.dds"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_PE_AMENITIES.dds"
     }
     spriteType = {
         name = "GFX_anz_voidframe_zone_SE_AMENITIES"
-        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_SE_AMENITIES.dds"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_SE_AMENITIES.dds"
     }
     spriteType = {
         name = "GFX_anz_voidframe_zone_TE_AMENITIES"
-        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_TE_AMENITIES.dds"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_voidframe_zone_TE_AMENITIES.dds"
     }
 }
