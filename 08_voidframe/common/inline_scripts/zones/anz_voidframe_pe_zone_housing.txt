@@ -62,5 +62,6 @@ excluded_building_sets = {
 }
 
 zone_sets = {
-    frame_urban
+    frame_urban1
+    frame_urban2
 }

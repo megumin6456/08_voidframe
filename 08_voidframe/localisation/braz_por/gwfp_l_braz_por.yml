@@ -1,0 +1,29 @@
+﻿l_braz_por:
+  
+  gwfp_infuse_black_hole:99 "§RInfuse Black Hole§!"
+  gwfp_frameworld_infuse_effect:99 "Infuses the black hole the frameworld sits on with £aot_sr_runic_power£ §YRunic Power.§!"
+  gwfp_infuse_black_hole_desc:99 "By slowly firing small amouts of Runic Power into the black hole at the event horizon, with the help of Hawking Radiation, we can replace enough particles of the black hole to facilitate other Phanon mega-projects."
+  
+  d_gwfp_phanon_black_hole:99 "§RRunic Power Infused Black Hole§!"
+  d_gwfp_phanon_black_hole_desc:99 "We are able to collect a substantial amount of £aot_sr_runic_power£ §YRunic Power§! from this black hole, similar to a Phanon Pylon Star."
+  
+  pc_phanon_black_hole:99 "§RRunic Black Hole§!"
+  pc_phanon_black_hole_desc:99 "A black hole with enough Runic Power shot into it for some to start getting spat back out."
+  
+  sc_phanon_black_hole:99 "§RRunic Black Hole§!"
+  sc_phanon_black_hole_desc:99 "A black hole with enough Runic Power shot into it for some to start getting spat back out."
+  
+  gwfp.001.name:99 "§RRunic Power Infusion§! Complete"
+  gwfp.001.desc:99 "Enough £aot_sr_runic_power£ §YRunic Power§! has been infused with the black hole. \n\nAt the press of the button, it will start releasing more £aot_sr_runic_power£ §YRunic Power§! and will allow for bigger projects like the Phanon Great Wall."
+  gwfp.001.a:99 "§RFINALIZE INFUSION§!"
+  
+  gwfp.002.name:99 "Phanon Great Wall Construction Begun"
+  gwfp.002.desc:99 "Work has begun on the new Phanon Great Wall around [star.GetName]. Soon this system will be impenetrable."
+  gwfp.002.a:99 "Excellent."
+  
+  gwfp_build_great_wall:99 "§RPhanon Great Wall Construction§!"
+  gwfp_build_great_wall_desc:99 "After the black hole which [capital.GetName] sits on was infused with Runic Power, our goal for a Phanon Great Wall have finally been realized."
+  gwfp_frameworld_great_wall_effect:99 "Starts construction on a §YPhanon Great Wall§!."
+  
+  frameripp_0:99 "Phanon MacR.I.P.P."
+  frameripp_0_DESC:99 "The Phanon Rupture Induced Planetary Perfection (R.I.P.P.) is the current pinnacle of deep space manufacturing technology. It uses £aot_sr_runic_power£ §YRunic Power§! to achieve an economic performance, previously deemed impossible with £acot_sr_dark_energy£ Dark Energy and £sr_dark_matter£ Dark Mater. It is also the only place to generate £aot_sr_runic_power£ Runic Power in sufficient quantities to fuel our phanon tier fleets."
