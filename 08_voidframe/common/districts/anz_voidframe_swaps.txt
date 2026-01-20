@@ -795,10 +795,10 @@ district_giga_voidframe_research_se = {
     }
 }
 
-# REFINERY #todo put the overlay icon on
+# REFINERY
 district_giga_voidframe_refinery_dm = {
     icon = district_giga_voidframe_strat_dm
-    #overlay_icon = GFX_giga_district_strategic_resources
+    overlay_icon = GFX_giga_district_strategic_resources
     gridbox = district_arcology_arms_industry
     district_background = district_giga_frameworld_refinery
 
@@ -809,7 +809,7 @@ district_giga_voidframe_refinery_dm = {
 }
 district_giga_voidframe_refinery_de = {
     icon = district_giga_voidframe_strat_de
-    #overlay_icon = GFX_giga_district_strategic_resources
+    overlay_icon = GFX_giga_district_strategic_resources
     gridbox = district_arcology_arms_industry
     district_background = district_giga_frameworld_refinery
 
@@ -820,7 +820,7 @@ district_giga_voidframe_refinery_de = {
 }
 district_giga_voidframe_refinery_pe = {
     icon = district_giga_voidframe_strat_pe
-    #overlay_icon = GFX_giga_district_strategic_resources
+    overlay_icon = GFX_giga_district_strategic_resources
     gridbox = district_arcology_arms_industry
     district_background = district_giga_frameworld_refinery
 
@@ -831,7 +831,7 @@ district_giga_voidframe_refinery_pe = {
 }
 district_giga_voidframe_refinery_se = {
     icon = district_giga_voidframe_strat_se
-    #overlay_icon = GFX_giga_district_strategic_resources
+    overlay_icon = GFX_giga_district_strategic_resources
     gridbox = district_arcology_arms_industry
     district_background = district_giga_frameworld_refinery
 
