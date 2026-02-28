@@ -593,6 +593,42 @@ anz_voidframe_synapse_drone_se = {
     }
 }
 
+# theta stuff
+anz_voidframe_meditator = {
+    category = specialist
+    swappable_data = {
+        default = {
+            condition_string = SPECIALIST_JOB_TRIGGER
+            building_icon = building_ae_dimensional_fabricator
+            icon = giga_amb_fe_celestial_architect
+        }
+    }
+    possible_pre_triggers = {
+        has_owner = yes
+        is_sapient = yes
+        is_enslaved = no
+        is_being_purged = no
+        is_being_assimilated = no
+    }
+
+    possible_precalc = can_fill_specialist_job
+    possible = { complex_specialist_job_check_trigger = yes }
+
+    resources = {
+        category = planet_metallurgists
+
+        produces = {
+            sm_sr_perfect_runic_energy = 0.1
+        }
+        upkeep = {
+        }
+    }
+
+    weight = {
+        weight = @specialist_job_weight
+    }
+}
+
 anz_voidframe_meditator_drone = {
 	category = complex_drone
     swappable_data = {
@@ -617,7 +653,7 @@ anz_voidframe_meditator_drone = {
 		category = planet_metallurgists
 
 		produces = {
-			sm_sr_perfect_runic_energy = 0.2
+			sm_sr_perfect_runic_energy = 0.1
 		}
 		upkeep = {
 		}
