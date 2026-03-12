@@ -212,7 +212,6 @@ zone_voidframe_zone_DM_foundry = {
 
     included_building_sets = {
         foundry
-        urban_automation
         origin
     }
 
@@ -267,7 +266,6 @@ zone_voidframe_zone_DE_foundry = {
 
     included_building_sets = {
         foundry
-        urban_automation
         origin
     }
 
@@ -322,7 +320,6 @@ zone_voidframe_zone_PE_foundry = {
 
     included_building_sets = {
         foundry
-        urban_automation
         origin
     }
 
@@ -377,7 +374,6 @@ zone_voidframe_zone_SE_foundry = {
 
     included_building_sets = {
         foundry
-        urban_automation
         origin
     }
 
@@ -433,7 +429,6 @@ zone_voidframe_zone_DM_factory = {
 
     included_building_sets = {
         factory
-        urban_automation
         origin
     }
 
@@ -497,7 +492,6 @@ zone_voidframe_zone_DE_factory = {
 
     included_building_sets = {
         factory
-        urban_automation
         origin
     }
 
@@ -552,7 +546,6 @@ zone_voidframe_zone_PE_factory = {
 
     included_building_sets = {
         factory
-        urban_automation
         origin
     }
 
@@ -607,7 +600,6 @@ zone_voidframe_zone_SE_factory = {
 
     included_building_sets = {
         factory
-        urban_automation
         origin
     }
 
@@ -672,7 +664,6 @@ zone_voidframe_zone_DM_trade = {
 
     included_building_sets = {
         trade
-        urban_automation
         origin
     }
 
@@ -732,7 +723,6 @@ zone_voidframe_zone_DE_trade = {
 
     included_building_sets = {
         trade
-        urban_automation
         origin
     }
 
@@ -792,7 +782,6 @@ zone_voidframe_zone_PE_trade = {
 
     included_building_sets = {
         trade
-        urban_automation
         origin
     }
 
@@ -852,7 +841,6 @@ zone_voidframe_zone_SE_trade = {
 
     included_building_sets = {
         trade
-        urban_automation
         origin
     }
 
@@ -2000,7 +1988,6 @@ zone_voidframe_zone_DMacot_admin = {
 
     included_building_sets = {
         unity
-        urban_automation
         origin
     }
 
@@ -2046,7 +2033,6 @@ zone_voidframe_zone_DM_admin = {
 
     included_building_sets = {
         unity
-        urban_automation
         origin
     }
 
@@ -2091,7 +2077,6 @@ zone_voidframe_zone_DE_admin = {
 
     included_building_sets = {
         unity
-        urban_automation
         origin
     }
 
@@ -2136,7 +2121,6 @@ zone_voidframe_zone_PE_admin = {
 
     included_building_sets = {
         unity
-        urban_automation
         origin
     }
 
@@ -2181,7 +2165,6 @@ zone_voidframe_zone_SE_admin = {
 
     included_building_sets = {
         unity
-        urban_automation
         origin
     }
 
@@ -2228,7 +2211,6 @@ zone_voidframe_zone_DM_temple = {
 
     included_building_sets = {
         unity
-        urban_automation
         origin
     }
 
@@ -2273,7 +2255,6 @@ zone_voidframe_zone_DE_temple = {
 
     included_building_sets = {
         unity
-        urban_automation
         origin
     }
 
@@ -2318,7 +2299,6 @@ zone_voidframe_zone_PE_temple = {
 
     included_building_sets = {
         unity
-        urban_automation
         origin
     }
 
@@ -2363,7 +2343,6 @@ zone_voidframe_zone_PE_temple = {
 
     included_building_sets = {
         unity
-        urban_automation
         origin
     }
 
@@ -2409,7 +2388,6 @@ zone_voidframe_zone_DM_synapse = {
 
     included_building_sets = {
         unity
-        urban_automation
         origin
     }
 
@@ -2453,7 +2431,6 @@ zone_voidframe_zone_DE_synapse = {
 
     included_building_sets = {
         unity
-        urban_automation
         origin
     }
 
@@ -2497,7 +2474,6 @@ zone_voidframe_zone_PE_synapse = {
 
     included_building_sets = {
         unity
-        urban_automation
         origin
     }
 
@@ -2541,7 +2517,6 @@ zone_voidframe_zone_PE_synapse = {
 
     included_building_sets = {
         unity
-        urban_automation
         origin
     }
 
@@ -2587,7 +2562,6 @@ zone_voidframe_zone_DM_simulation = {
 
     included_building_sets = {
         unity
-        urban_automation
         origin
     }
 
@@ -2631,7 +2605,6 @@ zone_voidframe_zone_DE_simulation = {
 
     included_building_sets = {
         unity
-        urban_automation
         origin
     }
 
@@ -2675,7 +2648,6 @@ zone_voidframe_zone_PE_simulation = {
 
     included_building_sets = {
         unity
-        urban_automation
         origin
     }
 
@@ -2719,7 +2691,6 @@ zone_voidframe_zone_PE_simulation = {
 
     included_building_sets = {
         unity
-        urban_automation
         origin
     }
 
@@ -2762,7 +2733,6 @@ zone_voidframe_zone_DM_sanctuary = {
     included_building_sets = {
         unity
         bio_trophy
-        urban_automation
         origin
     }
 
@@ -2803,7 +2773,6 @@ zone_voidframe_zone_DE_sanctuary = {
     included_building_sets = {
         unity
         bio_trophy
-        urban_automation
         origin
     }
 
@@ -2844,7 +2813,6 @@ zone_voidframe_zone_PE_sanctuary = {
     included_building_sets = {
         unity
         bio_trophy
-        urban_automation
         origin
     }
 
@@ -2885,7 +2853,6 @@ zone_voidframe_zone_SE_sanctuary = {
     included_building_sets = {
         unity
         bio_trophy
-        urban_automation
         origin
     }
 
@@ -2954,7 +2921,9 @@ icon = GFX_anz_voidframe_zone_DM_RESEARCH
 
     included_building_sets = {
         research
-        urban_automation
+        physics
+        society
+        engineering
         origin
     }
 
@@ -3021,7 +2990,9 @@ zone_voidframe_zone_DE_research = {
 
     included_building_sets = {
         research
-        urban_automation
+        physics
+        society
+        engineering
         origin
     }
 
@@ -3088,7 +3059,9 @@ zone_voidframe_zone_PE_research = {
 
     included_building_sets = {
         research
-        urban_automation
+        physics
+        society
+        engineering
         origin
     }
 
@@ -3155,7 +3128,9 @@ zone_voidframe_zone_SE_research = {
 
     included_building_sets = {
         research
-        urban_automation
+        physics
+        society
+        engineering
         origin
     }
 
@@ -3205,7 +3180,6 @@ zone_voidframe_zone_DM_refinery = {
         factory
         industrial
         foundry
-        urban_automation
         origin
     }
 
@@ -3253,7 +3227,6 @@ zone_voidframe_zone_DE_refinery = {
         factory
         industrial
         foundry
-        urban_automation
         origin
     }
 
@@ -3301,7 +3274,6 @@ zone_voidframe_zone_PE_refinery = {
         factory
         industrial
         foundry
-        urban_automation
         origin
     }
 
@@ -3349,7 +3321,6 @@ zone_voidframe_zone_SE_refinery = {
         factory
         industrial
         foundry
-        urban_automation
         origin
     }
 
@@ -3394,7 +3365,6 @@ zone_voidframe_zone_DM_anticrime = { #AOT locked since we using dm enforcer
 
     included_building_sets = {
         anticrime
-        urban_automation
         origin
         government
     }
@@ -3438,7 +3408,6 @@ zone_voidframe_zone_DE_anticrime = {
 
     included_building_sets = {
         anticrime
-        urban_automation
         origin
         government
     }
@@ -3482,7 +3451,6 @@ zone_voidframe_zone_PE_anticrime = {
 
     included_building_sets = {
         anticrime
-        urban_automation
         origin
         government
     }
@@ -3527,7 +3495,6 @@ zone_voidframe_zone_SE_anticrime = {
 
     included_building_sets = {
         anticrime
-        urban_automation
         origin
         government
     }
@@ -3567,7 +3534,6 @@ zone_voidframe_zone_DM_amenities = { #AOT locked since we using dm enforcer
 
     included_building_sets = {
         amenities
-        urban_automation
     }
     include = {
         building_luxury_residence
@@ -3633,7 +3599,6 @@ zone_voidframe_zone_DE_amenities = {
 
     included_building_sets = {
         amenities
-        urban_automation
     }
     include = {
         building_luxury_residence
@@ -3699,7 +3664,6 @@ zone_voidframe_zone_PE_amenities = {
 
     included_building_sets = {
         amenities
-        urban_automation
     }
     include = {
         building_luxury_residence
@@ -3765,7 +3729,6 @@ zone_voidframe_zone_SE_amenities = {
 
     included_building_sets = {
         amenities
-        urban_automation
     }
     include = {
         building_luxury_residence
@@ -3833,7 +3796,6 @@ zone_voidframe_zone_DM_amenities_dystopian = {
 
     included_building_sets = {
         amenities
-        urban_automation
     }
     include = {
         building_luxury_residence
@@ -3899,7 +3861,6 @@ zone_voidframe_zone_DE_amenities_dystopian = {
 
     included_building_sets = {
         amenities
-        urban_automation
     }
     include = {
         building_luxury_residence
@@ -3965,7 +3926,6 @@ zone_voidframe_zone_PE_amenities_dystopian = {
 
     included_building_sets = {
         amenities
-        urban_automation
     }
     include = {
         building_luxury_residence
@@ -4031,7 +3991,6 @@ zone_voidframe_zone_SE_amenities_dystopian = {
 
     included_building_sets = {
         amenities
-        urban_automation
     }
     include = {
         building_luxury_residence
@@ -4107,11 +4066,6 @@ zone_voidframe_zone_DM_tensiles = {
 
     included_building_sets = {
         giga_supertensile
-        factory
-        industrial
-        foundry
-        urban_automation
-        origin
     }
 
     zone_sets = {
@@ -4151,11 +4105,6 @@ zone_voidframe_zone_DE_tensiles = {
 
     included_building_sets = {
         giga_supertensile
-        factory
-        industrial
-        foundry
-        urban_automation
-        origin
     }
 
     zone_sets = {
@@ -4195,11 +4144,6 @@ zone_voidframe_zone_PE_tensiles = {
 
     included_building_sets = {
         giga_supertensile
-        factory
-        industrial
-        foundry
-        urban_automation
-        origin
     }
 
     zone_sets = {
@@ -4239,11 +4183,6 @@ zone_voidframe_zone_SE_tensiles = {
 
     included_building_sets = {
         giga_supertensile
-        factory
-        industrial
-        foundry
-        urban_automation
-        origin
     }
 
     zone_sets = {
