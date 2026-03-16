@@ -15,4 +15,12 @@ frameripp_0 = {
 	potential = {
 		always = no
 	}
+
+    possible = {
+        always = no
+    }
+
+    ai_weight = {
+        factor = 0
+    }
 }

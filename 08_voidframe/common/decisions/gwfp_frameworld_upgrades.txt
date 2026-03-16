@@ -7,7 +7,7 @@ gwfp_infuse_black_hole = {
 	}
 	
 	show_tech_unlock_if = {
-		gwfp_is_frame_empire = yes
+        giga_has_frameworld_origin = yes
 	}
 	
 	enactment_time = 1800
@@ -23,7 +23,7 @@ gwfp_infuse_black_hole = {
 	potential = {
 		has_global_flag = anz_voidframe_installed
 		owner = {
-			gwfp_is_frame_empire = yes
+            giga_has_frameworld_origin = yes
 		}
 		is_planet_class = pc_giga_frameworld
 		not = {
@@ -79,7 +79,7 @@ gwfp_build_great_wall = {
 	}
 
 	show_tech_unlock_if = {
-		gwfp_is_frame_empire = yes
+        giga_has_frameworld_origin = yes
 	}
 
 	enactment_time = 3600
@@ -95,7 +95,7 @@ gwfp_build_great_wall = {
 	potential = {
 		has_global_flag = anz_voidframe_installed
 		owner = {
-			gwfp_is_frame_empire = yes
+			giga_has_frameworld_origin = yes
 		}
 		is_planet_class = pc_giga_frameworld
 		has_planet_flag = frameworld_infused_black_hole
