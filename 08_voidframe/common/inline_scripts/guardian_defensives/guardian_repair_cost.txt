@@ -1,0 +1,50 @@
+category = megastructures_frameworld
+cost = {
+    trigger = {
+        exists = owner
+        owner = {
+            NOT = { has_technology = tech_precursor_guardian_alpha }
+        }
+    }
+    sr_dark_matter = @guardian_repair_cost_sr_dm
+    acot_sr_dark_energy = @guardian_repair_cost_sr_de
+}
+cost = {
+    trigger = {
+        exists = owner
+        owner = {
+            has_technology = tech_precursor_guardian_alpha
+        }
+    }
+    sr_dark_matter = @[guardian_repair_cost_sr_dm * 2]
+    acot_sr_dark_energy = @[guardian_repair_cost_sr_de * 2]
+}
+cost = {
+    trigger = {
+        exists = owner
+        owner = {
+            has_technology = tech_precursor_guardian_runic
+        }
+    }
+    aot_sr_runic_power = @guardian_repair_cost_sr_runic
+}
+cost = {
+    trigger = {
+        exists = owner
+        owner = {
+            has_technology = tech_precursor_guardian_sigma
+        }
+    }
+    acot_sr_stellarite = @guardian_repair_cost_sr_stellarite
+}
+cost = {
+    trigger = {
+        exists = owner
+        owner = {
+            has_technology = tech_precursor_guardian_master
+        }
+    }
+    # Doubles cost for Mastercraft
+    aot_sr_runic_power = @guardian_repair_cost_sr_runic
+    acot_sr_stellarite = @guardian_repair_cost_sr_stellarite
+}

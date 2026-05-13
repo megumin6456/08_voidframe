@@ -1,0 +1,51 @@
+decision_voidframe_guardian_repair_station_$ID$ = {
+    icon = decision_frameworld_perimeter
+    owned_planets_only = yes
+
+    enactment_time = @guardian_repair_time
+
+    resources = {
+        inline_script = guardian_defensives/guardian_repair_cost
+    }
+
+    potential = {
+        exists = owner
+        giga_is_frame_world = yes
+        has_planet_flag = voidframe_guardian_defensive_station_$ID$_destroyed
+    }
+
+    allow = {
+        can_rebuild_frameworld_defensive_station = yes
+        is_voidframe_upgraded = yes
+    }
+
+    effect = {
+        anz_voidframe_respawn_guardian_defensive_station = { WHO = owner ID = $ID$ }
+    }
+
+    ai_weight = {
+        weight = @weight_base
+
+
+        # more if we've got a lot of dark energy
+        modifier = {
+            factor = @weight_sr_dark_energy
+            exists = owner
+            owner = {
+                has_resource = {
+                    type = acot_sr_dark_energy
+                    amount > @dark_energy_threshold
+                }
+            }
+        }
+
+        # more if we're at war
+        modifier = {
+            factor = @weight_war
+            exists = owner
+            owner = {
+                is_at_war = yes
+            }
+        }
+    }
+}
