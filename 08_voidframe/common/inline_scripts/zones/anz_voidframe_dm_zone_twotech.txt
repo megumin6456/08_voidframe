@@ -1,0 +1,27 @@
+
+potential = { # planet scope
+    hidden_trigger = {
+        exists = owner
+        owner = {
+            giga_has_frameworld_origin = yes
+            is_wilderness_empire = no
+            OR = {
+                AND = {
+                    has_technology = $TECH1$
+                    $OTHER_REQ1$
+                }
+                AND = {
+                    has_technology = $TECH2$
+                    $OTHER_REQ2$
+                }
+            }
+        }
+        $OTHER_REQ_PLANET$
+    }
+    is_planet_class = pc_giga_frameworld
+    is_voidframe_dm = yes
+}
+
+inline_script = {
+    script = zones/base/anz_voidframe_dm_zone_base
+}

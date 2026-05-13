@@ -3521,10 +3521,17 @@ zone_voidframe_zone_DM_amenities = { #AOT locked since we using dm enforcer
     swap_type_weight = 10
 
     inline_script = {
-        script = zones/anz_voidframe_dm_zone
-        TECH = "tech_acot_dm_mansion"
-        OTHER_REQ = "
+        script = zones/anz_voidframe_dm_zone_twotech
+        TECH1 = "tech_acot_dm_mansion"
+        OTHER_REQ1 = "
             NOT = { has_valid_civic = civic_dystopian_society }
+            is_spiritualist = no
+            is_gestalt = no
+        "
+        TECH2 = "tech_acot_dm_temple"
+        OTHER_REQ2 = "
+            NOT = { has_valid_civic = civic_dystopian_society }
+            is_spiritualist = yes
             is_gestalt = no
         "
         OTHER_REQ_PLANET = ""
@@ -3590,10 +3597,17 @@ zone_voidframe_zone_DE_amenities = {
     swap_type_weight = 10
 
     inline_script = {
-        script = zones/anz_voidframe_de_zone
-        TECH = "tech_acot_ae_mansion"
-        OTHER_REQ = "
+        script = zones/anz_voidframe_de_zone_twotech
+        TECH1 = "tech_acot_ae_mansion"
+        OTHER_REQ1 = "
             NOT = { has_valid_civic = civic_dystopian_society }
+            is_spiritualist = no
+            is_gestalt = no
+        "
+        TECH2 = "tech_acot_ae_temple"
+        OTHER_REQ2 = "
+            NOT = { has_valid_civic = civic_dystopian_society }
+            is_spiritualist = yes
             is_gestalt = no
         "
         OTHER_REQ_PLANET = ""
@@ -3659,10 +3673,17 @@ zone_voidframe_zone_PE_amenities = {
     swap_type_weight = 10
 
     inline_script = {
-        script = zones/anz_voidframe_pe_zone
-        TECH = "tech_phanon_mansion"
-        OTHER_REQ = "
+        script = zones/anz_voidframe_pe_zone_twotech
+        TECH1 = "tech_phanon_mansion"
+        OTHER_REQ1 = "
             NOT = { has_valid_civic = civic_dystopian_society }
+            is_spiritualist = no
+            is_gestalt = no
+        "
+        TECH2 = "tech_phanon_temple"
+        OTHER_REQ2 = "
+            NOT = { has_valid_civic = civic_dystopian_society }
+            is_spiritualist = yes
             is_gestalt = no
         "
         OTHER_REQ_PLANET = ""
@@ -3728,10 +3749,17 @@ zone_voidframe_zone_SE_amenities = {
     swap_type_weight = 10
 
     inline_script = {
-        script = zones/anz_voidframe_se_zone
-        TECH = "tech_stellarite_mansion"
-        OTHER_REQ = "
+        script = zones/anz_voidframe_se_zone_twotech
+        TECH1 = "tech_stellarite_mansion"
+        OTHER_REQ1 = "
             NOT = { has_valid_civic = civic_dystopian_society }
+            is_spiritualist = no
+            is_gestalt = no
+        "
+        TECH2 = "tech_stellarite_temple"
+        OTHER_REQ2 = "
+            NOT = { has_valid_civic = civic_dystopian_society }
+            is_spiritualist = yes
             is_gestalt = no
         "
         OTHER_REQ_PLANET = ""
