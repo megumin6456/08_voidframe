@@ -21,6 +21,7 @@ gwfp_infuse_black_hole = {
 	}
 	
 	potential = {
+        has_global_flag = has_aot_mod
 		has_global_flag = anz_voidframe_installed
 		owner = {
             giga_has_frameworld_origin = yes
@@ -93,6 +94,7 @@ gwfp_build_great_wall = {
 	}
 
 	potential = {
+        has_global_flag = has_aot_mod
 		has_global_flag = anz_voidframe_installed
 		owner = {
 			giga_has_frameworld_origin = yes
