@@ -1,0 +1,11 @@
+inline_script = {
+    script = zones/base/anz_voidframe_zone_base
+}
+
+resources = {
+    category = planet_zones
+    cost = {
+        minerals = @zone_cost
+        acot_sr_stellarite = 100
+    }
+}
