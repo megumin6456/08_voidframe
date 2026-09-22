@@ -287,10 +287,10 @@ decision_voidframe_raid_phanon = {
 		}
 	}
 	potential = {
-		is_nomadic = no
-		is_ai = no
 		giga_has_frameworld_origin = yes
 		planet_owner = {
+			is_nomadic = no
+			is_ai = no
 			has_country_flag = has_vault_within_borders
 			NOT = { has_country_flag = acot_phanon_tech_stage_four_enabled }
 		}
@@ -409,9 +409,10 @@ frameag_evac = {
 		}
 
 		every_owned_pop_group = {
-			resettle_pop = {
-				pop = THIS
-				planet = event_target:target_frameworld
+			resettle_pop_group = {
+				POP_GROUP = THIS
+				PLANET = event_target:target_frameworld
+				PERCENTAGE = 100
 			}
 		}
 	}
